@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 
 import { PriceTag } from "@/components/price-tag";
 import { ProductImage } from "@/components/product-image";
@@ -6,6 +7,14 @@ import { StockBadge } from "@/components/stock-badge";
 import type { CatalogProduct } from "@/db/queries";
 import { t } from "@/i18n";
 
+/**
+ * La ficha de producto de la grilla — **piel** (NEW-STORE.md §5).
+ *
+ * Del diseño: tarjeta blanca sobre el fondo menta, foto de 16px de radio y el
+ * botón redondo de "ver" pisando la esquina de la foto. Lo que **no** es
+ * decoración y por eso sigue igual que en el template: de qué variante sale
+ * el precio que se muestra.
+ */
 export function ProductCard({
   product,
   priority = false,
@@ -26,28 +35,32 @@ export function ProductCard({
   return (
     <Link
       href={`/producto/${product.slug}`}
-      className="group border-border hover:border-foreground/20 focus-visible:ring-ring flex flex-col rounded-xl border p-3 transition-colors focus-visible:ring-2 focus-visible:outline-none"
+      className="group border-border/70 bg-card focus-visible:ring-ring hover:border-accent/40 flex flex-col rounded-2xl border p-3 transition-all hover:-translate-y-0.5 hover:shadow-lg focus-visible:ring-2 focus-visible:outline-none"
     >
-      <ProductImage
-        image={product.image}
-        alt={product.name}
-        categorySlug={product.categorySlug}
-        priority={priority}
-      />
+      <div className="relative">
+        <ProductImage
+          image={product.image}
+          alt={product.name}
+          categorySlug={product.categorySlug}
+          priority={priority}
+        />
+        {/* El botón del diseño: decorativo, porque toda la tarjeta ya es el
+            link. `aria-hidden` para no anunciarlo dos veces. */}
+        <span
+          aria-hidden
+          className="bg-primary text-primary-foreground border-card absolute -right-1 -bottom-1 flex size-9 items-center justify-center rounded-full border-[3px] opacity-0 transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100"
+        >
+          <ArrowUpRight className="size-4" />
+        </span>
+      </div>
 
       <div className="mt-3 flex flex-1 flex-col gap-1">
         <p className="text-muted-foreground text-xs">{product.brand ?? product.categoryName}</p>
-        <h3 className="group-hover:text-foreground line-clamp-2 text-sm font-medium">
-          {product.name}
-        </h3>
+        <h3 className="font-sans line-clamp-2 text-sm font-medium">{product.name}</h3>
 
         <div className="mt-auto pt-2">
           {shown ? (
-            <PriceTag
-              pricePyg={shown.pricePyg}
-              compareAtPyg={shown.compareAtPyg}
-              size="sm"
-            />
+            <PriceTag pricePyg={shown.pricePyg} compareAtPyg={shown.compareAtPyg} size="sm" />
           ) : null}
           <div className="mt-2 flex items-center gap-2">
             <StockBadge available={totalAvailable} />
@@ -65,8 +78,8 @@ export function ProductCard({
 
 export function ProductCardSkeleton() {
   return (
-    <div className="border-border rounded-xl border p-3">
-      <div className="bg-muted aspect-square animate-pulse rounded-lg" />
+    <div className="border-border/70 bg-card rounded-2xl border p-3">
+      <div className="bg-muted aspect-square animate-pulse rounded-xl" />
       <div className="mt-3 space-y-2">
         <div className="bg-muted h-3 w-1/3 animate-pulse rounded" />
         <div className="bg-muted h-4 w-4/5 animate-pulse rounded" />

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Mascota PY">
+  <rect width="100" height="100" rx="22" fill="#1a3d1a" />
+  <g fill="#EFFDF0">
+    <ellipse cx="50" cy="63.5" rx="23.5" ry="18.5" />
+    <ellipse cx="23.5" cy="37.5" rx="9.5" ry="12" />
+    <ellipse cx="41.5" cy="28.5" rx="9.3" ry="12.2" />
+    <ellipse cx="58.5" cy="28.5" rx="9.3" ry="12.2" />
+    <ellipse cx="76.5" cy="37.5" rx="9.5" ry="12" />
+  </g>
+</svg>

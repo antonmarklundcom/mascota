@@ -95,11 +95,11 @@ export type Hero = {
 export const MARCA_PLACEHOLDER = "TiendaPY";
 
 export const TIENDA: Tienda = {
-  nombre: MARCA_PLACEHOLDER,
-  titulo: "TiendaPY — Comprá online en Paraguay",
+  nombre: "Mascota PY",
+  titulo: "Mascota PY — Todo para tu mascota, comprá online en Paraguay",
   descripcion:
-    "Tienda online paraguaya. Precios en guaraníes, IVA incluido, envíos a todo el país y atención por WhatsApp.",
-  tagline: "Precios en guaraníes, IVA incluido. Enviamos a todo el país.",
+    "Tienda online para mascotas en Paraguay. Alimento, juguetes, camas y accesorios para perros y gatos. Precios en guaraníes, IVA incluido, envíos a todo el país.",
+  tagline: "Todo lo que aman tus mascotas. Precios en guaraníes, IVA incluido.",
   lang: "es-PY",
   ogLocale: "es_PY",
   cuentasClientes: false,

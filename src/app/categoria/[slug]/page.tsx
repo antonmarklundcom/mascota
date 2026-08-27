@@ -8,7 +8,7 @@ import { ProductCard } from "@/components/product-card";
 import { Button } from "@/components/ui/button";
 import { t, tPlural } from "@/i18n";
 import { parsePriceRange } from "@/lib/price-ranges";
-import { breadcrumbJsonLd, itemListJsonLd } from "@/lib/seo";
+import { breadcrumbJsonLd, itemListJsonLd, jsonLdScript } from "@/lib/seo";
 import { siteOrigin } from "@/lib/site-url";
 import {
   getBrands,
@@ -111,21 +111,25 @@ export default async function CategoryPage({
     <main className="mx-auto w-full max-w-6xl px-4 py-8">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: jsonLdScript(jsonLd) }}
       />
 
-      <nav className="text-muted-foreground text-sm">
-        <Link href="/" className="hover:text-foreground">
-          {t("nav.inicio")}
-        </Link>
-        <span aria-hidden> / </span>
-        <span className="text-foreground">{category.name}</span>
-      </nav>
+      {/* La cabecera de la categoría, con el aire del diseño: bloque menta,
+          miga de pan chica y el nombre en serif. */}
+      <div className="border-border/70 bg-secondary rounded-3xl border px-6 py-8 sm:px-10 sm:py-10">
+        <nav className="text-muted-foreground text-sm">
+          <Link href="/" className="hover:text-primary transition-colors">
+            {t("nav.inicio")}
+          </Link>
+          <span aria-hidden> / </span>
+          <span className="text-primary">{category.name}</span>
+        </nav>
 
-      <h1 className="mt-2 text-2xl font-semibold tracking-tight">{category.name}</h1>
-      <p className="text-muted-foreground mt-1 text-sm">
-        {tPlural("catalogo.productos", result.total)} · {t("catalogo.ivaIncluidoNota")}
-      </p>
+        <h1 className="text-primary mt-2 text-3xl sm:text-4xl">{category.name}</h1>
+        <p className="text-muted-foreground mt-2 text-sm">
+          {tPlural("catalogo.productos", result.total)} · {t("catalogo.ivaIncluidoNota")}
+        </p>
+      </div>
 
       <div className="mt-5">
         <Suspense fallback={null}>
@@ -134,10 +138,10 @@ export default async function CategoryPage({
       </div>
 
       {result.products.length === 0 ? (
-        <div className="border-border mt-8 rounded-xl border border-dashed p-10 text-center">
+        <div className="border-border bg-card mt-8 rounded-2xl border border-dashed p-10 text-center">
           <p className="font-medium">{t("categoria.sinResultados")}</p>
           <p className="text-muted-foreground mt-1 text-sm">{t("categoria.sinResultados.ayuda")}</p>
-          <Button asChild variant="outline" className="mt-4">
+          <Button asChild variant="outline" className="mt-4 rounded-full">
             <Link href={`/categoria/${slug}`}>{t("categoria.verTodo")}</Link>
           </Button>
         </div>
@@ -156,7 +160,7 @@ export default async function CategoryPage({
 
       {result.totalPages > 1 ? (
         <nav className="mt-8 flex items-center justify-center gap-3" aria-label={t("nav.paginacion")}>
-          <Button asChild variant="outline" size="sm" disabled={result.page <= 1}>
+          <Button asChild variant="outline" size="sm" className="rounded-full" disabled={result.page <= 1}>
             <Link href={buildPageHref(result.page - 1)} aria-disabled={result.page <= 1}>
               {t("nav.anterior")}
             </Link>
@@ -164,7 +168,13 @@ export default async function CategoryPage({
           <span className="text-muted-foreground text-sm">
             {t("nav.pagina", { actual: result.page, total: result.totalPages })}
           </span>
-          <Button asChild variant="outline" size="sm" disabled={result.page >= result.totalPages}>
+          <Button
+            asChild
+            variant="outline"
+            size="sm"
+            className="rounded-full"
+            disabled={result.page >= result.totalPages}
+          >
             <Link
               href={buildPageHref(result.page + 1)}
               aria-disabled={result.page >= result.totalPages}
