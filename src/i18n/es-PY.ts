@@ -42,13 +42,18 @@ export const esPY = {
   // -------------------------------------------------------------------------
   // Home
   // -------------------------------------------------------------------------
-  "home.hero.titulo": "Comprá fácil, pagá como quieras",
+  "home.hero.titulo": "Todo lo que aman tus mascotas",
   "home.hero.texto":
-    "Transferencia, QR o contra entrega. Precios en guaraníes con IVA incluido y envíos a todo el país. ¿Dudas? Escribinos por WhatsApp.",
+    "Alimento, juguetes, camas y accesorios para perros y gatos. Precios en guaraníes con IVA incluido y envíos a todo el país. ¿Dudas? Escribinos por WhatsApp.",
   "home.hero.cta": "Ver productos",
-  "home.categorias": "Categorías",
+  // Las tres chips de la portada. Dicen sólo lo que la tienda cumple: no hay
+  // acá ni una puntuación ni un "N clientes felices" que nadie pueda mostrar.
+  "home.hero.chip.envios": "Envíos a todo el país",
+  "home.hero.chip.iva": "Precios en guaraníes, IVA incluido",
+  "home.hero.chip.whatsapp": "Atención por WhatsApp",
+  "home.categorias": "Comprá por categoría",
   "home.categorias.verTodo": "Ver todo →",
-  "home.destacados": "Destacados",
+  "home.destacados": "Destacados de la semana",
   "home.sinProductos":
     "Todavía no hay productos publicados. Sembrá el catálogo con pnpm db:seed.",
   "home.errorCatalogo": "No pude leer el catálogo:",

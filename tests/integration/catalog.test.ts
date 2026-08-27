@@ -38,20 +38,20 @@ describe.skipIf(!hasTestDb)("queries del catálogo", () => {
   it("lista las categorías activas en orden", async () => {
     const categories = await getCategories();
     expect(categories.map((category) => category.slug)).toEqual([
-      "electronica",
-      "hogar-y-cocina",
-      "moda",
-      "deportes",
+      "alimentos",
+      "juguetes",
+      "accesorios",
+      "higiene-y-salud",
     ]);
   });
 
   it("pagina la categoría", async () => {
-    const first = await getCategoryProducts({ categorySlug: "moda", perPage: 4, page: 1 });
+    const first = await getCategoryProducts({ categorySlug: "alimentos", perPage: 4, page: 1 });
     expect(first.products).toHaveLength(4);
     expect(first.total).toBe(6);
     expect(first.totalPages).toBe(2);
 
-    const second = await getCategoryProducts({ categorySlug: "moda", perPage: 4, page: 2 });
+    const second = await getCategoryProducts({ categorySlug: "alimentos", perPage: 4, page: 2 });
     expect(second.products).toHaveLength(2);
 
     const overlap = first.products.filter((product) =>
@@ -62,7 +62,7 @@ describe.skipIf(!hasTestDb)("queries del catálogo", () => {
 
   it("ordena por precio mínimo de las variantes", async () => {
     const asc = await getCategoryProducts({
-      categorySlug: "deportes",
+      categorySlug: "accesorios",
       sort: "precio-asc",
       perPage: 60,
     });
@@ -72,16 +72,16 @@ describe.skipIf(!hasTestDb)("queries del catálogo", () => {
     expect([...prices]).toEqual([...prices].sort((a, b) => a - b));
 
     const desc = await getCategoryProducts({
-      categorySlug: "deportes",
+      categorySlug: "accesorios",
       sort: "precio-desc",
       perPage: 60,
     });
-    expect(desc.products[0]?.slug).toBe("bicicleta-rodado-29");
+    expect(desc.products[0]?.slug).toBe("transportadora-rigida");
   });
 
   it("filtra por rango de precio y por marca", async () => {
     const baratos = await getCategoryProducts({
-      categorySlug: "moda",
+      categorySlug: "alimentos",
       maxPricePyg: 100000,
       perPage: 60,
     });
@@ -89,27 +89,27 @@ describe.skipIf(!hasTestDb)("queries del catálogo", () => {
       expect(Math.min(...product.variants.map((v) => v.pricePyg))).toBeLessThanOrEqual(100000);
     }
 
-    const brands = await getBrands("moda");
-    const basics = brands.find((facet) => facet.brand === "Basics PY");
-    expect(basics).toBeDefined();
+    const brands = await getBrands("alimentos");
+    const pedigree = brands.find((facet) => facet.brand === "Pedigree");
+    expect(pedigree).toBeDefined();
 
-    const soloBasics = await getCategoryProducts({
-      categorySlug: "moda",
-      brand: "Basics PY",
+    const soloPedigree = await getCategoryProducts({
+      categorySlug: "alimentos",
+      brand: "Pedigree",
       perPage: 60,
     });
-    expect(soloBasics.products.every((product) => product.brand === "Basics PY")).toBe(true);
-    expect(soloBasics.total).toBe(soloBasics.products.length);
+    expect(soloPedigree.products.every((product) => product.brand === "Pedigree")).toBe(true);
+    expect(soloPedigree.total).toBe(soloPedigree.products.length);
 
     // El conteo del filtro tiene que ser el mismo número que va a aparecer al
-    // usarlo. Si se separan, "Basics PY (12)" lleva a una grilla de 3 y el
+    // usarlo. Si se separan, "Pedigree (12)" lleva a una grilla de 3 y el
     // filtro deja de ser confiable para siempre.
-    expect(basics?.total).toBe(soloBasics.total);
+    expect(pedigree?.total).toBe(soloPedigree.total);
   });
 
   it("las marcas salen ordenadas y sin las de otras categorías", async () => {
-    const moda = await getBrands("moda");
-    const nombres = moda.map((facet) => facet.brand);
+    const alimentos = await getBrands("alimentos");
+    const nombres = alimentos.map((facet) => facet.brand);
 
     // Con `localeCompare("es")` y no con el `.sort()` pelado: el orden lo hace
     // MySQL con `utf8mb4_general_ci`, donde la Ñ vale lo mismo que la N, así
@@ -118,17 +118,17 @@ describe.skipIf(!hasTestDb)("queries del catálogo", () => {
     // que son dos alfabetos distintos.
     expect(nombres).toEqual([...nombres].sort((a, b) => a.localeCompare(b, "es")));
     expect(new Set(nombres).size).toBe(nombres.length);
-    expect(moda.every((facet) => facet.total > 0)).toBe(true);
+    expect(alimentos.every((facet) => facet.total > 0)).toBe(true);
 
-    const electronica = (await getBrands("electronica")).map((facet) => facet.brand);
-    expect(electronica).not.toContain("Basics PY");
+    const juguetes = (await getBrands("juguetes")).map((facet) => facet.brand);
+    expect(juguetes).not.toContain("Pedigree");
   });
 
   it("trae la ficha del producto con sus variantes", async () => {
-    const product = await getProductBySlug("auriculares-bluetooth-tws");
+    const product = await getProductBySlug("alimento-perro-adulto-carne");
     expect(product).not.toBeNull();
-    expect(product?.categorySlug).toBe("electronica");
-    expect(product?.variants.map((variant) => variant.label).sort()).toEqual(["Blanco", "Negro"]);
+    expect(product?.categorySlug).toBe("alimentos");
+    expect(product?.variants.map((variant) => variant.label).sort()).toEqual(["15 kg", "3 kg"]);
     expect(product?.variants[0]?.available).toBeGreaterThan(0);
   });
 
@@ -138,7 +138,7 @@ describe.skipIf(!hasTestDb)("queries del catálogo", () => {
   });
 
   it("la disponibilidad del listado descuenta reservas vigentes", async () => {
-    const before = await getProductBySlug("power-bank-20000mah");
+    const before = await getProductBySlug("snacks-huesitos-dentales");
     const variant = before?.variants[0];
     expect(variant).toBeDefined();
 
@@ -147,23 +147,23 @@ describe.skipIf(!hasTestDb)("queries del catálogo", () => {
       expiresAt: new Date(Date.now() + 3600_000),
     });
 
-    const after = await getProductBySlug("power-bank-20000mah");
+    const after = await getProductBySlug("snacks-huesitos-dentales");
     expect(after?.variants[0]?.available).toBe(variant!.available - 4);
   });
 
   it("busca por FULLTEXT y por prefijo", async () => {
-    const exact = await searchProducts("auriculares");
-    expect(exact.map((product) => product.slug)).toContain("auriculares-bluetooth-tws");
+    const exact = await searchProducts("rascador");
+    expect(exact.map((product) => product.slug)).toContain("rascador-gato-poste");
 
-    const prefix = await searchProducts("auricu");
-    expect(prefix.map((product) => product.slug)).toContain("auriculares-bluetooth-tws");
+    const prefix = await searchProducts("rasca");
+    expect(prefix.map((product) => product.slug)).toContain("rascador-gato-poste");
   });
 
   it("cae al LIKE con términos cortos que FULLTEXT ignora", async () => {
-    // "jean" tiene 4 caracteres: entra justo, pero el fallback es lo que
-    // salva a "gorra" y compañía si ft_min_word_len sube.
-    const jeans = await searchProducts("jean");
-    expect(jeans.map((product) => product.slug)).toContain("jean-slim-hombre");
+    // "cama" tiene 4 caracteres: entra justo, pero el fallback es lo que
+    // salva a "collar" y compañía si ft_min_word_len sube.
+    const camas = await searchProducts("cama");
+    expect(camas.map((product) => product.slug)).toContain("cama-acolchada-perro");
   });
 
   it("no devuelve nada con términos vacíos o de una letra", async () => {
@@ -173,7 +173,7 @@ describe.skipIf(!hasTestDb)("queries del catálogo", () => {
   });
 
   it("no rompe con caracteres especiales del modo booleano", async () => {
-    await expect(searchProducts('remera +-><()~*"@')).resolves.toBeInstanceOf(Array);
+    await expect(searchProducts('collar +-><()~*"@')).resolves.toBeInstanceOf(Array);
   });
 
   /**
@@ -185,25 +185,25 @@ describe.skipIf(!hasTestDb)("queries del catálogo", () => {
   it("el sitemap lista sólo lo que la vidriera muestra", async () => {
     const antes = await getSitemapEntries();
     expect(antes.categories.map((category) => category.slug)).toEqual([
-      "electronica",
-      "hogar-y-cocina",
-      "moda",
-      "deportes",
+      "alimentos",
+      "juguetes",
+      "accesorios",
+      "higiene-y-salud",
     ]);
-    expect(antes.products.map((product) => product.slug)).toContain("jean-slim-hombre");
+    expect(antes.products.map((product) => product.slug)).toContain("cama-acolchada-perro");
 
     await getDb()
       .update(products)
       .set({ publishedAt: null })
-      .where(eq(products.slug, "jean-slim-hombre"));
+      .where(eq(products.slug, "cama-acolchada-perro"));
 
     const despues = await getSitemapEntries();
-    expect(despues.products.map((product) => product.slug)).not.toContain("jean-slim-hombre");
+    expect(despues.products.map((product) => product.slug)).not.toContain("cama-acolchada-perro");
     expect(despues.products).toHaveLength(antes.products.length - 1);
 
     await getDb()
       .update(products)
       .set({ publishedAt: new Date() })
-      .where(eq(products.slug, "jean-slim-hombre"));
+      .where(eq(products.slug, "cama-acolchada-perro"));
   });
 });

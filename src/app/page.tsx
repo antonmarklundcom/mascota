@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { HomeHero } from "@/components/home-hero";
@@ -5,6 +6,7 @@ import { ProductCard } from "@/components/product-card";
 import { TIENDA, type Hero } from "@/config/tienda";
 import { getCatalog, getCategories, type CatalogProduct } from "@/db/queries";
 import { t } from "@/i18n";
+import { categoryPlaceholderSrc } from "@/lib/images";
 
 /**
  * Home. ISR: el catálogo cambia poco y las redes móviles paraguayas
@@ -46,17 +48,33 @@ export default async function HomePage() {
       ) : (
         <>
           {categories.length > 0 ? (
-            <section className="mt-10">
-              <h2 className="text-lg font-semibold">{t("home.categorias")}</h2>
-              <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            <section className="mt-12">
+              <h2 className="text-2xl sm:text-3xl">{t("home.categorias")}</h2>
+              <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
                 {categories.map((category) => (
                   <Link
                     key={category.id}
                     href={`/categoria/${category.slug}`}
-                    className="border-border hover:border-foreground/30 rounded-xl border p-4 transition-colors"
+                    className="group border-border/70 bg-card hover:border-accent/40 overflow-hidden rounded-2xl border transition-all hover:-translate-y-0.5 hover:shadow-lg"
                   >
-                    <p className="font-medium">{category.name}</p>
-                    <p className="text-muted-foreground mt-1 text-sm">{t("home.categorias.verTodo")}</p>
+                    {/* La ilustración de la categoría (public/placeholders).
+                        Es un "todavía no hay foto" honesto: cuando el comercio
+                        cargue las suyas en Cloudinary, se reemplaza acá. */}
+                    <div className="bg-secondary relative aspect-[4/3]">
+                      <Image
+                        src={categoryPlaceholderSrc(category.slug)}
+                        alt=""
+                        fill
+                        sizes="(max-width: 640px) 100vw, 280px"
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="flex items-center justify-between gap-2 p-4">
+                      <p className="font-medium">{category.name}</p>
+                      <span className="text-accent text-sm whitespace-nowrap">
+                        {t("home.categorias.verTodo")}
+                      </span>
+                    </div>
                   </Link>
                 ))}
               </div>
@@ -64,9 +82,9 @@ export default async function HomePage() {
           ) : null}
 
           {featured.length > 0 ? (
-            <section className="mt-12">
+            <section className="mt-14">
               <div className="flex items-baseline justify-between">
-                <h2 className="text-lg font-semibold">{t("home.destacados")}</h2>
+                <h2 className="text-2xl sm:text-3xl">{t("home.destacados")}</h2>
               </div>
               <div className="mt-4 grid grid-cols-2 gap-4 lg:grid-cols-4">
                 {featured.map((product, index) => (

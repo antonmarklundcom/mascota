@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import type React from "react";
-import { Geist, Geist_Mono } from "next/font/google";
+import { DM_Serif_Display, Geist_Mono, Inter } from "next/font/google";
 
 import { TIENDA } from "@/config/tienda";
 import { Analytics } from "@/components/analytics";
@@ -13,9 +13,21 @@ import { idiomaActivo } from "@/i18n";
 import { siteOrigin } from "@/lib/site-url";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+/*
+  Las dos tipografías de la marca (NEW-STORE.md §5: la tipografía se cambia
+  acá). Inter para todo lo que se lee —fichas, precios, checkout— y DM Serif
+  Display sólo para los títulos: es la que le da el aire de tienda cuidada al
+  diseño, y en cuerpo de texto cansaría.
+*/
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+});
+
+const dmSerifDisplay = DM_Serif_Display({
+  variable: "--font-display",
+  subsets: ["latin"],
+  weight: "400",
 });
 
 const geistMono = Geist_Mono({
@@ -52,7 +64,7 @@ export default function RootLayout({
   return (
     <html
       lang={idiomaActivo()}
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${inter.variable} ${dmSerifDisplay.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">
         <SiteHeader />

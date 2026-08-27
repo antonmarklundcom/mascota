@@ -41,7 +41,7 @@ export function PriceTag({
             <span className="text-muted-foreground text-sm line-through tabular-nums">
               {formatGs(compareAtPyg)}
             </span>
-            <span className="text-xs font-medium text-emerald-700 dark:text-emerald-400">
+            <span className="text-accent text-xs font-medium">
               −{discount}%
             </span>
           </>

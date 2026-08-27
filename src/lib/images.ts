@@ -65,12 +65,16 @@ export function productImageUrl(
  * antes de que el comercio cargue fotos reales. A propósito son dibujos de
  * línea simples y genéricos, sin logos de marca: son un "todavía no hay
  * foto", no un producto de mentira disfrazado de real.
+ *
+ * Los slugs son los de `scripts/seed-data.ts` (las categorías de esta tienda).
+ * Una categoría nueva sin su SVG cae en `generico.svg`, que es feo a
+ * propósito: la solución son fotos, no más placeholders.
  */
 const CATEGORY_PLACEHOLDERS = new Set([
-  "electronica",
-  "hogar-y-cocina",
-  "moda",
-  "deportes",
+  "alimentos",
+  "juguetes",
+  "accesorios",
+  "higiene-y-salud",
 ]);
 
 /** `categoryPlaceholderSrc("moda")` → `/placeholders/moda.svg`. */
