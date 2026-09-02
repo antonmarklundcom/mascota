@@ -28,8 +28,8 @@ export async function realizarCompra(
   page: Page
 ): Promise<{ orderNumber: string; url: string }> {
   await page.goto("/");
-  await page.getByRole("link", { name: "Electrónica" }).first().click();
-  await expect(page).toHaveURL(/\/categoria\/electronica/);
+  await page.getByRole("link", { name: "Alimento" }).first().click();
+  await expect(page).toHaveURL(/\/categoria\/alimentos/);
 
   await page.locator('a[href^="/producto/"]').first().click();
   await expect(page).toHaveURL(/\/producto\//);

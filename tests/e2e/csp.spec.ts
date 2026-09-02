@@ -48,7 +48,7 @@ test("home y categoría (cacheadas): CSP sin ninguna violación", async ({
 
   await page.goto("/");
   await page.waitForLoadState("networkidle");
-  await page.goto("/categoria/electronica");
+  await page.goto("/categoria/alimentos");
   await page.waitForLoadState("networkidle");
 
   expect(violacionesReales(mensajes), mensajes.join("\n")).toEqual([]);
@@ -59,7 +59,7 @@ test("producto y admin/login (con nonce): sólo la violación documentada del ch
 }) => {
   const mensajes = await collectConsole(page);
 
-  await page.goto("/producto/auriculares-bluetooth-tws");
+  await page.goto("/producto/alimento-perro-adulto-carne");
   await page.waitForLoadState("networkidle");
   await page.goto("/admin/login");
   await page.waitForLoadState("networkidle");
@@ -70,7 +70,7 @@ test("producto y admin/login (con nonce): sólo la violación documentada del ch
 test("checkout con carrito (con nonce): sólo la violación documentada del chunk de next/image", async ({
   page,
 }) => {
-  await page.goto("/producto/auriculares-bluetooth-tws");
+  await page.goto("/producto/alimento-perro-adulto-carne");
   await page.getByRole("button", { name: "Agregar al carrito" }).click();
 
   const mensajes = await collectConsole(page);
@@ -88,7 +88,7 @@ test("el buscador del header responde (hay JS vivo en la home)", async ({
   // Dos `<SearchBox>` conviven en el DOM (uno para `sm:` y arriba, otro para
   // el celular, abajo): sólo uno es visible en el viewport de Chromium.
   const buscador = page.getByLabel("Buscar productos").first();
-  await buscador.fill("auriculares");
+  await buscador.fill("alimento");
 
   await expect(
     page.getByRole("listbox", { name: "Sugerencias" })
