@@ -1,0 +1,26 @@
+name: PHP SEO site
+on:
+  pull_request:
+    branches: [main]
+    paths: ['php-site/**', 'PHP-DEPLOY.md', '.github/workflows/php-seo.yml']
+  push:
+    branches: [codex/mascota-php-seo]
+    paths: ['php-site/**', 'PHP-DEPLOY.md', '.github/workflows/php-seo.yml']
+permissions:
+  contents: read
+jobs:
+  php:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    strategy:
+      matrix:
+        php: ['8.3', '8.4']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          coverage: none
+      - run: python3 php-site/tests/smoke.py --php php
+      - run: python3 php-site/tools/package.py --output /tmp/mascota-package
+      - run: python3 php-site/tests/package_smoke.py --php php --zip /tmp/mascota-package/mascota-hostinger-2026-10-08.zip

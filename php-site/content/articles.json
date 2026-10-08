@@ -1,0 +1,1921 @@
+{
+  "sources": {
+    "dog": {
+      "label": "AVMA · Cómo elegir un perro",
+      "url": "https://ebusiness.avma.org/files/productdownloads/SelectDog_En.pdf"
+    },
+    "cat": {
+      "label": "AVMA · Cómo elegir un gato",
+      "url": "https://ebusiness.avma.org/files/productdownloads/SelectCat_Sp.pdf"
+    },
+    "ownership": {
+      "label": "AVMA · Tenencia responsable",
+      "url": "https://ebusiness.avma.org/files/productdownloads/Responsible-Pet-Ownership-EnglishBW.pdf"
+    },
+    "rabbit": {
+      "label": "RSPCA · Bienestar y cuidados de conejos",
+      "url": "https://www.rspca.org.uk/adviceandwelfare/pets/rabbits"
+    },
+    "rabbitdiet": {
+      "label": "RSPCA · Alimentación del conejo",
+      "url": "https://education.rspca.org.uk/en/web/rspca/adviceandwelfare/pets/rabbits/diet"
+    },
+    "guinea": {
+      "label": "RSPCA · Alimentación del cobayo",
+      "url": "https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs/diet"
+    },
+    "guineacompany": {
+      "label": "RSPCA · Conejos y cobayos tienen necesidades distintas",
+      "url": "https://science.rspca.org.uk/en/web/rspca/adviceandwelfare/pets/rabbits/company/rabbitsandguineapigs"
+    },
+    "hamster": {
+      "label": "RSPCA · Cuidados del hámster",
+      "url": "https://www.rspca.org.uk/adviceandwelfare/pets/rodents/hamsters"
+    },
+    "bird": {
+      "label": "RSPCA · Cuidados y bienestar de aves",
+      "url": "https://www.rspca.org.uk/adviceandwelfare/pets/birds"
+    },
+    "fish": {
+      "label": "RSPCA · Comportamiento y necesidades de peces",
+      "url": "https://www.rspca.org.uk/adviceandwelfare/pets/fish/behaviour"
+    },
+    "fishhealth": {
+      "label": "RSPCA · Salud de los peces y calidad del agua",
+      "url": "https://www.rspca.org.uk/adviceandwelfare/pets/fish/health"
+    },
+    "reptile": {
+      "label": "RSPCA · Reptiles y otros animales exóticos",
+      "url": "https://www.rspca.org.uk/adviceandwelfare/pets/other"
+    },
+    "family": {
+      "label": "RSPCA · Elegir una mascota para la familia",
+      "url": "https://www.rspca.org.uk/findapet/advice/families"
+    },
+    "heat": {
+      "label": "AVMA · Seguridad de mascotas con clima cálido",
+      "url": "https://avma.org/resources/pet-owners/petcare/warm-weather-pet-safety"
+    },
+    "vaccines": {
+      "label": "AVMA · Vacunación y evaluación individual",
+      "url": "https://ebusiness.avma.org/files/productdownloads/mcm-client-brochures-vaccinations-2022.pdf"
+    },
+    "cathome": {
+      "label": "RSPCA · Preparar un hogar para gatos",
+      "url": "https://www.rspca.org.uk/adviceandwelfare/pets/cats/environment"
+    },
+    "catcompany": {
+      "label": "RSPCA · Presentaciones y compañía para gatos",
+      "url": "https://www.rspca.org.uk/adviceandwelfare/pets/cats/company"
+    },
+    "scratch": {
+      "label": "RSPCA · Comportamiento y rascado de gatos",
+      "url": "https://www.rspca.org.uk/adviceandwelfare/pets/cats/behaviour"
+    },
+    "harness": {
+      "label": "RSPCA · Bienestar y alternativas a collares de púas",
+      "url": "https://www.rspca.org.uk/adviceandwelfare/pets/dogs/training/prongcollars"
+    },
+    "travelprep": {
+      "label": "FDA · Preparación de viajes con mascotas",
+      "url": "https://www.fda.gov/animal-veterinary/animal-health-literacy/travel-training-you-and-your-pets"
+    },
+    "vet": {
+      "label": "SENACSA · Registro profesional veterinario del Paraguay",
+      "url": "https://senacsa.gov.py/servicios/servicios-tecnicos/registro-profesional-veterinario-del-paraguay/"
+    },
+    "law": {
+      "label": "BACN · Ley 7513/2025 de bienestar y protección animal",
+      "url": "https://www.bacn.gov.py/leyes-paraguayas/12783/ley-n-75132025-de-bienestar-y-proteccion-animal"
+    },
+    "city": {
+      "label": "Municipalidad de Asunción · Ordenanza 125/2017",
+      "url": "https://www.asuncion.gov.py/wp-content/uploads/2018/03/ORD-2017-125.pdf"
+    },
+    "wild": {
+      "label": "MADES · Los animales silvestres no son mascotas",
+      "url": "https://www.mades.gov.py/2024/11/10/los-animales-silvestres-no-son-mascotas/"
+    },
+    "mades": {
+      "label": "MADES · Trámites de vida silvestre",
+      "url": "https://www.mades.gov.py/tramites/"
+    },
+    "travel": {
+      "label": "SENACSA · Viajar con mascotas: ingreso y egreso",
+      "url": "https://senacsa.gov.py/servicios/sanidad-animal-identidad-y-trazabilidad/cuarentena/viajar-con-mascotas/"
+    },
+    "report": {
+      "label": "Dirección Nacional de Defensa, Salud y Bienestar Animal · Denuncias",
+      "url": "https://www.bienestaranimal.gov.py/denuncias/"
+    },
+    "authority": {
+      "label": "Dirección Nacional de Defensa, Salud y Bienestar Animal",
+      "url": "https://www.bienestaranimal.gov.py/"
+    },
+    "petcare": {
+      "label": "AVMA · Recursos para responsables de mascotas",
+      "url": "https://avma.org/resources-tools/pet-owners/petcare"
+    },
+    "products": {
+      "label": "SENACSA · Productos veterinarios y alimentos para animales",
+      "url": "https://senacsa.gov.py/servicios/servicios-tecnicos/productos-de-uso-veterinario/"
+    }
+  },
+  "articles": [
+    {
+      "category": "mascotas",
+      "slug": "perros",
+      "title": "Perros en Paraguay: espacio, rutina y cuidados",
+      "short": "Perros",
+      "description": "Qué tener en cuenta para vivir con un perro en Paraguay: tiempo, paseos, casa segura, gastos y atención veterinaria. Una guía para empezar bien.",
+      "answer": "Elegí según tu rutina y la del perro, no solo por su tamaño o apariencia. Prepará un espacio seguro, tiempo diario y un presupuesto que incluya atención veterinaria.",
+      "intro": "Un perro pasa a formar parte de la organización de tu hogar. Antes de traerlo, pensá quién lo acompañará durante el día, cómo resolverás los paseos y qué ocurrirá cuando viajes. La decisión también incluye a las otras personas y animales que viven con vos.",
+      "sections": [
+        {
+          "title": "La elección empieza por tu vida cotidiana",
+          "paragraphs": [
+            "La AVMA recomienda considerar el tiempo disponible, las necesidades del animal y el compromiso de cuidarlo durante toda su vida. Un cachorro y un adulto pueden requerir rutinas distintas; preguntá sobre el comportamiento observado y los antecedentes de cada perro.",
+            "Para ordenar la elección, describí una semana real: tus horarios, trayectos y momentos libres. Si alguien promete ayudar, acordá tareas concretas. Tener patio no resuelve por sí solo la compañía, el juego o la organización de los paseos. Reservá también una alternativa para días de trabajo largo, enfermedad o lluvia."
+          ],
+          "bullets": [
+            "¿Quién lo alimentará y acompañará cada día?",
+            "¿Dónde permanecerá mientras la casa esté vacía?",
+            "¿Qué espacios y tiempos podés ofrecerle de forma sostenida?"
+          ]
+        },
+        {
+          "title": "Prepará un hogar que puedas mantener",
+          "paragraphs": [
+            "Revisá portones, cercos, accesos al balcón y objetos que puedan quedar a su alcance. Elegí un lugar para descansar donde pueda estar tranquilo. Guardá productos de limpieza, medicamentos y cables de manera que la rutina no dependa de vigilar cada segundo.",
+            "Convivir con un perro también implica limpieza y acuerdos familiares. Definí dónde guardarás sus cosas, cómo limpiarás los elementos de uso diario y qué reglas seguirán todos. Un plan simple y consistente suele ser más fácil de mantener que comprar muchos accesorios sin saber para qué los usarás."
+          ]
+        },
+        {
+          "title": "Organizá el presupuesto antes de comprar",
+          "paragraphs": [
+            "Separá el gasto inicial de lo que pagarás todos los meses. Compará alimento para su etapa de vida, equipo de paseo, higiene, atención profesional y alternativas de cuidado durante tus ausencias. Pedí presupuestos en tu ciudad y anotá qué incluye cada uno.",
+            "Una reserva para imprevistos evita depender de una sola compra o promoción. La guía de presupuesto de Mascota te ayuda a armar tus propias cifras; no hay un precio mensual universal para todos los perros."
+          ]
+        },
+        {
+          "title": "Tu primera conversación con un veterinario",
+          "paragraphs": [
+            "Llevá cualquier libreta o antecedente que te entreguen. Consultá qué controles corresponden, cómo organizar vacunas y prevención, y cómo comunicarte si necesitás atención fuera del horario habitual. Guardá el contacto en tu teléfono y compartilo con quien cuide al perro.",
+            "Si hay niños u otros animales en casa, contalo al profesional. Esta guía orienta la preparación; el plan individual se define con la evaluación del perro, su edad, antecedentes y entorno."
+          ]
+        }
+      ],
+      "sources": [
+        "dog",
+        "ownership"
+      ],
+      "related": [
+        "primer-perro",
+        "presupuesto-mascota",
+        "mascotas-y-calor"
+      ],
+      "faqs": [
+        {
+          "q": "¿Un perro pequeño requiere menos atención?",
+          "a": "El tamaño por sí solo no describe su energía, necesidades o comportamiento. Elegí a partir de información sobre el animal y de tu rutina real."
+        },
+        {
+          "q": "¿Qué conviene tener antes de llevarlo a casa?",
+          "a": "Un lugar de descanso, recipientes adecuados, medios de traslado y paseo seguros, y una consulta planificada. Confirmá la alimentación y los cuidados con quien lo entrega y con el veterinario."
+        }
+      ],
+      "icon": "dog",
+      "teaser": "Rutina, paseos y compañía",
+      "tag": "Guía práctica",
+      "date": "2026-10-08"
+    },
+    {
+      "category": "mascotas",
+      "slug": "gatos",
+      "title": "Gatos en casa: ambiente, rutina y bienestar",
+      "short": "Gatos",
+      "description": "Prepará un hogar para tu gato: recursos, descanso, ventanas, juego y organización diaria. Qué preguntar antes de adoptar y al consultar al veterinario.",
+      "answer": "Prepará un ambiente con recursos accesibles, descanso y oportunidades de juego. Revisá la seguridad de ventanas y balcones y organizá la llegada sin forzar el contacto.",
+      "intro": "Elegir un gato implica conocer al individuo y pensar cómo se sentirá en tu hogar. Conversá sobre su experiencia previa, su convivencia con otros animales y la rutina que ya conoce. La edad y el carácter importan tanto como lo que podés ofrecerle.",
+      "sections": [
+        {
+          "title": "Elegí al individuo, no solo la foto",
+          "paragraphs": [
+            "La AVMA propone evaluar quién se hará cargo y si un cachorro o un adulto se adapta mejor a la familia. Pedí información sobre la alimentación, el uso del arenero, los antecedentes veterinarios y el comportamiento observado.",
+            "Un encuentro breve no cuenta toda su historia. Anotá las respuestas de la persona responsable y pedí un canal para consultar dudas durante la adaptación. Si hay otros animales, explicá esa situación antes de acordar la llegada."
+          ]
+        },
+        {
+          "title": "Un hogar con recursos bien pensados",
+          "paragraphs": [
+            "Las recomendaciones de bienestar de RSPCA destacan la importancia del ambiente del gato. Ubicá los recursos de modo que pueda acceder sin obstáculos y descansar sin interrupciones. Ofrecé lugares apropiados para rascar, esconderse y observar el entorno.",
+            "Recorré tu casa desde una perspectiva práctica: ¿qué ventanas quedan abiertas?, ¿qué puerta se usa con frecuencia?, ¿dónde podría quedar encerrado? Asegurar esos puntos es un trabajo previo, no una compra que se deja para después. Revisá también cómo separarás a otros animales durante la llegada."
+          ],
+          "bullets": [
+            "Definí un sitio para el arenero y una rutina de limpieza.",
+            "Prepará lugares de descanso y elementos de juego adecuados.",
+            "Revisá ventanas, balcones y salidas al exterior antes de la llegada."
+          ]
+        },
+        {
+          "title": "Una adaptación que puedas observar",
+          "paragraphs": [
+            "Elegí una llegada tranquila, con tiempo para acompañar y observar. Prepará una zona inicial con sus cosas y evitá que toda la familia intente tocarlo a la vez. Registrá qué come, dónde descansa y cómo se mueve por el espacio.",
+            "Cuando haya dudas sobre el comportamiento o cambios que te preocupen, consultá en lugar de forzar la interacción. Un plan de convivencia puede necesitar ajustes específicos; la guía de primeros días ofrece una lista para organizarte."
+          ]
+        },
+        {
+          "title": "Costos y cuidado durante tus ausencias",
+          "paragraphs": [
+            "Incluí alimento, sustrato para el arenero, higiene, equipamiento y consultas en tu presupuesto. Si viajás, definí quién irá, qué tareas realizará y cómo tendrá acceso al domicilio. Dejá instrucciones claras y un contacto profesional.",
+            "Llevá los antecedentes disponibles a la primera consulta y preguntá cómo organizar el seguimiento. Esta página no propone calendarios universales ni interpreta síntomas: te ayuda a preparar un hogar y una conversación informada."
+          ]
+        }
+      ],
+      "sources": [
+        "cat",
+        "cathome"
+      ],
+      "related": [
+        "primer-gato",
+        "rascadores-para-gatos",
+        "convivencia-perros-gatos"
+      ],
+      "faqs": [
+        {
+          "q": "¿Un gato necesita compañía y juego aunque viva adentro?",
+          "a": "La vida dentro de casa también requiere atención, ambiente adecuado y oportunidades de actividad. Consultá cómo adaptar la rutina a su edad y comportamiento."
+        },
+        {
+          "q": "¿Puedo dejar la preparación para después de adoptarlo?",
+          "a": "Conviene revisar seguridad y disponer los recursos antes. Así podés dedicar los primeros días a observar cómo se adapta."
+        }
+      ],
+      "icon": "cat",
+      "teaser": "Ambiente, juego y descanso",
+      "tag": "Guía práctica",
+      "date": "2026-10-08"
+    },
+    {
+      "category": "mascotas",
+      "slug": "conejos",
+      "title": "Conejos como compañeros: qué preparar antes",
+      "short": "Conejos",
+      "description": "Espacio, alimentación, convivencia y atención especializada para un conejo. Preguntas para decidir si podés cubrir sus necesidades en Paraguay.",
+      "answer": "Un conejo necesita una preparación específica de espacio, alimentación y cuidado. Identificá un veterinario que atienda conejos antes de asumir el compromiso.",
+      "intro": "El tamaño de un animal no determina el tiempo que exige. Si estás pensando en convivir con un conejo, armá primero un plan de alojamiento, limpieza, abastecimiento y cuidado durante tus ausencias. Revisá además el origen y la documentación del animal.",
+      "sections": [
+        {
+          "title": "Pensá en un espacio, no en una compra aislada",
+          "paragraphs": [
+            "RSPCA organiza el bienestar de los conejos alrededor del ambiente, la alimentación, el comportamiento, la compañía y la salud. La elección de un recinto no termina en sus dimensiones: tenés que poder mantenerlo limpio, seguro y adecuado para la actividad del animal.",
+            "Hacé un plano sencillo de dónde estará, qué zonas podrá utilizar y cómo evitarás escapes o acceso a cables y productos domésticos. Pensá cómo funcionará ese lugar en días de calor o cuando falte alguien en casa. Si no podés mantener las condiciones necesarias, todavía no es el momento de traerlo."
+          ]
+        },
+        {
+          "title": "La alimentación se aprende antes de la llegada",
+          "paragraphs": [
+            "La guía alimentaria de RSPCA destaca la importancia del heno o pasto apropiado en la dieta del conejo. Pedí orientación específica sobre alimento, agua y cambios de dieta a un profesional que conozca la especie. No uses el aspecto de un envase ni la dieta de otro animal como único criterio.",
+            "Confirmá con anticipación dónde conseguirás los insumos habituales. Anotá cantidades de compra, almacenamiento y reposición según las indicaciones que recibas; el objetivo es evitar improvisaciones cuando un proveedor no tenga lo que necesitás."
+          ]
+        },
+        {
+          "title": "Convivencia, manejo y atención profesional",
+          "paragraphs": [
+            "Preguntá cómo organizar la compañía y las interacciones con personas u otros animales. Conejos y cobayos no tienen necesidades idénticas; no conviene diseñar la convivencia suponiendo que son intercambiables.",
+            "Llamá a la clínica antes de una consulta para confirmar que atiende conejos, qué antecedentes necesita y cómo transportarlo. Guardá una alternativa para fuera de horario. Que un local atienda perros y gatos no demuestra que tenga experiencia con esta especie."
+          ]
+        },
+        {
+          "title": "Una lista para conversar en familia",
+          "paragraphs": [
+            "Asigná tareas con frecuencia y responsable. La persona adulta a cargo debe saber realizar todo el cuidado, aunque un niño participe. Prepará instrucciones para viajes y una reserva para atención veterinaria.",
+            "Compará el costo de sostener el ambiente y el abastecimiento, no solamente el valor inicial del animal. Pedí un presupuesto actualizado y agregá los consumibles a tu plan mensual."
+          ],
+          "bullets": [
+            "¿Tenemos un espacio seguro que podemos mantener todos los días?",
+            "¿Hay un profesional que atienda conejos a una distancia razonable?",
+            "¿Quién hará el cuidado si la persona principal está ausente?"
+          ]
+        }
+      ],
+      "sources": [
+        "rabbit",
+        "rabbitdiet",
+        "guineacompany"
+      ],
+      "related": [
+        "cobayos",
+        "elegir-mascota",
+        "presupuesto-mascota"
+      ],
+      "faqs": [
+        {
+          "q": "¿Es una mascota que puede cuidar un niño solo?",
+          "a": "El adulto responsable debe conocer y supervisar los cuidados. Las tareas no se delegan únicamente por el tamaño del conejo."
+        },
+        {
+          "q": "¿Qué debo confirmar con la clínica?",
+          "a": "Experiencia con conejos, horarios, traslado, seguimiento y a dónde recurrir si no puede atenderlo."
+        }
+      ],
+      "icon": "rabbit",
+      "teaser": "Espacio y cuidados propios",
+      "tag": "Guía práctica",
+      "date": "2026-10-08"
+    },
+    {
+      "category": "mascotas",
+      "slug": "cobayos",
+      "title": "Cobayos: necesidades antes de llevarlos a casa",
+      "short": "Cobayos",
+      "description": "Cómo preparar espacio, abastecimiento y cuidados para un cobayo. Diferencias con otros pequeños animales y preguntas para una consulta especializada.",
+      "answer": "Prepará los cuidados para la especie concreta. Un cobayo no comparte automáticamente la dieta, el alojamiento ni la rutina de un conejo o un hámster.",
+      "intro": "A los cobayos también se los conoce como conejillos de Indias. Antes de elegirlos, evaluá el cuidado diario, el lugar donde vivirán y la disponibilidad de atención especializada. Comparar animales solamente por el espacio de un envase o una jaula suele dejar preguntas importantes sin responder.",
+      "sections": [
+        {
+          "title": "Dieta y abastecimiento son decisiones previas",
+          "paragraphs": [
+            "RSPCA explica que los cobayos necesitan vitamina C en su dieta y una alimentación apropiada para la especie. Esta necesidad no se resuelve copiando la comida de un conejo. Conversá con un veterinario sobre el plan alimentario y evitá elegir suplementos o dosis por una publicación.",
+            "Hacé una lista de los insumos indicados y averiguá dónde conseguirlos de forma regular. La disponibilidad importa: un plan que depende de una compra ocasional puede complicarse durante viajes o faltantes. Definí cómo guardarás los alimentos y quién controlará la reposición."
+          ]
+        },
+        {
+          "title": "Un espacio fácil de cuidar y observar",
+          "paragraphs": [
+            "Diseñá el lugar de modo que puedas revisar al animal y mantener higiene sin improvisar cada día. Pensá en accesos, materiales, limpieza, protección del entorno y elementos apropiados para su actividad. Pedí recomendaciones de manejo y compañía ajustadas a la situación.",
+            "Antes de decidir, ubicá físicamente el recinto en la casa y observá cómo circulan las personas y los demás animales. Un lugar cómodo para vos puede resultar poco práctico si queda junto a una puerta muy usada o dificulta el control cotidiano."
+          ]
+        },
+        {
+          "title": "Cobayos y conejos no son equivalentes",
+          "paragraphs": [
+            "La orientación de RSPCA advierte sobre necesidades alimentarias y riesgos de mantener cobayos y conejos juntos. Que ambos sean pequeños no demuestra compatibilidad. Consultá cada convivencia y prepará alternativas de separación.",
+            "Cuando recibas consejos, pedí que se refieran a la especie concreta. Anotá qué recomendaciones corresponden al cobayo y cuáles al otro animal; esa simple distinción evita compras y arreglos de alojamiento basados en una generalización."
+          ]
+        },
+        {
+          "title": "Organizá apoyo y una primera consulta",
+          "paragraphs": [
+            "Confirmá qué clínica atiende cobayos y si puede ofrecer seguimiento. Llevá información sobre origen, dieta habitual y cuidados previos. Preguntá cómo registrar las observaciones y cuándo comunicar cambios.",
+            "Para ausencias, dejá una lista de tareas y permití que la persona de apoyo practique el cuidado antes de quedarse sola. Sumá al presupuesto insumos, mantenimiento y atención profesional, incluso si el gasto inicial parecía bajo."
+          ]
+        }
+      ],
+      "sources": [
+        "guinea",
+        "guineacompany"
+      ],
+      "related": [
+        "conejos",
+        "hamsters",
+        "presupuesto-mascota"
+      ],
+      "faqs": [
+        {
+          "q": "¿Puedo usar alimento de conejo para un cobayo?",
+          "a": "No los trates como dietas equivalentes. Pedí un plan apropiado para el cobayo, incluyendo sus necesidades nutricionales particulares."
+        },
+        {
+          "q": "¿Qué importa más que el precio inicial?",
+          "a": "Poder mantener diariamente el ambiente y la dieta, y tener acceso a atención profesional cuando haga falta."
+        }
+      ],
+      "icon": "small",
+      "teaser": "Dieta y atención específica",
+      "tag": "Guía práctica",
+      "date": "2026-10-08"
+    },
+    {
+      "category": "mascotas",
+      "slug": "hamsters",
+      "title": "Hámsters: rutina y ambiente para cuidarlos bien",
+      "short": "Hámsters",
+      "description": "Antes de convivir con un hámster, pensá en el recinto, la actividad, la limpieza y la atención profesional. Guía para una elección responsable.",
+      "answer": "Prepará un ambiente para la especie y conocé su rutina antes de elegirlo. Un hámster no es un juguete ni un cuidado que se resuelve únicamente con una jaula.",
+      "intro": "Una mascota pequeña ocupa un lugar concreto en la rutina de la casa. Para decidir si un hámster encaja en la tuya, investigá la especie exacta, preguntá por su origen y revisá cómo garantizarás el cuidado en días normales y durante ausencias.",
+      "sections": [
+        {
+          "title": "Conocé qué animal vas a cuidar",
+          "paragraphs": [
+            "RSPCA presenta al hámster como un animal con necesidades de exploración, ambiente y cuidado propias. Evitá asumir que todos los pequeños roedores se alojan igual o pueden convivir juntos. Pedí orientación para la especie que estás considerando.",
+            "Anotá qué nombre de especie te indican y qué antecedentes entregarán. No alcanza con una descripción genérica como “mini mascota”. Esa información permite conversar con el profesional y buscar pautas pertinentes sin mezclar animales con necesidades distintas."
+          ]
+        },
+        {
+          "title": "El recinto se planifica como un sistema",
+          "paragraphs": [
+            "Revisá seguridad del cierre, materiales, facilidad de limpieza y ubicación en la casa. Elegí elementos adecuados que permitan realizar la rutina de cuidado sin riesgos innecesarios. Antes de comprar, preguntá por los requerimientos específicos de espacio, sustrato y actividad.",
+            "Medí dónde irá el recinto y comprobá si podés acceder para limpiarlo y observar al animal. Pensá en otras mascotas, niños y personas que visiten la casa. La seguridad depende tanto del diseño como de que todos sepan cómo interactuar."
+          ]
+        },
+        {
+          "title": "Una responsabilidad adulta",
+          "paragraphs": [
+            "Si el hámster llega a una casa con niños, definí qué adulto será responsable y cómo se supervisará el manejo. Una tarea no debería quedar sin hacer porque cambió el interés del niño o su horario escolar.",
+            "Distribuí alimentación, revisión y limpieza en una lista visible. Contá con una persona que sepa hacer las tareas y no tenga que aprenderlas durante una emergencia. Evitá que el cuidado dependa exclusivamente de una promesa general de “yo me encargo”."
+          ]
+        },
+        {
+          "title": "Antes de necesitar una consulta",
+          "paragraphs": [
+            "Confirmá si una clínica local atiende hámsters y cómo recomienda trasladarlos. Guardá esa información junto a la dieta y los cuidados que te indicaron. Si aparecen cambios que te preocupan, pedí evaluación en vez de probar productos de otra especie.",
+            "El presupuesto debe contemplar consumibles, mantenimiento del ambiente y atención especializada. La guía de gastos de Mascota sirve para registrar cotizaciones reales; no presupongas un costo bajo únicamente por el tamaño del animal."
+          ]
+        }
+      ],
+      "sources": [
+        "hamster",
+        "family"
+      ],
+      "related": [
+        "elegir-mascota",
+        "cobayos",
+        "elegir-veterinaria"
+      ],
+      "faqs": [
+        {
+          "q": "¿Todos los hámsters pueden vivir juntos?",
+          "a": "No se debe asumir. La decisión necesita información sobre la especie y los individuos, y orientación sobre su alojamiento."
+        },
+        {
+          "q": "¿Qué debo averiguar primero?",
+          "a": "La especie exacta, sus requerimientos de ambiente y dieta, y dónde recibiría atención profesional."
+        }
+      ],
+      "icon": "small",
+      "teaser": "Ambiente y rutina diaria",
+      "tag": "Guía práctica",
+      "date": "2026-10-08"
+    },
+    {
+      "category": "mascotas",
+      "slug": "aves",
+      "title": "Aves: bienestar, origen y cuidados responsables",
+      "short": "Aves",
+      "description": "Qué evaluar antes de cuidar un ave en Paraguay: especie, origen, ambiente, tiempo y atención especializada. Fauna silvestre y permisos oficiales.",
+      "answer": "Confirmá la especie y el origen legal antes de considerar un ave. Después evaluá sus necesidades de ambiente, actividad, compañía y atención especializada.",
+      "intro": "La palabra “ave” abarca animales muy distintos. Una recomendación genérica no describe lo que necesita cada especie ni su situación legal. En Paraguay, la información sobre fauna silvestre debe consultarse con MADES; ver un animal a la venta no demuestra que su comercialización sea legal.",
+      "sections": [
+        {
+          "title": "La primera pregunta es sobre el origen",
+          "paragraphs": [
+            "MADES recomienda que la fauna silvestre permanezca en su hábitat y describe autorizaciones excepcionales de tenencia. Antes de cualquier decisión, identificá el animal y consultá documentación y autoridad competente. No compres para “rescatar” sin evaluar las consecuencias y consultar el caso.",
+            "Guardá la información del origen y los documentos que correspondan. Si alguien no puede explicar qué especie es o cómo llegó a su poder, no conviertas la duda en una compra apresurada. La guía de fauna silvestre reúne las preguntas que podés llevar a MADES."
+          ]
+        },
+        {
+          "title": "Pensá más allá de la jaula",
+          "paragraphs": [
+            "RSPCA señala que el cuidado de aves exige un compromiso considerable y que las necesidades dependen de la especie. Investigá el ambiente, actividad y manejo adecuados antes de elegir un recinto o accesorios.",
+            "Hacé una revisión del lugar donde viviría: quién circula, cómo se limpia y qué riesgos existen. Preguntá cómo organizar actividad y compañía sin improvisar interacciones con otros animales. Consultá también cómo preparar traslados y controles."
+          ]
+        },
+        {
+          "title": "Un plan sostenible para toda la familia",
+          "paragraphs": [
+            "Conversá sobre quién realizará el cuidado, cómo se cubrirán ausencias y si el hogar puede mantenerlo. Una rutina que parece sencilla durante una visita puede cambiar cuando hay trabajo, viajes o mudanzas.",
+            "Incluí abastecimiento, mantenimiento del ambiente y consultas en el presupuesto. Pedí orientación sobre alimentación específica: el envase de una mezcla general no es suficiente para determinar un plan apropiado para todas las aves."
+          ]
+        },
+        {
+          "title": "Confirmá atención antes de necesitarla",
+          "paragraphs": [
+            "Preguntá a la clínica qué especies de aves atiende y si puede ofrecer seguimiento. Explicá el origen, ambiente y dieta actual. Un nombre comercial o una publicación en redes no reemplaza esa confirmación.",
+            "No capturés aves del entorno para convertirlas en mascotas. Si encontrás fauna silvestre en una situación que te preocupa, buscá orientación de la autoridad competente antes de intervenir. La prioridad es actuar sin sumar riesgos para el animal o las personas."
+          ]
+        }
+      ],
+      "sources": [
+        "bird",
+        "wild"
+      ],
+      "related": [
+        "fauna-silvestre",
+        "elegir-mascota",
+        "elegir-veterinaria"
+      ],
+      "faqs": [
+        {
+          "q": "¿Un ave que se vende es necesariamente legal?",
+          "a": "No. Necesitás identificar la especie, conocer su origen y verificar los documentos y reglas aplicables con la autoridad competente."
+        },
+        {
+          "q": "¿Cualquier veterinaria atiende aves?",
+          "a": "Confirmalo antes de ir. Preguntá por experiencia con la especie y por el seguimiento disponible."
+        }
+      ],
+      "icon": "bird",
+      "teaser": "Origen, ambiente y bienestar",
+      "tag": "Guía práctica",
+      "date": "2026-10-08"
+    },
+    {
+      "category": "mascotas",
+      "slug": "peces",
+      "title": "Peces y acuarios: preparación antes de empezar",
+      "short": "Peces",
+      "description": "Cómo planificar un acuario: especie, compatibilidad, ambiente y mantenimiento. Preguntas antes de elegir peces y comprar el equipo.",
+      "answer": "Planificá primero el ambiente y su mantenimiento. Elegí peces según las condiciones que podés sostener y la compatibilidad comprobada entre especies.",
+      "intro": "Un acuario funciona como un conjunto de decisiones: especie, espacio, equipo, agua y rutina de mantenimiento. Comprar peces primero y resolver el resto después deja demasiado margen para la improvisación. Esta guía sirve para preparar preguntas y comparar opciones.",
+      "sections": [
+        {
+          "title": "Elegí un proyecto que puedas mantener",
+          "paragraphs": [
+            "Definí dónde estará el acuario y cómo accederás para revisarlo y mantenerlo. Considerá el espacio real, la seguridad del soporte, el equipo y la posibilidad de sostener sus condiciones cuando estés ausente.",
+            "Pedí información sobre cada especie que te interesa. Anotá nombre, tamaño adulto y necesidades específicas que te indiquen. No elijas la combinación únicamente por colores o por cómo se ven los animales en un tanque de exhibición."
+          ]
+        },
+        {
+          "title": "Agua y comportamiento van juntos",
+          "paragraphs": [
+            "RSPCA relaciona la cantidad de peces y su convivencia con la calidad del agua y las necesidades de comportamiento. El espacio disponible no se interpreta solamente como una cuenta de litros por animal. Preguntá por compatibilidad y condiciones para las especies concretas.",
+            "Averiguá qué controles necesita el sistema, qué equipo corresponde y cómo aprender a utilizarlo. Pedí que te expliquen el proceso de preparación y mantenimiento antes de incorporar los animales. Una guía general no reemplaza las pautas técnicas del acuario que vas a instalar."
+          ]
+        },
+        {
+          "title": "Armá una rutina por escrito",
+          "paragraphs": [
+            "Registrá qué tareas realizarás, con qué frecuencia y qué materiales necesitás. Aprendé a reconocer el funcionamiento habitual del equipo y a organizar la reposición de insumos. Guardá las instrucciones del fabricante junto a tus notas.",
+            "Si otra persona cuidará el acuario, dejá un procedimiento sencillo y practicá con ella. Explicá qué no debe modificar por su cuenta y a quién consultar si ocurre algo inesperado. No hagas que la primera experiencia de esa persona sea resolver un problema durante tu viaje."
+          ]
+        },
+        {
+          "title": "Compará el costo completo",
+          "paragraphs": [
+            "Sumá instalación, insumos recurrentes, mantenimiento y asistencia especializada. Preguntá qué partes necesitan reposición y qué gastos no están incluidos en la oferta inicial. Si el costo total excede tu plan, elegí un proyecto distinto antes de incorporar peces.",
+            "Cuando haya cambios preocupantes, buscá orientación sobre la especie y el sistema; no agregues productos sin comprender el problema. RSPCA vincula algunos signos de malestar con dificultades del agua, pero una observación aislada no basta para decidir un tratamiento."
+          ]
+        }
+      ],
+      "sources": [
+        "fish",
+        "fishhealth"
+      ],
+      "related": [
+        "elegir-mascota",
+        "presupuesto-mascota",
+        "reptiles"
+      ],
+      "faqs": [
+        {
+          "q": "¿Puedo elegir peces solo porque caben en el tanque?",
+          "a": "No. Hay que evaluar condiciones del sistema, necesidades de cada especie y compatibilidad de comportamiento."
+        },
+        {
+          "q": "¿Qué preparo para un viaje?",
+          "a": "Una persona que conozca el mantenimiento, instrucciones precisas y un contacto de apoyo. Practicá la rutina antes de ausentarte."
+        }
+      ],
+      "icon": "fish",
+      "teaser": "Agua, equipo y mantenimiento",
+      "tag": "Guía práctica",
+      "date": "2026-10-08"
+    },
+    {
+      "category": "mascotas",
+      "slug": "reptiles",
+      "title": "Reptiles: primero la especie, el origen y el ambiente",
+      "short": "Reptiles",
+      "description": "Qué investigar antes de cuidar un reptil en Paraguay. Legalidad, necesidades de la especie, equipamiento y atención especializada.",
+      "answer": "Un reptil exige conocer la especie exacta, verificar su origen y poder mantener su ambiente. La disponibilidad a la venta no resuelve ninguna de esas condiciones.",
+      "intro": "Tortugas, lagartos y serpientes no comparten un único plan de cuidados. Esta página es una guía para evaluar la responsabilidad, no un catálogo de especies recomendadas ni una autorización para tener fauna silvestre.",
+      "sections": [
+        {
+          "title": "Identificá al animal y su situación legal",
+          "paragraphs": [
+            "Anotá el nombre común y científico, el origen declarado y la documentación disponible. Cuando se trate de fauna silvestre, consultá a MADES antes de tomar decisiones. Una afirmación del vendedor no reemplaza la verificación oficial.",
+            "Si ya tenés un animal y no conocés su situación, consultá cómo regularizar o resolver el caso con la autoridad competente. No lo liberes por tu cuenta ni lo traslades sin orientación. La guía de fauna silvestre explica cómo organizar la información para esa consulta."
+          ]
+        },
+        {
+          "title": "El ambiente depende de la especie",
+          "paragraphs": [
+            "RSPCA advierte que los animales exóticos pueden tener necesidades complejas de ambiente y cuidado. Informate sobre el sistema que requiere la especie, sus controles y el equipo necesario antes de comprar.",
+            "Pedí un plan completo: recinto, materiales, condiciones, alimentación, limpieza y monitoreo. Solicitá explicación de cómo se comprueban esas condiciones y qué hacer cuando el equipo no funciona. No sustituyas las pautas de una especie por las de otra porque ambas sean reptiles."
+          ]
+        },
+        {
+          "title": "Evaluá si podés sostenerlo",
+          "paragraphs": [
+            "El costo inicial es solo parte de la decisión. Calculá reposiciones, funcionamiento del equipo, consultas y apoyo para tus ausencias. Pensá cómo resolverás una mudanza o un cambio importante de horarios.",
+            "Antes de asumir el cuidado, probá organizar el espacio y aprendé a manejar los controles. Si una condición indispensable depende de equipo que no podés mantener o reemplazar, revisá la decisión. Posponer la incorporación puede ser la opción responsable."
+          ]
+        },
+        {
+          "title": "Un profesional que conozca al animal",
+          "paragraphs": [
+            "Contactá a un veterinario que atienda la especie y explicá el proyecto antes de traerla. Preguntá sobre evaluación inicial, seguimiento y atención si aparece un problema. Tener una clínica cerca no demuestra que atienda reptiles.",
+            "Pedí instrucciones de manipulación e higiene adecuadas para las personas que compartirán el hogar. La elección también depende de quiénes viven con vos y de qué cuidados pueden realizar de forma segura. No hay un “reptil fácil” que elimine la necesidad de investigar."
+          ]
+        }
+      ],
+      "sources": [
+        "reptile",
+        "mades"
+      ],
+      "related": [
+        "fauna-silvestre",
+        "elegir-veterinaria",
+        "presupuesto-mascota"
+      ],
+      "faqs": [
+        {
+          "q": "¿Una guía general me dice si puedo tener esa especie?",
+          "a": "No. La situación se verifica para la especie y su origen, con la autoridad competente. Esta página no concede permisos."
+        },
+        {
+          "q": "¿Qué averiguo antes de comprar equipo?",
+          "a": "Las condiciones de la especie, cómo mantenerlas y medirlas, y qué respaldo tendrás si algo falla."
+        }
+      ],
+      "icon": "turtle",
+      "teaser": "Especie y atención especializada",
+      "tag": "Guía práctica",
+      "date": "2026-10-08",
+      "scope": "Contenido educativo. No recomienda adquirir fauna silvestre ni sustituye permisos o instrucciones específicas de un profesional."
+    },
+    {
+      "category": "cuidados",
+      "slug": "elegir-mascota",
+      "title": "Cómo elegir una mascota para tu hogar",
+      "short": "Elegir una mascota",
+      "description": "Compará tiempo, espacio, presupuesto y necesidades antes de elegir una mascota. Una decisión para la familia y para el bienestar del animal.",
+      "answer": "Elegí a partir de lo que podés sostener cada día. El tamaño, la apariencia y el precio inicial no resumen las necesidades de un animal.",
+      "intro": "Elegir una mascota se parece más a organizar una convivencia que a seleccionar un objeto. En lugar de empezar por una foto, empezá por tu casa, tus horarios y las personas que participarán en el cuidado. Esta guía propone una comparación práctica sin clasificar animales como “fáciles” para todos.",
+      "sections": [
+        {
+          "title": "Describí una semana real",
+          "paragraphs": [
+            "Anotá a qué hora salís, cuándo volvés y quién permanece en el hogar. Incluí fines de semana, viajes habituales y días con horarios diferentes. El plan debe servir también cuando no podés hacer todo personalmente.",
+            "Las organizaciones de bienestar recuerdan que diferentes especies tienen necesidades propias de ambiente, alimentación, manejo y compañía. Comparalas con tu disponibilidad real. Una buena intención no reemplaza una solución para cada tarea cotidiana."
+          ]
+        },
+        {
+          "title": "Compará necesidades antes de decidir",
+          "paragraphs": [
+            "Usá la misma lista de preguntas para cada opción, pero buscá las respuestas para la especie exacta. No extrapoles el cuidado de un gato a un conejo o el de un hámster a todos los roedores. Preguntá quién puede orientarte y dónde recibiría atención profesional."
+          ],
+          "table": {
+            "headers": [
+              "Aspecto",
+              "Pregunta útil"
+            ],
+            "rows": [
+              [
+                "Tiempo",
+                "¿Qué tareas necesita y quién puede realizarlas?"
+              ],
+              [
+                "Ambiente",
+                "¿Podemos ofrecer y mantener las condiciones apropiadas?"
+              ],
+              [
+                "Abastecimiento",
+                "¿Conseguimos regularmente los insumos que necesita?"
+              ],
+              [
+                "Atención",
+                "¿Qué profesional local atiende esta especie?"
+              ],
+              [
+                "Ausencias",
+                "¿Quién sabe cuidarla cuando no estamos?"
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Decidan juntos antes de comprometerse",
+          "paragraphs": [
+            "Conversá con todas las personas del hogar sobre espacios, limpieza, gastos y responsabilidades. Cuando hay niños, el adulto responsable debe conocer y garantizar el cuidado. Especificá tareas y evitá dejar el plan en una promesa sin horarios ni reemplazos.",
+            "También considerá las otras mascotas. Preguntá cómo evaluar la convivencia y qué separación inicial necesitarías. La posibilidad de compartir casa se analiza para los individuos y las especies, no solo para el espacio disponible."
+          ]
+        },
+        {
+          "title": "Comprobá origen y presupuesto",
+          "paragraphs": [
+            "Para fauna silvestre y animales de origen dudoso, consultá a la autoridad competente antes de decidir. La presencia de un anuncio o de un vendedor no equivale a permiso.",
+            "Armá el costo de instalación, el mensual y una reserva. Pedí cotizaciones locales, anotá la fecha y compará lo que incluyen. Si todavía no podés cubrir una condición esencial, esperar es una decisión válida; no necesitás compensarla con una compra adicional."
+          ]
+        }
+      ],
+      "sources": [
+        "family",
+        "ownership",
+        "mades"
+      ],
+      "related": [
+        "perros",
+        "gatos",
+        "presupuesto-mascota"
+      ],
+      "faqs": [
+        {
+          "q": "¿Cuál es la mascota más fácil?",
+          "a": "No hay una respuesta universal. Depende de las necesidades de la especie, del individuo y de las condiciones que podés mantener."
+        },
+        {
+          "q": "¿Qué hago si no tenemos acuerdo en casa?",
+          "a": "Resolvé responsabilidades, espacios y gastos antes de incorporar al animal. La convivencia necesita un plan compartido."
+        }
+      ],
+      "icon": "paw",
+      "teaser": "",
+      "tag": "Antes de elegir",
+      "date": "2026-10-08"
+    },
+    {
+      "category": "cuidados",
+      "slug": "primer-perro",
+      "title": "Primer perro: cómo preparar la llegada",
+      "short": "Primer perro",
+      "description": "Una lista para recibir a tu primer perro: casa, traslado, antecedentes, rutina y primera consulta. Prepará lo importante antes de la llegada.",
+      "answer": "Organizá la llegada con tiempo, antecedentes y un hogar seguro. Acordá quién lo acompañará y prepará una primera consulta con la información disponible.",
+      "intro": "Los primeros días son más manejables cuando las decisiones básicas ya están tomadas. Esta guía propone preparar la llegada sin comprar de más ni exigirle al perro que se adapte a toda la casa de inmediato. Ajustá el plan con quienes conocen al animal y con un veterinario.",
+      "sections": [
+        {
+          "title": "Antes del traslado",
+          "paragraphs": [
+            "Confirmá qué antecedentes entregarán y cómo se organiza el traslado. Preguntá por la rutina que conoce, alimento actual, convivencias previas y cualquier observación relevante. Anotá la información en un lugar que puedan consultar las personas responsables.",
+            "Prepará el recorrido y los elementos para un traslado seguro. Si se trata de una adopción, comprendé el procedimiento y los compromisos antes de la llegada. Un apuro de último momento puede dejar sin resolver cuestiones que después resultan importantes."
+          ]
+        },
+        {
+          "title": "Una revisión de la casa",
+          "paragraphs": [
+            "Recorré portones, puertas y otros accesos. Guardá productos domésticos, medicamentos y objetos de forma segura. Elegí dónde descansará y dónde se guardarán sus elementos, teniendo en cuenta cómo se limpia y usa la casa.",
+            "Prepará lo necesario para alimentación, descanso y paseo según sus características. La lista es un punto de partida: pedí recomendaciones para el animal y evitá elegir por la etiqueta de “kit completo” sin revisar cada componente."
+          ],
+          "bullets": [
+            "Un sitio de descanso que la familia pueda respetar.",
+            "Elementos de alimentación y limpieza.",
+            "Equipo de traslado y paseo apropiado para el perro.",
+            "Antecedentes y contactos guardados."
+          ]
+        },
+        {
+          "title": "Una rutina que todos puedan seguir",
+          "paragraphs": [
+            "Definí quién se ocupa de cada tarea y qué hará cuando esté ausente. Durante la adaptación, observá sin llenar el día de encuentros y actividades nuevas. Las reglas de la casa deben ser coherentes entre personas.",
+            "Registrá dudas para la consulta y pedí orientación si el comportamiento te preocupa. No prometas resultados en una cantidad fija de días: las historias y necesidades de los perros son distintas."
+          ]
+        },
+        {
+          "title": "La primera consulta y el plan de gastos",
+          "paragraphs": [
+            "Llevá la libreta, documentos y preguntas. Consultá cómo organizar seguimiento, alimentación, vacunas y prevención a partir de la evaluación individual. Averiguá también el procedimiento para atención fuera de horario.",
+            "Guardá recibos y presupuestos del primer mes. Te servirán para distinguir compras de instalación de los gastos habituales. El objetivo es sostener el cuidado después de la emoción inicial, no solo resolver el día de llegada."
+          ]
+        }
+      ],
+      "sources": [
+        "dog",
+        "ownership"
+      ],
+      "related": [
+        "perros",
+        "vacunas-y-controles",
+        "collares-y-correas"
+      ],
+      "faqs": [
+        {
+          "q": "¿Necesito comprar todo el mismo día?",
+          "a": "Conviene disponer de lo esencial antes de la llegada y sumar equipo según necesidades comprobadas. Evitá compras impulsivas que dificulten el presupuesto."
+        },
+        {
+          "q": "¿Puedo usar un calendario de vacunas de internet?",
+          "a": "Llevá los antecedentes al veterinario para definir el plan que corresponda al perro. Una tabla general no sustituye esa evaluación."
+        }
+      ],
+      "icon": "dog",
+      "teaser": "",
+      "tag": "Primeros días",
+      "date": "2026-10-08"
+    },
+    {
+      "category": "cuidados",
+      "slug": "primer-gato",
+      "title": "Primer gato: prepará sus primeros días en casa",
+      "short": "Primer gato",
+      "description": "Cómo organizar la llegada de un gato: zona inicial, arenero, recursos, seguridad y antecedentes. Una preparación tranquila para el hogar.",
+      "answer": "Prepará una zona tranquila con recursos y salidas seguras. Permití que el gato explore a su ritmo y consultá cómo organizar la convivencia si hay otros animales.",
+      "intro": "Recibir un gato requiere tiempo para observar, no solamente accesorios. Antes de trasladarlo, reuní información sobre su rutina y prepará un lugar donde pueda empezar a conocer el ambiente. La llegada es una etapa para aprender qué necesita y qué ajustes hacen falta.",
+      "sections": [
+        {
+          "title": "Organizá una zona inicial",
+          "paragraphs": [
+            "RSPCA propone un espacio seguro con recursos para facilitar la adaptación y gestionar presentaciones con otros animales. Prepará alimentación, agua, arenero, descanso y elementos adecuados para su actividad; ubicá todo de modo que pueda utilizarlo sin obstáculos.",
+            "Revisá puerta, ventanas, balcones y posibles escondites difíciles de alcanzar. Avisá a las personas del hogar cómo se usará ese espacio. Una puerta abierta durante una visita puede cambiar por completo una preparación cuidadosa."
+          ]
+        },
+        {
+          "title": "Los antecedentes también viajan",
+          "paragraphs": [
+            "Pedí la libreta o información disponible y anotá alimentación, sustrato y hábitos que conoce. Confirmá cómo recomiendan transportarlo y qué preguntas podés hacer después de la entrega.",
+            "Prepará el viaje antes de salir. Asegurate de tener el equipo adecuado y evitá organizar varios trámites innecesarios durante el traslado. La guía de transportadoras ayuda a comparar características y requisitos para cada uso."
+          ]
+        },
+        {
+          "title": "Observar sin forzar",
+          "paragraphs": [
+            "Dejá que conozca el espacio y evitá visitas numerosas o intentos constantes de contacto. Compartí criterios simples con la familia para no recibir instrucciones contradictorias.",
+            "Anotá dudas sobre la rutina, las interacciones y los cambios que te preocupen. Si hay otros animales, pedí un plan de presentación y mantené la posibilidad de separar espacios. No uses una primera impresión como garantía de convivencia inmediata."
+          ],
+          "bullets": [
+            "Reservá tiempo para acompañar la llegada.",
+            "Prepará instrucciones para quien abra puertas o haga la limpieza.",
+            "Consultá antes de cambiar muchas cosas de la rutina conocida."
+          ]
+        },
+        {
+          "title": "Primer seguimiento y continuidad",
+          "paragraphs": [
+            "Planificá una consulta con los antecedentes. Preguntá por controles, prevención y cuidados según la situación del gato. Guardá el contacto y explicá a la persona de apoyo cómo utilizarlo.",
+            "Compará los gastos reales de las primeras semanas con tu presupuesto. Reponé consumibles antes de que se terminen y probá la rutina de limpieza y abastecimiento. El hogar debe seguir funcionando cuando pase la novedad de la llegada."
+          ]
+        }
+      ],
+      "sources": [
+        "cat",
+        "cathome",
+        "catcompany"
+      ],
+      "related": [
+        "gatos",
+        "transportadoras",
+        "convivencia-perros-gatos"
+      ],
+      "faqs": [
+        {
+          "q": "¿Es necesario que toda la familia lo toque al llegar?",
+          "a": "No fuerces el contacto. Prepará un ambiente tranquilo y observá cómo se adapta, siguiendo orientación para el individuo."
+        },
+        {
+          "q": "¿Qué pasa si hay otro gato o un perro?",
+          "a": "Organizá espacios y presentaciones con tiempo. Pedí orientación y no supongas compatibilidad inmediata."
+        }
+      ],
+      "icon": "cat",
+      "teaser": "",
+      "tag": "Primeros días",
+      "date": "2026-10-08"
+    },
+    {
+      "category": "cuidados",
+      "slug": "mascotas-y-calor",
+      "title": "Mascotas y calor: organizá una rutina más segura",
+      "short": "Mascotas y calor",
+      "description": "Cómo revisar paseos, agua, descanso y traslados cuando hace calor. Preparación para perros y gatos en Paraguay y cuándo pedir ayuda.",
+      "answer": "Revisá el ambiente y la actividad según las condiciones del día. Ofrecé agua y un lugar adecuado para descansar, evitá dejar animales en vehículos y consultá riesgos individuales con su veterinario.",
+      "intro": "Cuando el día se vuelve caluroso, vale la pena cambiar la planificación en vez de mantener la rutina por costumbre. Esta guía reúne una preparación general para perros y gatos. Otros animales pueden necesitar condiciones específicas que debés consultar para su especie.",
+      "sections": [
+        {
+          "title": "Una evaluación antes de salir",
+          "paragraphs": [
+            "La AVMA advierte que el clima cálido puede representar riesgos incluso cuando no parece extremo. Revisá el horario, el recorrido, las condiciones del suelo y las necesidades del animal. No conviertas una salida prevista en una obligación que no podés modificar.",
+            "Prepará una alternativa para días difíciles: una actividad apropiada dentro de casa o un paseo ajustado a lo que te indicó el profesional. La decisión debe considerar al individuo, no una temperatura universal publicada en redes."
+          ]
+        },
+        {
+          "title": "El lugar de descanso también importa",
+          "paragraphs": [
+            "Comprobá que el agua esté disponible y que el animal pueda descansar en condiciones apropiadas. Revisá dónde queda durante tus ausencias y quién controla el ambiente. La situación puede cambiar durante el día aunque hayas dejado todo organizado por la mañana.",
+            "Pedí que la persona de apoyo conozca el plan y tenga acceso a los recursos. Pensá también en cortes de servicios y cambios de horario. Para animales con requerimientos ambientales particulares, necesitás un plan específico de la especie."
+          ]
+        },
+        {
+          "title": "Traslados sin improvisar",
+          "paragraphs": [
+            "No dejes a un animal dentro de un vehículo estacionado. Organizá el trayecto y la atención para evitar esperas innecesarias. Si vas a viajar, preguntá al veterinario por riesgos y al transportista por condiciones para llevarlo.",
+            "Una transportadora debe elegirse para el animal y el uso previsto. Sus características no vuelven seguro cualquier ambiente; la supervisión y el recorrido siguen siendo parte del plan."
+          ]
+        },
+        {
+          "title": "Si algo te preocupa, pedí ayuda",
+          "paragraphs": [
+            "Consultá al veterinario sobre qué cambios deben motivar una llamada en tu caso y qué contacto usar fuera de horario. Ante malestar o una situación que parezca urgente, buscá asistencia sin esperar a completar una lista de internet.",
+            "Esta guía no indica tratamientos ni dosis. Prepará con el profesional las instrucciones para actuar mientras accedés a atención. Guardalas con el teléfono de contacto y compartilas con quienes cuidan al animal."
+          ]
+        }
+      ],
+      "sources": [
+        "heat"
+      ],
+      "related": [
+        "perros",
+        "gatos",
+        "transportadoras"
+      ],
+      "faqs": [
+        {
+          "q": "¿Hay un horario que sea seguro para todos?",
+          "a": "No. Las condiciones del día, del recorrido y del animal cambian. Ajustá la salida y consultá los riesgos individuales."
+        },
+        {
+          "q": "¿La guía sirve para aves, reptiles o peces?",
+          "a": "No describe sus condiciones ambientales específicas. Buscá pautas de la especie y asesoramiento especializado."
+        }
+      ],
+      "icon": "paw",
+      "teaser": "",
+      "tag": "Rutina y bienestar",
+      "date": "2026-10-08"
+    },
+    {
+      "category": "cuidados",
+      "slug": "presupuesto-mascota",
+      "title": "Cuánto cuesta cuidar una mascota: armá tu presupuesto",
+      "short": "Presupuesto de cuidados",
+      "description": "Una forma práctica de calcular gastos de mascotas en guaraníes: instalación, consumibles, consultas, ausencias e imprevistos, con cotizaciones reales.",
+      "answer": "Separá gastos iniciales, habituales e imprevistos. Usá cotizaciones actuales de tu ciudad y compará lo que incluye cada oferta; no existe un monto único para todas las mascotas.",
+      "intro": "Para calcular cuánto cuesta cuidar una mascota en Paraguay, necesitás datos de tu situación. La especie, el individuo, el ambiente y la atención que requiere cambian el presupuesto. Esta guía te ayuda a construir números propios sin usar precios inventados o promociones como si fueran el costo total.",
+      "sections": [
+        {
+          "title": "Tres grupos que conviene separar",
+          "paragraphs": [
+            "En la instalación incluí lo que necesitás para recibir al animal y preparar su ambiente. En el gasto habitual anotá consumibles y servicios recurrentes. Agregá una reserva para situaciones no previstas y preguntá cómo afrontar cuidados durante tus ausencias.",
+            "No distribuyas una compra inicial como si todos los meses fueran iguales. Dejá visible cuándo toca renovar, pagar o revisar cada elemento; así podés anticipar el gasto sin sorpresas."
+          ],
+          "table": {
+            "headers": [
+              "Grupo",
+              "Qué registrar"
+            ],
+            "rows": [
+              [
+                "Inicial",
+                "Equipo, adecuación del hogar y evaluación de llegada"
+              ],
+              [
+                "Habitual",
+                "Alimento, higiene, mantenimiento y atención planificada"
+              ],
+              [
+                "Ausencias",
+                "Cuidado, traslados y necesidades del lugar de destino"
+              ],
+              [
+                "Imprevistos",
+                "Reserva y alternativas de atención profesional"
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Pedí cotizaciones que puedas comparar",
+          "paragraphs": [
+            "Anotá fecha, ciudad, presentación y lo que incluye cada presupuesto. Para alimento o consumibles, compará unidades equivalentes y considerá almacenamiento y frecuencia de compra. Para servicios, preguntá si el monto incluye evaluación, materiales, seguimiento o cargos adicionales.",
+            "No supongas que la opción de menor precio ofrece lo mismo. Si una oferta cambia tu rutina o necesita compras complementarias, sumá esas diferencias antes de decidir."
+          ]
+        },
+        {
+          "title": "Convertí la lista en un calendario",
+          "paragraphs": [
+            "Registrá compras y servicios con frecuencia estimada según el plan del animal. Marcá reposiciones y revisiones para que alguien pueda entender el sistema cuando estés ausente.",
+            "Durante el primer mes, guardá recibos y ajustá las estimaciones. Después revisá el presupuesto cuando cambien necesidades, proveedores o condiciones de vida. Un registro simple mantenido en el tiempo sirve más que una cifra precisa que nunca se vuelve a comprobar."
+          ]
+        },
+        {
+          "title": "Presupuesto y bienestar se deciden juntos",
+          "paragraphs": [
+            "La tenencia responsable incluye poder sostener los cuidados. Antes de adoptar, evaluá qué condiciones son indispensables y si realmente podés cubrirlas. Conversá las dudas con un profesional o con la organización responsable de la entrega.",
+            "Si te falta un dato esencial, dejá ese rubro como pendiente y buscá una cotización. No lo reemplaces por cero ni por una cantidad que parece razonable. Esta página ofrece un método de planificación; no fija tarifas veterinarias ni costos mínimos nacionales."
+          ]
+        }
+      ],
+      "sources": [
+        "ownership"
+      ],
+      "related": [
+        "elegir-mascota",
+        "perros",
+        "gatos"
+      ],
+      "faqs": [
+        {
+          "q": "¿Por qué no hay un precio mensual en esta guía?",
+          "a": "Porque una cifra sin especie, necesidades, ciudad y fecha puede resultar engañosa. El método te permite usar cotizaciones de tu propia situación."
+        },
+        {
+          "q": "¿Cómo empiezo si no tengo recibos?",
+          "a": "Solicitá presupuestos actuales, anotá sus condiciones y reemplazá las estimaciones con datos reales durante los primeros meses."
+        }
+      ],
+      "icon": "book",
+      "teaser": "",
+      "tag": "Organización",
+      "date": "2026-10-08"
+    },
+    {
+      "category": "cuidados",
+      "slug": "elegir-veterinaria",
+      "title": "Cómo elegir una veterinaria en Paraguay",
+      "short": "Elegir veterinaria",
+      "description": "Qué comprobar al elegir atención veterinaria en Paraguay: registro profesional, especie atendida, servicios, horarios y presupuestos claros.",
+      "answer": "Confirmá que el profesional esté habilitado, que atienda la especie y que el servicio se ajuste a tu necesidad. Llamá para verificar horarios, disponibilidad y condiciones antes de ir.",
+      "intro": "Elegir una veterinaria requiere información sobre el servicio concreto. Una clínica cercana puede servir para algunas consultas y necesitar derivarte para otras. Esta guía propone preguntas para preparar una elección sin clasificaciones comerciales ni promesas de resultados.",
+      "sections": [
+        {
+          "title": "Profesional, establecimiento y publicidad",
+          "paragraphs": [
+            "SENACSA describe el registro habilitante para ejercer la profesión bajo la Ley 6810/2021 y su renovación anual. Comprobá los datos del profesional que atenderá al animal. Un anuncio, una ficha de negocio o una presencia en redes no sustituyen ese registro.",
+            "También distinguí el nombre comercial del establecimiento de la persona que realiza la atención. Pedí información suficiente para saber quién evaluará el caso y cómo se organiza una derivación si hace falta."
+          ]
+        },
+        {
+          "title": "Preguntá por la especie y el motivo",
+          "paragraphs": [
+            "Al llamar, explicá qué animal tenés y para qué buscás consulta. Si es un conejo, un ave o un reptil, confirmá que atiendan la especie antes del traslado. Consultá qué antecedentes quieren que lleves y si necesitan un turno.",
+            "No presupongas que una lista amplia de servicios equivale a disponibilidad inmediata. Preguntá cuál es el procedimiento actual para esa atención y qué alternativa ofrecen cuando no pueden realizarla."
+          ],
+          "bullets": [
+            "¿Quién realiza la consulta y cómo puedo comprobar sus datos?",
+            "¿Atienden esta especie y este motivo de consulta?",
+            "¿Qué documentación y antecedentes conviene llevar?",
+            "¿Cómo se organiza el seguimiento o una derivación?"
+          ]
+        },
+        {
+          "title": "Horarios y urgencias se confirman",
+          "paragraphs": [
+            "Guardá contactos y averiguá qué ocurre fuera del horario regular. Una guardia presencial, un servicio de llamada y un horario extendido son modalidades diferentes; pedí que te expliquen cuál está disponible.",
+            "Ante una necesidad urgente, llamá directamente para comprobar atención en ese momento. Esta página no publica ni garantiza una lista de emergencias. Una dirección o un número copiados hace tiempo pueden haber cambiado."
+          ]
+        },
+        {
+          "title": "Entendé el presupuesto y el seguimiento",
+          "paragraphs": [
+            "Consultá qué incluye el precio informado y cómo se comunicarán otras evaluaciones o procedimientos. Pedí indicaciones y antecedentes que puedas conservar para el seguimiento.",
+            "La publicidad futura en Mascota se identificará como tal. Pagar una ficha no es una evaluación clínica ni un aval de idoneidad. Tu decisión debe apoyarse en los datos comprobables y en la conversación con el profesional que atenderá al animal."
+          ]
+        }
+      ],
+      "sources": [
+        "vet"
+      ],
+      "related": [
+        "vacunas-y-controles",
+        "conejos",
+        "reptiles"
+      ],
+      "faqs": [
+        {
+          "q": "¿Mascota lista todas las veterinarias?",
+          "a": "No. Esta versión ofrece orientación editorial. Las futuras fichas comerciales serán espacios contratados identificados como publicidad."
+        },
+        {
+          "q": "¿Una ficha paga significa que es la mejor opción?",
+          "a": "No. La contratación no establece calidad clínica o adecuación para tu caso. Confirmá registro, servicios y atención directamente."
+        }
+      ],
+      "icon": "book",
+      "teaser": "",
+      "tag": "Atención profesional",
+      "date": "2026-10-08"
+    },
+    {
+      "category": "cuidados",
+      "slug": "vacunas-y-controles",
+      "title": "Vacunas y controles: prepará un plan con tu veterinario",
+      "short": "Vacunas y controles",
+      "description": "Cómo organizar antecedentes, preguntas y seguimiento de vacunas y controles. Un plan individual para tu mascota en lugar de una tabla universal.",
+      "answer": "Reuní antecedentes y pedí un plan individual. El veterinario define vacunas y seguimiento a partir de la especie, edad, historia, riesgos y situación del animal.",
+      "intro": "Una libreta organizada te permite consultar con mejor información y evitar dudas sobre lo que ya se realizó. Esta guía no fija un calendario ni indica productos. Propone cómo preparar la consulta y mantener el seguimiento que acuerdes con el profesional.",
+      "sections": [
+        {
+          "title": "Llevá lo que ya sabés",
+          "paragraphs": [
+            "Reuní libreta, documentos de entrega y registros de consultas anteriores. Si no tenés un antecedente, anotá que falta; una suposición sobre una fecha no tiene el mismo valor que un registro.",
+            "Contá cómo vive el animal: convivencia, salidas, viajes previstos y cambios recientes. Esa información ayuda a plantear preguntas pertinentes. No necesitás interpretar el riesgo por tu cuenta para describir el entorno con claridad."
+          ]
+        },
+        {
+          "title": "Preguntas para un plan individual",
+          "paragraphs": [
+            "La AVMA señala que el veterinario considera factores individuales al recomendar vacunas y un programa de vacunación. Pedí que te expliquen qué corresponde, qué registro conservar y cómo se organiza el seguimiento.",
+            "Si recibís distintas opiniones, llevá la información completa a la consulta. No superpongas calendarios descargados ni cambies productos por una comparación de precios sin evaluar la indicación."
+          ],
+          "bullets": [
+            "¿Qué corresponde según los antecedentes disponibles?",
+            "¿Qué fechas y registros debemos conservar?",
+            "¿Qué cambia si planeamos un viaje o cambia el entorno?",
+            "¿A quién llamamos ante dudas después de una aplicación?"
+          ]
+        },
+        {
+          "title": "Un registro sencillo y compartido",
+          "paragraphs": [
+            "Conservá las indicaciones de forma que puedan encontrarlas todas las personas responsables. Anotá fecha, profesional y documentos entregados, y guardá una copia cuando sea apropiado.",
+            "Agendá lo que te indiquen y confirmá el turno con anticipación. Un recordatorio es una ayuda organizativa; si cambió la situación, consultá antes de asumir que sigue siendo el mismo plan."
+          ]
+        },
+        {
+          "title": "Viajes y cambios de rutina",
+          "paragraphs": [
+            "Los requisitos de un trámite no se resuelven únicamente con una tabla de vacunas. Para entrar o salir de Paraguay, consultá los documentos de SENACSA y las condiciones del destino y transporte.",
+            "Pedí orientación con tiempo para conocer los pasos reales. La guía de viajes de Mascota reúne la organización y las fuentes, sin reemplazar la evaluación veterinaria ni la certificación oficial."
+          ]
+        }
+      ],
+      "sources": [
+        "vaccines",
+        "travel"
+      ],
+      "related": [
+        "elegir-veterinaria",
+        "viajar-con-mascotas",
+        "primer-perro"
+      ],
+      "faqs": [
+        {
+          "q": "¿Hay un calendario único para todos?",
+          "a": "Esta guía no propone uno. El plan se define con un veterinario a partir del individuo y sus antecedentes."
+        },
+        {
+          "q": "¿Qué hago si no tengo la libreta anterior?",
+          "a": "Informá que falta y llevá los datos que puedas comprobar. El profesional evaluará cómo continuar sin inventar antecedentes."
+        }
+      ],
+      "icon": "book",
+      "teaser": "",
+      "tag": "Planificación de cuidados",
+      "date": "2026-10-08"
+    },
+    {
+      "category": "cuidados",
+      "slug": "convivencia-perros-gatos",
+      "title": "Perros y gatos en casa: organizá la convivencia",
+      "short": "Convivencia de perros y gatos",
+      "description": "Cómo preparar espacios, recursos y apoyo profesional cuando perros y gatos comparten una casa. Planificá sin forzar encuentros ni prometer plazos.",
+      "answer": "Organizá espacios y recursos antes de presentar animales. Evaluá a los individuos, mantené la posibilidad de separar ambientes y pedí orientación si la interacción te preocupa.",
+      "intro": "Compartir casa no significa compartir de inmediato todos los lugares o actividades. Si ya tenés un animal y va a llegar otro, planificá la transición con información sobre ambos. Esta guía organiza preguntas y tareas; no promete compatibilidad ni prescribe una técnica para todos los casos.",
+      "sections": [
+        {
+          "title": "Conocé a los individuos",
+          "paragraphs": [
+            "Preguntá por experiencias previas, comportamiento observado y circunstancias en las que el animal se siente cómodo o incómodo. Contá cómo es tu casa y quién vive allí antes de acordar una incorporación.",
+            "Evitá basar toda la decisión en un encuentro breve o en frases como “se lleva bien con todos”. Buscá ejemplos concretos y pedí una persona de referencia para dudas de adaptación. Si hay antecedentes difíciles, consultá cómo evaluarlos."
+          ]
+        },
+        {
+          "title": "Diseñá espacios que puedas separar",
+          "paragraphs": [
+            "RSPCA recomienda organizar un espacio seguro para gatos y gestionar gradualmente las presentaciones. Pensá dónde estarán los recursos y cómo impedirás accesos no previstos. La separación debe poder mantenerse cuando no estés para supervisar.",
+            "Hacé una prueba del uso de puertas y zonas antes de la llegada. Asegurate de que todas las personas sepan qué debe permanecer cerrado y cómo se realizan limpieza, alimentación y entradas al hogar."
+          ]
+        },
+        {
+          "title": "Observación y criterios compartidos",
+          "paragraphs": [
+            "Acordá una rutina que no dependa de que una sola persona interprete todo. Registrá qué ocurre, en qué situación y qué preguntas necesitan respuesta profesional. No fuerces contacto para demostrar que ya se conocen.",
+            "Si aparecen interacciones que te preocupan, priorizá la seguridad y buscá asesoramiento. Un plan puede necesitar ajustes; no lo aceleres para cumplir una cantidad de días vista en internet."
+          ],
+          "bullets": [
+            "Asigná responsables para cada recurso y espacio.",
+            "Mantené una alternativa de separación durante las ausencias.",
+            "Compartí observaciones concretas con el profesional."
+          ]
+        },
+        {
+          "title": "La convivencia también tiene costos",
+          "paragraphs": [
+            "Considerá duplicación de recursos, cambios de ambiente y tiempo adicional de cuidado. Revisá quién puede ayudar si la preparación toma más de lo esperado.",
+            "Cuando viajes, explicá el plan a quien cuide la casa. No basta con dejar alimento: la persona necesita conocer accesos, tareas y contactos. La decisión de incorporar otro animal incluye poder mantener esa organización."
+          ]
+        }
+      ],
+      "sources": [
+        "catcompany"
+      ],
+      "related": [
+        "primer-gato",
+        "perros",
+        "gatos"
+      ],
+      "faqs": [
+        {
+          "q": "¿Cuántos días tardan en llevarse bien?",
+          "a": "No hay un plazo garantizado. Depende de los individuos y de la situación, y puede requerir orientación y ajustes."
+        },
+        {
+          "q": "¿Los dejo juntos cuando salgo para que se acostumbren?",
+          "a": "No uses la ausencia como una prueba de convivencia. Organizá una separación segura y consultá cómo evaluar las interacciones."
+        }
+      ],
+      "icon": "paw",
+      "teaser": "",
+      "tag": "Convivencia",
+      "date": "2026-10-08"
+    },
+    {
+      "category": "paraguay",
+      "slug": "leyes-mascotas-paraguay",
+      "title": "Leyes sobre mascotas en Paraguay: dónde consultar",
+      "short": "Leyes y responsabilidades",
+      "description": "Leyes nacionales, reglas municipales y autoridades para consultar responsabilidades sobre mascotas en Paraguay. Una guía de fuentes y preguntas.",
+      "answer": "Distinguí la normativa nacional, las reglas de tu municipio y los trámites específicos. Consultá el texto oficial y la autoridad responsable antes de aplicar una regla a tu caso.",
+      "intro": "Al buscar leyes sobre mascotas en Paraguay, podés encontrar artículos antiguos, ordenanzas de una sola ciudad y consejos generales mezclados. Esta guía ordena las fuentes y las preguntas que conviene hacer. No interpreta sanciones ni sustituye asesoramiento sobre una situación particular.",
+      "sections": [
+        {
+          "title": "Una referencia nacional para bienestar animal",
+          "paragraphs": [
+            "La Biblioteca y Archivo Central del Congreso publica la Ley 7513/2025 de bienestar y protección animal. El texto incluye responsabilidades de cuidado, alimentación, condiciones adecuadas y atención preventiva. Usá la versión oficial como punto de partida y comprobá sus disposiciones y reglamentaciones aplicables.",
+            "No deduzcas la vigencia de una explicación solo porque menciona una ley. Verificá fecha, texto, modificaciones y autoridad. Una publicación sobre normas anteriores puede tener valor histórico sin describir el procedimiento actual."
+          ]
+        },
+        {
+          "title": "Las reglas de una ciudad no son las de todo el país",
+          "paragraphs": [
+            "Las municipalidades pueden tener reglas relacionadas con convivencia, salubridad, circulación y establecimientos. Identificá tu municipio y buscá su normativa vigente. La ordenanza de Asunción enlazada en las fuentes es una referencia local que necesita verificación de modificaciones.",
+            "Cuando consultes, describí la ciudad y la situación concreta. Preguntá qué oficina informa y cuál es el procedimiento. No apliques automáticamente un artículo de Asunción a Luque, San Lorenzo u otra localidad."
+          ]
+        },
+        {
+          "title": "Cada tema puede tener una autoridad distinta",
+          "paragraphs": [
+            "Para ejercicio profesional veterinario, consultá SENACSA. Para fauna silvestre, consultá MADES. Para un trámite de viaje, seguí la documentación de SENACSA y la del destino. Un contacto general puede orientarte, pero no significa que resuelva todos los temas.",
+            "Prepará una lista de preguntas sin incluir información privada en búsquedas públicas. Anotá la fuente, cuándo la consultaste y qué documento te indicaron. Eso facilita verificar la respuesta antes de actuar."
+          ],
+          "table": {
+            "headers": [
+              "Tema",
+              "Fuente para empezar"
+            ],
+            "rows": [
+              [
+                "Bienestar y protección animal",
+                "Texto oficial y Dirección Nacional de Defensa, Salud y Bienestar Animal"
+              ],
+              [
+                "Reglas locales",
+                "Municipalidad correspondiente"
+              ],
+              [
+                "Registro profesional",
+                "SENACSA"
+              ],
+              [
+                "Fauna silvestre",
+                "MADES"
+              ],
+              [
+                "Ingreso y salida del país",
+                "SENACSA y autoridad del destino"
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Cómo usar esta información responsablemente",
+          "paragraphs": [
+            "Consultá fuentes oficiales para confirmar formularios, oficinas y requisitos. Si hay un conflicto, una denuncia o una posible sanción, buscá orientación sobre tu caso antes de apoyarte en una lista resumida.",
+            "Mascota no recibe denuncias oficiales ni certifica tenencia. Los enlaces están para ayudarte a llegar al organismo correspondiente. Antes de publicar datos de otras personas o acusaciones, priorizá los canales formales y la protección de información privada."
+          ]
+        }
+      ],
+      "sources": [
+        "law",
+        "city",
+        "vet",
+        "mades"
+      ],
+      "related": [
+        "fauna-silvestre",
+        "denunciar-maltrato-animal",
+        "viajar-con-mascotas"
+      ],
+      "faqs": [
+        {
+          "q": "¿Una ordenanza de Asunción rige en todas las ciudades?",
+          "a": "No la presentes como una regla nacional. Identificá la jurisdicción y consultá la normativa de tu municipio."
+        },
+        {
+          "q": "¿Esta guía informa las multas exactas?",
+          "a": "No. Las sanciones y su aplicación deben comprobarse en los textos y procedimientos vigentes para el caso concreto."
+        }
+      ],
+      "icon": "book",
+      "teaser": "",
+      "tag": "Fuentes oficiales",
+      "date": "2026-10-08",
+      "scope": "Orientación sobre fuentes y jurisdicciones. No constituye asesoramiento legal ni una comprobación completa de vigencia, reformas o reglamentación."
+    },
+    {
+      "category": "paraguay",
+      "slug": "viajar-con-mascotas",
+      "title": "Viajar con mascotas desde o hacia Paraguay",
+      "short": "Viajar con mascotas",
+      "description": "Organizá documentos y consultas para viajar con perros o gatos desde o hacia Paraguay. SENACSA, destino, transporte y preparación del traslado.",
+      "answer": "Consultá a SENACSA y al país de destino con anticipación. Confirmá también las condiciones del transportista: un documento sanitario no equivale a una reserva o aceptación del animal.",
+      "intro": "Un viaje combina dos preparaciones: los documentos exigidos y las condiciones para trasladar al animal. Esta guía organiza ambas sin fijar un calendario universal. Las rutas, la especie y las circunstancias pueden cambiar lo que necesitás comprobar.",
+      "sections": [
+        {
+          "title": "Primero definí el viaje real",
+          "paragraphs": [
+            "Anotá origen, destino, fechas, escalas, medio de transporte y quién acompañará al animal. Confirmá si el procedimiento corresponde a un perro o gato: la información de SENACSA para animales de compañía no debe extrapolarse a todas las especies.",
+            "Si hay un traslado comercial, varios animales o circunstancias especiales, consultá el procedimiento específico. No uses un relato de otro viajero como autorización para repetir exactamente sus pasos."
+          ]
+        },
+        {
+          "title": "Los documentos se confirman con la autoridad",
+          "paragraphs": [
+            "SENACSA describe el Certificado Veterinario Internacional y los procedimientos de ingreso y egreso. Su página actual remite a requisitos MERCOSUR 20/2024 para perros y gatos. Verificá los pasos de tu ruta y los plazos directamente antes de tramitar.",
+            "Pedí orientación al veterinario con los antecedentes del animal y el itinerario. Después confirmá ante las autoridades qué certificados, identificaciones u otras comprobaciones corresponden. Conservá copias organizadas y revisá que los datos coincidan; no inventes fechas cuando falte un registro."
+          ]
+        },
+        {
+          "title": "El transporte tiene sus propias condiciones",
+          "paragraphs": [
+            "Consultá a la aerolínea o empresa antes de comprar el equipo y de asumir que el animal puede viajar. Pedí información para la ruta concreta, con especie y características del animal.",
+            "Comprobá reserva, modalidad, medidas del contenedor y condiciones de entrega o embarque. La FDA recomienda preparar los viajes con el veterinario e investigar opciones de atención en el destino. Un requisito de transporte puede ser distinto de un requisito de ingreso."
+          ],
+          "bullets": [
+            "Confirmá aceptación del animal para ese recorrido.",
+            "Pedí las condiciones del contenedor y del embarque por escrito.",
+            "Prepará contactos de atención en el destino.",
+            "Revisá de nuevo si cambia el itinerario."
+          ]
+        },
+        {
+          "title": "Una carpeta y una lista de pendientes",
+          "paragraphs": [
+            "Separá los documentos ya obtenidos de lo que falta confirmar. Anotá organismo, paso, fecha y responsable. Agendá consultas con tiempo según las instrucciones oficiales; no programes a partir de una tabla vieja.",
+            "El día anterior al viaje, revisá carpeta, reserva, equipo y contactos. Si una condición no se cumple o hay dudas sobre el bienestar del animal, consultá antes de trasladarlo. Esta guía no garantiza admisión ni recomienda medicación para viajar."
+          ]
+        }
+      ],
+      "sources": [
+        "travel",
+        "travelprep"
+      ],
+      "related": [
+        "transportadoras",
+        "vacunas-y-controles",
+        "mascotas-y-calor"
+      ],
+      "faqs": [
+        {
+          "q": "¿La libreta de vacunas es suficiente?",
+          "a": "No lo supongas. SENACSA y el destino indican los documentos correspondientes a cada desplazamiento."
+        },
+        {
+          "q": "¿Puedo usar esta guía para viajar con un ave o reptil?",
+          "a": "No extrapoles el procedimiento de perros y gatos. Consultá la especie y el traslado concreto con las autoridades responsables."
+        }
+      ],
+      "icon": "book",
+      "teaser": "",
+      "tag": "Trámites y viajes",
+      "date": "2026-10-08",
+      "scope": "Guía de preparación. Requisitos, plazos y aceptación se confirman con SENACSA, autoridades del destino y transportista para cada viaje."
+    },
+    {
+      "category": "paraguay",
+      "slug": "fauna-silvestre",
+      "title": "Fauna silvestre en Paraguay: por qué no es una mascota",
+      "short": "Fauna silvestre",
+      "description": "Qué informa MADES sobre fauna silvestre, tenencia excepcional y origen de animales. Cómo preparar una consulta sin promover captura o comercio.",
+      "answer": "MADES recomienda que la fauna silvestre permanezca en su hábitat. La tenencia excepcional requiere autorización; un anuncio o una compra no demuestra legalidad.",
+      "intro": "Aves, reptiles y otros animales de la fauna paraguaya pueden generar interés y afecto. Eso no convierte a cada especie en un animal adecuado o legal para convivir en casa. Informarte sobre conservación y autoridades es parte de una decisión responsable.",
+      "sections": [
+        {
+          "title": "La orientación oficial de MADES",
+          "paragraphs": [
+            "MADES explica que la tenencia de fauna silvestre se admite en casos excepcionales con autorización expresa. Su información menciona registro y permiso de tenencia correspondiente. Consultá el trámite y el caso específico; no interpretes esta página como un permiso general.",
+            "Una lista de documentos no significa que toda solicitud se apruebe ni que cualquier animal pueda comprarse. El organismo evalúa el marco aplicable. Buscá su orientación antes de adquirir, trasladar o decidir qué hacer con un ejemplar."
+          ]
+        },
+        {
+          "title": "Identificación y origen antes de actuar",
+          "paragraphs": [
+            "Si consultás sobre un animal, reuní la información disponible sobre especie, ubicación y origen. No te expongas para obtener una foto o identificarlo. Una observación segura y una descripción clara pueden servir para iniciar la orientación.",
+            "Si alguien ofrece un animal, pedí documentación y consultá su autenticidad y alcance con la autoridad. La apariencia del ejemplar o una afirmación comercial no son comprobaciones. No conviertas la falta de datos en una urgencia por comprar."
+          ]
+        },
+        {
+          "title": "Encontrar un animal no implica llevártelo",
+          "paragraphs": [
+            "Ante fauna silvestre en una situación que te preocupa, consultá antes de intervenir. Capturarlo, transportarlo o liberarlo por tu cuenta puede sumar riesgos. La respuesta depende de la especie y de lo que ocurre.",
+            "Tampoco compartas una ubicación precisa si eso facilita captura o comercio. Usá canales institucionales y evitá publicar datos personales de terceros. Pedí instrucciones a la autoridad o al servicio competente para esa situación."
+          ]
+        },
+        {
+          "title": "Si ya hay fauna silvestre en tu cuidado",
+          "paragraphs": [
+            "Explicá el caso con claridad y preguntá cómo proceder. Conservá los documentos existentes y no tomes una decisión de liberación o traslado para resolver rápidamente la incertidumbre.",
+            "Mascota ofrece educación y enlaces: no intermedia ventas, no asigna permisos ni recibe animales. Nuestra cobertura de reptiles y aves se centra en preguntas de bienestar, origen y atención; no invita a capturar animales del entorno."
+          ]
+        }
+      ],
+      "sources": [
+        "wild",
+        "mades"
+      ],
+      "related": [
+        "aves",
+        "reptiles",
+        "leyes-mascotas-paraguay"
+      ],
+      "faqs": [
+        {
+          "q": "¿Si un animal se vende puedo tenerlo?",
+          "a": "La venta no demuestra autorización o origen legal. Verificá especie, documentación y reglas con MADES."
+        },
+        {
+          "q": "¿Debo liberar un animal si no tengo documentos?",
+          "a": "No lo hagas por tu cuenta. Consultá a la autoridad cómo proceder con el caso concreto."
+        }
+      ],
+      "icon": "book",
+      "teaser": "",
+      "tag": "Conservación",
+      "date": "2026-10-08",
+      "scope": "Información educativa sobre autoridades y bienestar. No autoriza tenencia, captura, comercialización o traslado de fauna silvestre."
+    },
+    {
+      "category": "paraguay",
+      "slug": "denunciar-maltrato-animal",
+      "title": "Cómo buscar canales para denunciar maltrato animal",
+      "short": "Denunciar maltrato",
+      "description": "Dónde empezar una consulta por maltrato animal en Paraguay. Autoridad nacional, municipio, información del caso y cuidado de datos personales.",
+      "answer": "Buscá el canal oficial de la autoridad competente y confirmá el procedimiento actual. Mascota no recibe denuncias ni publica acusaciones contra personas.",
+      "intro": "Ante una situación que te preocupa, conviene organizar lo que observaste y buscar orientación formal. Esta guía ayuda a localizar fuentes y preparar información sin asumir que un enlace funciona siempre o que todos los casos siguen exactamente el mismo proceso.",
+      "sections": [
+        {
+          "title": "Empezá por la autoridad oficial",
+          "paragraphs": [
+            "La Dirección Nacional de Defensa, Salud y Bienestar Animal publica una página de denuncias. Consultá también su sitio principal para comprobar canales y procedimiento. Al revisar la página de denuncias el 8 de octubre de 2026, el formulario mostraba un error; por eso es importante confirmar una alternativa oficial si no funciona.",
+            "Según la situación y la jurisdicción, pueden intervenir otras autoridades. Pedí orientación concreta para saber dónde corresponde presentar el caso. No envíes información privada a un sitio únicamente porque promete actuar de inmediato."
+          ]
+        },
+        {
+          "title": "Separá observaciones de suposiciones",
+          "paragraphs": [
+            "Anotá qué observaste, dónde y cuándo, sin agregar hechos que no conocés. Organizá cualquier material que ya tengas y preguntá al organismo cómo puede presentarse. Conservá los originales en un lugar adecuado.",
+            "No te expongas ni ingreses a una propiedad para obtener pruebas. Una consulta oficial te permite saber qué información es útil y cuál es la forma de aportarla. Si existe una situación urgente de peligro, buscá la asistencia de la autoridad competente sin depender de esta guía."
+          ]
+        },
+        {
+          "title": "Protegé la información de las personas",
+          "paragraphs": [
+            "Una denuncia formal y una publicación en redes no cumplen la misma función. Evitá difundir teléfonos, domicilios, documentos o acusaciones contra personas identificadas mientras buscás orientación.",
+            "Compartí datos por el canal que te indiquen y guardá la referencia de presentación si la recibís. Preguntá cómo realizar seguimiento y qué información adicional podrían solicitar. No interpretes el envío de un mensaje como confirmación de intervención."
+          ]
+        },
+        {
+          "title": "La ciudad y el tipo de animal importan",
+          "paragraphs": [
+            "Indicá el municipio y si se trata de un animal doméstico o fauna silvestre. Para temas de vida silvestre, MADES es una fuente de orientación que conviene consultar.",
+            "Mascota no almacena documentos de denuncias, no recibe animales ni sustituye un procedimiento oficial. Los enlaces de fuentes sirven para llegar al organismo y comprobar su información actual antes de enviar datos."
+          ]
+        }
+      ],
+      "sources": [
+        "report",
+        "authority",
+        "mades"
+      ],
+      "related": [
+        "leyes-mascotas-paraguay",
+        "fauna-silvestre",
+        "adopcion-responsable"
+      ],
+      "faqs": [
+        {
+          "q": "¿Puedo denunciar a través de Mascota?",
+          "a": "No. Esta versión es informativa y no recibe denuncias, documentos o pruebas."
+        },
+        {
+          "q": "¿Qué hago si el formulario oficial no funciona?",
+          "a": "Buscá canales publicados en el sitio principal de la autoridad y consultá cómo presentar el caso. Confirmá siempre que el destino sea oficial."
+        }
+      ],
+      "icon": "book",
+      "teaser": "",
+      "tag": "Canales oficiales",
+      "date": "2026-10-08",
+      "scope": "Guía para localizar canales formales. No determina delitos, sanciones ni competencia definitiva de una autoridad para un caso."
+    },
+    {
+      "category": "cuidados",
+      "slug": "adopcion-responsable",
+      "title": "Adopción responsable: preguntas antes del compromiso",
+      "short": "Adopción responsable",
+      "description": "Cómo preparar una adopción: antecedentes del animal, rutina del hogar, acuerdos, documentos y seguimiento. Decidí con información y tiempo.",
+      "answer": "Una adopción se prepara con información del animal, un plan de cuidados y acuerdos claros. No reduzcas la decisión a una foto o a la presión de resolverla rápido.",
+      "intro": "Adoptar implica dar continuidad al cuidado del animal y organizar la convivencia. Antes de confirmar, conversá con la persona u organización responsable y con quienes viven en tu casa. Una decisión informada contempla también lo que harás si la adaptación requiere ayuda.",
+      "sections": [
+        {
+          "title": "Pedí información que sirva para cuidar",
+          "paragraphs": [
+            "Preguntá por origen, edad estimada, antecedentes conocidos, rutina, alimentación y comportamiento observado. Aclarar qué se sabe y qué se desconoce es más útil que completar una historia con suposiciones.",
+            "Consultá qué documentos entregarán y cómo se puede pedir orientación después. Si aparecen compromisos, leelos y asegurate de comprenderlos antes de aceptar. Evitá que el entusiasmo sustituya preguntas esenciales sobre cuidados y convivencia."
+          ]
+        },
+        {
+          "title": "Prepará a todo el hogar",
+          "paragraphs": [
+            "Revisá espacio, horarios y responsabilidades. Si hay otros animales, explicá esa situación y preguntá cómo evaluar la convivencia. Definí una alternativa de separación y apoyo mientras se organizan las interacciones.",
+            "La participación de niños requiere un adulto responsable del cuidado. Repartí tareas que realmente puedan realizarse y elegí quién toma decisiones sobre consultas, gastos y ausencias."
+          ],
+          "bullets": [
+            "¿Podemos mantener los cuidados diariamente?",
+            "¿Qué antecedentes y documentos recibiremos?",
+            "¿Cómo pediremos apoyo durante la adaptación?",
+            "¿Qué cambia si viajamos o nos mudamos?"
+          ]
+        },
+        {
+          "title": "Presupuesto y traslado sin apuro",
+          "paragraphs": [
+            "Calculá instalación, consumibles y atención profesional con datos locales. Prepará el traslado y elegí un momento con disponibilidad para acompañar la llegada.",
+            "Si una condición esencial todavía no está resuelta, plantealo antes de confirmar. No hace falta prometer que todo quedará organizado después. Un compromiso sostenible protege tanto al animal como al hogar."
+          ]
+        },
+        {
+          "title": "Seguimiento y decisiones responsables",
+          "paragraphs": [
+            "Guardá antecedentes y planificá una consulta según la orientación recibida. Registrá dudas y buscá apoyo cuando haga falta, sin experimentar con consejos que no se ajustan al animal.",
+            "Mascota publica guías, no un sistema de entrega o adopciones. Antes de participar en un proceso externo, comprobá a quién contactás y sus condiciones. No compartas documentación privada con desconocidos solo para avanzar rápido."
+          ]
+        }
+      ],
+      "sources": [
+        "ownership",
+        "dog",
+        "cat"
+      ],
+      "related": [
+        "elegir-mascota",
+        "primer-perro",
+        "primer-gato"
+      ],
+      "faqs": [
+        {
+          "q": "¿Mascota entrega animales en adopción?",
+          "a": "No. Esta versión es un sitio de guías. Cualquier proceso de adopción externo se verifica con su responsable."
+        },
+        {
+          "q": "¿Qué hago si me presionan para decidir hoy?",
+          "a": "Tomate el tiempo de comprobar antecedentes y resolver condiciones de cuidado. Un compromiso informado necesita respuestas claras."
+        }
+      ],
+      "icon": "paw",
+      "teaser": "",
+      "tag": "Antes de adoptar",
+      "date": "2026-10-08"
+    },
+    {
+      "category": "productos",
+      "slug": "transportadoras",
+      "title": "Cómo elegir una transportadora para tu mascota",
+      "short": "Transportadoras",
+      "description": "Qué comparar en una transportadora: animal, uso, medidas, cierre, limpieza y requisitos del transporte. Comprá después de confirmar lo necesario.",
+      "answer": "Elegí una transportadora para la especie, el animal y el uso concreto. Para viajes, pedí primero las condiciones de la empresa; un producto vendido como “apto” no garantiza aceptación.",
+      "intro": "La misma compra puede servir para una consulta local o necesitar otras características para un viaje. Definir el uso antes de comparar modelos evita gastar en algo que después no podés utilizar. Esta guía no recomienda marcas ni describe acuerdos comerciales.",
+      "sections": [
+        {
+          "title": "Definí qué traslado vas a hacer",
+          "paragraphs": [
+            "Anotá especie, características del animal, medio de transporte y duración prevista. Si hay una empresa involucrada, preguntá sus requisitos para el recorrido concreto antes de comprar.",
+            "Pedí orientación al veterinario sobre manejo y adaptación al traslado. La FDA recomienda preparar los viajes con anticipación y coordinar con el profesional. Elegir un contenedor es una parte del proceso, no una solución para todas las condiciones del viaje."
+          ]
+        },
+        {
+          "title": "Compará características verificables",
+          "paragraphs": [
+            "Revisá dimensiones, peso admitido, cierres, ventilación, materiales y limpieza. Solicitá medidas completas y comprobá cómo se utiliza el producto. Una foto atractiva no te permite evaluar todo el funcionamiento.",
+            "Cuando el equipo requiera montaje, revisá instrucciones y repuestos. Averiguá si existe una devolución o cambio por medidas y cómo se aplica; guardá la información antes de pagar."
+          ],
+          "table": {
+            "headers": [
+              "Aspecto",
+              "Qué comprobar"
+            ],
+            "rows": [
+              [
+                "Uso",
+                "Consulta, traslado por carretera o viaje con empresa"
+              ],
+              [
+                "Medidas",
+                "Dimensiones reales y compatibilidad con el animal"
+              ],
+              [
+                "Cierre",
+                "Funcionamiento y posibilidad de apertura involuntaria"
+              ],
+              [
+                "Mantenimiento",
+                "Materiales, limpieza e instrucciones"
+              ],
+              [
+                "Transporte",
+                "Condiciones escritas de la empresa para esa ruta"
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Prepará el uso, no solo la compra",
+          "paragraphs": [
+            "Organizá tiempo para conocer el equipo y pedir orientación sobre cómo acostumbrar al animal. No dejes el primer ensayo para el momento de salir. Confirmá cómo se coloca y mantiene seguro durante el traslado.",
+            "Si alguien más lo transportará, explicá apertura, cierre y manejo. Evitá modificaciones improvisadas que alteren el funcionamiento del producto. Ante dudas sobre bienestar o seguridad, consultá antes de usarlo."
+          ]
+        },
+        {
+          "title": "Precio total y documentación",
+          "paragraphs": [
+            "Compará el precio final con envío, accesorios realmente necesarios y condiciones de cambio. Conservá instrucciones y comprobante. No compres elementos adicionales únicamente porque aparecen en una promoción.",
+            "Para entrar o salir de Paraguay, la transportadora no reemplaza documentos oficiales. Consultá SENACSA y el destino, y revisá de nuevo cuando cambie la ruta. Esta guía no asegura aceptación por una empresa o autoridad."
+          ]
+        }
+      ],
+      "sources": [
+        "travelprep",
+        "travel"
+      ],
+      "related": [
+        "viajar-con-mascotas",
+        "primer-gato",
+        "mascotas-y-calor"
+      ],
+      "faqs": [
+        {
+          "q": "¿Un modelo “apto avión” sirve para cualquier aerolínea?",
+          "a": "No lo supongas. Confirmá condiciones de la empresa, modalidad y recorrido antes de comprar."
+        },
+        {
+          "q": "¿Mascota vende estas transportadoras?",
+          "a": "No en esta versión. La guía presenta criterios de elección sin inventario, precios o vínculos de afiliación."
+        }
+      ],
+      "icon": "book",
+      "teaser": "",
+      "tag": "Antes de comprar",
+      "date": "2026-10-08",
+      "scope": "Criterios de comparación, sin recomendación de marcas, inventario ni comisión comercial activa."
+    },
+    {
+      "category": "productos",
+      "slug": "collares-y-correas",
+      "title": "Collares, arneses y correas: qué comprobar",
+      "short": "Equipo de paseo",
+      "description": "Cómo comparar equipo de paseo para un perro: ajuste, uso, materiales, mantenimiento y orientación profesional, sin elegir solo por apariencia.",
+      "answer": "Compará ajuste, seguridad y uso para el perro concreto. Pedí orientación sobre manejo y elegí equipo que puedas revisar y mantener; la apariencia no basta.",
+      "intro": "El equipo de paseo debe funcionar con el animal y con la persona que lo acompaña. Antes de elegir, describí cómo serán las salidas y qué dudas de manejo tenés. Un producto no reemplaza un plan de bienestar o entrenamiento.",
+      "sections": [
+        {
+          "title": "El uso define la comparación",
+          "paragraphs": [
+            "Anotá qué recorridos harás y quién paseará al perro. Pedí orientación sobre qué tipo de equipo corresponde y cómo comprobar su ajuste. RSPCA propone alternativas cómodas y bien ajustadas frente a dispositivos que causan dolor.",
+            "No interpretes una promesa comercial de “control” como solución a cualquier comportamiento. Si las salidas resultan difíciles o preocupantes, buscá asesoramiento apropiado para el individuo."
+          ]
+        },
+        {
+          "title": "Probá características, no solo talles",
+          "paragraphs": [
+            "Revisá medidas e instrucciones del fabricante y comprobá funcionamiento de cierres y conexiones. Confirmá cómo debe colocarse y si el ajuste permite un uso seguro para ese perro.",
+            "Antes de salir, hacé una revisión del equipo y de lo que aprendiste a observar. El talle escrito en una etiqueta puede variar entre productos. Si no podés comprobar ajuste y funcionamiento, resolvé la duda antes de utilizarlo."
+          ],
+          "bullets": [
+            "Medidas y puntos de ajuste según el producto.",
+            "Cierre y conexión con la correa.",
+            "Materiales e instrucciones de mantenimiento.",
+            "Condiciones de cambio si no se ajusta al animal."
+          ]
+        },
+        {
+          "title": "Un plan para cada persona que pasea",
+          "paragraphs": [
+            "Compartí indicaciones de colocación, revisión y manejo con quienes usarán el equipo. Acordá recorridos y formas de pedir ayuda ante dificultades. Un elemento bien elegido pierde utilidad si cada persona lo utiliza de una manera distinta.",
+            "Revisá también las condiciones del día. El calor, el recorrido y la situación del perro pueden requerir cambios de rutina; ningún accesorio vuelve adecuada toda salida."
+          ]
+        },
+        {
+          "title": "Comprá pensando en mantenimiento",
+          "paragraphs": [
+            "Compará precio, durabilidad esperada, posibilidad de limpieza y reposición. Conservá las instrucciones y revisá desgaste de forma regular. Si el perro crece o cambian sus características, volvé a comprobar el ajuste.",
+            "Esta guía no evalúa marcas ni publica productos disponibles. Si más adelante hay ofertas comerciales en Mascota, se identificarán por separado. El criterio de elección seguirá siendo bienestar, uso y características comprobables."
+          ]
+        }
+      ],
+      "sources": [
+        "harness",
+        "ownership"
+      ],
+      "related": [
+        "perros",
+        "primer-perro",
+        "mascotas-y-calor"
+      ],
+      "faqs": [
+        {
+          "q": "¿Un accesorio resuelve todos los tirones o dificultades?",
+          "a": "No. El manejo y el comportamiento requieren evaluación y orientación; no dependen solo de una compra."
+        },
+        {
+          "q": "¿Puedo elegir por el talle que ya tengo?",
+          "a": "Comprobá medidas y funcionamiento de cada modelo. Las etiquetas no garantizan equivalencia entre productos."
+        }
+      ],
+      "icon": "dog",
+      "teaser": "",
+      "tag": "Antes de comprar",
+      "date": "2026-10-08",
+      "scope": "Criterios generales de elección. No indica una técnica de entrenamiento ni recomienda marcas o dispositivos para un caso individual."
+    },
+    {
+      "category": "productos",
+      "slug": "rascadores-para-gatos",
+      "title": "Rascadores para gatos: cómo elegir y ubicarlos",
+      "short": "Rascadores para gatos",
+      "description": "Qué observar al elegir un rascador: preferencias del gato, estabilidad, superficie, ubicación y mantenimiento. Una compra pensada para su ambiente.",
+      "answer": "Elegí una opción estable y apropiada para el uso que observás en tu gato. La ubicación y el ambiente también importan; comprar un rascador no garantiza que lo utilice.",
+      "intro": "Un rascador forma parte de la preparación del ambiente, no es una corrección automática de comportamiento. Antes de comprar, observá dónde y cómo rasca el gato y pensá qué lugares podés ofrecerle de forma segura. Esta guía propone criterios sin marcas ni productos patrocinados.",
+      "sections": [
+        {
+          "title": "Rascar es una conducta que necesita espacio",
+          "paragraphs": [
+            "RSPCA describe el rascado como parte del comportamiento del gato y recomienda ofrecer oportunidades apropiadas. No enfoques la decisión únicamente en evitar marcas en un mueble: prepará un recurso que pueda utilizar.",
+            "Si el comportamiento cambió o te preocupa, consultá cómo evaluar la situación. Un consejo de ubicación o una compra no permite interpretar un cambio por sí solo."
+          ]
+        },
+        {
+          "title": "Observá antes de comparar",
+          "paragraphs": [
+            "Anotá superficies y posiciones que usa, y los lugares en los que pasa tiempo. Esa información ayuda a comparar modelos sin depender exclusivamente de su tamaño o decoración.",
+            "Pedí detalles sobre estabilidad, materiales, medidas y mantenimiento. Revisá si el producto funcionará en el lugar donde pensás ponerlo, considerando puertas, circulación y otros recursos. Un modelo alto que no podés ubicar de forma adecuada puede ser una compra poco útil."
+          ],
+          "bullets": [
+            "Superficie y posición de uso que observás.",
+            "Estabilidad del conjunto y forma de instalación.",
+            "Espacio real disponible y acceso del gato.",
+            "Materiales, limpieza y piezas que pueden reemplazarse."
+          ]
+        },
+        {
+          "title": "Ubicación y continuidad del ambiente",
+          "paragraphs": [
+            "Pensá cómo el gato llegará al recurso y qué ocurre alrededor. Evitá elegir un rincón solo porque el objeto entra allí. Buscá orientación sobre cómo incorporar el elemento al ambiente y observar su uso sin forzar.",
+            "Si necesitás cambiar la ubicación, hacelo con un criterio y comprobá qué pasa. No acumules compras parecidas sin aprender de la anterior. Guardá notas de lo que funciona para que toda la familia mantenga la misma preparación."
+          ]
+        },
+        {
+          "title": "Mantenimiento y presupuesto",
+          "paragraphs": [
+            "Revisá desgaste y estabilidad con regularidad. Consultá instrucciones para sustituir piezas o materiales y verificá que los arreglos no creen problemas nuevos. Si no es posible mantenerlo apropiadamente, considerá una alternativa.",
+            "Compará el costo total, incluyendo instalación y reposiciones previstas. Esta guía no vende rascadores ni publica reseñas de productos. Te ayuda a hacer preguntas y a decidir según el animal y el espacio."
+          ]
+        }
+      ],
+      "sources": [
+        "scratch",
+        "cathome"
+      ],
+      "related": [
+        "gatos",
+        "primer-gato",
+        "presupuesto-mascota"
+      ],
+      "faqs": [
+        {
+          "q": "¿El modelo más grande es siempre mejor?",
+          "a": "No necesariamente. Debe ser estable, adecuado para el uso del gato y ubicarse de forma útil en el ambiente."
+        },
+        {
+          "q": "¿Qué hago si no lo usa?",
+          "a": "Observá preferencias y contexto, revisá ubicación y pedí orientación. No fuerces el contacto ni supongas que otra compra resolverá todo."
+        }
+      ],
+      "icon": "cat",
+      "teaser": "",
+      "tag": "Antes de comprar",
+      "date": "2026-10-08",
+      "scope": "Criterios de equipamiento y ambiente, sin reseñas verificadas, marcas recomendadas o acuerdos comerciales activos."
+    }
+  ],
+  "pages": {
+    "sobre-mascota": {
+      "title": "Sobre Mascota",
+      "description": "Un proyecto editorial para aprender a convivir mejor con los animales en Paraguay.",
+      "sections": [
+        {
+          "title": "Aprender antes de decidir",
+          "paragraphs": [
+            "Mascota.com.py reúne guías para personas que ya comparten su casa con animales y para quienes están pensando en hacerlo. Nuestro objetivo es ayudar a organizar preguntas, conocer necesidades y llegar a fuentes confiables. Publicamos en español con contexto de Paraguay."
+          ]
+        },
+        {
+          "title": "Quién prepara las guías",
+          "paragraphs": [
+            "El contenido se presenta como trabajo de Redacción Mascota. No atribuimos títulos profesionales ni revisiones clínicas que no se hayan realizado. Las páginas indican su fecha y las referencias consultadas. La información general no reemplaza la consulta veterinaria ni la interpretación legal de un caso."
+          ]
+        },
+        {
+          "title": "Un sitio de lectura",
+          "paragraphs": [
+            "Esta primera versión se centra en información. No procesa turnos, pagos, consultas médicas ni denuncias oficiales. Las referencias institucionales permiten que sigas el trámite en el canal responsable."
+          ]
+        }
+      ]
+    },
+    "metodologia": {
+      "title": "Fuentes y criterio editorial",
+      "description": "Cómo distinguimos información general, fuentes oficiales y espacios publicitarios en Mascota.",
+      "sections": [
+        {
+          "title": "Fuentes con contexto",
+          "paragraphs": [
+            "Para trámites y reglas de Paraguay priorizamos organismos oficiales. Para cuidados generales recurrimos a organizaciones veterinarias y de bienestar animal, indicando la institución y el enlace. Las orientaciones extranjeras de bienestar no se presentan como leyes paraguayas."
+          ]
+        },
+        {
+          "title": "Fechas y alcance",
+          "paragraphs": [
+            "Cada guía incluye la fecha de actualización y las fuentes utilizadas. Un enlace oficial puede cambiar o mostrar errores; por eso los trámites se deben confirmar antes de actuar. Las guías no prometen disponibilidad, precios ni vigencia de procedimientos sin comprobación."
+          ]
+        },
+        {
+          "title": "Cuidados y límites",
+          "paragraphs": [
+            "Publicamos preparación, organización y criterios de elección. No diagnosticamos por internet ni indicamos dosis. Si se incorporan revisores profesionales, se identificarán sus revisiones reales. No usamos reseñas, testimonios o credenciales inventadas."
+          ]
+        },
+        {
+          "title": "Contenido y publicidad",
+          "paragraphs": [
+            "Una futura ficha de negocio contratada se identificará como publicidad. La contratación no será una validación clínica ni modificará los criterios de bienestar. Las menciones a organismos y fuentes no son anuncios ni afiliaciones."
+          ]
+        },
+        {
+          "title": "Correcciones",
+          "paragraphs": [
+            "Revisamos el contenido cuando cambian las fuentes o detectamos un error. Una modificación queda reflejada en la fecha de la guía y en el historial del proyecto. El enlace a una fuente permite comprobar directamente lo que informa la autoridad."
+          ]
+        }
+      ]
+    },
+    "privacidad": {
+      "title": "Privacidad",
+      "description": "Qué hace esta versión de Mascota con tus datos cuando leés o buscás una guía.",
+      "sections": [
+        {
+          "title": "Lectura y búsqueda",
+          "paragraphs": [
+            "Esta versión no tiene cuentas, formularios de consulta, pagos ni suscripciones. La búsqueda utiliza palabras en la dirección de la página; no ingreses nombres, teléfonos o información privada en ese campo."
+          ]
+        },
+        {
+          "title": "Cookies y registros",
+          "paragraphs": [
+            "La aplicación no establece cookies ni incorpora herramientas de publicidad o análisis de terceros. El alojamiento puede generar registros técnicos de acceso para operar el servicio. No uses la búsqueda para enviar información personal."
+          ]
+        },
+        {
+          "title": "Sitios externos",
+          "paragraphs": [
+            "Las fuentes llevan a páginas de terceros con sus propias condiciones. Al abrirlas, la navegación se realiza en el sitio externo. Mascota no recibe ni tramita las solicitudes que hagas allí."
+          ]
+        },
+        {
+          "title": "Cambios futuros",
+          "paragraphs": [
+            "Antes de activar formularios, medición de terceros o servicios que recojan datos personales, actualizaremos esta información e indicaremos finalidad, responsables y canales de gestión. Ningún consentimiento comercial se presume por leer una guía."
+          ]
+        }
+      ]
+    },
+    "publicidad": {
+      "title": "Publicidad y espacios profesionales",
+      "description": "La información editorial y los futuros espacios contratados se distinguen de forma clara.",
+      "sections": [
+        {
+          "title": "Información primero",
+          "paragraphs": [
+            "Mascota comienza como un sitio de guías para propietarios de animales en Paraguay. El objetivo inicial es que las personas encuentren información útil. Los espacios comerciales se activarán cuando existan acuerdos reales."
+          ]
+        },
+        {
+          "title": "Fichas y patrocinios",
+          "paragraphs": [
+            "Las fichas de negocios se publicarán únicamente como espacios contratados, aprobados y vigentes. No ofrecemos un listado general gratuito de todas las veterinarias. Las referencias a autoridades o fuentes en las guías tienen una finalidad informativa."
+          ]
+        },
+        {
+          "title": "Cómo se identificarán",
+          "paragraphs": [
+            "Toda ficha o ubicación patrocinada llevará una indicación de publicidad. El pago no demuestra habilitación, calidad clínica, disponibilidad o idoneidad para un caso. Esas afirmaciones necesitan comprobaciones independientes."
+          ]
+        },
+        {
+          "title": "Medición responsable",
+          "paragraphs": [
+            "La apertura de un enlace o una llamada no acredita por sí sola una consulta, reserva o venta. Si se incorpora medición comercial, se describirá su alcance y se distinguirán los contactos de los resultados confirmados."
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -41,3 +41,11 @@ Do not scrape third-party photos, reviews or compiled listings into Mascota. Col
 Verify search demand using real keyword data and search results; interview owners/providers; identify clinical reviewers; confirm clinics' current public contacts and permissions; validate proposed paid deliverables; review national/municipal legal details; verify provider advertising/referral arrangements; confirm merchant stock/commissions; inspect the actual Hostinger slot and make a tested deployment/recovery runbook.
 
 No clinic outreach, consumer data collection, affiliate enrolment, scheduled monitor, payment processing, website build, production setup or deployment was performed by this planning task.
+
+## Build update: SEO first — 8 October 2026
+
+Anton explicitly changed the model: launch editorial SEO content first; sell paid veterinary listings/sponsorship later. No general free vet directory or lead-selling launch. The PHP content dataset contains 24 original preparation/decision guides and its exact source registry. Clinical credentials or professional review are not claimed.
+
+The national reporting page directly displayed “Formulario de contacto no encontrado” during the build check; the guide explains checking official alternate channels. BACN direct law opens returned 403; the legal guide is limited to source/jurisdiction orientation and does not publish penalty, repeal or detailed validity claims. Travel references use the current SENACSA source, not older copied checklists.
+
+General welfare references were researched from AVMA, RSPCA and the FDA. The complete URLs are in `php-site/content/articles.json`; the content is original editorial preparation and practical questions, with brief sourced factual summaries. No external photos, reviews, clinic records or supplier offers were imported.

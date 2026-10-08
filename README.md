@@ -1,3 +1,11 @@
+# Mascota — PHP SEO site
+
+The current requested launch is the standalone **HTML/PHP content site** in `php-site/`: 24 guides, 33 indexable pages and dormant paid veterinary placements. Start with [PHP-DEPLOY.md](PHP-DEPLOY.md) for the Hostinger ZIP upload, [current strategy](docs/strategy/2026-10-08/README.md) and [site structure](docs/strategy/2026-10-08/SITE-STRUCTURE.md). No Node.js or database is needed for this version.
+
+The previous Next.js store remains below and in Git. Its build, checkout, database and Node deployment instructions apply to that previous application, not to the PHP release.
+
+---
+
 # ecom — template de tienda online (Paraguay)
 
 Base reutilizable para montar tiendas online paraguayas: la maquinaria (pedidos,
