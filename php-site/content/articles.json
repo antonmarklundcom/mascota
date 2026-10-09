@@ -304,6 +304,31 @@
       "label": "CFA · Gato siamés",
       "url": "https://cfa.org/breed/siamese/",
       "checked": "2026-10-09"
+    },
+    "breed_dane": {
+      "label": "AKC · Gran danés",
+      "url": "https://www.akc.org/dog-breeds/great-dane/",
+      "checked": "2026-10-09"
+    },
+    "breed_shihtzu": {
+      "label": "American Shih Tzu Club · Cuidados y salud",
+      "url": "https://cdn.akc.org/ShihTzu-club-flyer.pdf",
+      "checked": "2026-10-09"
+    },
+    "breed_minpinscher": {
+      "label": "Miniature Pinscher Club of America · Conocer al pinscher miniatura",
+      "url": "https://cdn.akc.org/MiniaturePinscher-club-flier.pdf",
+      "checked": "2026-10-09"
+    },
+    "breed_mainecoon": {
+      "label": "CFA · Maine coon",
+      "url": "https://cfa.org/breed/maine-coon-cat/",
+      "checked": "2026-10-09"
+    },
+    "breed_ragdoll": {
+      "label": "CFA · Ragdoll",
+      "url": "https://cfa.org/breed/ragdoll/",
+      "checked": "2026-10-09"
     }
   },
   "articles": [
@@ -440,7 +465,17 @@
           "path": "/cuidados/vacunas-y-controles/",
           "label": "Vacunas y controles"
         }
-      ]
+      ],
+      "species": [
+        "perros"
+      ],
+      "topic": "convivencia",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      },
+      "image": "companions"
     },
     {
       "category": "mascotas",
@@ -570,7 +605,17 @@
           "path": "/productos/rascadores-para-gatos/",
           "label": "Rascadores para gatos"
         }
-      ]
+      ],
+      "species": [
+        "gatos"
+      ],
+      "topic": "convivencia",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      },
+      "image": "companions"
     },
     {
       "category": "mascotas",
@@ -674,7 +719,16 @@
           "path": "/cuidados/presupuesto-mascota/",
           "label": "Presupuesto de cuidados"
         }
-      ]
+      ],
+      "species": [
+        "conejos"
+      ],
+      "topic": "convivencia",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "mascotas",
@@ -739,7 +793,16 @@
       "date": "2026-10-08",
       "published": "2026-10-08",
       "modified": "2026-10-08",
-      "sources_checked": "2026-10-08"
+      "sources_checked": "2026-10-08",
+      "species": [
+        "cobayos"
+      ],
+      "topic": "convivencia",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "mascotas",
@@ -838,7 +901,16 @@
           "path": "/cuidados/presupuesto-mascota/",
           "label": "Presupuesto de cuidados"
         }
-      ]
+      ],
+      "species": [
+        "hamsters"
+      ],
+      "topic": "convivencia",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "mascotas",
@@ -903,7 +975,16 @@
       "date": "2026-10-08",
       "published": "2026-10-08",
       "modified": "2026-10-08",
-      "sources_checked": "2026-10-08"
+      "sources_checked": "2026-10-08",
+      "species": [
+        "aves"
+      ],
+      "topic": "convivencia",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "mascotas",
@@ -1001,7 +1082,16 @@
           "path": "/cuidados/presupuesto-mascota/",
           "label": "Presupuesto de cuidados"
         }
-      ]
+      ],
+      "species": [
+        "peces"
+      ],
+      "topic": "convivencia",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "mascotas",
@@ -1103,7 +1193,16 @@
           "path": "/cuidados/elegir-mascota/",
           "label": "Elegir una mascota"
         }
-      ]
+      ],
+      "species": [
+        "reptiles"
+      ],
+      "topic": "convivencia",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "cuidados",
@@ -1206,7 +1305,17 @@
           "path": "/cuidados/planificador-cuidados/",
           "label": "Imprimí tu hoja de cuidados"
         }
-      ]
+      ],
+      "species": [
+        "perros",
+        "gatos"
+      ],
+      "topic": "preparacion",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "cuidados",
@@ -1287,7 +1396,16 @@
           "path": "/cuidados/planificador-cuidados/",
           "label": "Imprimí tu hoja de cuidados"
         }
-      ]
+      ],
+      "species": [
+        "perros"
+      ],
+      "topic": "preparacion",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "cuidados",
@@ -1405,7 +1523,16 @@
           "path": "/cuidados/planificador-cuidados/",
           "label": "Imprimí tu hoja de cuidados"
         }
-      ]
+      ],
+      "species": [
+        "gatos"
+      ],
+      "topic": "preparacion",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "cuidados",
@@ -1469,7 +1596,17 @@
       "date": "2026-10-08",
       "published": "2026-10-08",
       "modified": "2026-10-08",
-      "sources_checked": "2026-10-08"
+      "sources_checked": "2026-10-08",
+      "species": [
+        "perros",
+        "gatos"
+      ],
+      "topic": "salud",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "cuidados",
@@ -1567,7 +1704,17 @@
           "path": "/cuidados/planificador-cuidados/",
           "label": "Imprimí tu hoja de cuidados"
         }
-      ]
+      ],
+      "species": [
+        "perros",
+        "gatos"
+      ],
+      "topic": "preparacion",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "cuidados",
@@ -1632,6 +1779,55 @@
               "label": "Tos en perros"
             }
           ]
+        },
+        {
+          "title": "Una llamada útil antes de trasladarte",
+          "paragraphs": [
+            "Cuando buscás veterinario cerca de mí, la primera decisión es confirmar si puede atender tu necesidad. Prepará una llamada corta con especie, edad aproximada, motivo, momento en que empezó y antecedentes disponibles. Anotá quién respondió y las instrucciones de llegada.",
+            "Confirmá la dirección exacta y el punto de entrada; preguntá si requieren turno y qué hacer si empeora durante el traslado. Una publicación que dice 24 horas no permite saber si hay guardia presencial o solamente un teléfono. Guardá una alternativa y actualizá esos datos directamente con el servicio."
+          ],
+          "table": {
+            "headers": [
+              "Lo que necesitás",
+              "Pregunta concreta"
+            ],
+            "rows": [
+              [
+                "Consulta habitual",
+                "¿Atienden esta especie y quién hará la consulta?"
+              ],
+              [
+                "Fuera de horario",
+                "¿Hay atención presencial ahora o debo esperar una llamada?"
+              ],
+              [
+                "Derivación",
+                "¿Pueden evaluar este motivo o recomiendan otro servicio?"
+              ],
+              [
+                "Presupuesto",
+                "¿Qué incluye la consulta y cómo se acuerdan gastos adicionales?"
+              ],
+              [
+                "Seguimiento",
+                "¿Cómo recibo indicaciones y una copia de los antecedentes?"
+              ]
+            ]
+          },
+          "inline_paragraphs": [
+            [
+              {
+                "text": "Prepará una hoja con antecedentes y contactos en el "
+              },
+              {
+                "text": "planificador de cuidados",
+                "path": "/cuidados/planificador-cuidados/"
+              },
+              {
+                "text": " para que otra persona pueda acompañar al animal sin perder información."
+              }
+            ]
+          ]
         }
       ],
       "sources": [
@@ -1683,7 +1879,17 @@
           "path": "/cuidados/planificador-cuidados/",
           "label": "Imprimí tu hoja de cuidados"
         }
-      ]
+      ],
+      "species": [
+        "perros",
+        "gatos"
+      ],
+      "topic": "salud",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "cuidados",
@@ -1754,7 +1960,17 @@
       "date": "2026-10-08",
       "published": "2026-10-08",
       "modified": "2026-10-08",
-      "sources_checked": "2026-10-08"
+      "sources_checked": "2026-10-08",
+      "species": [
+        "perros",
+        "gatos"
+      ],
+      "topic": "salud",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "cuidados",
@@ -1823,7 +2039,17 @@
       "date": "2026-10-08",
       "published": "2026-10-08",
       "modified": "2026-10-08",
-      "sources_checked": "2026-10-08"
+      "sources_checked": "2026-10-08",
+      "species": [
+        "perros",
+        "gatos"
+      ],
+      "topic": "convivencia",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "paraguay",
@@ -1919,7 +2145,17 @@
       "scope": "Orientación sobre fuentes y jurisdicciones. No constituye asesoramiento legal ni una comprobación completa de vigencia, reformas o reglamentación.",
       "published": "2026-10-08",
       "modified": "2026-10-08",
-      "sources_checked": "2026-10-08"
+      "sources_checked": "2026-10-08",
+      "species": [
+        "perros",
+        "gatos"
+      ],
+      "topic": "convivencia",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "paraguay",
@@ -1991,7 +2227,17 @@
       "scope": "Guía de preparación. Requisitos, plazos y aceptación se confirman con SENACSA, autoridades del destino y transportista para cada viaje.",
       "published": "2026-10-08",
       "modified": "2026-10-08",
-      "sources_checked": "2026-10-08"
+      "sources_checked": "2026-10-08",
+      "species": [
+        "perros",
+        "gatos"
+      ],
+      "topic": "convivencia",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "paraguay",
@@ -2057,7 +2303,14 @@
       "scope": "Información educativa sobre autoridades y bienestar. No autoriza tenencia, captura, comercialización o traslado de fauna silvestre.",
       "published": "2026-10-08",
       "modified": "2026-10-08",
-      "sources_checked": "2026-10-08"
+      "sources_checked": "2026-10-08",
+      "species": [],
+      "topic": "convivencia",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "paraguay",
@@ -2124,7 +2377,17 @@
       "scope": "Guía para localizar canales formales. No determina delitos, sanciones ni competencia definitiva de una autoridad para un caso.",
       "published": "2026-10-08",
       "modified": "2026-10-08",
-      "sources_checked": "2026-10-08"
+      "sources_checked": "2026-10-08",
+      "species": [
+        "perros",
+        "gatos"
+      ],
+      "topic": "convivencia",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "cuidados",
@@ -2196,7 +2459,17 @@
       "date": "2026-10-08",
       "published": "2026-10-08",
       "modified": "2026-10-08",
-      "sources_checked": "2026-10-08"
+      "sources_checked": "2026-10-08",
+      "species": [
+        "perros",
+        "gatos"
+      ],
+      "topic": "preparacion",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "productos",
@@ -2290,7 +2563,17 @@
       "scope": "Criterios de comparación, sin recomendación de marcas, inventario ni comisión comercial activa.",
       "published": "2026-10-08",
       "modified": "2026-10-08",
-      "sources_checked": "2026-10-08"
+      "sources_checked": "2026-10-08",
+      "species": [
+        "perros",
+        "gatos"
+      ],
+      "topic": "preparacion",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "productos",
@@ -2362,7 +2645,17 @@
       "scope": "Criterios generales de elección. No indica una técnica de entrenamiento ni recomienda marcas o dispositivos para un caso individual.",
       "published": "2026-10-08",
       "modified": "2026-10-08",
-      "sources_checked": "2026-10-08"
+      "sources_checked": "2026-10-08",
+      "species": [
+        "perros",
+        "gatos"
+      ],
+      "topic": "convivencia",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "productos",
@@ -2434,7 +2727,16 @@
       "scope": "Criterios de equipamiento y ambiente, sin reseñas verificadas, marcas recomendadas o acuerdos comerciales activos.",
       "published": "2026-10-08",
       "modified": "2026-10-08",
-      "sources_checked": "2026-10-08"
+      "sources_checked": "2026-10-08",
+      "species": [
+        "gatos"
+      ],
+      "topic": "convivencia",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "mascotas",
@@ -2477,6 +2779,56 @@
           "paragraphs": [
             "Compará el alimento por etapa de vida y por su etiqueta, no solo por el dibujo de la bolsa. Pedí orientación sobre cantidad y condición corporal. Anotá el gasto de comida, higiene, equipo de paseo y controles, además de una reserva para imprevistos.",
             "Durante los días calurosos, ajustá horarios y recorridos a las condiciones reales. Buscá sombra y agua disponible; evitá trayectos exigentes sobre superficies calientes. Consultá una rutina adecuada para su edad y estado de salud, especialmente si vuelve a casa fatigado o muestra cambios de comportamiento."
+          ]
+        },
+        {
+          "title": "Labrador y golden: comparar tareas del hogar",
+          "paragraphs": [
+            "Ambos son retrievers y necesitan que conozcas al individuo. La comparación útil no elige un ganador: pregunta qué rutina de cuidado y actividad podés sostener. El pelo del golden implica una organización distinta del mantenimiento del manto.",
+            "Antes de decidir, visitá o conocé al perro de forma que puedas preguntar por hábitos, antecedentes y respuesta al manejo. Una etiqueta como familiar no sustituye encuentros supervisados. Anotá también cómo resolverías paseos y cuidado durante tus ausencias."
+          ],
+          "table": {
+            "headers": [
+              "Tarea",
+              "Labrador",
+              "Golden retriever"
+            ],
+            "rows": [
+              [
+                "Pelaje",
+                "Manto corto; prever cepillado y limpieza.",
+                "Manto más largo; organizar mantenimiento y revisión de nudos."
+              ],
+              [
+                "Convivencia",
+                "Conocer hábitos e interacciones del individuo.",
+                "Conocer hábitos e interacciones del individuo."
+              ],
+              [
+                "Llegada",
+                "Equipo y transporte para el adulto.",
+                "Equipo y transporte para el adulto."
+              ],
+              [
+                "Presupuesto",
+                "Comida, controles y apoyo con precios locales.",
+                "Agregar la rutina de mantenimiento del manto que necesite."
+              ]
+            ]
+          },
+          "inline_paragraphs": [
+            [
+              {
+                "text": "Leé también la guía del "
+              },
+              {
+                "text": "golden retriever",
+                "path": "/mascotas/perros/razas/golden-retriever/"
+              },
+              {
+                "text": " y compará los gastos con la misma hoja de presupuesto."
+              }
+            ]
           ]
         }
       ],
@@ -2525,8 +2877,21 @@
         {
           "path": "/cuidados/presupuesto-mascota/",
           "label": "Presupuesto de cuidados"
+        },
+        {
+          "path": "/mascotas/perros/razas/golden-retriever/",
+          "label": "Comparar con golden retriever"
         }
-      ]
+      ],
+      "species": [
+        "perros"
+      ],
+      "topic": "razas",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "mascotas",
@@ -2569,6 +2934,56 @@
           "paragraphs": [
             "Pensá en el tamaño del perro adulto al elegir transporte, lugar de descanso y apoyo durante tus viajes. Acordá quién sostendrá paseos y cepillado. Si hay niños, organizá supervisión y un lugar donde el perro pueda retirarse sin que lo sigan.",
             "El precio de un cachorro no describe el costo de mantenerlo. Sumá alimento, controles, prevención, higiene y equipo. En épocas de calor, adaptá salidas y descansos con tu veterinario. Una comparación útil se apoya en necesidades y servicios incluidos, no en una cifra aislada de un anuncio."
+          ]
+        },
+        {
+          "title": "Labrador y golden: comparar tareas del hogar",
+          "paragraphs": [
+            "Ambos son retrievers y necesitan que conozcas al individuo. La comparación útil no elige un ganador: pregunta qué rutina de cuidado y actividad podés sostener. El pelo del golden implica una organización distinta del mantenimiento del manto.",
+            "Antes de decidir, visitá o conocé al perro de forma que puedas preguntar por hábitos, antecedentes y respuesta al manejo. Una etiqueta como familiar no sustituye encuentros supervisados. Anotá también cómo resolverías paseos y cuidado durante tus ausencias."
+          ],
+          "table": {
+            "headers": [
+              "Tarea",
+              "Labrador",
+              "Golden retriever"
+            ],
+            "rows": [
+              [
+                "Pelaje",
+                "Manto corto; prever cepillado y limpieza.",
+                "Manto más largo; organizar mantenimiento y revisión de nudos."
+              ],
+              [
+                "Convivencia",
+                "Conocer hábitos e interacciones del individuo.",
+                "Conocer hábitos e interacciones del individuo."
+              ],
+              [
+                "Llegada",
+                "Equipo y transporte para el adulto.",
+                "Equipo y transporte para el adulto."
+              ],
+              [
+                "Presupuesto",
+                "Comida, controles y apoyo con precios locales.",
+                "Agregar la rutina de mantenimiento del manto que necesite."
+              ]
+            ]
+          },
+          "inline_paragraphs": [
+            [
+              {
+                "text": "Leé también la guía del "
+              },
+              {
+                "text": "labrador retriever",
+                "path": "/mascotas/perros/razas/labrador/"
+              },
+              {
+                "text": " y compará los gastos con la misma hoja de presupuesto."
+              }
+            ]
           ]
         }
       ],
@@ -2617,8 +3032,21 @@
         {
           "path": "/cuidados/presupuesto-mascota/",
           "label": "Presupuesto de cuidados"
+        },
+        {
+          "path": "/mascotas/perros/razas/labrador/",
+          "label": "Comparar con labrador"
         }
-      ]
+      ],
+      "species": [
+        "perros"
+      ],
+      "topic": "razas",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "mascotas",
@@ -2710,7 +3138,16 @@
           "path": "/cuidados/presupuesto-mascota/",
           "label": "Presupuesto de cuidados"
         }
-      ]
+      ],
+      "species": [
+        "perros"
+      ],
+      "topic": "razas",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "mascotas",
@@ -2753,6 +3190,40 @@
           "paragraphs": [
             "El pastor alemán puede describirse por el largo de su pelo y por colores como sable. Esas palabras no definen por sí solas el temperamento ni acreditan calidad. Preguntá por necesidades de cepillado, estado de la piel y antecedentes, con especial atención a lo que realmente podés mantener.",
             "En Paraguay, pedí presupuestos para alimento, controles y equipo adecuados al adulto. Ajustá recorridos al calor y a las superficies disponibles. Anotá también quién lo cuidará durante tus ausencias; un compromiso sostenible depende de esa organización más que del precio inicial del perro."
+          ]
+        },
+        {
+          "title": "Una semana viable para un pastor alemán",
+          "paragraphs": [
+            "Hacé un ensayo de horario antes de comprometerte: quién sale con el perro, cuánto tiempo estará sin compañía y qué oportunidad de aprender o jugar tendrá al volver. Si dependés de ayuda, confirmá quién está disponible y cómo se comunican las tareas.",
+            "Separá los objetivos de convivencia del tamaño o del aspecto del perro. Anotá qué debe aprender para tu casa —esperar en una puerta, aceptar cuidados o viajar— y buscá apoyo si no sabés enseñar esas rutinas. No fomentes intimidación como sustituto de un plan de manejo."
+          ],
+          "bullets": [
+            "Horario y responsable de cada salida.",
+            "Zona tranquila para descansar sin visitas constantes.",
+            "Actividad y aprendizaje adaptados al individuo.",
+            "Plan alternativo si el cuidador habitual falta."
+          ],
+          "inline_paragraphs": [
+            [
+              {
+                "text": "Podés escribir esa organización en el "
+              },
+              {
+                "text": "planificador de cuidados",
+                "path": "/cuidados/planificador-cuidados/"
+              },
+              {
+                "text": " y consultar la guía de "
+              },
+              {
+                "text": "comida para perros",
+                "path": "/productos/comida-para-perros/"
+              },
+              {
+                "text": " para ordenar la compra."
+              }
+            ]
           ]
         }
       ],
@@ -2802,7 +3273,16 @@
           "path": "/cuidados/presupuesto-mascota/",
           "label": "Presupuesto de cuidados"
         }
-      ]
+      ],
+      "species": [
+        "perros"
+      ],
+      "topic": "razas",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "mascotas",
@@ -2898,7 +3378,16 @@
           "path": "/cuidados/presupuesto-mascota/",
           "label": "Presupuesto de cuidados"
         }
-      ]
+      ],
+      "species": [
+        "perros"
+      ],
+      "topic": "razas",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "mascotas",
@@ -2990,7 +3479,16 @@
           "path": "/cuidados/presupuesto-mascota/",
           "label": "Presupuesto de cuidados"
         }
-      ]
+      ],
+      "species": [
+        "perros"
+      ],
+      "topic": "razas",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "mascotas",
@@ -3082,7 +3580,16 @@
           "path": "/cuidados/presupuesto-mascota/",
           "label": "Presupuesto de cuidados"
         }
-      ]
+      ],
+      "species": [
+        "perros"
+      ],
+      "topic": "razas",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "mascotas",
@@ -3174,7 +3681,16 @@
           "path": "/cuidados/presupuesto-mascota/",
           "label": "Presupuesto de cuidados"
         }
-      ]
+      ],
+      "species": [
+        "perros"
+      ],
+      "topic": "razas",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "mascotas",
@@ -3266,7 +3782,16 @@
           "path": "/cuidados/presupuesto-mascota/",
           "label": "Presupuesto de cuidados"
         }
-      ]
+      ],
+      "species": [
+        "perros"
+      ],
+      "topic": "razas",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "mascotas",
@@ -3358,7 +3883,16 @@
           "path": "/cuidados/presupuesto-mascota/",
           "label": "Presupuesto de cuidados"
         }
-      ]
+      ],
+      "species": [
+        "perros"
+      ],
+      "topic": "razas",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "mascotas",
@@ -3449,8 +3983,21 @@
         {
           "path": "/cuidados/presupuesto-mascota/",
           "label": "Presupuesto de cuidados"
+        },
+        {
+          "path": "/mascotas/perros/razas/pinscher-miniatura/",
+          "label": "Pinscher miniatura: una raza diferente"
         }
-      ]
+      ],
+      "species": [
+        "perros"
+      ],
+      "topic": "razas",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "mascotas",
@@ -3542,7 +4089,16 @@
           "path": "/cuidados/presupuesto-mascota/",
           "label": "Presupuesto de cuidados"
         }
-      ]
+      ],
+      "species": [
+        "perros"
+      ],
+      "topic": "razas",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "mascotas",
@@ -3634,7 +4190,16 @@
           "path": "/cuidados/presupuesto-mascota/",
           "label": "Presupuesto de cuidados"
         }
-      ]
+      ],
+      "species": [
+        "perros"
+      ],
+      "topic": "razas",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "mascotas",
@@ -3726,7 +4291,16 @@
           "path": "/cuidados/presupuesto-mascota/",
           "label": "Presupuesto de cuidados"
         }
-      ]
+      ],
+      "species": [
+        "perros"
+      ],
+      "topic": "razas",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "mascotas",
@@ -3818,7 +4392,16 @@
           "path": "/cuidados/presupuesto-mascota/",
           "label": "Presupuesto de cuidados"
         }
-      ]
+      ],
+      "species": [
+        "perros"
+      ],
+      "topic": "razas",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "mascotas",
@@ -3914,7 +4497,16 @@
           "path": "/cuidados/presupuesto-mascota/",
           "label": "Presupuesto de cuidados"
         }
-      ]
+      ],
+      "species": [
+        "perros"
+      ],
+      "topic": "razas",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "mascotas",
@@ -4006,7 +4598,16 @@
           "path": "/cuidados/presupuesto-mascota/",
           "label": "Presupuesto de cuidados"
         }
-      ]
+      ],
+      "species": [
+        "perros"
+      ],
+      "topic": "razas",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "mascotas",
@@ -4049,6 +4650,34 @@
           "paragraphs": [
             "Disponé lugares de descanso, rascadores y oportunidades de juego adaptadas al gato. Observá qué espacios prefiere y qué cuidados acepta. Un temperamento descrito como tranquilo no significa que no necesite actividad ni que deba permanecer aislado de su familia.",
             "Calculá comida, arena, atención veterinaria y mantenimiento del manto. Pedí presupuestos reales en tu zona y organizá apoyo durante ausencias. El color del pelo o el precio del gatito no resuelven esas necesidades; compará el compromiso futuro además de la adquisición inicial."
+          ]
+        },
+        {
+          "title": "Antes de elegir: comprobar la rutina del pelo",
+          "paragraphs": [
+            "Pedí una demostración de peinado que permita reconocer qué herramientas necesitás y qué señales indican que el gato necesita una pausa. Preguntá cómo resolver nudos que no puedas retirar y qué apoyo estará disponible. No planifiques el cuidado suponiendo que todo el manejo será fácil desde el primer día.",
+            "Probá el horario del hogar y anotá los costos reales de los servicios que vas a usar. Si otra persona lo cuida, explicale la rutina del manto además de alimento y arenero. Así podés valorar si el compromiso de cuidado encaja con tu vida antes de decidir por una fotografía."
+          ],
+          "inline_paragraphs": [
+            [
+              {
+                "text": "Compará estos cuidados con otras "
+              },
+              {
+                "text": "razas de gatos",
+                "path": "/mascotas/gatos/razas/"
+              },
+              {
+                "text": " y revisá los criterios de "
+              },
+              {
+                "text": "arena para gatos",
+                "path": "/productos/arena-para-gatos/"
+              },
+              {
+                "text": " antes de preparar la llegada."
+              }
+            ]
           ]
         }
       ],
@@ -4099,7 +4728,16 @@
           "path": "/cuidados/presupuesto-mascota/",
           "label": "Presupuesto de cuidados"
         }
-      ]
+      ],
+      "species": [
+        "gatos"
+      ],
+      "topic": "razas",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "mascotas",
@@ -4192,7 +4830,16 @@
           "path": "/cuidados/presupuesto-mascota/",
           "label": "Presupuesto de cuidados"
         }
-      ]
+      ],
+      "species": [
+        "gatos"
+      ],
+      "topic": "razas",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "mascotas",
@@ -4388,8 +5035,30 @@
         {
           "path": "/cuidados/elegir-mascota/",
           "label": "Elegir una mascota"
+        },
+        {
+          "path": "/mascotas/perros/razas/gran-danes/",
+          "label": "Gran danés"
+        },
+        {
+          "path": "/mascotas/perros/razas/shih-tzu/",
+          "label": "Shih tzu"
+        },
+        {
+          "path": "/mascotas/perros/razas/pinscher-miniatura/",
+          "label": "Pinscher miniatura"
         }
-      ]
+      ],
+      "species": [
+        "perros"
+      ],
+      "topic": "razas",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      },
+      "image": "companions"
     },
     {
       "category": "mascotas",
@@ -4401,7 +5070,7 @@
       "card_title": "Razas de gatos: tipos y características",
       "description": "Conocé razas de gatos, sus características y necesidades de cuidado. Compará tipos con criterio y prepará la convivencia antes de elegir un compañero.",
       "answer": "Las razas de gatos aportan información sobre rasgos de apariencia y algunas necesidades de cuidado. El pelaje, la historia y la conducta del individuo importan más que una etiqueta. Conocé también a los gatos mestizos y prepará ambiente, juego y controles antes de elegir.",
-      "intro": "Las razas de gatos, los colores y los patrones del pelo describen características diferentes. Esta guía ordena esas diferencias y enlaza los cuidados del gato persa y del siamés para ayudarte a conocerlos antes de elegir.",
+      "intro": "Las razas, los colores y los patrones del pelo describen características distintas. Compará persa, siamés, maine coon y ragdoll por sus cuidados y el equipo que necesitará cada individuo; conocé también las necesidades de un gato mestizo.",
       "sections": [
         {
           "title": "Cómo comparar razas de gatos",
@@ -4430,6 +5099,26 @@
             "Atigrado, negro o tricolor describen aspectos del pelo y no acreditan por sí solos una raza. Un gato mestizo necesita el mismo compromiso de ambiente, controles y atención a su conducta. Elegí a partir del animal y de lo que tu hogar puede ofrecerle.",
             "Antes de la llegada, asegurá ventanas, prepará arenero y transportadora, y pedí los antecedentes de alimentación. Acordá quién sostendrá la rutina durante tus ausencias. La guía de gatitos y primeros días te permite ordenar esas tareas, independientemente de una etiqueta de raza."
           ]
+        },
+        {
+          "title": "Maine coon: tamaño grande y pelo largo",
+          "paragraphs": [
+            "La CFA describe al maine coon como un gato grande de pelo largo. Esa referencia permite plantear preguntas sobre transportadora, arenero, superficies de descanso y mantenimiento del manto; no acredita la raza de cualquier gato grande que veas en una foto.",
+            "Comprobá dimensiones y límites de carga del equipo para el adulto, y pedí una demostración de cómo cuidar su pelo. Organizá recursos seguros y lugares de retiro. La convivencia y el plan de controles deben responder al individuo, aunque el anuncio lo describa como tranquilo."
+          ],
+          "source_refs": [
+            "breed_mainecoon"
+          ]
+        },
+        {
+          "title": "Ragdoll: apariencia y cuidado del individuo",
+          "paragraphs": [
+            "La CFA presenta al ragdoll como una raza grande, de manto semilargo y color en las extremidades. Tiene necesidades de cuidado del pelo; su apariencia no debe confundirse automáticamente con la de un siamés o un mestizo con un patrón parecido.",
+            "Pedí antecedentes y conocé cómo acepta contacto, cepillado y traslado. Una fama de gato tranquilo no elimina juego ni presentaciones graduales. Si ya hay otros animales, prepará recursos y descanso separados antes de esperar una convivencia inmediata."
+          ],
+          "source_refs": [
+            "breed_ragdoll"
+          ]
         }
       ],
       "sources": [
@@ -4437,7 +5126,9 @@
         "cathome",
         "catcompany",
         "breed_persa",
-        "breed_siames"
+        "breed_siames",
+        "breed_mainecoon",
+        "breed_ragdoll"
       ],
       "related": [
         "gatos",
@@ -4485,7 +5176,17 @@
           "path": "/cuidados/primer-gato/",
           "label": "Primer gato"
         }
-      ]
+      ],
+      "species": [
+        "gatos"
+      ],
+      "topic": "razas",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      },
+      "image": "companions"
     },
     {
       "category": "productos",
@@ -4495,7 +5196,7 @@
       "seo_title": "Comida para perros: cómo elegir",
       "short": "Comida para perros",
       "card_title": "Comida para perros: cómo elegir",
-      "description": "Cómo comparar comida para perros y cachorros: etapa de vida, etiqueta, formato y presupuesto. Criterios de alimentación con contexto para Paraguay.",
+      "description": "Compará comida para perros por etapa, etiqueta y formato. Calculá precio por kilo y gasto por 30 días con tus propios precios en guaraníes.",
       "answer": "Elegí comida para perros según etapa de vida, salud y la información del envase. Compará un alimento completo con otros de la misma finalidad y pedí orientación sobre cantidad y condición corporal. El precio, los ingredientes destacados o una palabra como premium no resuelven solos la elección.",
       "intro": "En Paraguay podés encontrar distintos formatos y presentaciones de alimento para perros. Antes de comparar bolsas, ordená qué necesita tu perro y qué datos aporta cada producto: una compra útil responde a esa información y al presupuesto que podés sostener.",
       "sections": [
@@ -4560,6 +5261,51 @@
             "Para comparar precio por kilo, dividí el precio de la bolsa por su peso; por ejemplo, G. 180.000 por 10 kg da G. 18.000 por kilo. Es un ejemplo de cálculo, no una cotización actual. El costo diario depende además de cuánto use tu perro según su plan.",
             "Sumá almacenamiento, posibles desperdicios y disponibilidad de reposición a la decisión. Evitá comprar una cantidad que no puedas conservar adecuadamente. Si necesitás cambiar de alimento o tu perro deja de comer, consultá cómo proceder; no uses un síntoma como criterio para probar productos al azar."
           ]
+        },
+        {
+          "title": "Compará el costo de la comida con tus propios datos",
+          "paragraphs": [
+            "El comparador de esta página usa el precio de cada presentación, su peso y los gramos diarios que ingresás. Calcula costo por kilo, por día y por 30 días. No determina la cantidad que debe comer un perro: cargá la indicada en su plan y revisala si el profesional la modifica.",
+            "Dos alimentos pueden requerir cantidades diferentes. Por eso compará productos adecuados para la misma finalidad y usá la cantidad real de cada uno. El cálculo no incluye entrega, premios, desperdicio ni variación de precios; sumá esos importes al presupuesto cuando correspondan."
+          ],
+          "table": {
+            "headers": [
+              "Dato",
+              "Cómo usarlo"
+            ],
+            "rows": [
+              [
+                "Precio y peso",
+                "Copiá la cotización y cantidad neta de la presentación."
+              ],
+              [
+                "Gramos por día",
+                "Usá el dato de tu plan; la herramienta no recomienda raciones."
+              ],
+              [
+                "Costo por 30 días",
+                "Permite comparar el gasto estimado con el consumo ingresado."
+              ],
+              [
+                "Costos adicionales",
+                "Agregá entrega, premios y desperdicio por separado."
+              ]
+            ]
+          },
+          "inline_paragraphs": [
+            [
+              {
+                "text": "Para comparar el gasto completo del hogar, llevá el resultado a la "
+              },
+              {
+                "text": "calculadora de presupuesto",
+                "path": "/cuidados/calculadora-presupuesto-mascota/"
+              },
+              {
+                "text": ". Si todavía no conocés un dato, dejalo pendiente antes de sacar conclusiones."
+              }
+            ]
+          ]
         }
       ],
       "sources": [
@@ -4618,7 +5364,18 @@
           "path": "/cuidados/planificador-cuidados/",
           "label": "Imprimí tu hoja de cuidados"
         }
-      ]
+      ],
+      "tool": "food-cost",
+      "species": [
+        "perros"
+      ],
+      "topic": "alimentacion",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      },
+      "image": "food-label"
     },
     {
       "category": "productos",
@@ -4713,7 +5470,16 @@
           "path": "/productos/",
           "label": "Productos para mascotas"
         }
-      ]
+      ],
+      "species": [
+        "perros"
+      ],
+      "topic": "salud",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "productos",
@@ -4763,6 +5529,58 @@
             "Compará cantidad neta, duración observada y disponibilidad de reposición, además del precio inicial. Un producto barato que no acepta tu gato o que no podés almacenar bien puede complicar la rutina. Guardá la bolsa cerrada según sus indicaciones y separá los utensilios de limpieza.",
             "Pedí precios actuales y anotá cuánto material usás realmente por semana. Esa observación permite armar tu presupuesto sin presentar una cifra universal. Si alguien más cuida al gato durante tus viajes, explicale la rutina y dónde están la arena, el recipiente de descarte y los elementos de limpieza."
           ]
+        },
+        {
+          "title": "Ficha de comparación para tu arenero",
+          "paragraphs": [
+            "Anotá el producto, material, tamaño del envase y precio, junto con cuánto usás durante una semana. No compares automáticamente litros con kilos: son unidades distintas y el mismo volumen puede tener diferente peso según el material.",
+            "Observá aceptación, facilidad para retirar residuos y reposición disponible. Cambiá de forma que el gato conserve una opción conocida, siguiendo orientación adecuada a su caso. Si alguien más se ocupa del arenero, dejá escritas la ubicación, la limpieza y la forma de descarte indicada en el producto."
+          ],
+          "table": {
+            "headers": [
+              "Qué observar",
+              "Qué registrar"
+            ],
+            "rows": [
+              [
+                "Compra",
+                "Precio, cantidad y unidad del envase."
+              ],
+              [
+                "Aceptación",
+                "Qué bandeja usa y qué cambió en el ambiente."
+              ],
+              [
+                "Limpieza",
+                "Material que retirás y frecuencia de reposición real."
+              ],
+              [
+                "Descarte",
+                "Instrucciones del envase; no asumir que va al inodoro."
+              ]
+            ]
+          },
+          "inline_paragraphs": [
+            [
+              {
+                "text": "Incluí arena e higiene en tu "
+              },
+              {
+                "text": "presupuesto de mascotas",
+                "path": "/cuidados/calculadora-presupuesto-mascota/"
+              },
+              {
+                "text": " y revisá la "
+              },
+              {
+                "text": "preparación del hogar para un gato",
+                "path": "/cuidados/primer-gato/"
+              },
+              {
+                "text": " si todavía estás organizando sus recursos."
+              }
+            ]
+          ]
         }
       ],
       "sources": [
@@ -4809,7 +5627,17 @@
           "path": "/productos/rascadores-para-gatos/",
           "label": "Rascadores para gatos"
         }
-      ]
+      ],
+      "species": [
+        "gatos"
+      ],
+      "topic": "convivencia",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      },
+      "image": "companions"
     },
     {
       "category": "mascotas",
@@ -4908,7 +5736,16 @@
           "path": "/cuidados/elegir-mascota/",
           "label": "Elegir una mascota"
         }
-      ]
+      ],
+      "species": [
+        "hurones"
+      ],
+      "topic": "convivencia",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "cuidados",
@@ -5005,7 +5842,16 @@
           "path": "/cuidados/vacunas-y-controles/",
           "label": "Vacunas y controles"
         }
-      ]
+      ],
+      "species": [
+        "perros"
+      ],
+      "topic": "salud",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "cuidados",
@@ -5105,7 +5951,16 @@
           "path": "/cuidados/elegir-veterinaria/",
           "label": "Elegir veterinaria"
         }
-      ]
+      ],
+      "species": [
+        "gatos"
+      ],
+      "topic": "salud",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "cuidados",
@@ -5206,7 +6061,16 @@
           "path": "/cuidados/vacunas-y-controles/",
           "label": "Vacunas y controles"
         }
-      ]
+      ],
+      "species": [
+        "perros"
+      ],
+      "topic": "salud",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "cuidados",
@@ -5303,7 +6167,16 @@
           "path": "/cuidados/vacunas-y-controles/",
           "label": "Vacunas y controles"
         }
-      ]
+      ],
+      "species": [
+        "perros"
+      ],
+      "topic": "salud",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "cuidados",
@@ -5389,7 +6262,17 @@
           "path": "/productos/comida-para-perros/",
           "label": "Comida para perros"
         }
-      ]
+      ],
+      "species": [
+        "perros",
+        "gatos"
+      ],
+      "topic": "herramientas",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     },
     {
       "category": "cuidados",
@@ -5475,7 +6358,488 @@
           "path": "/cuidados/primer-perro/",
           "label": "Primer perro"
         }
-      ]
+      ],
+      "species": [
+        "perros",
+        "gatos"
+      ],
+      "topic": "herramientas",
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
+    },
+    {
+      "category": "mascotas",
+      "slug": "perros/razas/gran-danes",
+      "title": "Gran danés: tamaño, cuidados y convivencia",
+      "h1": "Gran danés: tamaño, cuidados y convivencia",
+      "seo_title": "Gran danés: tamaño, cuidados y convivencia",
+      "short": "Gran danés",
+      "card_title": "Gran danés: tamaño, cuidados y convivencia",
+      "description": "Gran danés en Paraguay: qué prever por su tamaño, cómo preparar un cachorro y qué comprobar antes de elegirlo. Presupuesto y cuidados cotidianos.",
+      "answer": "El gran danés es un perro de tamaño gigante. La convivencia exige preparar transporte, descanso, manejo y gastos para el adulto. Un cachorro pequeño o una descripción de carácter tranquilo no reducen ese compromiso.",
+      "intro": "Antes de elegir un gran danés, probá cómo resolverías las tareas que su tamaño vuelve más difíciles: subir al vehículo, pasar por una puerta, quedarse con otro cuidador y recibir atención veterinaria. Esta guía ordena esas decisiones sin publicar precios de venta ni disponibilidad de perros.",
+      "sections": [
+        {
+          "title": "Tamaño del gran danés y espacio útil",
+          "paragraphs": [
+            "El AKC destaca el gran tamaño, peso y fuerza de esta raza. En la práctica, medí el paso entre muebles y puertas y el espacio donde podrá acostarse sin bloquear la circulación. Un patio amplio no resuelve por sí solo el descanso, la compañía o los paseos.",
+            "Pensá en el adulto al elegir cama, equipo y traslado. Consultá límites de carga del producto y ensayá el acceso al vehículo. Si hay escaleras o una sola persona para cuidarlo, prepará una alternativa de ayuda antes de necesitar mover a un perro que no pueda caminar con normalidad."
+          ],
+          "source_refs": [
+            "breed_dane"
+          ]
+        },
+        {
+          "title": "Cachorro gran danés: preparar la llegada",
+          "paragraphs": [
+            "Pedí los antecedentes de alimentación y controles que existan y conservá su identificación. Organizá una primera consulta para hablar de crecimiento, condición corporal y actividad apropiada para ese cachorro. La cantidad de alimento y el ejercicio no se eligen por una foto ni por la etiqueta gigante.",
+            "Guardá medicamentos, cables y objetos que pueda alcanzar conforme crezca. Acordá una zona de descanso y quién lo acompañará durante la adaptación. Revisá periódicamente el ajuste del equipo; comprar una sola medida para toda la vida puede dejarte con un arnés inadecuado."
+          ],
+          "bullets": [
+            "Antecedentes y contacto del cuidador anterior.",
+            "Traslado organizado y equipo con límites de carga comprobados.",
+            "Responsable habitual y una persona de apoyo.",
+            "Consulta de llegada y presupuesto para el crecimiento."
+          ]
+        },
+        {
+          "title": "Convivencia y manejo de un perro gigante",
+          "paragraphs": [
+            "Observá al ejemplar concreto y preguntá cómo responde a visitas, otros perros y al manejo cotidiano. La fama de gigante tranquilo no garantiza una interacción segura. Supervisá encuentros con niños y prepará un lugar al que el perro pueda retirarse sin que lo persigan.",
+            "Enseñá señales coherentes entre cuidadores y practicá salidas en entornos que puedas manejar. Elegí recorridos y horarios según el calor y las condiciones reales. Si no podés controlar un paseo con comodidad, pedí ayuda profesional para organizarlo; no esperes a que un incidente defina la rutina."
+          ],
+          "inline_paragraphs": [
+            [
+              {
+                "text": "Para organizar las primeras semanas, usá la "
+              },
+              {
+                "text": "guía de primer perro",
+                "path": "/cuidados/primer-perro/"
+              },
+              {
+                "text": " y dejá por escrito quién mantiene cada tarea."
+              }
+            ]
+          ]
+        },
+        {
+          "title": "Precio inicial y presupuesto en Paraguay",
+          "paragraphs": [
+            "No tenemos una cotización verificada de cachorros gran danés en Paraguay. Un precio anunciado debe aclarar qué incluye, quién entrega al animal y qué antecedentes aporta. No tomes un importe aislado como garantía de origen, salud o costo futuro.",
+            "Separá adquisición o adopción, equipo inicial, comida, servicios y reserva para imprevistos. Pedí presupuestos locales para el adulto y comprobá que el transporte y la atención puedan atender su tamaño. Comparar el gasto por mes te permite evaluar si podés sostener el compromiso."
+          ],
+          "table": {
+            "headers": [
+              "Necesidad",
+              "Qué comprobar antes de elegir"
+            ],
+            "rows": [
+              [
+                "Traslado",
+                "Espacio del vehículo, acceso y apoyo para moverlo."
+              ],
+              [
+                "Descanso",
+                "Medidas de cama y pasillos libres en casa."
+              ],
+              [
+                "Paseo",
+                "Equipo adecuado y cuidador que pueda manejarlo."
+              ],
+              [
+                "Presupuesto",
+                "Comida y servicios para el adulto, además del gasto inicial."
+              ]
+            ]
+          },
+          "inline_paragraphs": [
+            [
+              {
+                "text": "Ingresá tus propias cotizaciones en la "
+              },
+              {
+                "text": "calculadora de gastos de mascotas",
+                "path": "/cuidados/calculadora-presupuesto-mascota/"
+              },
+              {
+                "text": "; los campos vacíos siguen siendo gastos por averiguar."
+              }
+            ]
+          ]
+        },
+        {
+          "title": "Colores, anuncios y antecedentes",
+          "paragraphs": [
+            "Arlequín, azul o marrón son palabras que aparecen en búsquedas y anuncios de gran danés. Ninguna acredita por sí sola el origen del perro ni reemplaza sus antecedentes. Preguntá por el animal, su identificación, su historia y la documentación que exista.",
+            "Un cruce con labrador u otra raza no se vuelve gran danés de raza por parecerse a una fotografía. Cualquiera sea su origen, conocé sus necesidades y evitá decidir por un color prometido o un tamaño extremo. Esta página reúne los cuidados del gran danés; no es un catálogo de animales en venta."
+          ]
+        }
+      ],
+      "sources": [
+        "breed_dane",
+        "ownership",
+        "heat"
+      ],
+      "related": [
+        "perros",
+        "perros/razas",
+        "primer-perro",
+        "comida-para-perros"
+      ],
+      "faqs": [
+        {
+          "q": "¿Un gran danés necesita solamente un patio grande?",
+          "a": "No. Necesita descanso dentro de una rutina de compañía, paseos y cuidados, además de transporte y manejo adecuados a su tamaño."
+        },
+        {
+          "q": "¿Publican el precio del gran danés en Paraguay?",
+          "a": "No tenemos precios de venta comprobados. Pedí una cotización con condiciones y antecedentes, y calculá por separado el costo de mantener al adulto."
+        },
+        {
+          "q": "¿Gran danés cachorro y adulto usan el mismo equipo?",
+          "a": "No lo des por hecho. Comprobá ajuste, dimensiones y carga del equipo a medida que crece."
+        }
+      ],
+      "icon": "dog",
+      "teaser": "Cuidados y convivencia",
+      "tag": "Razas de perros",
+      "date": "2026-10-09",
+      "published": "2026-10-09",
+      "modified": "2026-10-09",
+      "sources_checked": "2026-10-09",
+      "parent": "perros/razas",
+      "species": [
+        "perros"
+      ],
+      "topic": "razas",
+      "guide_links": [
+        {
+          "path": "/mascotas/perros/razas/",
+          "label": "Comparar razas de perros"
+        },
+        {
+          "path": "/cuidados/calculadora-presupuesto-mascota/",
+          "label": "Calculá gastos en guaraníes"
+        },
+        {
+          "path": "/cuidados/primer-perro/",
+          "label": "Preparar la llegada de un perro"
+        }
+      ],
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
+    },
+    {
+      "category": "mascotas",
+      "slug": "perros/razas/shih-tzu",
+      "title": "Shih tzu: precio en Paraguay y cuidados",
+      "h1": "Shih tzu: precio en Paraguay y cuidados",
+      "seo_title": "Shih tzu: precio en Paraguay y cuidados",
+      "short": "Shih tzu",
+      "card_title": "Shih tzu: precio en Paraguay y cuidados",
+      "description": "Shih tzu en Paraguay: cuidado del pelo, preparación del cachorro y preguntas sobre precio y gastos. Qué revisar antes de elegir un compañero.",
+      "answer": "El shih tzu es un perro pequeño con un manto que requiere cuidados regulares. Antes de elegirlo, organizá compañía, mantenimiento del pelo, traslado y controles. Un tamaño reducido no elimina el tiempo ni el presupuesto de cuidado.",
+      "intro": "Las búsquedas de shih tzu precio suelen empezar por la compra. Para decidir bien, mirá también la rutina que vas a sostener: quién cuida el pelo, dónde descansa y qué ocurrirá cuando viajes. Esta guía no publica vendedores ni cotizaciones sin verificar.",
+      "sections": [
+        {
+          "title": "Pelaje del shih tzu: una tarea habitual",
+          "paragraphs": [
+            "El American Shih Tzu Club describe el cuidado del manto como una parte importante de la tenencia. Elegir un corte más corto puede cambiar el mantenimiento, pero no elimina la necesidad de revisar el pelo y aprender a manejarlo sin dolor.",
+            "Pedí que te enseñen herramientas y técnica apropiadas para tu perro. Practicá sesiones breves y tranquilas. Si hay nudos muy compactos o malestar, buscá ayuda antes de tirar del pelo o cortar cerca de la piel. Consultá qué tareas podés hacer en casa y cuáles requieren otro servicio."
+          ],
+          "source_refs": [
+            "breed_shihtzu"
+          ]
+        },
+        {
+          "title": "Cachorro shih tzu y primeras semanas",
+          "paragraphs": [
+            "Prepará una zona tranquila, recipientes estables y un traslado seguro. Guardá productos de limpieza y objetos pequeños; cerrá los accesos que no pueda usar con seguridad. Antes de recibirlo, averiguá qué come y qué controles tiene documentados.",
+            "Acordá quién lo acompañará y cómo se organizarán descanso y salidas. La primera consulta permite revisar al cachorro y preparar su plan individual. Llevá antecedentes e identificá cualquier cambio que hayas observado; no atribuyas automáticamente el malestar a una característica normal de la raza."
+          ],
+          "inline_paragraphs": [
+            [
+              {
+                "text": "La "
+              },
+              {
+                "text": "guía para recibir al primer perro",
+                "path": "/cuidados/primer-perro/"
+              },
+              {
+                "text": " permite ordenar equipo, responsables y llegada antes de comprar accesorios."
+              }
+            ]
+          ]
+        },
+        {
+          "title": "Compañía, juego y días calurosos",
+          "paragraphs": [
+            "Organizá momentos de interacción, juego y descanso que puedas mantener. Un perro pequeño también necesita conocer el entorno con seguridad y aprender rutinas. Supervisá encuentros con niños y dejá que pueda retirarse; sostenerlo en brazos no reemplaza respetar sus señales.",
+            "En Paraguay, comprobá sombra, agua disponible y condiciones de traslado antes de salir. El club de la raza aconseja prestar especial atención al calor. Pedí al veterinario un plan acorde al individuo y evitá usar una duración fija de paseo copiada de otro perro."
+          ],
+          "source_refs": [
+            "breed_shihtzu"
+          ],
+          "inline_paragraphs": [
+            [
+              {
+                "text": "Revisá nuestra guía de "
+              },
+              {
+                "text": "mascotas y calor",
+                "path": "/cuidados/mascotas-y-calor/"
+              },
+              {
+                "text": " para organizar horarios y transporte."
+              }
+            ]
+          ]
+        },
+        {
+          "title": "Shih tzu precio: qué incluye la decisión",
+          "paragraphs": [
+            "No publicamos un precio actual de shih tzu en Paraguay porque no tenemos cotizaciones verificadas. Si encontrás una oferta, pedí identidad del responsable, antecedentes, condiciones de entrega y detalle de lo incluido. Un anuncio barato o la palabra mini no garantizan salud, origen ni adecuación al hogar.",
+            "Compará el compromiso después de la llegada: mantenimiento del pelo, alimento, controles, equipo y ayuda durante ausencias. Anotá precios reales de tu zona y frecuencia acordada de cada servicio. La reserva para imprevistos debe figurar aparte para poder ver qué gasto conocés y qué falta averiguar."
+          ],
+          "table": {
+            "headers": [
+              "Gasto",
+              "Pregunta para tu presupuesto"
+            ],
+            "rows": [
+              [
+                "Pelo e higiene",
+                "¿Qué puedo hacer en casa y cuánto cuesta la ayuda que necesito?"
+              ],
+              [
+                "Comida",
+                "¿Qué presentación y cantidad indica su plan?"
+              ],
+              [
+                "Controles",
+                "¿Qué incluye cada consulta y cuándo corresponde el seguimiento?"
+              ],
+              [
+                "Ausencias",
+                "¿Quién lo cuida y mantiene la misma rutina?"
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Antecedentes y elección del individuo",
+          "paragraphs": [
+            "Conocé al perro y preguntá por su respuesta a cuidados cotidianos, compañía y encuentros. La descripción de una raza orienta preguntas; no certifica el comportamiento del ejemplar. Si necesitás confirmar origen, solicitá la documentación que exista en vez de basarte solo en el corte de pelo.",
+            "Antes de comprometerte, probá si el horario y presupuesto del hogar permiten cuidar el manto de manera continua. Un plan que depende de servicios que no podés contratar necesita ajustes. También podés conocer perros que esperan adopción y valorar sus necesidades individuales."
+          ]
+        }
+      ],
+      "sources": [
+        "breed_shihtzu",
+        "ownership",
+        "heat"
+      ],
+      "related": [
+        "perros",
+        "perros/razas",
+        "primer-perro",
+        "comida-para-perros"
+      ],
+      "faqs": [
+        {
+          "q": "¿Cuánto cuesta un shih tzu en Paraguay?",
+          "a": "No disponemos de precios actuales de venta verificados. Pedí condiciones completas y compará además los gastos de cuidado, especialmente el mantenimiento del pelo."
+        },
+        {
+          "q": "¿Un corte corto elimina el cuidado del pelo?",
+          "a": "No. Cambia la rutina, pero seguís necesitando revisar el manto y usar una técnica adecuada al perro."
+        },
+        {
+          "q": "¿Un shih tzu pequeño necesita compañía y actividad?",
+          "a": "Sí. Organizá interacción, juego, descanso y salidas apropiadas para el individuo."
+        }
+      ],
+      "icon": "dog",
+      "teaser": "Cuidados y convivencia",
+      "tag": "Razas de perros",
+      "date": "2026-10-09",
+      "published": "2026-10-09",
+      "modified": "2026-10-09",
+      "sources_checked": "2026-10-09",
+      "parent": "perros/razas",
+      "species": [
+        "perros"
+      ],
+      "topic": "razas",
+      "guide_links": [
+        {
+          "path": "/mascotas/perros/razas/",
+          "label": "Comparar razas de perros"
+        },
+        {
+          "path": "/cuidados/calculadora-presupuesto-mascota/",
+          "label": "Calculá gastos en guaraníes"
+        },
+        {
+          "path": "/cuidados/primer-perro/",
+          "label": "Preparar la llegada de un perro"
+        }
+      ],
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
+    },
+    {
+      "category": "mascotas",
+      "slug": "perros/razas/pinscher-miniatura",
+      "title": "Pinscher miniatura y dóberman miniatura: diferencias",
+      "h1": "Pinscher miniatura y dóberman miniatura: diferencias",
+      "seo_title": "Pinscher miniatura y dóberman miniatura: diferencias",
+      "short": "Pinscher miniatura",
+      "card_title": "Pinscher miniatura y dóberman miniatura: diferencias",
+      "description": "Pinscher miniatura, también buscado como mini pincher o dóberman miniatura: diferencias, convivencia y cuidados. Prepará su llegada en Paraguay.",
+      "answer": "El pinscher miniatura es una raza propia, no una versión reducida del dóberman. Las búsquedas mini pincher o dóberman miniatura pueden llevar al mismo tema, pero conviene comprobar qué animal describe el anuncio y organizar sus cuidados reales.",
+      "intro": "El tamaño pequeño del pinscher miniatura no indica poca actividad ni ausencia de necesidades. Antes de elegirlo, revisá seguridad de la casa, paseo, compañía y antecedentes. Esta guía aclara los nombres usados en las búsquedas y propone decisiones para la convivencia.",
+      "sections": [
+        {
+          "title": "Pinscher miniatura y dóberman: la diferencia",
+          "paragraphs": [
+            "El Miniature Pinscher Club of America aclara que el pinscher miniatura no se originó como un dóberman reducido. Son razas distintas. Mini pincher y dóberman miniatura aparecen como nombres informales, por lo que necesitás pedir una identificación clara cuando los veas en un anuncio.",
+            "El club describe un perro pequeño, activo y curioso. Su parecido de colores con otro perro no permite confirmar raza ni personalidad. Revisá antecedentes y documentación si el origen es parte de tu decisión; un mestizo puede compartir apariencia sin tener la misma historia."
+          ],
+          "source_refs": [
+            "breed_minpinscher"
+          ],
+          "inline_paragraphs": [
+            [
+              {
+                "text": "Podés comparar esa diferencia con la guía del "
+              },
+              {
+                "text": "dóberman",
+                "path": "/mascotas/perros/razas/doberman/"
+              },
+              {
+                "text": " sin asumir que sus cuidados o tamaño son intercambiables."
+              }
+            ]
+          ]
+        },
+        {
+          "title": "Seguridad de puertas, patio y paseo",
+          "paragraphs": [
+            "Revisá huecos bajo portones, rejas y otras salidas que un perro pequeño pueda atravesar. Cerrá accesos antes de empezar a explorar la casa. Un patio no sustituye la supervisión y conviene comprobar su seguridad aunque otro perro más grande nunca haya salido por allí.",
+            "Elegí collar o arnés según ajuste real y revisalo periódicamente. Practicá salidas con señales coherentes y atención a su respuesta. Si el paseo se vuelve difícil o aparece miedo, pedí apoyo; el tamaño del animal no justifica forzar encuentros ni ignorar cambios de conducta."
+          ],
+          "bullets": [
+            "Medí huecos y cerrá las salidas accesibles.",
+            "Comprobá que el equipo no se afloje al moverse.",
+            "Prepará una zona de descanso protegida.",
+            "Acordá normas iguales entre quienes lo cuidan."
+          ]
+        },
+        {
+          "title": "Cachorro y adaptación al hogar",
+          "paragraphs": [
+            "Pedí la información disponible sobre alimentación, controles y hábitos. Organizá traslado y una consulta de llegada. Prepará superficies y accesos que pueda usar con seguridad y guardá cables, objetos pequeños y sustancias fuera de su alcance.",
+            "Introducí el ambiente de manera gradual y evitá una visita continua de personas nuevas. Si hay niños u otros animales, supervisá y ofrecé zonas separadas de descanso. Conocé qué manejo acepta el individuo y permitile retirarse; la convivencia no está garantizada por el nombre de la raza."
+          ]
+        },
+        {
+          "title": "Actividad y cuidado cotidiano",
+          "paragraphs": [
+            "Reservá tiempo para juego, paseos y aprendizaje adaptados al perro. Un compañero pequeño puede necesitar una rutina muy distinta de la que imaginaste mirando una fotografía. Anotá cómo se comporta cuando está acompañado o solo y comentá las dificultades antes de que se vuelvan habituales.",
+            "Ajustá los horarios al calor y revisá condiciones del recorrido y transporte. Consultá alimentación, prevención y controles de acuerdo con edad y salud. No deduzcas raciones ni tratamientos de la palabra mini o toy, ni uses indicaciones de otro animal como plan propio."
+          ],
+          "inline_paragraphs": [
+            [
+              {
+                "text": "Usá el "
+              },
+              {
+                "text": "planificador de cuidados",
+                "path": "/cuidados/planificador-cuidados/"
+              },
+              {
+                "text": " para compartir tareas y las indicaciones profesionales que ya tenga tu perro."
+              }
+            ]
+          ]
+        },
+        {
+          "title": "Precio y gastos de un pinscher miniatura",
+          "paragraphs": [
+            "No publicamos una cifra de venta verificada para Paraguay. Si buscás pinscher miniatura precio, pedí una propuesta con antecedentes y condiciones claras. El precio inicial no informa cuánto vas a gastar en comida, controles, equipo o apoyo durante ausencias.",
+            "Compará servicios y presentaciones con tus propias cotizaciones. Separá los gastos iniciales de los recurrentes y reservá una suma para imprevistos. Antes de elegir, comprobá que el cuidador alternativo conoce la seguridad de puertas y la rutina de paseo: esos detalles importan tanto como comprar el equipo."
+          ]
+        }
+      ],
+      "sources": [
+        "breed_minpinscher",
+        "ownership",
+        "heat"
+      ],
+      "related": [
+        "perros",
+        "perros/razas",
+        "primer-perro",
+        "comida-para-perros"
+      ],
+      "faqs": [
+        {
+          "q": "¿El pinscher miniatura es un dóberman pequeño?",
+          "a": "No. Es una raza propia. Dóberman miniatura puede usarse informalmente, pero no significa que sea una versión reducida de esa raza."
+        },
+        {
+          "q": "¿Mini pincher y pinscher miniatura significan lo mismo?",
+          "a": "Mini pincher se usa en búsquedas informales sobre pinscher miniatura. Confirmá qué perro describe la persona y qué antecedentes aporta."
+        },
+        {
+          "q": "¿Un pinscher miniatura necesita solo espacio pequeño?",
+          "a": "Además de un lugar seguro necesita compañía, actividad, paseo y controles. Revisá especialmente las salidas por las que podría escapar."
+        }
+      ],
+      "icon": "dog",
+      "teaser": "Cuidados y convivencia",
+      "tag": "Razas de perros",
+      "date": "2026-10-09",
+      "published": "2026-10-09",
+      "modified": "2026-10-09",
+      "sources_checked": "2026-10-09",
+      "parent": "perros/razas",
+      "species": [
+        "perros"
+      ],
+      "topic": "razas",
+      "guide_links": [
+        {
+          "path": "/mascotas/perros/razas/",
+          "label": "Comparar razas de perros"
+        },
+        {
+          "path": "/cuidados/calculadora-presupuesto-mascota/",
+          "label": "Calculá gastos en guaraníes"
+        },
+        {
+          "path": "/cuidados/primer-perro/",
+          "label": "Preparar la llegada de un perro"
+        }
+      ],
+      "authorship": {
+        "type": "Organization",
+        "name": "Mascota",
+        "profile": "/sobre-mascota/"
+      }
     }
   ],
   "pages": {

@@ -1,34 +1,44 @@
-"""Build an explicit allowlisted Hostinger domain-root ZIP; no secrets or old store."""
+"""Build deterministic, explicit allowlisted Hostinger private-sibling releases."""
 from pathlib import Path
 import argparse
 import hashlib
 import json
+import os
+import tempfile
 import zipfile
+from release_metadata import encoded, metadata, release_files
 
-parser=argparse.ArgumentParser()
-parser.add_argument('--output', type=Path, required=True)
-args=parser.parse_args()
-root=Path(__file__).resolve().parents[1]
-output=args.output.resolve(); output.mkdir(parents=True,exist_ok=True)
-package=output/'mascota-hostinger-2026-10-09.zip'
-files=[]
-allowed = ['public/index.php', 'public/.htaccess', 'public/assets/site.css',
-           'public/assets/companions.svg', 'public/assets/logo.svg',
-           'public/assets/social.svg', 'public/assets/social.png',
-           'app/bootstrap.php', 'app/interactive.php', 'public/assets/tools.js', 'app/.htaccess', 'content/articles.json',
-           'content/sponsors.json', 'content/.htaccess',
-           'config/site.example.php', 'config/.htaccess']
-for name in allowed:
-    source = root/name
-    assert source.is_file(), f'Missing release file: {name}'
-    relative = source.relative_to(root)
-    destination = Path('public_html')/source.relative_to(root/'public') if name.startswith('public/') else Path('mascota-app')/relative
-    files.append((source,destination.as_posix()))
-assert any(name=='public_html/assets/social.png' for _,name in files), 'Generate social.png before packaging'
-assert all('site.local' not in name and '.env' not in name and 'node_modules' not in name for _,name in files)
-with zipfile.ZipFile(package,'w',zipfile.ZIP_DEFLATED) as archive:
-    for source,destination in files: archive.write(source,destination)
-    archive.write(root.parent/'PHP-DEPLOY.md','LEEME-HOSTINGER.md')
-manifest={'package':package.name,'files':len(files)+1,'sha256':hashlib.sha256(package.read_bytes()).hexdigest(),'layout':['public_html/','mascota-app/'],'containsCustomerData':False,'containsSecrets':False}
-(output/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8')
-print(json.dumps(manifest,indent=2))
+def build(root, output):
+    files = release_files(root)
+    release = metadata(root, files)
+    files['public_html/release.json'] = encoded(release)
+    output.mkdir(parents=True, exist_ok=True)
+    package = output/('mascota-hostinger-'+release['version']+'.zip')
+    with tempfile.NamedTemporaryFile(dir=output, suffix='.tmp', delete=False) as stream:
+        temporary = Path(stream.name)
+    try:
+        with zipfile.ZipFile(temporary, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
+            for name,body in sorted(files.items()):
+                entry = zipfile.ZipInfo(name, date_time=(1980,1,1,0,0,0))
+                entry.compress_type = zipfile.ZIP_DEFLATED
+                entry.external_attr = 0o100644 << 16
+                archive.writestr(entry,body)
+        manifest = {**release, 'package':package.name, 'sha256':hashlib.sha256(temporary.read_bytes()).hexdigest(),
+                    'files':{name:hashlib.sha256(body).hexdigest() for name,body in sorted(files.items())},
+                    'containsSecrets':False, 'containsCustomerData':False}
+        manifest_path = package.with_suffix('.manifest.json')
+        # Both outputs are immutable; reject conflicts before writing either output.
+        for path,body in [(package,temporary.read_bytes()),(manifest_path,encoded(manifest))]:
+            if path.exists() and path.read_bytes()!=body: raise ValueError('Refusing to overwrite differing release: '+str(path))
+        if not package.exists(): os.replace(temporary,package)
+        if not manifest_path.exists(): manifest_path.write_bytes(encoded(manifest))
+        return manifest
+    finally:
+        temporary.unlink(missing_ok=True)
+
+if __name__ == '__main__':
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--output',type=Path,required=True)
+    parser.add_argument('--root',type=Path,default=Path(__file__).resolve().parents[1])
+    args=parser.parse_args()
+    print(json.dumps(build(args.root.resolve(),args.output.resolve()),indent=2))

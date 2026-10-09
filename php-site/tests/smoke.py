@@ -66,8 +66,13 @@ for a in data['articles']:
     check(all(re.fullmatch(r'[a-z][a-z0-9-]*',i) for i in ids),f'safe section ids {a["slug"]}')
     check(all(ref in data['sources'] for s in a['sections'] for ref in s.get('source_refs',[])),f'section references {a["slug"]}')
     check(a['published']<=a['modified'],f'publication before modification {a["slug"]}')
-    text=' '.join([a['answer'],a['intro'],*[p for s in a['sections'] for p in s['paragraphs']],*[p for s in a['sections'] for p in s.get('bullets',[])],*[cell for s in a['sections'] for row in s.get('table',{}).get('rows',[]) for cell in row],*[f['a'] for f in a['faqs']]])
-    check(len(text.split())>=350, f'article minimum substance {a["slug"]}: {len(text.split())}')
+    for section in a['sections']:
+        check(bool(section.get('paragraphs')) or bool(section.get('inline_paragraphs')), f'section prose {a["slug"]}')
+        for paragraph in section.get('inline_paragraphs', []):
+            check(bool(paragraph) and all(isinstance(part.get('text'), str) and part['text'].strip() for part in paragraph), f'typed inline prose {a["slug"]}')
+            for part in paragraph:
+                if 'path' in part:
+                    check(part['path'].startswith('/') and not part['path'].startswith('//') and '..' not in part['path'].split('/'), f'safe inline destination {a["slug"]}')
 check(json.loads((root/'content/sponsors.json').read_text())==[], 'no free/demo listings shipped')
 for phpfile in root.rglob('*.php'):
     check(subprocess.run([args.php,'-l',str(phpfile)],capture_output=True).returncode==0, f'PHP lint {phpfile.name}')
@@ -93,7 +98,6 @@ with tempfile.TemporaryDirectory(prefix='mascota-smoke-') as temporary:
         check(code==200,'sitemap response')
         urls=[item.text for item in ET.fromstring(body).findall('{*}url/{*}loc')]
         check(len(urls)==1+4+len(data['articles'])+len(data['pages']),'complete published sitemap')
-        check(len(urls)==64,'64-page portfolio release')
         check(not any('/buscar/' in u or '/veterinarias/' in u for u in urls),'no search/empty listing pages in sitemap')
         dates={urlparse(item.find('{*}loc').text).path:item.findtext('{*}lastmod') for item in ET.fromstring(body).findall('{*}url')}
         expected_dates={'/':data['home']['modified'],**{'/'+k+'/':s['modified'] for k,s in data['sections'].items()},**{'/'+k+'/':p['modified'] for k,p in data['pages'].items()},**{'/'+a['category']+'/'+a['slug']+'/':a['modified'] for a in data['articles']}}

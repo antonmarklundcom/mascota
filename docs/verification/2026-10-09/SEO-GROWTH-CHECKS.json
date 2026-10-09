@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-09",
+  "scope": "PHP SEO growth implementation on codex/mascota-php-seo",
+  "sourceState": "Validated working tree; final committed source and ZIP hashes recorded by immutable release manifest.",
+  "baselineCommit": "6a71faf4ec38695ec01484dda5524c870df79430",
+  "publicPages": 67,
+  "articleRecords": 58,
+  "phpVersion": "8.3.33",
+  "checks": {
+    "phpContentSeoRoutesPrivacySponsorship": {
+      "status": "PASS",
+      "assertions": 2046
+    },
+    "browserDesktopMobileToolsSearchPrint": {
+      "status": "PASS",
+      "assertions": 437,
+      "pages": 67,
+      "viewports": [
+        1440,
+        320,
+        390
+      ]
+    },
+    "keywordOpportunities": {
+      "status": "PASS",
+      "tests": 13,
+      "sourceGroups": 60,
+      "sourceRows": 2858,
+      "unmapped": 0,
+      "excluded": 10,
+      "deferred": 1
+    },
+    "editorialMetadataInlineEscaping": {
+      "status": "PASS",
+      "assertions": 56
+    },
+    "immutableReleaseAndFailureMatrix": {
+      "status": "PASS",
+      "tests": 3,
+      "failureModes": 13
+    },
+    "additionalUiPreview": {
+      "status": "PASS",
+      "viewports": [
+        320,
+        390,
+        760,
+        1200
+      ],
+      "dogTopicCards": 41
+    },
+    "hostedCI": {
+      "status": "SKIP",
+      "reason": "GitHub Actions permissions API reports enabled:false; workflow provided but not run."
+    },
+    "hostingerAccountProductionAcceptance": {
+      "status": "UNVERIFIED",
+      "reason": "No deployment or hosting account mutation authorized or performed."
+    },
+    "retainedNextStore": {
+      "status": "SKIP",
+      "reason": "Legacy application, DB and runtime are outside the PHP release scope."
+    }
+  },
+  "databaseRequired": false,
+  "databaseMigrationsRun": false,
+  "deployed": false,
+  "merged": false,
+  "paymentsActivated": false,
+  "gscMetrics": "unmeasured; no exports supplied",
+  "professionalReviews": "pending; no real reviewer identity supplied",
+  "packageVerification": "Run package_smoke.py against final immutable ZIP; final evidence belongs to release artifact folder."
+}

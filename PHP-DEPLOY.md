@@ -1,12 +1,12 @@
 # Mascota — subir la versión PHP a Hostinger
 
-Actualizado 9 de octubre de 2026. Esta versión es un sitio editorial de SEO: **51 guías y 2 herramientas + 2 colecciones de razas + 4 secciones + 4 páginas editoriales + inicio = 64 páginas**. No necesita Node.js, Composer, MySQL ni instalación de dependencias en el servidor. Las fichas veterinarias pagadas están desactivadas.
+Actualizado 9 de octubre de 2026. Esta versión es un sitio editorial de SEO: **54 guías (una con comparador de comida), 2 herramientas independientes, 2 colecciones de razas, 4 secciones, 4 páginas editoriales e inicio = 67 páginas**. No necesita Node.js, Composer, MySQL ni instalación de dependencias en el servidor. Las fichas veterinarias pagadas están desactivadas.
 
 ## La forma rápida para esta noche
 
 1. En hPanel, elegí **mascota.com.py** y comprobá que sea un sitio PHP/HTML. Seleccioná **PHP 8.3 o 8.4**. Este proyecto fue probado localmente con PHP 8.3.33; el PHP real de tu cuenta todavía debe comprobarse.
 2. Abrí el administrador de archivos. Guardá una copia privada de los archivos actuales y de cualquier configuración real antes de reemplazar el inicio. Esta tarea no inspeccionó tu cuenta ni generó una copia de producción.
-3. Subí `mascota-hostinger-2026-10-09.zip` a la carpeta del dominio, **un nivel por encima de `public_html`**, y extraelo allí. El ZIP contiene estas dos carpetas hermanas:
+3. Subí el ZIP indicado en el manifest del release a la carpeta del dominio, **un nivel por encima de `public_html`**, y extraelo allí. El ZIP contiene estas dos carpetas hermanas:
 
 ```text
 carpeta-del-dominio/
@@ -19,6 +19,7 @@ carpeta-del-dominio/
     .htaccess
     index.php
     assets/
+    release.json              # Huella pública sin secretos
 ```
 
 4. Confirmá que `.htaccess` se haya extraído y que la página de bienvenida anterior no tenga prioridad. `DirectoryIndex index.php` está configurado en el archivo nuevo. Conservá la copia anterior fuera de la carpeta pública; no dejes un respaldo accesible por URL.
@@ -66,7 +67,7 @@ Desde la raíz del repositorio:
 php -S 127.0.0.1:8178 -t php-site/public php-site/router.php
 python php-site/tests/smoke.py --php php
 python php-site/tools/package.py --output /ruta/privada/de/salida
-python php-site/tests/package_smoke.py --php php --zip /ruta/privada/de/salida/mascota-hostinger-2026-10-09.zip
+python php-site/tests/package_smoke.py --php php --zip /ruta/privada/de/salida/mascota-hostinger-<version>.zip
 ```
 
 En Windows el PHP verificado está en `C:/php/php.exe`. En Linux los comandos usan el PHP instalado. Las pruebas HTTP copian la aplicación a una carpeta temporal y usan datos sintéticos; no escriben sobre anuncios reales.
@@ -89,12 +90,53 @@ Para volver atrás, conservá la versión actual y restaurá los archivos públi
 
 Referencias: [Hostinger · sitios PHP/HTML con Git](https://www.hostinger.com/support/1583302-how-to-deploy-a-git-repository-in-hostinger/), [Hostinger · elegir versión PHP](https://www.hostinger.com/support/1575755-how-to-change-the-php-version-of-your-hostinger-hosting-plan/). El despliegue por Git no se asume capaz de seleccionar un subdirectorio del repositorio; para esta noche usá el paquete explícito.
 
-## Herramientas y referencias del portfolio — 9 octubre 2026
+## SEO, herramientas y release reproducible — 9 octubre 2026
 
-Release actual: `php-portfolio-20261009`, 64 rutas indexables y 17 archivos permitidos; el ZIP nuevo está en `C:/AI work/mascota/portfolio-2026-10-09/`, separado del release anterior. [Acuerdo compartido](https://github.com/antonmarklundcom/mascota/blob/codex/mascota-php-seo/docs/portfolio/2026-10-09/MASCOTA-PERRO-AGREEMENT.md). El paquete necesita también `mascota-app/app/interactive.php` y `public_html/assets/tools.js`; desplegar archivos de una misma versión.
+La versión anterior `php-portfolio-20261009` queda como historial en `C:/AI work/mascota/portfolio-2026-10-09/`. El incremento SEO tiene 67 rutas. Los paquetes nuevos usan `mascota-hostinger-<commit12>-<fingerprint12>.zip` con su `.manifest.json`; no sustituyen silenciosamente otro contenido con el mismo nombre. El manifest declara `sourceState` y commit reales, rutas y hashes permitidos. `public_html/release.json` contiene una huella pública sin secretos. Desplegá ambas carpetas de una misma versión: el header `X-Mascota-Release` usa esa huella en el paquete.
 
-Calculadora: `/cuidados/calculadora-presupuesto-mascota/`; planificador: `/cuidados/planificador-cuidados/`. JavaScript local, sin cuentas, almacenamiento ni envío de campos. Probar importes, reset y vista de impresión en móvil/escritorio. La calculadora señala campos pendientes y separa ahorro de gasto; no aporta cotizaciones. Para actualizar una herramienta editar PHP/JS canónicos y reconstruir.
+Después de subir, corré el verificador desde tu PC, con el manifest que acompañaba exactamente al ZIP:
 
-`perro_links_enabled => true` habilita siete referencias contextuales a seis destinos públicos verificados el 9 octubre. Si alguno deja de funcionar, retirar la referencia o poner `false` en la configuración privada; volver a comprobar antes de reactivar. No hace requests a Perro al cargar una guía. Perro → Mascota sigue desactivado hasta que los cinco destinos de Mascota estén publicados y comprobados. No activar sponsors/pagos por publicar las herramientas.
+```sh
+python php-site/tools/check_release.py --base-url https://mascota.com.py --manifest /ruta/privada/mascota-hostinger-<version>.manifest.json
+```
 
-El chequeo público de preparación confirmó Mascota default hosting y guías 404; no equivale a un despliegue. No fusionar PR20 ni subir ZIP sin autorización del propietario.
+Hace solo GET al mismo dominio. Comprueba versión, HTTPS, sitemap completo, canonicals, indexación, assets y rutas privadas. Si falla, resolver la causa antes de declarar el lanzamiento. No es una auditoría de rankings ni comprueba una cuenta de Search Console. El chequeo local del ZIP usa HTTP únicamente en loopback con flag explícito; no prueba el Apache/LiteSpeed de Hostinger.
+
+Las guías de perros y gatos agrupan sus enlaces por razas, alimentación, salud, preparación, herramientas y convivencia, dentro de las mismas URLs. `species`/`topic` controlan esos grupos. `inline_paragraphs` permite segmentos de texto y enlaces a destinos internos comprobados; no acepta HTML crudo. El contrato completo está en `php-site/docs/UI-CAPABILITIES.md`.
+
+La comida para perros incluye `tool: food-cost`: compara precio/kg y costo de 30 días con precios, peso y gramos diarios aportados por el visitante. No prescribe raciones. Calculadora de presupuesto y planificador conservan sus URLs. Las tres herramientas tienen reset e impresión, sin envío ni almacenamiento de campos.
+
+Los assets están registrados con dimensiones, créditos y origen en `content/assets.json`. Las tarjetas OG son propias de cada artículo; el arte general no se presenta como una foto de raza. Después de cambiar títulos o añadir artículos:
+
+```sh
+python php-site/tools/build-editorial-assets.py
+```
+
+Necesita Pillow en desarrollo, nunca en Hostinger. La aplicación publicada usa solo archivos locales. `editorial-team.json` empieza vacío. Incorporar una persona o revisión exige identidad, rol y alcance verdaderamente verificados; las fuentes consultadas no se presentan como revisión clínica. La cola privada se consulta con:
+
+```sh
+php php-site/app/editorial.php
+```
+
+La herramienta offline de oportunidades lee el KWP original y, opcionalmente, CSV reales de Search Console. Guardá informes fuera del document root y Git. No se inventan métricas ni relaciones consulta/página a partir de exportaciones separadas:
+
+```sh
+python php-site/tools/keyword_opportunities.py --kwp /ruta/keywords-for-ai.md --content php-site/content/articles.json --mapping docs/seo/2026-10-09/KEYWORD-PAGE-MAP.csv --output /ruta/privada/reportes
+python -m unittest discover -s php-site/tests -p test_keyword_opportunities.py -v
+python php-site/tests/test_release.py
+python php-site/tests/test_editorial.py --php php
+```
+
+Prueba de navegador portable (Node y Playwright solo en desarrollo):
+
+```sh
+npm install --prefix php-site/tests --ignore-scripts
+npx --prefix php-site/tests playwright install chromium
+node php-site/tests/browser.cjs --php php --output /ruta/privada/browser-checks
+```
+
+Opciones `--playwright-module`, `--browser-executable`, `--base-url`, `--root` permiten usar instalaciones reales existentes. Sin `--base-url` crea una copia temporal privada y un preview propio; no cambia la configuración de producción. La CI ejecuta PHP8.3/8.4 y estas comprobaciones, pero Actions debe estar habilitado por el propietario para que corra en GitHub.
+
+Las siete referencias contextuales a seis destinos de Perro conservan el criterio del [acuerdo compartido](https://github.com/antonmarklundcom/mascota/blob/codex/mascota-php-seo/docs/portfolio/2026-10-09/MASCOTA-PERRO-AGREEMENT.md). Perro → Mascota sigue condicionado a publicación y verificación de los destinos de Mascota. No activar sponsors ni pagos por publicar las herramientas.
+
+No se fusionó ni desplegó este trabajo. La verificación anterior de Mascota observó la página por defecto; no es evidencia de que este paquete esté publicado. Confirmar el estado actual con el verificador, usando el manifest correcto.

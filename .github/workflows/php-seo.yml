@@ -11,7 +11,7 @@ permissions:
 jobs:
   php:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 15
     strategy:
       matrix:
         php: ['8.3', '8.4']
@@ -21,6 +21,21 @@ jobs:
         with:
           php-version: ${{ matrix.php }}
           coverage: none
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --prefix php-site/tests --ignore-scripts
+      - run: npx --prefix php-site/tests playwright install --with-deps chromium
       - run: python3 php-site/tests/smoke.py --php php
+      - run: python3 php-site/tests/test_release.py
+      - run: python3 php-site/tests/test_editorial.py --php php
+      - run: python3 -m unittest discover -s php-site/tests -p test_keyword_opportunities.py -v
       - run: python3 php-site/tools/package.py --output /tmp/mascota-package
-      - run: python3 php-site/tests/package_smoke.py --php php --zip /tmp/mascota-package/mascota-hostinger-2026-10-09.zip
+      - name: Verify extracted release
+        run: |
+          python3 - <<'PY'
+          import pathlib, subprocess
+          package = next(pathlib.Path('/tmp/mascota-package').glob('*.zip'))
+          subprocess.run(['python3','php-site/tests/package_smoke.py','--php','php','--zip',str(package)],check=True)
+          PY
+      - run: node php-site/tests/browser.cjs --php php --output /tmp/mascota-browser

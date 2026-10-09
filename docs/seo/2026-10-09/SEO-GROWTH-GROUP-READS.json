@@ -1,0 +1,4564 @@
+{
+  "sourceSHA256": "2000fc93e4fb1f9d9fbd2208f9e59b15e3bc776d8360df8bd4a4df82a704aade",
+  "readDate": "2026-10-09",
+  "release": "php-seo-growth-20261009",
+  "method": "Full parsed group detail rows including volume, CPC and folded variants read before editing. Mixed aliases are not assumed equivalent. No brand pages.",
+  "groups": [
+    {
+      "group": "veterinario cerca de mi",
+      "projectPhrases": 43,
+      "projectVolume": 16800,
+      "topSummary": "veterinario cerca de mi (14,800); veterinario 24 horas cerca de mi (720); veterinario cerca de mi ubicación (260); clinica veterinaria cerca de mi (170); veterinario abierto ahora (140); tienda de mascotas cerca de mi (110); hospital veterinario cerca de mi (70); veterinaria cerca a mi ubicación (50)",
+      "selectedPhrases": 38,
+      "selectedSearches": 38,
+      "selectedVolume": 16800,
+      "rows": [
+        {
+          "phrase": "veterinario cerca de mi",
+          "volume": 14800,
+          "cpcLowSEK": 0.6,
+          "cpcHighSEK": 5.79,
+          "variants": []
+        },
+        {
+          "phrase": "veterinario 24 horas cerca de mi",
+          "volume": 720,
+          "cpcLowSEK": 1.09,
+          "cpcHighSEK": 6.92,
+          "variants": []
+        },
+        {
+          "phrase": "veterinario cerca de mi ubicación",
+          "volume": 260,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "clinica veterinaria cerca de mi",
+          "volume": 170,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "veterinario abierto ahora",
+          "volume": 140,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "tienda de mascotas cerca de mi",
+          "volume": 110,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "hospital veterinario cerca de mi",
+          "volume": 70,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "veterinaria cerca a mi ubicación",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "veterinario a domicilio",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "veterinario urgencias cerca de mi",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "urgencias veterinarias cerca de mi",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "veterinario abierto hoy",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "tienda de animales cerca de mi",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "veterinaria cerca de mi ubicación actual",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "veterinario a domicilio cerca de mi",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "veterinario de aves cerca de mi",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "clinica 24 horas cerca de mi",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "clinica de perros cerca de mi",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "clinica veterinaria 24 horas cerca de mi",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "hospital de animales cerca de mi",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "hospital de perros cerca de mi",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "hospital para perros cerca de mi",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "hospital veterinario 24 horas cerca de mi",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "tienda de perros cerca de mi",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "urgencias veterinarias a domicilio",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "venta de cachorros cerca de mi",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "veterinaria cerca a mi",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "veterinaria cerca de mi abierta",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "veterinarias baratas cerca de mi",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "veterinarias cerca de mi abiertas",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "veterinario 24 horas cerca de mi ubicación",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "veterinario abierto hoy cerca de mi",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "veterinario barato cerca de mi",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "veterinario cerca de mi 24 horas",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "veterinario cerca de mi barato",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "veterinario de animales exóticos cerca de mi",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "veterinario de exóticos cerca de mi",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "veterinario de urgencias cerca de mi",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "group": "gatos",
+      "projectPhrases": 447,
+      "projectVolume": 16280,
+      "topSummary": "gatos (12,100); perros y gatos (260); gatos garfield (170) = gatos negros, stickers de gatos; casa de gatos (140) = casas de gatos, la loca de los gatos, +1; urinary gatos (140); ojos de gato (110); n&d gatos (90); pulgas en gatos (70)",
+      "selectedPhrases": 55,
+      "selectedSearches": 50,
+      "selectedVolume": 14220,
+      "rows": [
+        {
+          "phrase": "gatos",
+          "volume": 12100,
+          "cpcLowSEK": 2.53,
+          "cpcHighSEK": 11.57,
+          "variants": []
+        },
+        {
+          "phrase": "perros y gatos",
+          "volume": 260,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gatos garfield",
+          "volume": 170,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": [
+            "gatos negros",
+            "stickers de gatos"
+          ]
+        },
+        {
+          "phrase": "casa de gatos",
+          "volume": 140,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": [
+            "casas de gatos",
+            "la loca de los gatos",
+            "patas de gato"
+          ]
+        },
+        {
+          "phrase": "urinary gatos",
+          "volume": 140,
+          "cpcLowSEK": 0.69,
+          "cpcHighSEK": 3.87,
+          "variants": []
+        },
+        {
+          "phrase": "ojos de gato",
+          "volume": 110,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "n&d gatos",
+          "volume": 90,
+          "cpcLowSEK": 2.3,
+          "cpcHighSEK": 5.04,
+          "variants": []
+        },
+        {
+          "phrase": "pulgas en gatos",
+          "volume": 70,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pulgas gatos",
+          "volume": 70,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "arena de gato",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "arena de gatos",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gatos calvos",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pulgas de gato",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "churus gato",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gatos de sailor moon",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "tos en gatos",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "tos gatos",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "brit gatos",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "broadline gatos",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "de gatos",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "dientes de gato",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "garrapatas en gatos",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gatos bonitos",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gatos raros",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "loca de los gatos",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "los gatos tienen garrapatas",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "matisse gatos",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pro plan gatos",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "vet life urinary gatos",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "arena gatos",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gatos a la venta",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gatos cachorros",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gatos de disney",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gatos en venta",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gatos enormes",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gatos grandes maine coon",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gatos obesos",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gatos pequeños",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "nutrique gatos",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pinturas de gatos",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "therapy urinary gatos",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "vet life renal gatos",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "vital can urinary gatos",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "advance gatos",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "advance renal gatos",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "advance urinary gatos",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "advantage gatos",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "afoxolaner gatos",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "agility gatos",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "agility gold gatos",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "group": "labrador",
+      "projectPhrases": 510,
+      "projectVolume": 14020,
+      "topSummary": "labrador (4,400); retriever labrador (1,900); labrador perro (1,600) = perro labrador; labrador negra (720); cachorros labrador (320) = labrador cachorro, labrador cachorros; labrador dudley (210); labrador blanco (170); bebes labradores (110) = labrador bebe, labrador chocolate, +1",
+      "selectedPhrases": 56,
+      "selectedSearches": 50,
+      "selectedVolume": 10530,
+      "rows": [
+        {
+          "phrase": "labrador",
+          "volume": 4400,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "retriever labrador",
+          "volume": 1900,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "labrador perro",
+          "volume": 1600,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": [
+            "perro labrador"
+          ]
+        },
+        {
+          "phrase": "labrador negra",
+          "volume": 720,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cachorros labrador",
+          "volume": 320,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": [
+            "labrador cachorro",
+            "labrador cachorros"
+          ]
+        },
+        {
+          "phrase": "labrador dudley",
+          "volume": 210,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "labrador blanco",
+          "volume": 170,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "bebes labradores",
+          "volume": 110,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": [
+            "labrador bebe",
+            "labrador chocolate",
+            "labrador golden retriever cachorro"
+          ]
+        },
+        {
+          "phrase": "cachorro labrador retriever",
+          "volume": 90,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "labrador mestizo",
+          "volume": 90,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "labrador retriever cachorro",
+          "volume": 90,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "lobero irlandés",
+          "volume": 90,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "perros de raza labrador",
+          "volume": 70,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "perro labrador cachorro",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "labradores hembras",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "perro raza labrador",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "tipos de labrador",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cachorros de labrador",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "labrador americano",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "labrador ingles",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "labrador retriever bebe",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "perro labrador retriever",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cachorro labrador blanco",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "labrador 3 meses",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "labrador adulto",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "labrador australiano",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "labrador características",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "labrador gris",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "labradores cruzados",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "adopcion de labrador cachorro",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "adoptar labrador",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "alergia labrador",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "animal labrador",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "basset leonado de bretaña",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "beagle con labrador",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "bebe labrador blanco",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "border labrador",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cachorro de labrador blanco",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cachorro de labrador chocolate",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cachorro de labrador retriever",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cachorro labrador 1 mes",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cachorro labrador 3 meses",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cachorro labrador 4 meses",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cachorro labrador 5 meses",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cachorro labrador 6 meses",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cachorro labrador americano",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cachorro labrador bebe",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cachorro labrador cafe",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cachorro labrador chocolate",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cachorro labrador de 1 mes",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "group": "den retriever",
+      "projectPhrases": 542,
+      "projectVolume": 12460,
+      "topSummary": "den retriever (6,600) = gold3n retriever, golden r retriever, +2; cachorro golden retriever (1,300); bebes golden retriever (260) = golden retriever bebes; golden retriever precio (210) = precio del golden retriever; golden retriever labrador retriever (140) = golden retriever y labrador, golden y labrador retriever, +3; perro golden retriever (110) = perros labrador golden retriever; golden terrier (70); golden retriever perros (50)",
+      "selectedPhrases": 62,
+      "selectedSearches": 50,
+      "selectedVolume": 9360,
+      "rows": [
+        {
+          "phrase": "den retriever",
+          "volume": 6600,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": [
+            "gold3n retriever",
+            "golden r retriever",
+            "golden retriever",
+            "golden retriever retriever"
+          ]
+        },
+        {
+          "phrase": "cachorro golden retriever",
+          "volume": 1300,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "bebes golden retriever",
+          "volume": 260,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": [
+            "golden retriever bebes"
+          ]
+        },
+        {
+          "phrase": "golden retriever precio",
+          "volume": 210,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": [
+            "precio del golden retriever"
+          ]
+        },
+        {
+          "phrase": "golden retriever labrador retriever",
+          "volume": 140,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": [
+            "golden retriever y labrador",
+            "golden y labrador retriever",
+            "labrador golden retriever",
+            "labrador retriever y golden retriever",
+            "retriever labrador golden"
+          ]
+        },
+        {
+          "phrase": "perro golden retriever",
+          "volume": 110,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": [
+            "perros labrador golden retriever"
+          ]
+        },
+        {
+          "phrase": "golden terrier",
+          "volume": 70,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "golden retriever perros",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "perros de raza golden retriever",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "perros raza golden retriever",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "raza de perros golden retriever",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "golden retriever blanco",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "retriever de nueva escocia",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "coated retriever",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "golden retriever características",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "golden retriever hembra",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "precio de golden retriever",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "precio de un golden retriever",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "1 golden retriever",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "2 golden retriever",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "adopcion de golden retriever",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "adopcion de golden retriever cachorros",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "adopcion perros golden retriever",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "adoptar golden retriever",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "alimento para golden retriever",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "alopecia golden retriever",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "animal golden retriever",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "baño golden retriever",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "bebes de golden retriever",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "border collie con golden retriever",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "border collie golden retriever",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "border collie y golden retriever",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "buscar golden retriever",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cachorro de golden retriever precio",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cachorro golden retriever 3 meses",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cachorro golden retriever 4 meses",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cachorro golden retriever blanco",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cachorros de golden retriever",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cachorros de golden retriever en adopción",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cachorros golden retriever en adopción",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cachorros golden retriever venta",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cachorros golden terrier",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cachorros recien nacidos golden retriever",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "caniche y golden retriever",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "características del golden retriever",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "clases de golden retriever",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "clases de retriever",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cocker golden retriever",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "comida para golden retriever",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "comprar golden retriever",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "group": "pastor alemán",
+      "projectPhrases": 315,
+      "projectVolume": 11600,
+      "topSummary": "pastor alemán (6,600) = pastor alemana; bebe pastor aleman (720) = bebes pastor aleman; cachorros pastor aleman (590) = perro pastor aleman; pastor alemán precio (210); pastor aleman con pelo largo (170); cachorros de pastor aleman (110) = husky pastor aleman, pastor aleman cachorro 1 mes, +1; pastor aleman bebe 1 mes (50); pastor aleman de pelo largo (50)",
+      "selectedPhrases": 56,
+      "selectedSearches": 50,
+      "selectedVolume": 9460,
+      "rows": [
+        {
+          "phrase": "pastor alemán",
+          "volume": 6600,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": [
+            "pastor alemana"
+          ]
+        },
+        {
+          "phrase": "bebe pastor aleman",
+          "volume": 720,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": [
+            "bebes pastor aleman"
+          ]
+        },
+        {
+          "phrase": "cachorros pastor aleman",
+          "volume": 590,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": [
+            "perro pastor aleman"
+          ]
+        },
+        {
+          "phrase": "pastor alemán precio",
+          "volume": 210,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pastor aleman con pelo largo",
+          "volume": 170,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cachorros de pastor aleman",
+          "volume": 110,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": [
+            "husky pastor aleman",
+            "pastor aleman cachorro 1 mes",
+            "pastor alemán mestizo"
+          ]
+        },
+        {
+          "phrase": "pastor aleman bebe 1 mes",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pastor aleman de pelo largo",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pastor alemán raza",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pastor aleman 2 meses",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pastor alemán cachorro 1 mes precio",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pastor alemán colores",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pastor aleman de 1 mes",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pastor aleman de 2 meses",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "raza de perro pastor alemán",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "husky con pastor aleman",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pastor aleman 3 meses",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pastor alemán características",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pastor aleman con husky",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pastor aleman con rottweiler",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pastor aleman de 3 meses",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pastor aleman y husky",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "razas de pastor aleman",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "rottweiler pastor aleman",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cachorros pastor alemán en venta baratos",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "colores de pastor aleman",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "labrador con pastor alemán",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "labrador pastor aleman",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pastor alemán 1 mes y medio",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pastor alemán cachorro precio",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pastor aleman con pitbull",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pastor aleman con siberiano",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pastor aleman de 4 meses",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pastor aleman de trabajo",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pastor aleman de un mes",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pastor aleman en ingles",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pastor aleman en venta",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pastor aleman suizo",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "1 mes pastor aleman bebe",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "a mi pastor aleman se le cae mucho el pelo",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "a pastor alemán",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "adopcion de pastor aleman",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "adopcion de perros pastor aleman",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "adoptar pastor aleman",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "alemán pastor alemán",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "alimento para pastor aleman",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "alimento para pastor alemán cachorro",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "antiguo pastor aleman",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "bebe de pastor aleman",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "buscar pastor alemán",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "group": "veterinari",
+      "projectPhrases": 106,
+      "projectVolume": 10030,
+      "topSummary": "veterinari (8,100) = veterinaria, veterinarie, +1; ciencias veterinarias (320) = veterinaria tacuary; la veterinaria (260) = veterinaria españa; medica veterinaria (210); veterinaria integral (140); dr veterinario (70); veterinaria animals (50); veterinaria en ingles (50)",
+      "selectedPhrases": 55,
+      "selectedSearches": 50,
+      "selectedVolume": 9790,
+      "rows": [
+        {
+          "phrase": "veterinari",
+          "volume": 8100,
+          "cpcLowSEK": 0.9,
+          "cpcHighSEK": 9.95,
+          "variants": [
+            "veterinaria",
+            "veterinarie",
+            "veterinario"
+          ]
+        },
+        {
+          "phrase": "ciencias veterinarias",
+          "volume": 320,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": [
+            "veterinaria tacuary"
+          ]
+        },
+        {
+          "phrase": "la veterinaria",
+          "volume": 260,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": [
+            "veterinaria españa"
+          ]
+        },
+        {
+          "phrase": "medica veterinaria",
+          "volume": 210,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "veterinaria integral",
+          "volume": 140,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "dr veterinario",
+          "volume": 70,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "veterinaria animals",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "veterinaria en ingles",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "medico veterinario",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "productos veterinarios",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "laboratorios veterinarios",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "vet veterinaria",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "veterinaria labrador",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "medicina veterinaria y zootecnia",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "oftalmología veterinaria",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "oncologia veterinaria",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "veterinaria agropecuaria",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "veterinaria movil",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "abc veterinario",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "ampicilina veterinaria",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "bayer veterinaria",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "benazepril veterinario",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cardiologia veterinaria",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "chinoin veterinaria",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cirugia veterinaria",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cirujano veterinario",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cirurgia veterinária",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "consejo profesional de medicos veterinarios",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "consejo veterinario",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "daktari veterinaria",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "dermatologia veterinaria",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "dr paul veterinario",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "el veterinario",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "enfermeria veterinaria",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "engystol veterinario",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "fauna veterinaria",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "fisiologia veterinaria",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "histologia veterinaria",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "inmunologia veterinaria",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "integral veterinaria",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "medicina veterinaria y zootecnia precios",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "medico veterinario zootecnista",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "msd veterinaria",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "mundo veterinario",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "neonatologia veterinaria",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "odontologia veterinaria",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "ortopedia veterinaria",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "productos de veterinaria",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "radiologia veterinaria",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "sulfatrim veterinario",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "group": "gato persa",
+      "projectPhrases": 499,
+      "projectVolume": 8240,
+      "topSummary": "gato persa (4,400); bebe gato persa (170) = gato persa precio; gata blanca persa (50); gata persa blanca (50); gata persa gris (50); gato persa naranja (40); gata persa azul (30); gato de raza persa (30)",
+      "selectedPhrases": 51,
+      "selectedSearches": 50,
+      "selectedVolume": 5300,
+      "rows": [
+        {
+          "phrase": "gato persa",
+          "volume": 4400,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "bebe gato persa",
+          "volume": 170,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": [
+            "gato persa precio"
+          ]
+        },
+        {
+          "phrase": "gata blanca persa",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gata persa blanca",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gata persa gris",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gato persa naranja",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gata persa azul",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gato de raza persa",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "persa azul gato",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gato angora persa",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gato persa bebe precio",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "himalayo gato persa bebe",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "persa angora gato",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "a mi gato persa se le cae mucho el pelo",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "adopcion persa",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "alimentacion gato persa",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "alimento para gato persa",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "angora gato persa",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "angora gato persa precio",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "azul persa gato",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cachorro de gato persa",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cachorro gato persa",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "calico persa",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "carácter gato persa",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "caracteristicas gato persa",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "chinchilla gato persa",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "chinchilla persa",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "comida gato persa",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "comida para gatos persa",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "comprar gato persa",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "comprar gato persa barato",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cuál es el gato persa",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cuál es el precio de un gato persa",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cuidados del gato persa",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "de donde es el gato persa",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "doll face persa",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "el gato persa",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "garfield es un gato persa",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "garfield gato persa",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "garfield persa",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gata persa amarilla",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gata persa blanca ojos azules",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gata persa blanca precio",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gata persa embarazada",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gata persa exotica",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gata persa extrema",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gata persa negra",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gata persa tricolor",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gato angora con persa",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gato angora cruzado con persa",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "group": "razade gatos",
+      "projectPhrases": 439,
+      "projectVolume": 7590,
+      "topSummary": "razade gatos (2,400) = razas de gatos; gato razas (320) = gatos razas, raza gatos; tipos de gatos (260); gato de raza grande (140) = raza de gatos grandes; razas de gatos peludos (110); garfield gato raza (90); gato grande raza (70); razas de patos (70)",
+      "selectedPhrases": 54,
+      "selectedSearches": 50,
+      "selectedVolume": 4220,
+      "rows": [
+        {
+          "phrase": "razade gatos",
+          "volume": 2400,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": [
+            "razas de gatos"
+          ]
+        },
+        {
+          "phrase": "gato razas",
+          "volume": 320,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": [
+            "gatos razas",
+            "raza gatos"
+          ]
+        },
+        {
+          "phrase": "tipos de gatos",
+          "volume": 260,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gato de raza grande",
+          "volume": 140,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": [
+            "raza de gatos grandes"
+          ]
+        },
+        {
+          "phrase": "razas de gatos peludos",
+          "volume": 110,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "garfield gato raza",
+          "volume": 90,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gato grande raza",
+          "volume": 70,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "razas de patos",
+          "volume": 70,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gato naranja raza",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "razas de gatos comunes",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "razas de gatos finos",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gato peludo raza",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "especies de gatos",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gato de raza maine coon",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "raza de gato blanco",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "raza de gato maine coon",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "raza de gatos domesticos",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "razas de gatos pequeños",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "todas las razas de gatos",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "clases de gatos",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gato blanco raza",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gato gigante raza",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gato raza ragdoll",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "raza de gato naranja",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "15 razas de gatos",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "5 razas de gatos",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "clases de gatos domesticos",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "clases de gatos finos",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cuáles son las razas de gatos",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cuáles son las razas de los gatos",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cuáles son los gatos más grandes del mundo",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "de que raza es el gato garfield",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "de que raza es garfield",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "de que raza es mi gato",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "de que raza son los gatos naranjas",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "diferentes razas de gato",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "diferentes tipos de gatos",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "distintas razas de gatos",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "el gato mas grande del mundo raza",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "especies de gatos domesticos",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "fotos de gatos de raza",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "garfield que raza de gato es",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "garfield raza de gato",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gata de tres colores raza",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gato amarillo con blanco raza",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gato amarillo raza",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gato argentino raza",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gato atigrado raza",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gato bills raza",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gato blanco con manchas negras raza",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "group": "comida para perros",
+      "projectPhrases": 859,
+      "projectVolume": 7010,
+      "topSummary": "comida para perros (480); racion para perros (140); alimento para perros (110) = comida de perro; comida para perros paraguay (110); comederos para perros (90); comida para cachorros (50); dispensador de comida para perros (50); los 10 mejores alimentos para perros (50)",
+      "selectedPhrases": 51,
+      "selectedSearches": 50,
+      "selectedVolume": 1780,
+      "rows": [
+        {
+          "phrase": "comida para perros",
+          "volume": 480,
+          "cpcLowSEK": 2.69,
+          "cpcHighSEK": 3.7,
+          "variants": []
+        },
+        {
+          "phrase": "racion para perros",
+          "volume": 140,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "alimento para perros",
+          "volume": 110,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": [
+            "comida de perro"
+          ]
+        },
+        {
+          "phrase": "comida para perros paraguay",
+          "volume": 110,
+          "cpcLowSEK": 2.5,
+          "cpcHighSEK": 3.14,
+          "variants": []
+        },
+        {
+          "phrase": "comederos para perros",
+          "volume": 90,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "comida para cachorros",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "dispensador de comida para perros",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "los 10 mejores alimentos para perros",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "hueso para perro comestible",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "comedero automatico para perros",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "comida para perros cerca de mi",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "dieta barf perros",
+          "volume": 30,
+          "cpcLowSEK": 2.32,
+          "cpcHighSEK": 3.0,
+          "variants": []
+        },
+        {
+          "phrase": "marcas de comida para perros",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "alimento para cachorros",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "alimento para mascotas",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "alimento para perros premium",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "alimentos premium para perros",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "comida de perro marcas",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "comida de perros marcas",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "comida humeda para perros",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "comida para perros cachorros",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "comida para perros pedigree",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "comida para perros precios",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "comida para pollitos",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "comida perros",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "comida premium para perros",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "mutt comida para perro",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pasto para perro",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pienso para cachorros",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "venta de comida para perros",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "10 alimentos dañinos para los perros",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "10 alimentos prohibidos para perros",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "alimentacion barf para perros",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "alimentación barf perros",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "alimentacion canina",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "alimentación correcta para perros",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "alimentacion de los perros",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "alimentación de un perro",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "alimentacion natural para perros",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "alimentación para perros con erliquia",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "alimentacion perros",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "alimento agility perros",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "alimento agility perros opiniones",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "alimento animal planet cachorro",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "alimento antialergico para perros",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "alimento barf perros",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "alimento bueno para cachorros",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "alimento cachorro",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "alimento cachorro premium",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "alimento cachorro raza grande",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "group": "shih tzu precio",
+      "projectPhrases": 456,
+      "projectVolume": 5560,
+      "topSummary": "shih tzu precio (390) = show show precio; border collie precio (140) = cane corso precio, maine coon precio; perros salchichas precio (110) = pug precio, shar pei precio; beagle precio (90); bull terrier precio (90); doberman precio (90); huron precio (90); jack russell terrier precio (90)",
+      "selectedPhrases": 55,
+      "selectedSearches": 50,
+      "selectedVolume": 2670,
+      "rows": [
+        {
+          "phrase": "shih tzu precio",
+          "volume": 390,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": [
+            "show show precio"
+          ]
+        },
+        {
+          "phrase": "border collie precio",
+          "volume": 140,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": [
+            "cane corso precio",
+            "maine coon precio"
+          ]
+        },
+        {
+          "phrase": "perros salchichas precio",
+          "volume": 110,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": [
+            "pug precio",
+            "shar pei precio"
+          ]
+        },
+        {
+          "phrase": "beagle precio",
+          "volume": 90,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "bull terrier precio",
+          "volume": 90,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "doberman precio",
+          "volume": 90,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "huron precio",
+          "volume": 90,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "jack russell terrier precio",
+          "volume": 90,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "perro beagle precio",
+          "volume": 90,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "perro husky precio",
+          "volume": 90,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "perro pug precio",
+          "volume": 90,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "weimaraner precio",
+          "volume": 90,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "yorkie terrier precio",
+          "volume": 90,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "rottweiler cachorro precio",
+          "volume": 70,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "rottweiler precio",
+          "volume": 70,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cocker spaniel precio",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "dalmatas precio",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "perro labrador precio",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "perro rottweiler precio",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "perro shih tzu precio",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "basset hound precio",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "labrador retriever precio",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "perro shar pei precio",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "perro yorkie precio",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "precio labrador retriever",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "yorkie precio",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "beagle cachorro precio",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "perros doberman precio",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pitbull precio",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "bichon frise precio",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "boyero de berna precio",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "british shorthair precio",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "corgi precio",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "doberman cachorro precio",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "golden retriever cachorro precio",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "husky precio",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "labrador precio",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "maltipoo precio",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "mini shih tzu precio",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "perro rhodesian precio",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "perros border collie precio",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pitbull cachorro precio",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pointer ingles precio",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "precio de rottweiler",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "precio labrador cachorro",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "ragdoll precio",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "raza de perro beagle precio",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "raza shih tzu precio",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "venta de cachorros rottweiler baratos",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "abisinio precio",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "group": "gran danes",
+      "projectPhrases": 30,
+      "projectVolume": 5130,
+      "topSummary": "gran danes (4,400) = gran danes perro, perro gran danes; cachorro gran danes (170) = gran danes cachorro; gran danes precio (110); perro danes (90); gran danes arlequin (50); gran danes marron (50); gran danes cafe (30); raza de perro gran danés (30)",
+      "selectedPhrases": 28,
+      "selectedSearches": 25,
+      "selectedVolume": 5130,
+      "rows": [
+        {
+          "phrase": "gran danes",
+          "volume": 4400,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": [
+            "gran danes perro",
+            "perro gran danes"
+          ]
+        },
+        {
+          "phrase": "cachorro gran danes",
+          "volume": 170,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": [
+            "gran danes cachorro"
+          ]
+        },
+        {
+          "phrase": "gran danes precio",
+          "volume": 110,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "perro danes",
+          "volume": 90,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gran danes arlequin",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gran danes marron",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gran danes cafe",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "raza de perro gran danés",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "el gran danes",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gran danes azul",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gran danes gris",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "doberman grande",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gran danes blanco",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gran danes con labrador",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gran danés gigante",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gran danes golden retriever",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gran danes pedigree",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gran danes pedigree precio",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gran danes pequeño",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gran danes pet shop",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "gran danés raza",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "labrador con gran danes",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "lps gran danes",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "precio gran danes",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "un gran danés",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "group": "arena para gato",
+      "projectPhrases": 280,
+      "projectVolume": 5040,
+      "topSummary": "arena para gato (590) = arena para gatos; pipeta para gatitos (390) = pipetas para gatos; cama para gatos (320) = camas para gatos, rascadores para gatos; juguetes para gatos (210); casa para gatos (170) = collar para gatos, collares para gatos; ropa para gato (140) = ropa para gatos; bebederos para gatos (110); arena sanitaria para gatos (90)",
+      "selectedPhrases": 57,
+      "selectedSearches": 50,
+      "selectedVolume": 3750,
+      "rows": [
+        {
+          "phrase": "arena para gato",
+          "volume": 590,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": [
+            "arena para gatos"
+          ]
+        },
+        {
+          "phrase": "pipeta para gatitos",
+          "volume": 390,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": [
+            "pipetas para gatos"
+          ]
+        },
+        {
+          "phrase": "cama para gatos",
+          "volume": 320,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": [
+            "camas para gatos",
+            "rascadores para gatos"
+          ]
+        },
+        {
+          "phrase": "juguetes para gatos",
+          "volume": 210,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "casa para gatos",
+          "volume": 170,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": [
+            "collar para gatos",
+            "collares para gatos"
+          ]
+        },
+        {
+          "phrase": "ropa para gato",
+          "volume": 140,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": [
+            "ropa para gatos"
+          ]
+        },
+        {
+          "phrase": "bebederos para gatos",
+          "volume": 110,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "arena sanitaria para gatos",
+          "volume": 90,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "churu para gatos",
+          "volume": 90,
+          "cpcLowSEK": 1.15,
+          "cpcHighSEK": 2.91,
+          "variants": []
+        },
+        {
+          "phrase": "torre para gato",
+          "volume": 90,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "torre para gatos",
+          "volume": 90,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "casas para gatos",
+          "volume": 70,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "collar antipulgas para gatos",
+          "volume": 70,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "mochila para gatos",
+          "volume": 70,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "mochilas para gatos",
+          "volume": 70,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pecheras para gatos",
+          "volume": 70,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "collar isabelino para gatos",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "juguetes de gatos",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "platos para gatos",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "puerta para gatos",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "puertas para gatos",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "shampoo para gatos",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "arena aglomerante para gatos",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "camas de gatos",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cepillos para gatos",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "correa para gatos",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "correas para gatos",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "juguetes para gatos caseros",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "ratones para gatos",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "red para gatos",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "redes para gatos",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "transportin para gatos",
+          "volume": 40,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "casa para gatos exterior",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cosas para gatos",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pañales para gatos",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "para gatos",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "rascador de gatos",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "rascadores de gatos",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "accesorios para gatos",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "baño para gatos",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "bolso para gatos",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "bozal para gatos",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cama para gatos de madera",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "casa para gatos casera",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "formula para gatos bebes",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "malta para gatos",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "ropa de gato",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "transportadoras para gatos",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "wiska para gato",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "agility para gatos",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "group": "doberman miniatura",
+      "projectPhrases": 237,
+      "projectVolume": 4940,
+      "topSummary": "doberman miniatura (1,300) = perros mini pincher, perros pincher miniatura, +1; pinscher miniatura (720); schnauzer mini (390); teckel mini (260); perro schnauzer mini (210) = raza schnauzer mini, schnauzer miniatura; perro pincher mini (140) = perros salchichas mini, pinscher mini, +2; dachshund miniatura (110) = mini pincher; pincher mini toy (70)",
+      "selectedPhrases": 60,
+      "selectedSearches": 50,
+      "selectedVolume": 3920,
+      "rows": [
+        {
+          "phrase": "doberman miniatura",
+          "volume": 1300,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": [
+            "perros mini pincher",
+            "perros pincher miniatura",
+            "raza pinscher miniatura"
+          ]
+        },
+        {
+          "phrase": "pinscher miniatura",
+          "volume": 720,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "schnauzer mini",
+          "volume": 390,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "teckel mini",
+          "volume": 260,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "perro schnauzer mini",
+          "volume": 210,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": [
+            "raza schnauzer mini",
+            "schnauzer miniatura"
+          ]
+        },
+        {
+          "phrase": "perro pincher mini",
+          "volume": 140,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": [
+            "perros salchichas mini",
+            "pinscher mini",
+            "pinscher miniatura blanco",
+            "salchicha mini"
+          ]
+        },
+        {
+          "phrase": "dachshund miniatura",
+          "volume": 110,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": [
+            "mini pincher"
+          ]
+        },
+        {
+          "phrase": "pincher mini toy",
+          "volume": 70,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pinscher miniatura precio",
+          "volume": 70,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "perro miniatura",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "perros miniatura",
+          "volume": 50,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "bull terrier miniatura",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "fox terrier miniatura",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "perro minis",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "perros mini",
+          "volume": 30,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "bull terrier mini",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "doberman pinscher miniatura",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "mini pincher precio",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "mini toy perro",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "pequines mini",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "perro teckel mini",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "perros mini toy",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "yorkshire toy mini",
+          "volume": 20,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "arnes perro pequeño",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "belier mini lop",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "biofresh perro raza pequeña",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "bodeguero andaluz mini",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "border collie miniatura",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "busco perro pequeño",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cachorro french poodle mini toy",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cachorro mini toy",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "cachorros french poodle mini",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "caniche poodle mini",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "collie miniatura",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "comprar schnauzer mini",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "dermacomfort mini",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "doberman de pequeño",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "doberman en pequeño",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "doberman pinscher miniatura precio",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "eukanuba cachorro raza pequeña",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "excellent puppy raza pequeña",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "french mini toy",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "french poodle mini toy",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "french poodle mini toy adulto",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "french poodle mini toy baratos",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "french poodle mini toy blanco",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "french poodle pequeño",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "grifón vandeano basset pequeño",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "husky miniatura",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        },
+        {
+          "phrase": "jack russell terrier mini precio",
+          "volume": 10,
+          "cpcLowSEK": 0.0,
+          "cpcHighSEK": 0.0,
+          "variants": []
+        }
+      ]
+    }
+  ],
+  "newPages": [
+    {
+      "group": "gran danes",
+      "path": "/mascotas/perros/razas/gran-danes/",
+      "mainKeyword": "gran danes",
+      "reason": "Distinct existing missing breed. Ignore unrelated crosses and pet shop terms."
+    },
+    {
+      "group": "shih tzu precio",
+      "path": "/mascotas/perros/razas/shih-tzu/",
+      "mainKeyword": "shih tzu precio",
+      "reason": "Single breed guide includes honest cost section, no invented sale price; unrelated breeds excluded."
+    },
+    {
+      "group": "doberman miniatura",
+      "path": "/mascotas/perros/razas/pinscher-miniatura/",
+      "mainKeyword": "doberman miniatura",
+      "reason": "Clarify common misnomer and use accurate breed name. No duplicate aliases."
+    }
+  ],
+  "catExpansion": "Maine coon and ragdoll covered as sections of existing cat-breed collection; no speculative new breed URLs."
+}

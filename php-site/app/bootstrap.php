@@ -2,8 +2,9 @@
 declare(strict_types=1);
 
 const MASCOTA_ROOT = __DIR__ . '/..';
-const MASCOTA_RELEASE = 'php-portfolio-20261009';
+const MASCOTA_RELEASE = 'php-seo-growth-20261009';
 require_once __DIR__.'/interactive.php';
+require_once __DIR__.'/editorial.php';
 date_default_timezone_set('America/Asuncion');
 
 function h(string|int $value): string { return htmlspecialchars((string)$value, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); }
@@ -51,7 +52,7 @@ function guide_links(array $links): void {
     if (!$links) return;
     echo '<nav class="guide-links" aria-label="Guías relacionadas"><ul>';
     foreach ($links as $link) {
-        if (!is_array($link) || !is_string($link['path'] ?? null) || !str_starts_with($link['path'], '/') || str_starts_with($link['path'], '//')) continue;
+        if (!is_array($link) || !is_string($link['path'] ?? null) || !valid_internal_path($link['path'])) continue;
         echo '<li><a href="'.h($link['path']).'">'.h($link['label']).' '.icon('arrow').'</a></li>';
     }
     echo '</ul></nav>';
@@ -118,9 +119,10 @@ function page_start(string $title, string $description, string $path, array $sch
         ['@type'=>'WebSite','@id'=>url('/').'#website','name'=>'Mascota','url'=>url('/'),'inLanguage'=>'es-PY','publisher'=>['@id'=>url('/').'#organization']],
         ...$schema,
     ];
+    $og=null; foreach(content()['articles'] as $a) if(article_path($a)===$path) { $og=article_og($a); break; }
     $seo = ['@context'=>'https://schema.org','@graph'=>$graph];
     ?>
-<!doctype html><html lang="es-PY"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title><?=h($title)?> | Mascota Paraguay</title><meta name="description" content="<?=h($description)?>"><meta name="robots" content="<?=$index?'index,follow,max-image-preview:large':'noindex,follow'?>"><link rel="canonical" href="<?=h(url($path))?>"><meta property="og:type" content="<?=isset($schema[0]['@type']) && $schema[0]['@type']==='Article'?'article':'website'?>"><meta property="og:title" content="<?=h($title)?>"><meta property="og:description" content="<?=h($description)?>"><meta property="og:url" content="<?=h(url($path))?>"><meta property="og:site_name" content="Mascota"><meta property="og:locale" content="es_PY"><meta property="og:image" content="<?=h(url('/assets/social.png'))?>"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/assets/logo.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/site.css?v=20261009"><script type="application/ld+json" nonce="<?=h(nonce())?>"><?=json_encode($seo,JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES|JSON_HEX_TAG|JSON_HEX_AMP|JSON_HEX_APOS|JSON_HEX_QUOT)?></script></head><body>
+<!doctype html><html lang="es-PY"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title><?=h($title)?> | Mascota Paraguay</title><meta name="description" content="<?=h($description)?>"><meta name="robots" content="<?=$index?'index,follow,max-image-preview:large':'noindex,follow'?>"><link rel="canonical" href="<?=h(url($path))?>"><meta property="og:type" content="<?=isset($schema[0]['@type']) && $schema[0]['@type']==='Article'?'article':'website'?>"><meta property="og:title" content="<?=h($title)?>"><meta property="og:description" content="<?=h($description)?>"><meta property="og:url" content="<?=h(url($path))?>"><meta property="og:site_name" content="Mascota"><meta property="og:locale" content="es_PY"><meta property="og:image" content="<?=h(url($og['path'] ?? '/assets/social.png'))?>"><meta property="og:image:width" content="<?=$og['width'] ?? 1200?>"><meta property="og:image:height" content="<?=$og['height'] ?? 630?>"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/assets/logo.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/site.css?v=<?=h(asset_cache_token('/assets/site.css'))?>"><script type="application/ld+json" nonce="<?=h(nonce())?>"><?=json_encode($seo,JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES|JSON_HEX_TAG|JSON_HEX_AMP|JSON_HEX_APOS|JSON_HEX_QUOT)?></script></head><body>
 <a class="skip" href="#contenido">Saltar al contenido</a><header class="site-header"><div class="container header-row"><a class="brand" href="/" aria-label="Mascota, inicio"><?=icon('paw')?>mascota<span>.com.py</span></a><nav class="desktop-nav" aria-label="Principal"><?php foreach(sections() as $key=>$s):?><a <?=str_starts_with($path,'/'.$key.'/')?'aria-current="page"':''?> href="/<?=h($key)?>/"><?=h($s['label'])?></a><?php endforeach;?></nav><a class="search-toggle" href="/buscar/" aria-label="Buscar guías"><?=icon('search')?></a><details class="mobile-menu"><summary>Menú</summary><nav aria-label="Menú móvil"><?php foreach(sections() as $key=>$s):?><a href="/<?=h($key)?>/"><?=h($s['label'])?></a><?php endforeach;?></nav></details></div></header><main id="contenido">
 <?php }
 function page_end(): void {
@@ -159,6 +161,7 @@ function category_page(string $key): void {
 function render_section(array $s, int $i): void {
     echo '<section id="'.h(section_id($s, $i)).'"><h2>'.h($s['title']).'</h2>';
     foreach($s['paragraphs'] ?? [] as $p) echo '<p>'.h($p).'</p>';
+    render_inline_paragraphs($s['inline_paragraphs'] ?? []);
     if(isset($s['bullets'])) { echo '<ul>'; foreach($s['bullets'] as $p) echo '<li>'.h($p).'</li>'; echo '</ul>'; }
     if(isset($s['table'])) { echo '<div class="table-scroll"><table><thead><tr>'; foreach($s['table']['headers'] as $v) echo '<th scope="col">'.h($v).'</th>'; echo '</tr></thead><tbody>'; foreach($s['table']['rows'] as $row) {echo '<tr>'; foreach($row as $v) echo '<td>'.h($v).'</td>'; echo '</tr>';} echo '</tbody></table></div>'; }
     guide_links($s['links'] ?? []);
@@ -177,15 +180,20 @@ function article_page(array $a): void {
     $published=$a['published'] ?? $a['date']; $modified=$a['modified'] ?? $a['date'];
     $type=($a['kind'] ?? '')==='collection'?'CollectionPage':'Article';
     $articleSchema=['@type'=>$type,'headline'=>$h1,'name'=>$h1,'description'=>$a['description'],'mainEntityOfPage'=>url($path),'url'=>url($path),'image'=>url('/assets/social.png'),'datePublished'=>$published,'dateModified'=>$modified,'author'=>['@type'=>'Organization','name'=>'Redacción Mascota','url'=>url('/sobre-mascota/')],'publisher'=>['@id'=>url('/').'#organization'],'inLanguage'=>'es-PY'];
+    $articleSchema=array_replace($articleSchema,editorial_schema($a));
+    if($og=article_og($a)) $articleSchema['image']=url($og['path']);
     $children=array_values(array_filter(content()['articles'],fn($child)=>($child['parent'] ?? null)===$a['slug']));
     if ($type==='CollectionPage') $articleSchema['hasPart']=array_map(fn($child)=>['@type'=>'Article','name'=>$child['title'],'url'=>url(article_path($child))],$children);
     page_start($a['seo_title'] ?? $a['title'],$a['description'],$path,[$articleSchema,['@type'=>'BreadcrumbList','itemListElement'=>$elements]]);
     echo '<div class="container">'; breadcrumb($items);
     echo '<header class="article-header"><span class="eyebrow">'.h($a['tag']).' · '.h($c['label']).'</span><h1>'.h($h1).'</h1><p class="dek">'.h($a['description']).'</p><div class="byline">Redacción Mascota <span>·</span> Publicado el '.h(date('d/m/Y',strtotime($published))).' <span>·</span> Actualizado el '.h(date('d/m/Y',strtotime($modified))).'</div></header><div class="article-layout"><aside class="toc"><strong>En esta guía</strong><ol>';
+    if(species_hub_groups($a)) echo '<li><a href="#por-tema">Guías por tema</a></li>';
     foreach($a['sections'] as $i=>$s) echo '<li><a href="#'.h(section_id($s,$i)).'">'.h($s['title']).'</a></li>';
     if(isset($a['tool'])) echo '<li><a href="#herramienta">Usar la herramienta</a></li>';
     if($children) echo '<li><a href="#explorar">Explorar las guías</a></li>';
     echo '</ol><a href="#fuentes">Fuentes consultadas</a></aside><article class="prose"><div class="quick-answer"><strong>Para empezar</strong><p>'.h($a['answer']).'</p></div><p>'.h($a['intro']).'</p>';
+    render_editorial_status($a);
+    render_article_image($a);
     if(isset($a['tool'])) render_pet_tool($a['tool']);
     foreach($a['sections'] as $i=>$s) render_section($s,$i);
     if($a['faqs'] ?? []) { echo '<section class="faq"><h2>Preguntas frecuentes</h2>'; foreach($a['faqs'] as $f) echo '<details><summary>'.h($f['q']).'</summary><p>'.h($f['a']).'</p></details>'; echo '</section>'; }
@@ -193,6 +201,7 @@ function article_page(array $a): void {
     foreach($a['sources'] as $id) {$s=source($id); echo '<li><a href="'.h($s['url']).'" target="_blank" rel="noopener noreferrer">'.h($s['label']).' ↗</a></li>';}
     $consulted=$a['sources_checked'] ?? $a['date'];
     echo '</ul><p>Consulta de fuentes: '.h(date('d/m/Y',strtotime($consulted))).'. '.h($a['scope'] ?? 'Orientación general para organizar cuidados. No reemplaza una evaluación veterinaria individual.').'</p><a href="/metodologia/">Cómo preparamos nuestras guías</a></section></article></div>';
+    render_species_hub($a);
     perro_reference($a);
     if($children) {echo '<section id="explorar" class="section"><div class="section-heading"><h2>Explorá las guías</h2></div><div class="article-grid">';foreach($children as $child) article_card($child);echo '</div></section>';}
     echo '<section class="section"><div class="section-heading"><h2>Seguí aprendiendo</h2></div>';
@@ -255,10 +264,15 @@ function sitemap(): void {
     }
     echo '</urlset>';
 }
+function release_version(): string {
+    $file=public_asset_root().'/release.json';
+    if(is_file($file)) { $r=json_decode(file_get_contents($file),true); $v=$r['version']??''; if(is_string($v)&&preg_match('/^[a-zA-Z0-9._-]{1,80}$/D',$v)) return $v; }
+    return MASCOTA_RELEASE;
+}
 function mascota_run(): void {
     header('X-Content-Type-Options: nosniff');header('Referrer-Policy: strict-origin-when-cross-origin');header('X-Frame-Options: DENY');
     header("Content-Security-Policy: default-src 'self'; script-src 'self' 'nonce-".nonce()."'; style-src 'self'; img-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'");
-    header('Permissions-Policy: camera=(), microphone=(), geolocation=()');header('X-Mascota-Release: '.MASCOTA_RELEASE);
+    header('Permissions-Policy: camera=(), microphone=(), geolocation=()');header('X-Mascota-Release: '.release_version());
     if(is_preview()) header('X-Robots-Tag: noindex, nofollow');
     $method=$_SERVER['REQUEST_METHOD'] ?? 'GET';
     if(!in_array($method,['GET','HEAD'],true)) {http_response_code(405);header('Allow: GET, HEAD');header('Content-Type: text/plain; charset=UTF-8');echo 'Método no permitido.';return;}

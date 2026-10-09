@@ -31,7 +31,13 @@ with tempfile.TemporaryDirectory(prefix='mascota-restore-') as temporary:
     restored = Path(temporary)
     with zipfile.ZipFile(args.zip) as archive:
         names = archive.namelist()
-        check(len(names) == 17, 'explicit release file count')
+        manifest_path=args.zip.with_suffix('.manifest.json')
+        manifest=json.loads(manifest_path.read_text(encoding='utf-8'))
+        import hashlib
+        check(hashlib.sha256(args.zip.read_bytes()).hexdigest()==manifest['sha256'], 'ZIP matches immutable manifest')
+        check(set(names)==set(manifest['files']), 'explicit release file inventory')
+        for name in names:
+            check(hashlib.sha256(archive.read(name)).hexdigest()==manifest['files'][name], 'release file checksum '+name)
         check(all(name.startswith(('public_html/', 'mascota-app/')) or name == 'LEEME-HOSTINGER.md' for name in names), 'domain-root layout')
         check(not any('local.' in name or '.env' in name or 'node_modules' in name or 'tests/' in name for name in names), 'no private overrides, dependencies or tests')
         check(all(not name.startswith('/') and '..' not in Path(name).parts for name in names), 'safe archive paths')
@@ -42,6 +48,7 @@ with tempfile.TemporaryDirectory(prefix='mascota-restore-') as temporary:
     $path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
     $asset = realpath(__DIR__.'/public_html'.$path);
     $assets = realpath(__DIR__.'/public_html/assets');
+    if ($path === '/release.json') return false;
     if ($asset && str_starts_with($asset, $assets.DIRECTORY_SEPARATOR) && is_file($asset)) return false;
     require __DIR__.'/public_html/index.php';
     """, encoding='utf-8')
@@ -63,13 +70,17 @@ with tempfile.TemporaryDirectory(prefix='mascota-restore-') as temporary:
         paths = [urlparse(element.text).path for element in ET.fromstring(body).findall('{*}url/{*}loc')]
         data=json.loads((restored/'mascota-app/content/articles.json').read_text(encoding='utf-8'))
         check(len(paths)==1+4+len(data['articles'])+len(data['pages']), 'restored complete content sitemap')
-        check(len(paths)==64,'restored 64-page portfolio release')
+        check(set(paths)==set(manifest['paths']),'restored derived release paths')
         for path in paths:
             code, body = fetch(path)
             check(code == 200 and b'<h1' in body, f'restored page {path}')
-        for path in ['/assets/site.css', '/assets/social.png', '/assets/companions.svg', '/assets/tools.js']:
+        for path in manifest['assets']:
             code, body = fetch(path)
             check(code == 200 and len(body) > 100, f'restored asset {path}')
+        import sys
+        sys.path.insert(0, str(Path(__file__).resolve().parents[1]/'tools'))
+        from check_release import verify
+        check(verify(f'http://127.0.0.1:{port}',manifest,True,'mascota.com.py')['status']=='PASS','production checker on restored ZIP')
         for path in ['/app/bootstrap.php', '/content/articles.json', '/config/site.local.php', '/mascota-app/app/bootstrap.php', '/veterinarias/']:
             check(fetch(path)[0] == 404, f'private/absent route {path}')
     finally:

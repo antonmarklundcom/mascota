@@ -156,3 +156,7 @@ vite.config.ts.timestamp-*
 # PHP editorial site: private configuration and runtime commercial agreements
 /php-site/config/site.local.php
 /php-site/content/sponsors.local.json
+
+# Python local verification caches
+__pycache__/
+*.py[cod]
