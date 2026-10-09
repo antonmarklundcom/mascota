@@ -8,14 +8,14 @@ ALLOWLIST = (
     'public/index.php', 'public/.htaccess', 'public/assets/site.css',
     'public/assets/companions.svg', 'public/assets/logo.svg',
     'public/assets/social.svg', 'public/assets/social.png', 'public/assets/tools.js',
-    'app/bootstrap.php', 'app/interactive.php', 'app/editorial.php', 'app/.htaccess',
+    'app/bootstrap.php', 'app/interactive.php', 'app/editorial.php', 'app/commercial.php', 'app/.htaccess',
     'content/articles.json', 'content/sponsors.json', 'content/assets.json', 'content/editorial-team.json', 'content/.htaccess',
     'config/site.example.php', 'config/.htaccess',
 )
 PRIVATE_PATHS = ('/.htaccess', '/app/bootstrap.php', '/content/articles.json',
     '/content/sponsors.local.json', '/config/site.local.php', '/.env',
     '/mascota-app/app/bootstrap.php', '/mascota-app/content/articles.json',
-    '/mascota-release-missing-page/')
+    '/mascota-release-missing-page/', '/app/commercial.php', '/tools/commercial_report.py', '/commercial-ledger.json', '/clinic-clicks.json')
 
 def encoded(value):
     return (json.dumps(value, sort_keys=True, indent=2, ensure_ascii=False)+'\n').encode('utf-8')

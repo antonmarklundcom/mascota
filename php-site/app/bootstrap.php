@@ -5,6 +5,7 @@ const MASCOTA_ROOT = __DIR__ . '/..';
 const MASCOTA_RELEASE = 'php-seo-growth-20261009';
 require_once __DIR__.'/interactive.php';
 require_once __DIR__.'/editorial.php';
+require_once __DIR__.'/commercial.php';
 date_default_timezone_set('America/Asuncion');
 
 function h(string|int $value): string { return htmlspecialchars((string)$value, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); }
@@ -233,8 +234,7 @@ function sponsor_page(array $s): void {
     $path='/veterinarias/'.$s['slug'].'/';
     page_start($s['name'].' en '.$s['city'],$s['description'],$path);
     echo '<div class="container"><header class="article-header"><span class="eyebrow">Publicidad · Ficha contratada</span><h1>'.h($s['name']).'</h1><p class="dek">'.h($s['city']).' · '.h($s['description']).'</p></header><article class="prose info-prose"><h2>Información del establecimiento</h2><p>'.h($s['details'] ?? $s['description']).'</p>';
-    if(isset($s['address'])) echo '<p>Dirección: '.h($s['address']).'</p>';
-    if(isset($s['phone']) && preg_match('/^\+?[0-9 ()-]{7,25}$/D',$s['phone'])) echo '<p><a class="button" href="tel:'.h(preg_replace('/[^+0-9]/','',$s['phone'])).'">Llamar al establecimiento</a></p>';
+    clinic_details($s);
     echo '<p>Confirmá directamente los servicios, horarios, disponibilidad y precios. La contratación de este espacio no constituye una recomendación clínica.</p><a href="/publicidad/">Nuestra política de publicidad</a></article></div>';page_end();
 }
 function not_found(): void {
@@ -281,10 +281,11 @@ function mascota_run(): void {
     if($method==='HEAD') ob_start();
     $raw=parse_url((string)($_SERVER['REQUEST_URI'] ?? '/'),PHP_URL_PATH);
     $path=is_string($raw)?rawurldecode($raw):'';
-    if($path==='/robots.txt') {header('Content-Type: text/plain; charset=UTF-8');echo is_preview()?"User-agent: *\nDisallow: /\n":"User-agent: *\nAllow: /\nDisallow: /buscar/\nSitemap: ".url('/sitemap.xml')."\n";}
+    if($path==='/robots.txt') {header('Content-Type: text/plain; charset=UTF-8');echo is_preview()?"User-agent: *\nDisallow: /\n":"User-agent: *\nAllow: /\nDisallow: /buscar/\nDisallow: /contacto-clinica/\nSitemap: ".url('/sitemap.xml')."\n";}
     elseif($path==='/sitemap.xml') sitemap();
     elseif($path==='/index.php') {header('Location: /',true,301);}
     elseif($path!=='/' && !str_ends_with($path,'/') && in_array($path.'/',array_merge(public_paths(),['/buscar/']),true)) {header('Location: '.$path.'/'.($_GET?'?'.http_build_query($_GET):''),true,301);}
+    elseif(preg_match('~^/contacto-clinica/([a-z0-9]+(?:-[a-z0-9]+)*)/(phone|whatsapp|website)/$~D', $path, $contact)) clinic_contact($contact[1], $contact[2], $method);
     elseif($path==='/') home();
     elseif($path==='/buscar/') search_page();
     else {

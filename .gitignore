@@ -160,3 +160,9 @@ vite.config.ts.timestamp-*
 # Python local verification caches
 __pycache__/
 *.py[cod]
+
+# Private commercial aggregates, never versioned or packaged
+/php-site/private/
+**/commercial-ledger*.json
+**/clinic-clicks*.json
+**/commercial-report*.json
