@@ -5,6 +5,7 @@ from urllib.parse import urlparse, quote
 import argparse
 import json
 import os
+import re
 import shutil
 import socket
 import subprocess
@@ -26,9 +27,10 @@ def check(condition, label):
 
 class Page(HTMLParser):
     def __init__(self):
-        super().__init__(); self.links=[]; self.images=[]; self.canonical=''; self.description=''; self.robots=''; self.h1=0; self.title=''; self.in_title=False; self.schemas=[]; self.ld=False; self.ld_text=''
+        super().__init__(); self.links=[]; self.images=[]; self.canonical=''; self.description=''; self.robots=''; self.h1=0; self.title=''; self.in_title=False; self.schemas=[]; self.ld=False; self.ld_text=''; self.ids=set()
     def handle_starttag(self, tag, attrs):
         a=dict(attrs)
+        if a.get('id'): self.ids.add(a['id'])
         if tag=='a': self.links.append(a.get('href',''))
         if tag=='img': self.images.append(a.get('src','')); check(bool(a.get('alt')), 'image alt')
         if tag=='link' and a.get('rel')=='canonical': self.canonical=a.get('href','')
@@ -56,6 +58,11 @@ for a in data['articles']:
     check(len(a['sections'])>=4, f'substantive sections {a["slug"]}')
     check(all(s in data['sources'] for s in a['sources']), f'source references {a["slug"]}')
     check(all(s in slugs for s in a['related']), f'related references {a["slug"]}')
+    ids=[s.get('id','seccion-'+str(i+1)) for i,s in enumerate(a['sections'])]
+    check(len(ids)==len(set(ids)),f'unique section ids {a["slug"]}')
+    check(all(re.fullmatch(r'[a-z][a-z0-9-]*',i) for i in ids),f'safe section ids {a["slug"]}')
+    check(all(ref in data['sources'] for s in a['sections'] for ref in s.get('source_refs',[])),f'section references {a["slug"]}')
+    check(a['published']<=a['modified'],f'publication before modification {a["slug"]}')
     text=' '.join([a['answer'],a['intro'],*[p for s in a['sections'] for p in s['paragraphs']],*[p for s in a['sections'] for p in s.get('bullets',[])],*[cell for s in a['sections'] for row in s.get('table',{}).get('rows',[]) for cell in row],*[f['a'] for f in a['faqs']]])
     check(len(text.split())>=350, f'article minimum substance {a["slug"]}: {len(text.split())}')
 check(json.loads((root/'content/sponsors.json').read_text())==[], 'no free/demo listings shipped')
@@ -82,9 +89,13 @@ with tempfile.TemporaryDirectory(prefix='mascota-smoke-') as temporary:
         code,headers,body=fetch('/sitemap.xml')
         check(code==200,'sitemap response')
         urls=[item.text for item in ET.fromstring(body).findall('{*}url/{*}loc')]
-        check(len(urls)==33,'complete 33-page launch sitemap')
+        check(len(urls)==1+4+len(data['articles'])+len(data['pages']),'complete published sitemap')
+        check(len(urls)==62,'62-page approved SEO release')
         check(not any('/buscar/' in u or '/veterinarias/' in u for u in urls),'no search/empty listing pages in sitemap')
-        paths=set(urlparse(u).path for u in urls); internal=set(); all_titles=set()
+        dates={urlparse(item.find('{*}loc').text).path:item.findtext('{*}lastmod') for item in ET.fromstring(body).findall('{*}url')}
+        expected_dates={'/':data['home']['modified'],**{'/'+k+'/':s['modified'] for k,s in data['sections'].items()},**{'/'+k+'/':p['modified'] for k,p in data['pages'].items()},**{'/'+a['category']+'/'+a['slug']+'/':a['modified'] for a in data['articles']}}
+        check(dates==expected_dates,'sitemap modification dates match each page content')
+        paths=set(urlparse(u).path for u in urls); internal=set(); all_titles=set(); parsed={}; graph={}; fragments=[]
         for path in paths:
             code,headers,body=fetch(path)
             check(code==200,f'200 {path}')
@@ -97,7 +108,34 @@ with tempfile.TemporaryDirectory(prefix='mascota-smoke-') as temporary:
             check(bool(page.schemas),f'valid structured data {path}')
             check('Set-Cookie' not in headers,f'no application cookies {path}')
             check('Content-Security-Policy' in headers,f'CSP {path}')
+            parsed[path]=page
+            graph[path]={urlparse(link).path for link in page.links if link.startswith('/') and urlparse(link).path in paths}
+            for link in page.links:
+                target=urlparse(link)
+                if target.fragment and (link.startswith('/') or link.startswith('#')):
+                    fragments.append((target.path or path,target.fragment))
             internal.update(urlparse(link).path for link in page.links+page.images if link.startswith('/'))
+        for path,fragment in fragments:
+            check(path in parsed and fragment in parsed[path].ids,f'existing anchor {path}#{fragment}')
+        visited={'/'};pending=['/']
+        while pending:
+            for linked in graph[pending.pop()]-visited:visited.add(linked);pending.append(linked)
+        check(visited==paths,'all published pages reachable from homepage')
+        for a in data['articles']:
+            path='/'+a['category']+'/'+a['slug']+'/'
+            page=parsed[path]
+            check(page.title==(a.get('seo_title',a['title'])+' | Mascota Paraguay'),f'approved title {path}')
+            schemas=page.schemas[0]['@graph']
+            expected='CollectionPage' if a.get('kind')=='collection' else 'Article'
+            article=next(s for s in schemas if s['@type']==expected)
+            check(article['datePublished']==a['published'] and article['dateModified']==a['modified'],f'truthful dates {path}')
+            crumbs=next(s for s in schemas if s['@type']=='BreadcrumbList')['itemListElement']
+            if a.get('parent'):
+                parent=next(p for p in data['articles'] if p['slug']==a['parent'])
+                check(crumbs[-2]['item']=='https://mascota.com.py/'+parent['category']+'/'+parent['slug']+'/',f'parent breadcrumb {path}')
+            if expected=='CollectionPage':
+                children=[x for x in data['articles'] if x.get('parent')==a['slug']]
+                check(len(article['hasPart'])==len(children),f'hub structured data {path}')
         for path in internal:
             check(fetch(path)[0]==200,f'internal link/asset {path}')
         for path in ['/not-a-page/','/.htaccess','/app/bootstrap.php','/content/articles.json','/config/site.local.php','/content/sponsors.local.json','/%2e%2e/app/bootstrap.php','/veterinarias/','/veterinarias/demo/']:

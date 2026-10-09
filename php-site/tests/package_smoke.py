@@ -61,7 +61,9 @@ with tempfile.TemporaryDirectory(prefix='mascota-restore-') as temporary:
         code, body = fetch('/sitemap.xml')
         check(code == 200, 'restored sitemap response')
         paths = [urlparse(element.text).path for element in ET.fromstring(body).findall('{*}url/{*}loc')]
-        check(len(paths) == 33, 'restored 33-page sitemap')
+        data=json.loads((restored/'mascota-app/content/articles.json').read_text(encoding='utf-8'))
+        check(len(paths)==1+4+len(data['articles'])+len(data['pages']), 'restored complete content sitemap')
+        check(len(paths)==62,'restored 62-page SEO release')
         for path in paths:
             code, body = fetch(path)
             check(code == 200 and b'<h1' in body, f'restored page {path}')

@@ -1,0 +1,143 @@
+Mascota.com.py — follow-up research seeds
+Location: Paraguay | Language: Spanish
+Research seeds only: volume not yet measured. Keep all related ideas; export the all-212-group index before repeating existing research.
+
+1. Dog food — missing a clean complete generic export
+```text
+comida para perros
+alimento para perros
+balanceado para perros
+racion para perros
+comida para cachorros
+alimento para cachorros
+alimento seco perros
+alimento humedo perros
+alimento perros adultos
+alimento perros senior
+```
+
+2. Cat food — not a selected standalone group
+```text
+comida para gatos
+alimento para gatos
+balanceado para gatos
+racion para gatos
+comida para gatitos
+alimento para gatitos
+alimento seco gatos
+alimento humedo gatos
+alimento gatos castrados
+alimento gatos adultos
+```
+
+3. Dog diarrhoea — no selected standalone group
+```text
+diarrea en perros
+perro con diarrea
+cachorro con diarrea
+diarrea con sangre perros
+diarrea amarilla perros
+diarrea negra perros
+diarrea liquida perros
+diarrea cachorro
+heces blandas perros
+perro diarrea vomitos
+```
+
+4. Cat urinary symptoms — no selected standalone group
+```text
+gato no orina
+gato orina sangre
+gato dificultad orinar
+cistitis gatos
+infeccion urinaria gatos
+obstruccion urinaria gatos
+calculos urinarios gatos
+gato orina poco
+gato dolor orinar
+problemas urinarios gatos
+```
+
+5. Dog itching — the allergy export mixes human allergies
+```text
+picazon en perros
+perro se rasca
+picor en perros
+perro piel irritada
+perro piel roja
+perro se lame
+perro pierde pelo
+dermatitis en perros
+alergia piel perros
+ronchas en perros
+```
+
+6. Cat diarrhoea — no selected standalone group
+```text
+diarrea en gatos
+gato con diarrea
+gatito con diarrea
+diarrea con sangre gatos
+diarrea amarilla gatos
+diarrea negra gatos
+diarrea liquida gatos
+heces blandas gatos
+gato diarrea vomitos
+diarrea gato bebe
+```
+
+7. Dog intestinal parasites — check the excluded index first
+```text
+parasitos en perros
+parasitos intestinales perros
+lombrices en perros
+gusanos en perros
+desparasitar perros
+desparasitante para perros
+antiparasitario para perros
+lombrices en cachorros
+gusanos heces perro
+tenia en perros
+```
+
+8. Cat intestinal parasites — check the excluded index first
+```text
+parasitos en gatos
+parasitos intestinales gatos
+lombrices en gatos
+gusanos en gatos
+desparasitar gatos
+desparasitante para gatos
+antiparasitario para gatos
+lombrices en gatitos
+gusanos heces gato
+tenia en gatos
+```
+
+9. Dog vomiting — reexport full detail rather than the 50-row subset
+```text
+perro vomita
+vomitos en perros
+perro vomita amarillo
+perro vomita espuma
+perro vomita sangre
+perro vomita comida
+cachorro vomita
+perro vomita agua
+perro vomita bilis
+perro vomita diarrea
+```
+
+10. Cat vomiting — reexport full detail rather than the 50-row subset
+```text
+gato vomita
+vomitos en gatos
+gato vomita amarillo
+gato vomita espuma
+gato vomita sangre
+gato vomita comida
+gatito vomita
+gato vomita agua
+gato vomita bilis
+bolas de pelo gatos
+```

@@ -1,12 +1,12 @@
 # Mascota — subir la versión PHP a Hostinger
 
-Actualizado 8 de octubre de 2026. Esta versión es un sitio editorial de SEO: **24 guías originales + 4 secciones + 4 páginas editoriales + inicio = 33 páginas**. No necesita Node.js, Composer, MySQL ni instalación de dependencias en el servidor. Las fichas veterinarias pagadas están desactivadas.
+Actualizado 9 de octubre de 2026. Esta versión es un sitio editorial de SEO: **51 guías + 2 colecciones de razas + 4 secciones + 4 páginas editoriales + inicio = 62 páginas**. No necesita Node.js, Composer, MySQL ni instalación de dependencias en el servidor. Las fichas veterinarias pagadas están desactivadas.
 
 ## La forma rápida para esta noche
 
 1. En hPanel, elegí **mascota.com.py** y comprobá que sea un sitio PHP/HTML. Seleccioná **PHP 8.3 o 8.4**. Este proyecto fue probado localmente con PHP 8.3.33; el PHP real de tu cuenta todavía debe comprobarse.
 2. Abrí el administrador de archivos. Guardá una copia privada de los archivos actuales y de cualquier configuración real antes de reemplazar el inicio. Esta tarea no inspeccionó tu cuenta ni generó una copia de producción.
-3. Subí `mascota-hostinger-2026-10-08.zip` a la carpeta del dominio, **un nivel por encima de `public_html`**, y extraelo allí. El ZIP contiene estas dos carpetas hermanas:
+3. Subí `mascota-hostinger-2026-10-09.zip` a la carpeta del dominio, **un nivel por encima de `public_html`**, y extraelo allí. El ZIP contiene estas dos carpetas hermanas:
 
 ```text
 carpeta-del-dominio/
@@ -42,13 +42,13 @@ El sitio admite `MASCOTA_SITE_URL`, `MASCOTA_ENV` y `MASCOTA_CONTACT_EMAIL` desd
 - Verificá el dominio en Google Search Console y enviá `https://mascota.com.py/sitemap.xml`. La propiedad debe estar bajo tu control; no se configuró desde esta tarea.
 - Comprobá la indexación de las páginas reales y que la vista de pruebas esté excluida.
 - Mantené enlaces internos, títulos y descripciones únicos. La búsqueda está marcada `noindex`; no crees miles de páginas por filtros o ciudades sin contenido propio.
-- Revisá consultas e impresiones cuando haya datos y priorizá nuevas guías con esa evidencia. El mapa de palabras clave es una hipótesis editorial; no contiene volúmenes medidos ni garantiza posicionamiento.
+- Revisá consultas e impresiones cuando haya datos y priorizá nuevas guías con esa evidencia. El [mapa de palabras clave](https://github.com/antonmarklundcom/mascota/blob/codex/mascota-php-seo/docs/seo/2026-10-09/KEYWORD-PAGE-MAP.csv) conserva los volúmenes de Google Keyword Planner suministrados para Paraguay/español. Hay grupos mezclados y detalles incompletos: sus totales no son una previsión de tráfico ni garantizan posicionamiento.
 
 ## Editar una guía
 
 Contenido: `mascota-app/content/articles.json`. La copia canónica versionada vive en `php-site/content/articles.json` dentro del repositorio. Hacé cambios allí, validalos y armá un paquete nuevo; una modificación solo en el servidor se perderá en el siguiente despliegue.
 
-Cada guía tiene categoría, slug estable, título, descripción, respuesta breve, introducción, secciones, fuentes, enlaces relacionados y fecha `date`. Al modificar el contenido sustancial, actualizá la fecha y comprobá las fuentes. No inventes una revisión veterinaria, tarifas, fechas de trámites o testimonios.
+Cada guía tiene categoría, slug estable, título, H1 y título SEO opcionales, descripción, respuesta breve, introducción, secciones, fuentes y enlaces relacionados. `published` conserva la fecha de publicación; `modified` cambia después de una revisión sustancial; `sources_checked` registra cuándo se comprobaron las fuentes. Las colecciones usan `kind: collection`, y las guías de razas usan `parent` para enlazar sus antecedentes. Una sección puede tener un `id` estable, `links` y `source_refs`; comprobá sus destinos. Actualizá también `modified` de inicio, secciones o páginas informativas cuando cambien sustancialmente, para que el sitemap sea exacto. No inventes una revisión veterinaria, tarifas, fechas de trámites o testimonios.
 
 ## Fichas pagadas: se activan después
 
@@ -66,6 +66,7 @@ Desde la raíz del repositorio:
 php -S 127.0.0.1:8178 -t php-site/public php-site/router.php
 python php-site/tests/smoke.py --php php
 python php-site/tools/package.py --output /ruta/privada/de/salida
+python php-site/tests/package_smoke.py --php php --zip /ruta/privada/de/salida/mascota-hostinger-2026-10-09.zip
 ```
 
 En Windows el PHP verificado está en `C:/php/php.exe`. En Linux los comandos usan el PHP instalado. Las pruebas HTTP copian la aplicación a una carpeta temporal y usan datos sintéticos; no escriben sobre anuncios reales.

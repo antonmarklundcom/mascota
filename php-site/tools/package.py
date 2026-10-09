@@ -10,7 +10,7 @@ parser.add_argument('--output', type=Path, required=True)
 args=parser.parse_args()
 root=Path(__file__).resolve().parents[1]
 output=args.output.resolve(); output.mkdir(parents=True,exist_ok=True)
-package=output/'mascota-hostinger-2026-10-08.zip'
+package=output/'mascota-hostinger-2026-10-09.zip'
 files=[]
 allowed = ['public/index.php', 'public/.htaccess', 'public/assets/site.css',
            'public/assets/companions.svg', 'public/assets/logo.svg',
