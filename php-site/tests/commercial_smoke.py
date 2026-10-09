@@ -79,9 +79,18 @@ with tempfile.TemporaryDirectory(prefix='mascota-commercial-') as temp:
         check(not any(word in counts.read_text() for word in ('secret','private','ip','phone','symptom','inquiry')),'no visitor/symptom/inquiry data')
         # Independent PHP workers exercise the separate lock and atomic replacement.
         code="require "+json.dumps(str(app/'app/bootstrap.php'))+"; record_clinic_click('synthetic-vet','whatsapp');"
-        def bump(_):return subprocess.run([args.php,'-r',code],capture_output=True).returncode
+        def bump(_):
+            result=subprocess.run([args.php,'-r',code],capture_output=True,text=True)
+            return result.returncode,result.stderr
         with ThreadPoolExecutor(max_workers=6) as workers: results=list(workers.map(bump,range(24)))
-        check(all(x==0 for x in results) and json.loads(counts.read_text())['months'][period]['synthetic-vet']['whatsapp']==25,'concurrent increments retained')
+        check(all(status==0 for status,_ in results) and json.loads(counts.read_text())['months'][period]['synthetic-vet']['whatsapp']==25,'concurrent increments retained; actual='+str(json.loads(counts.read_text())['months'][period]['synthetic-vet']['whatsapp'])+'; worker errors='+str([error for status,error in results if status!=0 or error]))
+        # Offline pruning/canonical JSON tools may reorder object members.
+        reordered={'months':{period:{'synthetic-vet':{'whatsapp':4}}},'version':1}
+        counts.write_text(json.dumps(reordered,sort_keys=True));fetch(contact)
+        check(json.loads(counts.read_text())['months'][period]['synthetic-vet']['whatsapp']==5,'reordered exact keys retain real writer increment 4 to 5')
+        for invalid in ({'version':1,'months':{},'visitor_ip':'synthetic'}, {'months':{}}, {'version':1}):
+            counts.write_text(json.dumps(invalid));code,_,_=fetch(contact)
+            check(code==302 and json.loads(counts.read_text())==invalid,'unknown or missing aggregate keys rejected without replacing store')
         counts.write_text('{broken');fetch(contact);check(counts.read_text()=='{broken','corrupt counts not overwritten and contact works')
         bad={'version':1,'months':{period:{'synthetic-vet':{'visitor_ip':'secret'}}}}
         counts.write_text(json.dumps(bad));fetch(contact);check(json.loads(counts.read_text())==bad,'tampered identifier fields not retained by writer')

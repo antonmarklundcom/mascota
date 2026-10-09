@@ -33,6 +33,9 @@ class ReleaseTests(unittest.TestCase):
                 for name,body in expected.items(): self.assertEqual(zipped.read(name),body)
                 self.assertEqual(json.loads(zipped.read('public_html/release.json')),metadata(root,expected))
                 self.assertEqual(set(zipped.namelist()),set(first['files']))
+                header_rules=zipped.read('public_html/.htaccess').decode().splitlines()
+                referrer_rules=[line.strip() for line in header_rules if line.strip().startswith('Header ') and 'Referrer-Policy' in line]
+                self.assertEqual(referrer_rules,['Header always setifempty Referrer-Policy "strict-origin-when-cross-origin"'])
             archive.write_bytes(b'preexisting different release')
             with self.assertRaises(ValueError): build(root,output)
             self.assertEqual(archive.read_bytes(),b'preexisting different release')
@@ -71,17 +74,26 @@ class ReleaseTests(unittest.TestCase):
                 self.send_response(status)
                 for key,value in extra.items(): self.send_header(key,value)
                 self.end_headers(); self.wfile.write(body)
+            def do_HEAD(self):
+                state['requests'].append('HEAD '+self.path)
+                self.send_response(404)
+                self.send_header('Referrer-Policy','strict-origin-when-cross-origin' if state['fault']=='contact-referrer' else 'no-referrer')
+                self.send_header('Cache-Control','public, max-age=300' if state['fault']=='contact-cache' else 'no-store')
+                self.send_header('X-Robots-Tag','index' if state['fault']=='contact-index' else 'noindex, nofollow')
+                self.end_headers()
             def log_message(self,*args): pass
         server=http.server.ThreadingHTTPServer(('127.0.0.1',0),Handler)
         thread=threading.Thread(target=server.serve_forever,daemon=True);thread.start()
         try:
             base='http://127.0.0.1:'+str(server.server_port)
             self.assertEqual(verify(base,manifest,True,'mascota.com.py')['status'],'PASS')
-            for fault in ('fingerprint','runtime','robots','sitemap','canonical','noindex','header','default','404','redirect','asset','private','external'):
+            for fault in ('fingerprint','runtime','robots','sitemap','canonical','noindex','header','default','404','redirect','asset','private','external','contact-referrer','contact-cache','contact-index'):
                 with self.subTest(fault=fault):
                     state['fault']=fault
                     with self.assertRaises((AssertionError,ValueError)): verify(base,manifest,True,'mascota.com.py')
             self.assertFalse(any('example.invalid' in p for p in state['requests']))
+            self.assertIn('HEAD /contacto-clinica/mascota-release-probe-missing/website/',state['requests'])
+            self.assertNotIn('/contacto-clinica/mascota-release-probe-missing/website/',state['requests'])
         finally: server.shutdown();server.server_close();thread.join()
 
 if __name__=='__main__': unittest.main()

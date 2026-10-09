@@ -51,7 +51,8 @@ function private_click_path(mixed $path): ?string {
     return $parent.DIRECTORY_SEPARATOR.basename($path);
 }
 function valid_click_store(array $data): bool {
-    if (array_keys($data) !== ['version', 'months'] || $data['version'] !== 1 || !is_array($data['months'])) return false;
+    // JSON object member order is irrelevant; the exact permitted key set is not.
+    if (count($data) !== 2 || !array_key_exists('version', $data) || !array_key_exists('months', $data) || $data['version'] !== 1 || !is_array($data['months'])) return false;
     foreach ($data['months'] as $month=>$partners) {
         if (!is_string($month) || !preg_match('/^[0-9]{4}-(0[1-9]|1[0-2])$/D', $month) || !is_array($partners)) return false;
         foreach ($partners as $slug=>$channels) {

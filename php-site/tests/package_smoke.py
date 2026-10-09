@@ -41,6 +41,8 @@ with tempfile.TemporaryDirectory(prefix='mascota-restore-') as temporary:
         check(all(name.startswith(('public_html/', 'mascota-app/')) or name == 'LEEME-HOSTINGER.md' for name in names), 'domain-root layout')
         check(not any('local.' in name or '.env' in name or 'node_modules' in name or 'tests/' in name or 'tools/' in name or 'ledger' in name or 'clicks' in name or 'commercial-report' in name or name.endswith('.lock') for name in names), 'no private overrides, dependencies or tests')
         check(all(not name.startswith('/') and '..' not in Path(name).parts for name in names), 'safe archive paths')
+        header_rules=archive.read('public_html/.htaccess').decode().splitlines()
+        check([line.strip() for line in header_rules if line.strip().startswith('Header ') and 'Referrer-Policy' in line]==['Header always setifempty Referrer-Policy "strict-origin-when-cross-origin"'],'packaged Apache default preserves stricter PHP contact policy')
         archive.extractall(restored)
     check(json.loads((restored/'mascota-app/content/sponsors.json').read_text()) == [], 'no paid/customer records in launch ZIP')
     router = restored/'test-router.php'
