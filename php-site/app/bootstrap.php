@@ -2,7 +2,8 @@
 declare(strict_types=1);
 
 const MASCOTA_ROOT = __DIR__ . '/..';
-const MASCOTA_RELEASE = 'php-seo-20261009';
+const MASCOTA_RELEASE = 'php-portfolio-20261009';
+require_once __DIR__.'/interactive.php';
 date_default_timezone_set('America/Asuncion');
 
 function h(string|int $value): string { return htmlspecialchars((string)$value, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); }
@@ -141,6 +142,7 @@ function home(): void {
     page_start($home['title'], $home['description'], '/');
     ?><section class="hero container"><div class="hero-copy"><span class="eyebrow pill">HECHO PARA PARAGUAY</span><h1><?=h($home['h1'])?></h1><p>Conocé sus necesidades, prepará tu casa y aprendé a cuidarla. Guías claras para acompañarte todos los días.</p><form action="/buscar/" class="hero-search" role="search"><label class="sr-only" for="home-search">¿Qué querés aprender?</label><?=icon('search')?><input id="home-search" name="q" type="search" placeholder="Probá: gatos, calor, viajar…" maxlength="120"><button type="submit" aria-label="Buscar"><?=icon('arrow')?></button></form><div class="hero-tags"><span>Para empezar:</span><a href="/mascotas/perros/">Perros</a><a href="/mascotas/gatos/">Gatos</a><a href="/paraguay/viajar-con-mascotas/">Viajes</a></div></div><div class="hero-art"><img src="/assets/companions.svg" width="600" height="530" fetchpriority="high" alt="Ilustración de un perro y un gato descansando juntos"><span class="art-sticker"><?=icon('paw')?>Pequeñas patas.<br>Gran compañía.</span></div></section>
 <section class="section container"><div class="section-heading"><div><span class="eyebrow">CADA ANIMAL, UN MUNDO</span><h2>¿Con quién compartís tu casa?</h2></div><a class="text-link" href="/mascotas/">Ver todas las guías <?=icon('arrow')?></a></div><div class="pet-grid"><?php foreach(content()['articles'] as $a) if($a['category']==='mascotas' && !isset($a['parent'])):?><a class="pet-tile" href="<?=h(article_path($a))?>"><?=icon($a['icon'])?><strong><?=h($a['short'])?></strong><span><?=h($a['teaser'])?></span></a><?php endif;?></div></section>
+<section class="section container"><div class="section-heading"><div><span class="eyebrow">GUÍAS Y HERRAMIENTAS</span><h2>Encontrá lo que necesitás hoy</h2></div></div><?php guide_links([["path"=>"/mascotas/perros/razas/","label"=>"Razas de perros"],["path"=>"/productos/comida-para-perros/","label"=>"Comida para perros"],["path"=>"/cuidados/elegir-veterinaria/","label"=>"Elegir veterinaria"],["path"=>"/cuidados/vomitos-en-perros/","label"=>"Vómitos en perros"],["path"=>"/cuidados/calculadora-presupuesto-mascota/","label"=>"Calculadora de presupuesto"],["path"=>"/cuidados/planificador-cuidados/","label"=>"Planificador imprimible"]]);?></section>
 <section class="section featured-section"><div class="container"><div class="section-heading"><div><span class="eyebrow">PARA CUIDARLOS MEJOR</span><h2>Las preguntas de todos los días</h2></div><a class="text-link" href="/cuidados/">Explorar cuidados <?=icon('arrow')?></a></div><div class="article-grid"><?php foreach(['elegir-mascota','mascotas-y-calor','presupuesto-mascota'] as $slug) foreach(content()['articles'] as $a) if($a['slug']===$slug) article_card($a);?></div></div></section>
 <section class="section container local-section"><div><span class="eyebrow">VIVIR CON MASCOTAS ACÁ</span><h2>Paraguay tiene<br>sus propias preguntas.</h2><p>Qué documentos necesitás para viajar, dónde consultar las reglas y por qué la fauna silvestre pertenece a su hábitat.</p><a href="/paraguay/" class="button">Ver las guías locales <?=icon('arrow')?></a></div><div class="local-links"><?php foreach(content()['articles'] as $a) if($a['category']==='paraguay'):?><a href="<?=h(article_path($a))?>"><span><?=h($a['short'])?></span><?=icon('arrow')?></a><?php endif;?></div></section>
 <section class="container section"><?php sponsored_block();?><div class="trust-strip"><div><?=icon('book')?><strong>Fuentes a la vista</strong><p>Referencias para comprobar y seguir aprendiendo.</p></div><div><?=icon('paw')?><strong>Bienestar primero</strong><p>Cuidados y decisiones responsables para cada animal.</p></div><div><?=icon('search')?><strong>Información con contexto</strong><p>Lo cotidiano, los trámites y la vida en Paraguay.</p></div></div></section><?php page_end();
@@ -181,14 +183,17 @@ function article_page(array $a): void {
     echo '<div class="container">'; breadcrumb($items);
     echo '<header class="article-header"><span class="eyebrow">'.h($a['tag']).' · '.h($c['label']).'</span><h1>'.h($h1).'</h1><p class="dek">'.h($a['description']).'</p><div class="byline">Redacción Mascota <span>·</span> Publicado el '.h(date('d/m/Y',strtotime($published))).' <span>·</span> Actualizado el '.h(date('d/m/Y',strtotime($modified))).'</div></header><div class="article-layout"><aside class="toc"><strong>En esta guía</strong><ol>';
     foreach($a['sections'] as $i=>$s) echo '<li><a href="#'.h(section_id($s,$i)).'">'.h($s['title']).'</a></li>';
+    if(isset($a['tool'])) echo '<li><a href="#herramienta">Usar la herramienta</a></li>';
     if($children) echo '<li><a href="#explorar">Explorar las guías</a></li>';
     echo '</ol><a href="#fuentes">Fuentes consultadas</a></aside><article class="prose"><div class="quick-answer"><strong>Para empezar</strong><p>'.h($a['answer']).'</p></div><p>'.h($a['intro']).'</p>';
+    if(isset($a['tool'])) render_pet_tool($a['tool']);
     foreach($a['sections'] as $i=>$s) render_section($s,$i);
     if($a['faqs'] ?? []) { echo '<section class="faq"><h2>Preguntas frecuentes</h2>'; foreach($a['faqs'] as $f) echo '<details><summary>'.h($f['q']).'</summary><p>'.h($f['a']).'</p></details>'; echo '</section>'; }
     echo '<section id="fuentes" class="sources"><h2>Fuentes consultadas</h2><ul>';
     foreach($a['sources'] as $id) {$s=source($id); echo '<li><a href="'.h($s['url']).'" target="_blank" rel="noopener noreferrer">'.h($s['label']).' ↗</a></li>';}
     $consulted=$a['sources_checked'] ?? $a['date'];
     echo '</ul><p>Consulta de fuentes: '.h(date('d/m/Y',strtotime($consulted))).'. '.h($a['scope'] ?? 'Orientación general para organizar cuidados. No reemplaza una evaluación veterinaria individual.').'</p><a href="/metodologia/">Cómo preparamos nuestras guías</a></section></article></div>';
+    perro_reference($a);
     if($children) {echo '<section id="explorar" class="section"><div class="section-heading"><h2>Explorá las guías</h2></div><div class="article-grid">';foreach($children as $child) article_card($child);echo '</div></section>';}
     echo '<section class="section"><div class="section-heading"><h2>Seguí aprendiendo</h2></div>';
     guide_links($a['guide_links'] ?? []);
@@ -199,8 +204,7 @@ function article_page(array $a): void {
 function search_page(): void {
     $q=isset($_GET['q']) && is_string($_GET['q'])?trim($_GET['q']):'';
     $q=function_exists('mb_substr')?mb_substr($q,0,120):substr($q,0,120);
-    $needle=normalized($q);
-    $rows=$needle===''?[]:array_values(array_filter(content()['articles'],fn($a)=>str_contains(normalized($a['title'].' '.$a['description'].' '.json_encode($a['sections'],JSON_UNESCAPED_UNICODE)),$needle)));
+    $rows=search_guides($q);
     page_start('Buscar guías de mascotas','Buscá información sobre tipos de mascotas, cuidados, Paraguay y equipamiento.','/buscar/',[],true);
     echo '<section class="container section search-page"><span class="eyebrow">Encontrá tu próxima lectura</span><h1>¿Qué querés aprender?</h1><form action="/buscar/" class="hero-search" role="search"><label class="sr-only" for="search-query">Buscar guías</label>'.icon('search').'<input id="search-query" type="search" name="q" maxlength="120" value="'.h($q).'" placeholder="Gatos, viajes, cuidados…"><button type="submit">Buscar</button></form>';
     if($q!=='') echo '<p class="search-count">'.count($rows).' '.(count($rows)===1?'guía':'guías').' para “'.h($q).'”.</p>';

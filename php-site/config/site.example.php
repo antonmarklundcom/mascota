@@ -6,4 +6,6 @@ return [
     'environment' => 'production', // Use preview on staging to send noindex headers.
     'contact_email' => '', // Optional real editorial/commercial mailbox.
     'sponsorship_enabled' => false,
+    // Perro destinations verified publicly on 2026-10-09. Turn off if unavailable.
+    'perro_links_enabled' => true,
 ];

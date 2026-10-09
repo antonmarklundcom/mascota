@@ -1,6 +1,8 @@
+[Acuerdo editorial/comercial compartido v1.0.0](docs/portfolio/2026-10-09/MASCOTA-PERRO-AGREEMENT.md) · [90 días y acciones del propietario](docs/portfolio/2026-10-09/90-DAY-PLAN.md).
+
 # Mascota — PHP SEO site
 
-The current requested launch is the standalone **HTML/PHP content site** in `php-site/`: 51 guides and 2 breed collections across 62 indexable pages, with dormant paid veterinary placements. Start with [PHP-DEPLOY.md](PHP-DEPLOY.md) for the Hostinger ZIP upload, [keyword implementation and current inventory](docs/seo/2026-10-09/README.md) and [current release checks](docs/verification/2026-10-09/PHP-SEO-RELEASE.md). No Node.js or database is needed for this version.
+The current requested launch is the standalone **HTML/PHP content site** in `php-site/`: 51 guides, 2 breed collections and 2 planning tools across 64 indexable pages, with dormant paid veterinary placements. Start with [PHP-DEPLOY.md](PHP-DEPLOY.md) for the Hostinger ZIP upload, [keyword implementation and current inventory](docs/seo/2026-10-09/README.md) and [current portfolio release checks](docs/verification/2026-10-09/PORTFOLIO-RELEASE.md). No Node.js or database is needed for this version.
 
 The previous Next.js store remains below and in Git. Its build, checkout, database and Node deployment instructions apply to that previous application, not to the PHP release.
 

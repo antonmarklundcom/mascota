@@ -1195,8 +1195,18 @@
       "tag": "Antes de elegir",
       "date": "2026-10-08",
       "published": "2026-10-08",
-      "modified": "2026-10-08",
-      "sources_checked": "2026-10-08"
+      "modified": "2026-10-09",
+      "sources_checked": "2026-10-08",
+      "guide_links": [
+        {
+          "path": "/cuidados/calculadora-presupuesto-mascota/",
+          "label": "Calculá tu presupuesto en guaraníes"
+        },
+        {
+          "path": "/cuidados/planificador-cuidados/",
+          "label": "Imprimí tu hoja de cuidados"
+        }
+      ]
     },
     {
       "category": "cuidados",
@@ -1266,8 +1276,18 @@
       "tag": "Primeros días",
       "date": "2026-10-08",
       "published": "2026-10-08",
-      "modified": "2026-10-08",
-      "sources_checked": "2026-10-08"
+      "modified": "2026-10-09",
+      "sources_checked": "2026-10-08",
+      "guide_links": [
+        {
+          "path": "/cuidados/calculadora-presupuesto-mascota/",
+          "label": "Calculá tu presupuesto en guaraníes"
+        },
+        {
+          "path": "/cuidados/planificador-cuidados/",
+          "label": "Imprimí tu hoja de cuidados"
+        }
+      ]
     },
     {
       "category": "cuidados",
@@ -1376,6 +1396,14 @@
         {
           "path": "/cuidados/vacunas-y-controles/",
           "label": "Vacunas y controles"
+        },
+        {
+          "path": "/cuidados/calculadora-presupuesto-mascota/",
+          "label": "Calculá tu presupuesto en guaraníes"
+        },
+        {
+          "path": "/cuidados/planificador-cuidados/",
+          "label": "Imprimí tu hoja de cuidados"
         }
       ]
     },
@@ -1528,8 +1556,18 @@
       "tag": "Organización",
       "date": "2026-10-08",
       "published": "2026-10-08",
-      "modified": "2026-10-08",
-      "sources_checked": "2026-10-08"
+      "modified": "2026-10-09",
+      "sources_checked": "2026-10-08",
+      "guide_links": [
+        {
+          "path": "/cuidados/calculadora-presupuesto-mascota/",
+          "label": "Calculá tu presupuesto en guaraníes"
+        },
+        {
+          "path": "/cuidados/planificador-cuidados/",
+          "label": "Imprimí tu hoja de cuidados"
+        }
+      ]
     },
     {
       "category": "cuidados",
@@ -1636,6 +1674,14 @@
         {
           "path": "/metodologia/",
           "label": "Fuentes y criterio editorial"
+        },
+        {
+          "path": "/cuidados/calculadora-presupuesto-mascota/",
+          "label": "Calculá tu presupuesto en guaraníes"
+        },
+        {
+          "path": "/cuidados/planificador-cuidados/",
+          "label": "Imprimí tu hoja de cuidados"
         }
       ]
     },
@@ -4206,6 +4252,83 @@
             "Un perro mestizo no necesita que inventes una raza para recibir cuidados apropiados. Su edad, tamaño, conducta y estado de salud permiten organizar la rutina. Preguntá por lo observado por quienes lo cuidan y pedí apoyo para la adaptación si aparecen dudas.",
             "En Paraguay, incluí calor, traslados y horarios de tu hogar al comparar opciones. Usá las guías de raza como un punto de partida y la consulta como apoyo para el caso concreto. Una decisión sostenible contempla tiempo, presupuesto y bienestar, además de la preferencia por una apariencia."
           ]
+        },
+        {
+          "title": "Índice de razas de perros",
+          "paragraphs": [
+            "Consultá las guías por nombre. Cada una desarrolla necesidades y convivencia; este índice no anuncia animales disponibles ni clasifica una raza como ideal para todos."
+          ],
+          "id": "indice-razas",
+          "links": [
+            {
+              "path": "/mascotas/perros/razas/american-bully/",
+              "label": "American bully"
+            },
+            {
+              "path": "/mascotas/perros/razas/bulldog-frances/",
+              "label": "Bulldog francés"
+            },
+            {
+              "path": "/mascotas/perros/razas/caniche/",
+              "label": "Caniche"
+            },
+            {
+              "path": "/mascotas/perros/razas/chihuahua/",
+              "label": "Chihuahua"
+            },
+            {
+              "path": "/mascotas/perros/razas/chow-chow/",
+              "label": "Chow chow"
+            },
+            {
+              "path": "/mascotas/perros/razas/dogo-argentino/",
+              "label": "Dogo argentino"
+            },
+            {
+              "path": "/mascotas/perros/razas/doberman/",
+              "label": "Dóberman"
+            },
+            {
+              "path": "/mascotas/perros/razas/golden-retriever/",
+              "label": "Golden retriever"
+            },
+            {
+              "path": "/mascotas/perros/razas/husky-siberiano/",
+              "label": "Husky siberiano"
+            },
+            {
+              "path": "/mascotas/perros/razas/labrador/",
+              "label": "Labrador retriever"
+            },
+            {
+              "path": "/mascotas/perros/razas/pastor-aleman/",
+              "label": "Pastor alemán"
+            },
+            {
+              "path": "/mascotas/perros/razas/pastor-australiano/",
+              "label": "Pastor australiano"
+            },
+            {
+              "path": "/mascotas/perros/razas/perro-salchicha/",
+              "label": "Perro salchicha"
+            },
+            {
+              "path": "/mascotas/perros/razas/pitbull/",
+              "label": "Pitbull"
+            },
+            {
+              "path": "/mascotas/perros/razas/pomerania/",
+              "label": "Pomerania"
+            },
+            {
+              "path": "/mascotas/perros/razas/pug/",
+              "label": "Pug"
+            },
+            {
+              "path": "/mascotas/perros/razas/san-bernardo/",
+              "label": "San Bernardo"
+            }
+          ]
         }
       ],
       "sources": [
@@ -4380,7 +4503,8 @@
           "title": "Comida para perros según su etapa",
           "paragraphs": [
             "Un cachorro, un adulto y un perro con necesidades particulares no se evalúan igual. Revisá para qué etapa y especie está formulado el alimento. Si hay una enfermedad o el veterinario indicó una dieta específica, no la reemplaces solo porque otro envase parezca similar.",
-            "La cantidad adecuada no se deduce únicamente del tamaño de la bolsa. Llevá a la consulta la etiqueta y contá qué más come el perro durante el día. Pedí que te expliquen cómo observar condición corporal y cuándo ajustar el plan; guardá esas indicaciones junto con los controles."
+            "La cantidad adecuada no se deduce únicamente del tamaño de la bolsa. Llevá a la consulta la etiqueta y contá qué más come el perro durante el día. Pedí que te expliquen cómo observar condición corporal y cuándo ajustar el plan; guardá esas indicaciones junto con los controles.",
+            "Comida, alimento y ración para perros son formas habituales de nombrar la compra. El nombre de la categoría no indica por sí solo si el producto es completo ni para qué etapa fue formulado: comprobá esos datos en el envase."
           ],
           "source_refs": [
             "nutrition"
@@ -4404,7 +4528,31 @@
           ],
           "source_refs": [
             "nutrition"
-          ]
+          ],
+          "table": {
+            "headers": [
+              "Qué comparar",
+              "Dato que necesitás"
+            ],
+            "rows": [
+              [
+                "Etapa y finalidad",
+                "Especie, etapa de vida y propósito nutricional declarados"
+              ],
+              [
+                "Identificación",
+                "Fabricante, envase, lote y vencimiento"
+              ],
+              [
+                "Presentación",
+                "Cantidad neta y condiciones de conservación"
+              ],
+              [
+                "Costo comparable",
+                "Precio por kilo, plan de consumo y entrega incluidos"
+              ]
+            ]
+          }
         },
         {
           "title": "Presupuesto y compra en Paraguay",
@@ -4461,6 +4609,14 @@
         {
           "path": "/productos/",
           "label": "Productos para mascotas"
+        },
+        {
+          "path": "/cuidados/calculadora-presupuesto-mascota/",
+          "label": "Calculá tu presupuesto en guaraníes"
+        },
+        {
+          "path": "/cuidados/planificador-cuidados/",
+          "label": "Imprimí tu hoja de cuidados"
         }
       ]
     },
@@ -5148,6 +5304,178 @@
           "label": "Vacunas y controles"
         }
       ]
+    },
+    {
+      "category": "cuidados",
+      "slug": "calculadora-presupuesto-mascota",
+      "title": "Calculadora de gastos de mascotas en guaraníes",
+      "h1": "Calculadora de gastos de mascotas en guaraníes",
+      "seo_title": "Calculadora de gastos de mascotas en guaraníes",
+      "short": "Calculadora de presupuesto",
+      "description": "Calculá gastos de tu mascota con importes propios en guaraníes. Separá compras iniciales, gastos mensuales, costos anuales y ahorro para imprevistos.",
+      "answer": "Anotá tus cotizaciones y separá lo que comprás al recibir a la mascota de lo que pagás durante el año. La calculadora suma los importes cargados; los campos vacíos siguen siendo pendientes, y el aporte a la reserva se muestra separado.",
+      "intro": "Un presupuesto sirve cuando refleja tu casa y el animal que cuidás. Esta herramienta de Mascota te permite trabajar con recibos y cotizaciones de Paraguay, sin asumir una tarifa nacional ni el precio de una consulta. Podés imprimir los resultados para conversarlos con otras personas del hogar.",
+      "tool": "budget",
+      "sections": [
+        {
+          "title": "Qué datos conviene conseguir",
+          "paragraphs": [
+            "Pedí cotizaciones fechadas de alimento, higiene, preparación del ambiente y servicios que realmente vas a usar. Anotá presentación, ciudad y qué incluye cada precio. Si todavía no sabés un gasto, dejalo en blanco: una suma parcial no demuestra que ya puedas cubrir todos los cuidados.",
+            "Incluí los acuerdos durante viajes o ausencias. Si compartís el gasto, decidí quién paga cada rubro y cómo se informa una compra inesperada. No cambies un cuidado indicado para ajustar el presupuesto sin conversar con el profesional responsable."
+          ]
+        },
+        {
+          "title": "Cómo se calculan los resultados",
+          "paragraphs": [
+            "La suma mensual es alimento + higiene + servicios + otros gastos mensuales + gastos previstos por año divididos entre doce. Multiplicar esa suma por doce da los gastos recurrentes cargados para un año. El aporte mensual a la reserva se informa por separado.",
+            "La caja del primer año suma doce meses de gastos recurrentes, doce aportes a la reserva y las compras iniciales. La reserva sigue siendo dinero disponible hasta que lo uses. Los resultados se redondean a guaraníes; no son una cotización ni una obligación de gasto."
+          ]
+        },
+        {
+          "title": "Evitá contar lo mismo dos veces",
+          "paragraphs": [
+            "Si ya anotaste una compra en un rubro mensual, no la repitas en el total anual. Una consulta prevista que cotizaste para todo el año puede ir en ese total anual. La compra inicial va en instalación y no se repite automáticamente en los meses siguientes.",
+            "Separá los aportes a la reserva de los imprevistos que finalmente pagaste. Cuando revises recibos, reemplazá una estimación por el gasto real en lugar de sumar ambos. Si el proveedor incluye entrega o un servicio, comprobá ese alcance antes de cargar otro importe."
+          ]
+        },
+        {
+          "title": "Cómo conservar y revisar tu presupuesto",
+          "paragraphs": [
+            "Esta página no guarda los importes. Imprimí o elegí guardar como PDF desde tu navegador, con fecha y notas de las cotizaciones. Al recargar se vacía la herramienta; si querés seguir registrando gastos, mantené tu propia hoja o archivo.",
+            "Revisá el presupuesto después del primer mes y cuando cambien las necesidades, proveedores o personas responsables. Comprobá qué rubros siguen pendientes y qué reserva quedó disponible. El planificador de cuidados complementa los números con tareas y contactos para que alguien pueda ayudarte durante una ausencia."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "¿Son precios promedio de Paraguay?",
+          "a": "No. Todos los importes los cargás vos con tus propios recibos o cotizaciones. Los campos empiezan vacíos."
+        },
+        {
+          "q": "¿El total incluye emergencias?",
+          "a": "Incluye solo los importes cargados y tu aporte elegido a una reserva. No estima ni garantiza el costo de una emergencia."
+        },
+        {
+          "q": "¿Se guardan mis datos?",
+          "a": "La herramienta no los envía ni los almacena. Podés conservarlos imprimiendo o guardando una copia como PDF."
+        }
+      ],
+      "related": [
+        "presupuesto-mascota",
+        "planificador-cuidados",
+        "comida-para-perros"
+      ],
+      "sources": [
+        "ownership"
+      ],
+      "icon": "book",
+      "teaser": "Organizá tus cuidados",
+      "tag": "Herramienta gratuita",
+      "date": "2026-10-09",
+      "published": "2026-10-09",
+      "modified": "2026-10-09",
+      "sources_checked": "2026-10-08",
+      "scope": "Herramienta de organización propia. La fuente orienta sobre tenencia responsable; no fija precios, tratamientos ni el funcionamiento del cálculo.",
+      "guide_links": [
+        {
+          "path": "/cuidados/presupuesto-mascota/",
+          "label": "Presupuesto de cuidados"
+        },
+        {
+          "path": "/cuidados/planificador-cuidados/",
+          "label": "Planificador imprimible"
+        },
+        {
+          "path": "/productos/comida-para-perros/",
+          "label": "Comida para perros"
+        }
+      ]
+    },
+    {
+      "category": "cuidados",
+      "slug": "planificador-cuidados",
+      "title": "Planificador de cuidados de mascotas para imprimir",
+      "h1": "Planificador de cuidados de mascotas para imprimir",
+      "seo_title": "Planificador de cuidados de mascotas para imprimir",
+      "short": "Planificador imprimible",
+      "description": "Completá e imprimí una hoja de cuidados para tu mascota: rutina, responsables, compras, contactos confirmados y consultas acordadas. Sin registro.",
+      "answer": "Prepará una hoja que otra persona pueda entender: rutina acordada, responsable, reemplazo y contactos comprobados. Anotá las fechas e indicaciones que recibiste del veterinario. El planificador organiza esa información y no define tratamientos ni un calendario sanitario.",
+      "intro": "La convivencia necesita acuerdos que se puedan cumplir también cuando viajás o cambiás de horario. Esta hoja de Mascota reúne lo que ya sabés y deja espacio para preguntas pendientes. Podés completar los campos en tu navegador o imprimirla en blanco para escribir a mano.",
+      "tool": "planner",
+      "sections": [
+        {
+          "title": "Definí quién se ocupa de cada tarea",
+          "paragraphs": [
+            "Conversá con las personas del hogar antes de llenar la hoja. Elegí un responsable y un reemplazo que pueda seguir la rutina durante ausencias. Escribí tareas concretas, evitando promesas generales como encargarse de todo cuando nadie conoce los detalles.",
+            "La especie y el individuo cambian las necesidades. Usá las guías correspondientes y las indicaciones profesionales para describir la rutina. Este documento no propone que un mismo plan de alimento, ambiente o actividades sirva para un perro, un gato y un hámster."
+          ]
+        },
+        {
+          "title": "Registrá contactos y consultas confirmadas",
+          "paragraphs": [
+            "Comprobá qué profesional atiende a tu mascota y cómo se consulta fuera del horario habitual. Anotá la fecha en que verificaste el contacto. Si cambia el establecimiento, actualizá la hoja que usa tu reemplazo para evitar llamadas a un número viejo.",
+            "En consultas acordadas escribí fecha, lugar y preguntas. Transcribí solo indicaciones recibidas para esta mascota, manteniendo sus condiciones y duración. Si no entendés una instrucción o el animal presenta un cambio, consultá al profesional en vez de improvisar una respuesta desde la hoja."
+          ]
+        },
+        {
+          "title": "Usá el registro semanal con contexto",
+          "paragraphs": [
+            "En cada día podés anotar una observación o marcar tareas realizadas. Un casillero completo registra actividad; no comprueba que el animal esté sano. No conviertas la hoja en una prueba diagnóstica ni retrases una consulta para terminar la semana.",
+            "Agregá compras pendientes con una fecha de reposición y revisá el stock antes de una ausencia. La calculadora de presupuesto ayuda a separar gastos mensuales, anuales e iniciales. Si falta una cotización o una responsabilidad, mantenela visible como pendiente hasta resolverla."
+          ]
+        },
+        {
+          "title": "Imprimí una copia útil y protegé los datos",
+          "paragraphs": [
+            "Los campos no se guardan ni se envían desde esta herramienta. Al recargar se vacían. Usá imprimir o guardar como PDF para conservar una copia, comprobando que el texto se vea completo en la vista previa. También podés imprimirla sin completar y escribir a mano.",
+            "Guardá contactos e indicaciones donde las encuentre la persona autorizada a cuidar la mascota. No publiques esa hoja en redes si incluye nombres, teléfonos o antecedentes. Revisala cuando cambie la rutina y retirala de uso cuando quede desactualizada; el archivo viejo no debe confundirse con el plan vigente."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "¿Puedo imprimirla en blanco?",
+          "a": "Sí. Podés dejar los campos vacíos e imprimir desde el botón o desde el menú de tu navegador."
+        },
+        {
+          "q": "¿Sirve como calendario de vacunas?",
+          "a": "Podés anotar fechas acordadas con tu veterinario. La herramienta no propone intervalos, vacunas, dosis ni tratamientos."
+        },
+        {
+          "q": "¿Puedo compartir la hoja con quien la cuide?",
+          "a": "Sí, si esa persona está autorizada. Revisá antes los datos de contacto y las indicaciones; evitá publicar información privada."
+        }
+      ],
+      "related": [
+        "calculadora-presupuesto-mascota",
+        "elegir-veterinaria",
+        "primer-perro"
+      ],
+      "sources": [
+        "ownership"
+      ],
+      "icon": "book",
+      "teaser": "Organizá tus cuidados",
+      "tag": "Herramienta gratuita",
+      "date": "2026-10-09",
+      "published": "2026-10-09",
+      "modified": "2026-10-09",
+      "sources_checked": "2026-10-08",
+      "scope": "Herramienta de organización propia. La fuente orienta sobre tenencia responsable; no fija precios, tratamientos ni el funcionamiento del cálculo.",
+      "guide_links": [
+        {
+          "path": "/cuidados/calculadora-presupuesto-mascota/",
+          "label": "Calculadora de presupuesto"
+        },
+        {
+          "path": "/cuidados/elegir-veterinaria/",
+          "label": "Elegir veterinaria"
+        },
+        {
+          "path": "/cuidados/primer-perro/",
+          "label": "Primer perro"
+        }
+      ]
     }
   ],
   "pages": {
@@ -5172,9 +5500,15 @@
           "paragraphs": [
             "Esta primera versión se centra en información. No procesa turnos, pagos, consultas médicas ni denuncias oficiales. Las referencias institucionales permiten que sigas el trámite en el canal responsable."
           ]
+        },
+        {
+          "title": "Mascota y Perro",
+          "paragraphs": [
+            "Mascota y perro.com.py comparten propietario. Mascota ofrece guías de cuidado, productos y decisiones sobre servicios; Perro se concentra en adopción gratuita, hogares temporales y avisos de perros. Sus contenidos y recorridos cumplen funciones propias."
+          ]
         }
       ],
-      "modified": "2026-10-08"
+      "modified": "2026-10-09"
     },
     "metodologia": {
       "title": "Fuentes y criterio editorial",
@@ -5241,9 +5575,15 @@
           "paragraphs": [
             "Antes de activar formularios, medición de terceros o servicios que recojan datos personales, actualizaremos esta información e indicaremos finalidad, responsables y canales de gestión. Ningún consentimiento comercial se presume por leer una guía."
           ]
+        },
+        {
+          "title": "Herramientas de organización",
+          "paragraphs": [
+            "La calculadora y el planificador procesan los campos en tu navegador. No envían ni almacenan esos valores; al recargar se borran. Una impresión o PDF que guardes queda bajo tu control y puede contener contactos que conviene proteger."
+          ]
         }
       ],
-      "modified": "2026-10-08"
+      "modified": "2026-10-09"
     },
     "publicidad": {
       "title": "Publicidad y espacios profesionales",

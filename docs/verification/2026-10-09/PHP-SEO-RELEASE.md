@@ -1,5 +1,7 @@
 # Expanded PHP SEO release — 9 October 2026
 
+Historical 62-route release; superseded for upload by [the 64-route portfolio release](PORTFOLIO-RELEASE.md).
+
 The approved Paraguay/Spanish Keyword Planner editorial plan is implemented and tested. The PHP release contains **51 guides plus 2 breed collections**, or **62 indexable routes** including home, categories and editorial information pages. There are 29 new editorial routes; existing mapped pages and shared hubs were expanded. All 44 immediate mappings resolve to actual pages/anchors. The future paid vet finder remains disabled and absent.
 
 ## Tested source and artifact

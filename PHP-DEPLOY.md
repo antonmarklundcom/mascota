@@ -1,6 +1,6 @@
 # Mascota — subir la versión PHP a Hostinger
 
-Actualizado 9 de octubre de 2026. Esta versión es un sitio editorial de SEO: **51 guías + 2 colecciones de razas + 4 secciones + 4 páginas editoriales + inicio = 62 páginas**. No necesita Node.js, Composer, MySQL ni instalación de dependencias en el servidor. Las fichas veterinarias pagadas están desactivadas.
+Actualizado 9 de octubre de 2026. Esta versión es un sitio editorial de SEO: **51 guías y 2 herramientas + 2 colecciones de razas + 4 secciones + 4 páginas editoriales + inicio = 64 páginas**. No necesita Node.js, Composer, MySQL ni instalación de dependencias en el servidor. Las fichas veterinarias pagadas están desactivadas.
 
 ## La forma rápida para esta noche
 
@@ -31,7 +31,7 @@ El ZIP no publica documentos del repositorio ni la tienda Next.js anterior. No a
 
 El dominio canónico predeterminado es `https://mascota.com.py`. Para cambiar una opción, copiá `mascota-app/config/site.example.php` a `mascota-app/config/site.local.php`, siempre fuera del directorio público. No subas ese archivo privado a Git.
 
-Opciones: `site_url`, `environment`, `contact_email` y `sponsorship_enabled`. Un correo real es opcional; si está vacío, el sitio no inventa una dirección. Esta primera versión no necesita credenciales. Si se configura un correo editorial, el enlace aparece en las páginas informativas.
+Opciones: `site_url`, `environment`, `contact_email`, `sponsorship_enabled` y `perro_links_enabled`. Un correo real es opcional; si está vacío, el sitio no inventa una dirección. Esta primera versión no necesita credenciales. Si se configura un correo editorial, el enlace aparece en las páginas informativas.
 
 Para una copia de pruebas, usá `environment => 'preview'`; responde con instrucciones de no indexar. Antes de lanzar el dominio real, confirmá `environment => 'production'`. La vista local también está excluida por su host. No uses `preview` en la web que querés posicionar.
 
@@ -88,3 +88,13 @@ El paquete incluye una lista explícita de archivos públicos, aplicación, cont
 Para volver atrás, conservá la versión actual y restaurá los archivos públicos y privados de la versión conocida, sin sobreescribir configuración privada o acuerdos reales que necesites mantener. Esta versión editorial no crea bases de datos ni registros de usuarios. Una prueba de recuperación del ZIP se realiza localmente; el backup y la recuperación de tu hosting siguen pendientes de comprobar.
 
 Referencias: [Hostinger · sitios PHP/HTML con Git](https://www.hostinger.com/support/1583302-how-to-deploy-a-git-repository-in-hostinger/), [Hostinger · elegir versión PHP](https://www.hostinger.com/support/1575755-how-to-change-the-php-version-of-your-hostinger-hosting-plan/). El despliegue por Git no se asume capaz de seleccionar un subdirectorio del repositorio; para esta noche usá el paquete explícito.
+
+## Herramientas y referencias del portfolio — 9 octubre 2026
+
+Release actual: `php-portfolio-20261009`, 64 rutas indexables y 17 archivos permitidos; el ZIP nuevo está en `C:/AI work/mascota/portfolio-2026-10-09/`, separado del release anterior. [Acuerdo compartido](https://github.com/antonmarklundcom/mascota/blob/codex/mascota-php-seo/docs/portfolio/2026-10-09/MASCOTA-PERRO-AGREEMENT.md). El paquete necesita también `mascota-app/app/interactive.php` y `public_html/assets/tools.js`; desplegar archivos de una misma versión.
+
+Calculadora: `/cuidados/calculadora-presupuesto-mascota/`; planificador: `/cuidados/planificador-cuidados/`. JavaScript local, sin cuentas, almacenamiento ni envío de campos. Probar importes, reset y vista de impresión en móvil/escritorio. La calculadora señala campos pendientes y separa ahorro de gasto; no aporta cotizaciones. Para actualizar una herramienta editar PHP/JS canónicos y reconstruir.
+
+`perro_links_enabled => true` habilita siete referencias contextuales a seis destinos públicos verificados el 9 octubre. Si alguno deja de funcionar, retirar la referencia o poner `false` en la configuración privada; volver a comprobar antes de reactivar. No hace requests a Perro al cargar una guía. Perro → Mascota sigue desactivado hasta que los cinco destinos de Mascota estén publicados y comprobados. No activar sponsors/pagos por publicar las herramientas.
+
+El chequeo público de preparación confirmó Mascota default hosting y guías 404; no equivale a un despliegue. No fusionar PR20 ni subir ZIP sin autorización del propietario.

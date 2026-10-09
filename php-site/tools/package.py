@@ -15,7 +15,7 @@ files=[]
 allowed = ['public/index.php', 'public/.htaccess', 'public/assets/site.css',
            'public/assets/companions.svg', 'public/assets/logo.svg',
            'public/assets/social.svg', 'public/assets/social.png',
-           'app/bootstrap.php', 'app/.htaccess', 'content/articles.json',
+           'app/bootstrap.php', 'app/interactive.php', 'public/assets/tools.js', 'app/.htaccess', 'content/articles.json',
            'content/sponsors.json', 'content/.htaccess',
            'config/site.example.php', 'config/.htaccess']
 for name in allowed:

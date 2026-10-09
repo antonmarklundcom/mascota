@@ -31,7 +31,7 @@ with tempfile.TemporaryDirectory(prefix='mascota-restore-') as temporary:
     restored = Path(temporary)
     with zipfile.ZipFile(args.zip) as archive:
         names = archive.namelist()
-        check(len(names) == 15, 'explicit release file count')
+        check(len(names) == 17, 'explicit release file count')
         check(all(name.startswith(('public_html/', 'mascota-app/')) or name == 'LEEME-HOSTINGER.md' for name in names), 'domain-root layout')
         check(not any('local.' in name or '.env' in name or 'node_modules' in name or 'tests/' in name for name in names), 'no private overrides, dependencies or tests')
         check(all(not name.startswith('/') and '..' not in Path(name).parts for name in names), 'safe archive paths')
@@ -63,11 +63,11 @@ with tempfile.TemporaryDirectory(prefix='mascota-restore-') as temporary:
         paths = [urlparse(element.text).path for element in ET.fromstring(body).findall('{*}url/{*}loc')]
         data=json.loads((restored/'mascota-app/content/articles.json').read_text(encoding='utf-8'))
         check(len(paths)==1+4+len(data['articles'])+len(data['pages']), 'restored complete content sitemap')
-        check(len(paths)==62,'restored 62-page SEO release')
+        check(len(paths)==64,'restored 64-page portfolio release')
         for path in paths:
             code, body = fetch(path)
             check(code == 200 and b'<h1' in body, f'restored page {path}')
-        for path in ['/assets/site.css', '/assets/social.png', '/assets/companions.svg']:
+        for path in ['/assets/site.css', '/assets/social.png', '/assets/companions.svg', '/assets/tools.js']:
             code, body = fetch(path)
             check(code == 200 and len(body) > 100, f'restored asset {path}')
         for path in ['/app/bootstrap.php', '/content/articles.json', '/config/site.local.php', '/mascota-app/app/bootstrap.php', '/veterinarias/']:

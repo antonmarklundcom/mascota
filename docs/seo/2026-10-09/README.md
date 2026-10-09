@@ -1,5 +1,7 @@
 # Paraguay keyword implementation — 9 October 2026
 
+Historical 62-route editorial release. The subsequent [portfolio increment](../../verification/2026-10-09/PORTFOLIO-RELEASE.md) adds two tools, natural search and shared strategy for 64 routes.
+
 The approved editorial plan is implemented in the standalone HTML/PHP site: **29 new guides/collections, 53 editorial routes, 62 indexable pages**. All 44 immediate group mappings in the 45-row plan resolve to an actual route or stable section anchor. The remaining mapping is the future paid veterinary finder, which stays disabled. This report records a local implementation; it does not claim production deployment or search traffic.
 
 ## Evidence and content decisions

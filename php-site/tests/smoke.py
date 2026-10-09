@@ -27,11 +27,14 @@ def check(condition, label):
 
 class Page(HTMLParser):
     def __init__(self):
-        super().__init__(); self.links=[]; self.images=[]; self.canonical=''; self.description=''; self.robots=''; self.h1=0; self.title=''; self.in_title=False; self.schemas=[]; self.ld=False; self.ld_text=''; self.ids=set()
+        super().__init__(); self.links=[]; self.images=[]; self.canonical=''; self.description=''; self.robots=''; self.h1=0; self.title=''; self.in_title=False; self.schemas=[]; self.ld=False; self.ld_text=''; self.ids=set(); self.duplicate_ids=set()
     def handle_starttag(self, tag, attrs):
         a=dict(attrs)
-        if a.get('id'): self.ids.add(a['id'])
+        if a.get('id'):
+            if a['id'] in self.ids: self.duplicate_ids.add(a['id'])
+            self.ids.add(a['id'])
         if tag=='a': self.links.append(a.get('href',''))
+        if tag=='script' and a.get('src'): self.images.append(a['src'])
         if tag=='img': self.images.append(a.get('src','')); check(bool(a.get('alt')), 'image alt')
         if tag=='link' and a.get('rel')=='canonical': self.canonical=a.get('href','')
         if tag=='meta' and a.get('name')=='description': self.description=a.get('content','')
@@ -90,7 +93,7 @@ with tempfile.TemporaryDirectory(prefix='mascota-smoke-') as temporary:
         check(code==200,'sitemap response')
         urls=[item.text for item in ET.fromstring(body).findall('{*}url/{*}loc')]
         check(len(urls)==1+4+len(data['articles'])+len(data['pages']),'complete published sitemap')
-        check(len(urls)==62,'62-page approved SEO release')
+        check(len(urls)==64,'64-page portfolio release')
         check(not any('/buscar/' in u or '/veterinarias/' in u for u in urls),'no search/empty listing pages in sitemap')
         dates={urlparse(item.find('{*}loc').text).path:item.findtext('{*}lastmod') for item in ET.fromstring(body).findall('{*}url')}
         expected_dates={'/':data['home']['modified'],**{'/'+k+'/':s['modified'] for k,s in data['sections'].items()},**{'/'+k+'/':p['modified'] for k,p in data['pages'].items()},**{'/'+a['category']+'/'+a['slug']+'/':a['modified'] for a in data['articles']}}
@@ -101,6 +104,7 @@ with tempfile.TemporaryDirectory(prefix='mascota-smoke-') as temporary:
             check(code==200,f'200 {path}')
             page=Page();page.feed(body)
             check(page.h1==1,f'one H1 {path}')
+            check(not page.duplicate_ids,f'unique HTML IDs {path}')
             check(page.canonical=='https://mascota.com.py'+path,f'canonical {path}')
             check(bool(page.description),f'description {path}')
             check('index,follow' in page.robots,f'production indexable {path}')
@@ -153,6 +157,19 @@ with tempfile.TemporaryDirectory(prefix='mascota-smoke-') as temporary:
         check('Disallow: /' in fetch('/robots.txt',production=False)[2],'local robots noindex')
         check('X-Robots-Tag' in fetch('/',production=False)[1],'local noindex header')
         check('Sitemap: https://mascota.com.py/sitemap.xml' in fetch('/robots.txt')[2],'production robots sitemap')
+        for query,expected in [('mi perro vomita','/cuidados/vomitos-en-perros/'),('vomito perro','/cuidados/vomitos-en-perros/'),('perro con tos','/cuidados/tos-en-perros/'),('alimento para perros','/productos/comida-para-perros/'),('racion perros','/productos/comida-para-perros/'),('gato siames','/mascotas/gatos/razas/siames/'),('hamster ruso','/mascotas/hamsters/')]:
+            body=fetch('/buscar/?q='+quote(query))[2]
+            first=re.search(r'class="card-link" href="([^"]+)"',body)
+            check(first and first.group(1)==expected,'relevant first result '+query)
+        check('0 guías' in fetch('/buscar/?q=palabraquenuncaexiste')[2],'unknown query empty')
+        check('data-tool="budget"' in fetch('/cuidados/calculadora-presupuesto-mascota/')[2],'budget tool rendered')
+        check('data-tool="planner"' in fetch('/cuidados/planificador-cuidados/')[2],'planner rendered')
+        check('https://perro.com.py/perros' in fetch('/mascotas/perros/')[2],'verified contextual adoption reference')
+        check('href="https://perro.com.py' not in fetch('/cuidados/vomitos-en-perros/')[2],'symptom page has no portfolio promotion')
+        (isolated/'config/site.local.php').write_text("<?php return ['perro_links_enabled'=>false];",encoding='utf-8')
+        check('href="https://perro.com.py' not in fetch('/mascotas/perros/')[2],'portfolio gate disabled')
+        (isolated/'config/site.local.php').write_text("<?php return ['perro_links_enabled'=>true];",encoding='utf-8')
+        check('href="https://perro.com.py/perros"' in fetch('/mascotas/perros/')[2],'portfolio gate enabled')
         # Publication gating uses synthetic private files in the isolated copy.
         (isolated/'config/site.local.php').write_text("<?php return ['sponsorship_enabled'=>true];",encoding='utf-8')
         sample={'slug':'fixture-vet','name':'Fixture clinic','city':'Fixture city','description':'Synthetic test only','paid':False,'approved':True,'starts':'2026-01-01','ends':'2099-12-31'}
