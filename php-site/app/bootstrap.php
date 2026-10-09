@@ -269,6 +269,13 @@ function release_version(): string {
     if(is_file($file)) { $r=json_decode(file_get_contents($file),true); $v=$r['version']??''; if(is_string($v)&&preg_match('/^[a-zA-Z0-9._-]{1,80}$/D',$v)) return $v; }
     return MASCOTA_RELEASE;
 }
+function canonical_request_path(string $path): ?string {
+    if ($path === '/index.php') return '/';
+    $known = array_merge(public_paths(), ['/buscar/', '/robots.txt', '/sitemap.xml']);
+    if (in_array($path, $known, true)) return $path;
+    if ($path !== '/' && !str_ends_with($path, '/') && in_array($path.'/', $known, true)) return $path.'/';
+    return null;
+}
 function mascota_run(): void {
     header('X-Content-Type-Options: nosniff');header('Referrer-Policy: strict-origin-when-cross-origin');header('X-Frame-Options: DENY');
     header("Content-Security-Policy: default-src 'self'; script-src 'self' 'nonce-".nonce()."'; style-src 'self'; img-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'");
@@ -279,12 +286,16 @@ function mascota_run(): void {
     header('Content-Type: text/html; charset=UTF-8');
     header('Cache-Control: public, max-age=300');
     if($method==='HEAD') ob_start();
-    $raw=parse_url((string)($_SERVER['REQUEST_URI'] ?? '/'),PHP_URL_PATH);
-    $path=is_string($raw)?rawurldecode($raw):'';
-    if($path==='/robots.txt') {header('Content-Type: text/plain; charset=UTF-8');echo is_preview()?"User-agent: *\nDisallow: /\n":"User-agent: *\nAllow: /\nDisallow: /buscar/\nDisallow: /contacto-clinica/\nSitemap: ".url('/sitemap.xml')."\n";}
+    // REQUEST_URI is an origin-form path; parse_url would treat // as an authority.
+    $raw=explode('?', (string)($_SERVER['REQUEST_URI'] ?? '/'), 2)[0];
+    $path=rawurldecode($raw);
+    $canonical = canonical_request_path($path);
+    if ($canonical !== null && $raw !== $canonical) {
+        $query = (string)($_SERVER['QUERY_STRING'] ?? '');
+        header('Location: '.$canonical.($query !== '' ? '?'.$query : ''), true, 301);
+    }
+    elseif($path==='/robots.txt') {header('Content-Type: text/plain; charset=UTF-8');echo is_preview()?"User-agent: *\nDisallow: /\n":"User-agent: *\nDisallow: /contacto-clinica/\nSitemap: ".url('/sitemap.xml')."\n";}
     elseif($path==='/sitemap.xml') sitemap();
-    elseif($path==='/index.php') {header('Location: /',true,301);}
-    elseif($path!=='/' && !str_ends_with($path,'/') && in_array($path.'/',array_merge(public_paths(),['/buscar/']),true)) {header('Location: '.$path.'/'.($_GET?'?'.http_build_query($_GET):''),true,301);}
     elseif(preg_match('~^/contacto-clinica/([a-z0-9]+(?:-[a-z0-9]+)*)/(phone|whatsapp|website)/$~D', $path, $contact)) clinic_contact($contact[1], $contact[2], $method);
     elseif($path==='/') home();
     elseif($path==='/buscar/') search_page();

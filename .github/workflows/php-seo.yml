@@ -1,10 +1,10 @@
 name: PHP SEO site
 on:
   pull_request:
-    branches: [main, codex/mascota-php-seo]
+    branches: [main, codex/mascota-php-seo, codex/commercial-measurement-20261009]
     paths: ['php-site/**', 'PHP-DEPLOY.md', '.github/workflows/php-seo.yml']
   push:
-    branches: [codex/mascota-php-seo, codex/commercial-measurement-20261009]
+    branches: [codex/mascota-php-seo, codex/commercial-measurement-20261009, codex/crawl-readiness-20261009]
     paths: ['php-site/**', 'PHP-DEPLOY.md', '.github/workflows/php-seo.yml']
 permissions:
   contents: read
@@ -29,6 +29,8 @@ jobs:
       - run: python3 php-site/tests/smoke.py --php php
       - run: python3 php-site/tests/commercial_smoke.py --php php
       - run: python3 php-site/tests/test_release.py
+      - run: python3 php-site/tests/test_crawl.py --php php
+      - run: php php-site/tests/search_regression.php
       - run: python3 php-site/tests/test_editorial.py --php php
       - run: python3 -m unittest discover -s php-site/tests -p test_keyword_opportunities.py -v
       - run: python3 php-site/tools/package.py --output /tmp/mascota-package

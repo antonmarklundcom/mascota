@@ -62,6 +62,10 @@ def verify(base, manifest, allow_local_http=False, host=None):
     code,_,body=fetch('/robots.txt'); robots=body.decode('utf-8')
     check(code==200 and 'Sitemap: '+canonical_origin+'/sitemap.xml' in robots,'Robots sitemap')
     check(not any(line.strip().lower()=='disallow: /' for line in robots.splitlines()),'Production robots blocks indexing')
+    expected_robots='User-agent: *\nDisallow: /contacto-clinica/\nSitemap: '+canonical_origin+'/sitemap.xml\n'
+    check(robots==expected_robots,'Wrong production robots policy; search must be crawlable and clinic contact blocked')
+    code,_,body=fetch('/buscar/'); search=Page(); search.feed(body.decode('utf-8'))
+    check(code==200 and any('noindex' in rule.lower().split(',') for rule in search.robots),'Search must remain noindex')
     code,_,body=fetch('/sitemap.xml'); check(code==200,'Sitemap missing')
     urls=[e.text for e in ET.fromstring(body).findall('{*}url/{*}loc')]
     check(set(urls)=={canonical_origin+p for p in manifest['paths']} and len(urls)==len(manifest['paths']),'Sitemap inventory mismatch')
