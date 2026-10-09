@@ -32,11 +32,13 @@ function check(value,label){if(!value)throw new Error(label);checks++;}
  browser=await chromium.launch({...(executablePath?{executablePath}:{}),headless:true});
  const page=await browser.newPage();const errors=[],requests=[];
  page.on('pageerror',error=>errors.push(error.message));
- page.on('requestfailed',request=>requests.push(request.url()));
+ page.on('requestfailed',request=>requests.push({url:request.url(),error:request.failure()?.errorText,type:request.resourceType()}));
  for(const width of [1440,320]){
   await page.setViewportSize({width,height:900});
   for(const path of paths){
    const response=await page.goto(base+path,{waitUntil:'load'});
+   // Settle lazy local images before navigating away; retain strict failed-request checks.
+   await page.waitForLoadState('networkidle');
    check(response.status()===200,'browser route '+path);
    check(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),'horizontal overflow '+width+' '+path);
    check(await page.locator('h1').isVisible(),'visible heading '+width+' '+path);
@@ -120,7 +122,7 @@ function check(value,label){if(!value)throw new Error(label);checks++;}
  check(await plain.locator('noscript').innerText().then(t=>t.includes('fórmulas')),'no-JS budget instructions');
  await plain.goto(base+'/cuidados/planificador-cuidados/');
  check(await plain.locator('#care-daily').isVisible(),'no-JS planner editable');
- check(errors.length===0,'no browser JS/CSP errors');check(requests.length===0,'no failed requests');
+ check(errors.length===0,'no browser JS/CSP errors');check(requests.length===0,'no failed requests: '+JSON.stringify(requests));
  const report={status:'PASS',checks,pages:paths.length,viewports:[1440,320,390],budgetExample:{monthly:600000,reserve:100000,annualRecurring:7200000,firstYearCash:9400000},printPDFs:['budget-example.pdf','planner-example.pdf'],noJSChecked:true,productionDeploymentPerformed:false};
  fs.writeFileSync(out+'/browser-checks.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));
  await cleanup();

@@ -1,10 +1,10 @@
 name: PHP SEO site
 on:
   pull_request:
-    branches: [main]
+    branches: [main, codex/mascota-php-seo]
     paths: ['php-site/**', 'PHP-DEPLOY.md', '.github/workflows/php-seo.yml']
   push:
-    branches: [codex/mascota-php-seo]
+    branches: [codex/mascota-php-seo, codex/commercial-measurement-20261009]
     paths: ['php-site/**', 'PHP-DEPLOY.md', '.github/workflows/php-seo.yml']
 permissions:
   contents: read

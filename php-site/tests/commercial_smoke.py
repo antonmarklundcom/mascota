@@ -31,7 +31,7 @@ class NoRedirect(urllib.request.HTTPRedirectHandler):
     def redirect_request(self,*a,**kw): return None
 
 with tempfile.TemporaryDirectory(prefix='mascota-commercial-') as temp:
-    private=Path(temp); app=private/'site/php-site'; shutil.copytree(root,app)
+    private=Path(temp); app=private/'site/php-site'; shutil.copytree(root,app,ignore=shutil.ignore_patterns('*.local.php','*.local.json','node_modules','__pycache__','private','commercial-ledger*.json','clinic-clicks*.json','commercial-report*.json','*.lock'))
     counts=private/'clinic-clicks.json'
     fixture={'slug':'synthetic-vet','name':'Synthetic clinic only','city':'Test city','description':'Isolated fixture','paid':True,'approved':True,'starts':'2000-01-01','ends':'2099-12-31','verified_on':date.today().isoformat(),'contact_approved':True,'address':'Synthetic <address>','services':['Synthetic service'],'hours':'Synthetic hours','phone':'+595981234567','whatsapp':'+595981234567','website':'https://clinic.example/contact'}
     def setup(**config):
