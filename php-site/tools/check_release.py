@@ -1,4 +1,4 @@
-"""Read-only production launch verification. Only same-origin HTTP(S) GETs."""
+"""Read-only production verification: same-origin GETs and one no-count HEAD contact-policy probe."""
 from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urlsplit, urljoin
@@ -42,12 +42,12 @@ def verify(base, manifest, allow_local_http=False, host=None):
         nonlocal checks
         if not value: raise AssertionError(label)
         checks+=1
-    def fetch(path):
+    def fetch(path, method="GET"):
         target=urlsplit(urljoin(base+'/',path))
         check((target.scheme,target.netloc)==(origin.scheme,origin.netloc),'Refusing external request '+path)
         headers={'User-Agent':'Mascota-Release-Check/1.0'}
         if host: headers['Host']=host
-        req=urllib.request.Request(target.geturl(),headers=headers,method='GET')
+        req=urllib.request.Request(target.geturl(),headers=headers,method=method)
         try: response=opener.open(req,timeout=15)
         except urllib.error.HTTPError as error: response=error
         with response:
@@ -62,6 +62,10 @@ def verify(base, manifest, allow_local_http=False, host=None):
     code,_,body=fetch('/robots.txt'); robots=body.decode('utf-8')
     check(code==200 and 'Sitemap: '+canonical_origin+'/sitemap.xml' in robots,'Robots sitemap')
     check(not any(line.strip().lower()=='disallow: /' for line in robots.splitlines()),'Production robots blocks indexing')
+    expected_robots='User-agent: *\nDisallow: /contacto-clinica/\nSitemap: '+canonical_origin+'/sitemap.xml\n'
+    check(robots==expected_robots,'Wrong production robots policy; search must be crawlable and clinic contact blocked')
+    code,_,body=fetch('/buscar/'); search=Page(); search.feed(body.decode('utf-8'))
+    check(code==200 and any('noindex' in rule.lower().split(',') for rule in search.robots),'Search must remain noindex')
     code,_,body=fetch('/sitemap.xml'); check(code==200,'Sitemap missing')
     urls=[e.text for e in ET.fromstring(body).findall('{*}url/{*}loc')]
     check(set(urls)=={canonical_origin+p for p in manifest['paths']} and len(urls)==len(manifest['paths']),'Sitemap inventory mismatch')
@@ -87,7 +91,15 @@ def verify(base, manifest, allow_local_http=False, host=None):
         code,_,body=fetch(path)
         check(code in (403,404),'Private or absent path exposed '+path)
         check(b'<?php' not in body and b'"articles"' not in body,'Private content leaked '+path)
-    return {'status':'PASS','checks':checks,'pages':len(manifest['paths']),'version':manifest['version'],'base':base,'method':'GET'}
+    # HEAD never records a click, and redirects are never followed. This also
+    # detects hosting rules that overwrite PHP's stricter endpoint headers.
+    code,headers,body=fetch('/contacto-clinica/mascota-release-probe-missing/website/', 'HEAD')
+    check(code in (302,404),'Contact privacy probe unavailable')
+    check(headers.get('Referrer-Policy')=='no-referrer','Contact referrer policy overwritten')
+    check('no-store' in headers.get('Cache-Control','').lower(),'Contact probe is cacheable')
+    check('noindex' in headers.get('X-Robots-Tag','').lower(),'Contact probe is indexable')
+    check(not body,'HEAD contact probe returned a body')
+    return {'status':'PASS','checks':checks,'pages':len(manifest['paths']),'version':manifest['version'],'base':base,'method':'GET+HEAD'}
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__)

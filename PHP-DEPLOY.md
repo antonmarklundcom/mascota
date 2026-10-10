@@ -32,7 +32,7 @@ El ZIP no publica documentos del repositorio ni la tienda Next.js anterior. No a
 
 El dominio canónico predeterminado es `https://mascota.com.py`. Para cambiar una opción, copiá `mascota-app/config/site.example.php` a `mascota-app/config/site.local.php`, siempre fuera del directorio público. No subas ese archivo privado a Git.
 
-Opciones: `site_url`, `environment`, `contact_email`, `sponsorship_enabled` y `perro_links_enabled`. Un correo real es opcional; si está vacío, el sitio no inventa una dirección. Esta primera versión no necesita credenciales. Si se configura un correo editorial, el enlace aparece en las páginas informativas.
+Opciones: `site_url`, `environment`, `contact_email`, `sponsorship_enabled`, `perro_links_enabled`, `clinic_contact_enabled`, `clinic_click_tracking_enabled` y `clinic_clicks_path`. Un correo real es opcional; si está vacío, el sitio no inventa una dirección. Esta primera versión no necesita credenciales. Si se configura un correo editorial, el enlace aparece en las páginas informativas.
 
 Para una copia de pruebas, usá `environment => 'preview'`; responde con instrucciones de no indexar. Antes de lanzar el dominio real, confirmá `environment => 'production'`. La vista local también está excluida por su host. No uses `preview` en la web que querés posicionar.
 
@@ -42,7 +42,7 @@ El sitio admite `MASCOTA_SITE_URL`, `MASCOTA_ENV` y `MASCOTA_CONTACT_EMAIL` desd
 
 - Verificá el dominio en Google Search Console y enviá `https://mascota.com.py/sitemap.xml`. La propiedad debe estar bajo tu control; no se configuró desde esta tarea.
 - Comprobá la indexación de las páginas reales y que la vista de pruebas esté excluida.
-- Mantené enlaces internos, títulos y descripciones únicos. La búsqueda está marcada `noindex`; no crees miles de páginas por filtros o ciudades sin contenido propio.
+- Mantené enlaces internos, títulos y descripciones únicos. La búsqueda está marcada `noindex`; no crees miles de páginas por filtros o ciudades sin contenido propio. Permití rastrear `/buscar/` para que el buscador pueda leer ese `noindex`; producción solo bloquea `/contacto-clinica/`. La vista previa conserva el bloqueo completo. Las rutas válidas codificadas (por ejemplo `/mascotas/%70erros/`) redirigen una sola vez con 301 a la URL normal, conservando la consulta.
 - Revisá consultas e impresiones cuando haya datos y priorizá nuevas guías con esa evidencia. El [mapa de palabras clave](https://github.com/antonmarklundcom/mascota/blob/codex/mascota-php-seo/docs/seo/2026-10-09/KEYWORD-PAGE-MAP.csv) conserva los volúmenes de Google Keyword Planner suministrados para Paraguay/español. Hay grupos mezclados y detalles incompletos: sus totales no son una previsión de tráfico ni garantizan posicionamiento.
 
 ## Editar una guía
@@ -57,7 +57,7 @@ Mantener `sponsorship_enabled => false` deja todos los anuncios y fichas fuera d
 
 Cuando exista un acuerdo real, creá `mascota-app/content/sponsors.local.json` en el servidor privado con una lista de fichas. Este archivo tiene prioridad sobre el JSON vacío entregado y queda fuera de Git y del ZIP. Cada ficha necesita `paid: true`, `approved: true`, nombre (`name`), slug, ciudad (`city`), descripción (`description`) y fechas válidas `starts`/`ends` en formato `AAAA-MM-DD`. Solo se publica si el módulo está habilitado y el acuerdo está vigente. El sitio identifica estos espacios como publicidad. Una ficha impaga, no aprobada, futura o vencida queda oculta y responde 404.
 
-Los registros comerciales se mantienen fuera de Git si contienen datos que no deben publicarse. No se incluye sistema de cobro, renovación automática, facturación, portal de clientes ni métricas comerciales. Antes de activar el módulo, confirmá contacto, derecho a publicar, datos actuales y términos del acuerdo; probá con una copia aislada.
+Los registros comerciales se mantienen fuera de Git si contienen datos que no deben publicarse. No se incluye sistema de cobro, renovación automática, facturación, portal de clientes. El contacto y reporte comercial privado preparados se describen abajo; siguen desactivados sin socios reales. Antes de activar el módulo, confirmá contacto, derecho a publicar, datos actuales y términos del acuerdo; probá con una copia aislada.
 
 ## Desarrollo y verificaciones
 
@@ -66,6 +66,8 @@ Desde la raíz del repositorio:
 ```sh
 php -S 127.0.0.1:8178 -t php-site/public php-site/router.php
 python php-site/tests/smoke.py --php php
+python php-site/tests/test_crawl.py --php php
+php php-site/tests/search_regression.php
 python php-site/tools/package.py --output /ruta/privada/de/salida
 python php-site/tests/package_smoke.py --php php --zip /ruta/privada/de/salida/mascota-hostinger-<version>.zip
 ```
@@ -140,3 +142,17 @@ Opciones `--playwright-module`, `--browser-executable`, `--base-url`, `--root` p
 Las siete referencias contextuales a seis destinos de Perro conservan el criterio del [acuerdo compartido](https://github.com/antonmarklundcom/mascota/blob/codex/mascota-php-seo/docs/portfolio/2026-10-09/MASCOTA-PERRO-AGREEMENT.md). Perro → Mascota sigue condicionado a publicación y verificación de los destinos de Mascota. No activar sponsors ni pagos por publicar las herramientas.
 
 No se fusionó ni desplegó este trabajo. La verificación anterior de Mascota observó la página por defecto; no es evidencia de que este paquete esté publicado. Confirmar el estado actual con el verificador, usando el manifest correcto.
+
+## Prepared private clinic contact and commercial reporting - 9 October 2026
+
+Sponsorship, clinic contact and click tracking remain disabled; sponsor data is empty. Optional contact requires a current paid/approved partner plus separate contact gate, contact permission and business details checked within 90 days. Aggregate redirect clicks are optional and never confirmed inquiries/appointments. There are no forms, sessions, payments, messages or automatic booking.
+
+The integrated deterministic allowlist adds only `mascota-app/app/commercial.php` to the parent editorial/assets release, for 82 total files and 67 indexable routes. The CLI `php-site/tools/commercial_report.py` stays offline and outside the ZIP. Keep real partner overrides, ledgers, counter JSON/lock files and private reports outside Git, manuals and all document roots. Configured counts require an absolute .json path with an existing private parent outside the domain/application tree; verify actual filesystem permissions and replacement behavior before enabling. Preserve private configuration/data during updates and rollback. Run `python php-site/tests/commercial_smoke.py --php php` in addition to all parent checks.
+
+[Private operator workflow and schema](https://github.com/antonmarklundcom/mascota/blob/codex/commercial-measurement-20261009/docs/operations/COMMERCIAL-MEASUREMENT.md). Billing, collected cash, refunds, confirmed outcomes, renewals and actual service hours are manually checked private aggregates. Unknown costs suppress a margin claim; recorded residue is not certified net profit or salary available. No real commercial data or partner permissions are supplied.
+
+## Review fixes follow-up - 9 October 2026
+
+The commercial aggregate writer now permits JSON member reordering while retaining the exact allowed key set. Public Apache headers use `Header always setifempty Referrer-Policy "strict-origin-when-cross-origin"` to preserve PHP/FastCGI contact responses' stricter `no-referrer`; this requires Apache-compatible setifempty support (Apache 2.4.7+). Actual Hostinger/LiteSpeed/FastCGI behavior remains unverified; the local PHP development server does not process .htaccess. Consult the [official Apache header documentation](https://httpd.apache.org/docs/2.4/mod/mod_headers.html#header) and verify the actual response before activating contact/tracking.
+
+The read-only release checker now adds one same-origin HEAD contact-policy probe (no redirect count, no external follow) to its GET checks. It fails if the endpoint's no-referrer/no-store/noindex headers are overridden. New scoped test copies and non-secret release artifacts are on `E:/ai work/Artifacts/mascota/2026-10-09/review/`; use only the committed `final/` ZIP plus its matching immutable manifest, not the working-tree `precommit/` package. Prior C: checkouts/packages are retained. Sponsorship/contact/tracking remain disabled and sponsor data empty. See the versioned commercial verification report for exact checks and remaining hosting validation.
