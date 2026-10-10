@@ -54,7 +54,8 @@ class ReleaseTests(unittest.TestCase):
                     value=copy.deepcopy(manifest)
                     if fault=='fingerprint': value['fingerprint']='wrong'
                     body=encoded(value)
-                elif self.path=='/robots.txt': body=b'Sitemap: https://mascota.com.py/sitemap.xml\n'+(b'Disallow: /\n' if fault=='robots' else b'')
+                elif self.path=='/robots.txt': body=b'User-agent: *\nDisallow: /contacto-clinica/\nSitemap: https://mascota.com.py/sitemap.xml\n'+(b'Disallow: /\n' if fault=='robots' else b'Disallow: /buscar/\n' if fault=='search-robots' else b'')
+                elif self.path=='/buscar/': body=b'<title>Search</title><h1>Search</h1>'+ (b'' if fault=='search-index' else b'<meta name="robots" content="noindex,follow">')
                 elif self.path=='/sitemap.xml':
                     paths=['/'] if fault=='sitemap' else manifest['paths']
                     body=('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join('<url><loc>https://mascota.com.py'+p+'</loc></url>' for p in paths)+'</urlset>').encode()
@@ -87,7 +88,7 @@ class ReleaseTests(unittest.TestCase):
         try:
             base='http://127.0.0.1:'+str(server.server_port)
             self.assertEqual(verify(base,manifest,True,'mascota.com.py')['status'],'PASS')
-            for fault in ('fingerprint','runtime','robots','sitemap','canonical','noindex','header','default','404','redirect','asset','private','external','contact-referrer','contact-cache','contact-index'):
+            for fault in ('fingerprint','runtime','robots','search-robots','search-index','sitemap','canonical','noindex','header','default','404','redirect','asset','private','external','contact-referrer','contact-cache','contact-index'):
                 with self.subTest(fault=fault):
                     state['fault']=fault
                     with self.assertRaises((AssertionError,ValueError)): verify(base,manifest,True,'mascota.com.py')

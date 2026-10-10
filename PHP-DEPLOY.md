@@ -42,7 +42,7 @@ El sitio admite `MASCOTA_SITE_URL`, `MASCOTA_ENV` y `MASCOTA_CONTACT_EMAIL` desd
 
 - Verificá el dominio en Google Search Console y enviá `https://mascota.com.py/sitemap.xml`. La propiedad debe estar bajo tu control; no se configuró desde esta tarea.
 - Comprobá la indexación de las páginas reales y que la vista de pruebas esté excluida.
-- Mantené enlaces internos, títulos y descripciones únicos. La búsqueda está marcada `noindex`; no crees miles de páginas por filtros o ciudades sin contenido propio.
+- Mantené enlaces internos, títulos y descripciones únicos. La búsqueda está marcada `noindex`; no crees miles de páginas por filtros o ciudades sin contenido propio. Permití rastrear `/buscar/` para que el buscador pueda leer ese `noindex`; producción solo bloquea `/contacto-clinica/`. La vista previa conserva el bloqueo completo. Las rutas válidas codificadas (por ejemplo `/mascotas/%70erros/`) redirigen una sola vez con 301 a la URL normal, conservando la consulta.
 - Revisá consultas e impresiones cuando haya datos y priorizá nuevas guías con esa evidencia. El [mapa de palabras clave](https://github.com/antonmarklundcom/mascota/blob/codex/mascota-php-seo/docs/seo/2026-10-09/KEYWORD-PAGE-MAP.csv) conserva los volúmenes de Google Keyword Planner suministrados para Paraguay/español. Hay grupos mezclados y detalles incompletos: sus totales no son una previsión de tráfico ni garantizan posicionamiento.
 
 ## Editar una guía
@@ -66,6 +66,8 @@ Desde la raíz del repositorio:
 ```sh
 php -S 127.0.0.1:8178 -t php-site/public php-site/router.php
 python php-site/tests/smoke.py --php php
+python php-site/tests/test_crawl.py --php php
+php php-site/tests/search_regression.php
 python php-site/tools/package.py --output /ruta/privada/de/salida
 python php-site/tests/package_smoke.py --php php --zip /ruta/privada/de/salida/mascota-hostinger-<version>.zip
 ```

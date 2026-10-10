@@ -6,8 +6,10 @@ function search_tokens(string $text): array {
         'vomitos'=>'vomito','vomita'=>'vomito','vomitar'=>'vomito','vomitando'=>'vomito',
         'alimentos'=>'alimento','comida'=>'alimento','comidas'=>'alimento','racion'=>'alimento',
         'hamsters'=>'hamster','cachorros'=>'cachorro','veterinarias'=>'veterinaria','veterinario'=>'veterinaria',
-        'veterinarios'=>'veterinaria','razas'=>'raza','cuidados'=>'cuidado'];
-    $stop=['a','al','con','como','de','del','el','en','es','la','las','lo','los','mi','mis','para','por','que','se','su','sus','tu','tus','un','una','y'];
+        'veterinarios'=>'veterinaria','razas'=>'raza','cuidados'=>'cuidado','cuidar'=>'cuidado',
+        'precio'=>'costo','precios'=>'costo','gasto'=>'costo','gastos'=>'costo','costos'=>'costo',
+        'coste'=>'costo','costes'=>'costo','cuesta'=>'costo','cuestan'=>'costo','costar'=>'costo'];
+    $stop=['a','al','con','como','cuanto','de','del','el','en','es','la','las','lo','los','mi','mis','para','por','que','se','su','sus','tu','tus','un','una','y'];
     $tokens=preg_split('/[^a-z0-9]+/',normalized($text),-1,PREG_SPLIT_NO_EMPTY);
     return array_values(array_unique(array_map(fn($t)=>$aliases[$t] ?? $t,array_filter($tokens,fn($t)=>!in_array($t,$stop,true)))));
 }
@@ -24,13 +26,22 @@ function search_guides(string $query): array {
         $description=search_tokens($article['description']);
         $sections=array_map(fn($s)=>[$s['title'],$s['paragraphs'] ?? [],array_map('inline_plain_text',$s['inline_paragraphs'] ?? []),$s['bullets'] ?? [],$s['table'] ?? [],array_column($s['links'] ?? [],'label')],$article['sections']);
         $body=search_tokens(search_strings([$article['answer'],$article['intro'],$sections,$article['faqs']]));
-        $all=array_unique([...$title,...$description,...$body]);
+        // Species metadata supports shared guides without accepting unrelated or unknown query words.
+        $species=search_tokens(implode(' ',$article['species'] ?? []));
+        $all=array_unique([...$title,...$description,...$body,...$species]);
         if (array_diff($tokens,$all)) continue;
         $score=0;
-        foreach ($tokens as $token) $score+=in_array($token,$title,true)?12:(in_array($token,$description,true)?5:1);
+        // A topic in the title is stronger evidence than an audience species alone.
+        foreach ($tokens as $token) $score+=in_array($token,$title,true)?(in_array($token,$species,true)?12:18):(in_array($token,$description,true)?5:(in_array($token,$species,true)?3:1));
+        // Prefer the main species guide when otherwise equally relevant to a broad species question.
+        if($article['category']==='mascotas' && in_array($article['slug'],$article['species'] ?? [],true)
+            && array_intersect($tokens,search_tokens($article['slug']))) $score+=2;
         $matches[]=['article'=>$article,'score'=>$score];
     }
-    usort($matches,fn($a,$b)=>($b['score']<=>$a['score']) ?: strcmp($a['article']['title'],$b['article']['title']));
+    // With equal evidence, answer the question with a guide before offering its interactive tool.
+    usort($matches,fn($a,$b)=>($b['score']<=>$a['score'])
+        ?: (isset($a['article']['tool'])<=>isset($b['article']['tool']))
+        ?: strcmp($a['article']['title'],$b['article']['title']));
     return array_column($matches,'article');
 }
 function perro_reference(array $article): void {
