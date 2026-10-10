@@ -1,3 +1,13 @@
+# Current Mascota instructions
+
+## Current PHP scope
+
+The owner authorized a separate PHP SEO site in `php-site/`, with content traffic first and paid veterinary listing/sponsorship monetization later. No general free clinic directory. Follow `PHP-DEPLOY.md` and `docs/strategy/2026-10-08/README.md` for this scope. Keep real private config, customer records and contracts outside Git. Run PHP lint and `python php-site/tests/smoke.py --php php`; verify desktop/mobile layouts and the packaged public/private deployment. PHP changes do not require installing or seeding the retained Next.js application.
+
+The instructions below remain applicable to edits of the retained Next.js store. Do not change its money, stock, payment or database machinery as part of the PHP build.
+
+---
+
 # CLAUDE.md
 
 Este repo es el **template** de tiendas online (`antonmarklundcom/ecom`), o

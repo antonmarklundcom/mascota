@@ -1,0 +1,26 @@
+{
+  "package": "mascota-hostinger-2026-10-09.zip",
+  "files": 15,
+  "sha256": "4e72099d8ea0fe8aad9515b109b240ae39f767b3f69a7404074b6fc756fbce31",
+  "layout": [
+    "public_html/",
+    "mascota-app/"
+  ],
+  "containsCustomerData": false,
+  "containsSecrets": false,
+  "sourceBaseline": "3add08c59ba3343ebd782930b2aedc298aab780f",
+  "branch": "codex/mascota-php-seo",
+  "pullRequest": "https://github.com/antonmarklundcom/mascota/pull/20",
+  "testedPHP": "8.3.33",
+  "checks": {
+    "php": 1567,
+    "browser": 425,
+    "extractedPackage": 78
+  },
+  "indexablePages": 62,
+  "editorialRoutes": 53,
+  "newEditorialRoutes": 29,
+  "implementedGroupMappings": 44,
+  "deferredPaidFinderMappings": 1,
+  "deployed": false
+}

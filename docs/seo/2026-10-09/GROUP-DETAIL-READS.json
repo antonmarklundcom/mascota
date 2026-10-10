@@ -1,0 +1,425 @@
+{
+  "sourceFileName": "mascota.com.py-keywords-for-ai.md",
+  "sourceSHA256": "2000fc93e4fb1f9d9fbd2208f9e59b15e3bc776d8360df8bd4a4df82a704aade",
+  "readOrder": [
+    "Summary",
+    "Meaning groups",
+    "Group details"
+  ],
+  "groups": [
+    {
+      "group": "perros",
+      "page": "/mascotas/perros/",
+      "detailSHA256": "8ac9a431fcd18a6f82cae15b849aa5b0a24a0074f6c3e7be209a090b83a52136",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 21730,
+      "exportedSubsetVolume": 19630,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "gatos",
+      "page": "/mascotas/gatos/",
+      "detailSHA256": "031066d2c78fa88ad54b17609b4fded970991754614268b938a61cae537931a3",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 16280,
+      "exportedSubsetVolume": 14220,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "el gato",
+      "page": "/mascotas/gatos/",
+      "detailSHA256": "f6c57472b91a4538132c3f390d213c9301e24f6a0afffe6968d39473184c5747",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 9740,
+      "exportedSubsetVolume": 5790,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "gatitos",
+      "page": "/cuidados/primer-gato/",
+      "detailSHA256": "6928ceca93770424fc0370f06996415efc8482bf9c54ae1dd81e50f5eccfb3b3",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 6780,
+      "exportedSubsetVolume": 5920,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "hamster",
+      "page": "/mascotas/hamsters/",
+      "detailSHA256": "c302705792903afaddbfa9455c695ba4a82c7f76fbb9bd7ee6dc539b04094ce3",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 10150,
+      "exportedSubsetVolume": 6940,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "veterinari",
+      "page": "/cuidados/elegir-veterinaria/",
+      "detailSHA256": "fe9551944c081ebe046e9ac4837919a9e4012f2a64b4401d4fec3ec6d0959e6f",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 10030,
+      "exportedSubsetVolume": 9790,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "peces",
+      "page": "/mascotas/peces/",
+      "detailSHA256": "e1eb8f20cc8633e92c96b0066b6c95f1cdeba50204e064bb848f7b732129ff18",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 5890,
+      "exportedSubsetVolume": 3770,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "conejos",
+      "page": "/mascotas/conejos/",
+      "detailSHA256": "f97a5d0f09556565ba847ac179a2edb0367516a50fb28a4a4d4703b57e318619",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 5370,
+      "exportedSubsetVolume": 4850,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "tortug",
+      "page": "/mascotas/reptiles/",
+      "detailSHA256": "051d52bc6f52d9826106f18c122b9985b3b665b5832d4a54a0b36c405a3c6dd2",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 4910,
+      "exportedSubsetVolume": 3660,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "labrador",
+      "page": "/mascotas/perros/razas/labrador/",
+      "detailSHA256": "00713603d5ed162f74eaaa4b3303769f0e5445b39cf5708b1412047460434d14",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 14020,
+      "exportedSubsetVolume": 10530,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "den retriever",
+      "page": "/mascotas/perros/razas/golden-retriever/",
+      "detailSHA256": "a6f6527457d44c4cc463f888c93a538d7fbcd919bbe33b1e8a7ac769560731c1",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 12460,
+      "exportedSubsetVolume": 9360,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "pastor australiano",
+      "page": "/mascotas/perros/razas/pastor-australiano/",
+      "detailSHA256": "bfe22e0a695895451d9bacb7baba442951d9cf925ea73baf63c2cda3e1b66fd4",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 16680,
+      "exportedSubsetVolume": 16180,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "pastor alemán",
+      "page": "/mascotas/perros/razas/pastor-aleman/",
+      "detailSHA256": "f6327817816bc59828226c837748a86360efef950234ee042e00ab6cbc6cfac5",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 11600,
+      "exportedSubsetVolume": 9460,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "pastor alem",
+      "page": "/mascotas/perros/razas/pastor-aleman/",
+      "detailSHA256": "610742e800ecd54ac2feb472708bbdacec3ffb6eccd1fb08efd7b80269788a1b",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 8350,
+      "exportedSubsetVolume": 7660,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "ovejero aleman",
+      "page": "/mascotas/perros/razas/pastor-aleman/",
+      "detailSHA256": "178384ad39eecd8a418fcb5a3c1164d0ace1e649ce0cf1631c5bdbe313dbd29d",
+      "detailRowsRead": 45,
+      "reportedGroupVolume": 8070,
+      "exportedSubsetVolume": 8070,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "cachorros husky",
+      "page": "/mascotas/perros/razas/husky-siberiano/",
+      "detailSHA256": "80c0742eec4e7304a734caeab827ed62ef31da2b7b6ec9d95547f53e9417dc19",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 12630,
+      "exportedSubsetVolume": 11890,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "raza siberiano",
+      "page": "/mascotas/perros/razas/husky-siberiano/",
+      "detailSHA256": "c73dadfb8a635cb5d61980ae40f6d696363bc1582351997da3777f151d5da0c6",
+      "detailRowsRead": 29,
+      "reportedGroupVolume": 6530,
+      "exportedSubsetVolume": 6530,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "husky siberiano",
+      "page": "/mascotas/perros/razas/husky-siberiano/",
+      "detailSHA256": "f3d21a5ea2a6daf9e691c3216d50f1a58d95cbeb1eb22c0266a24fd5bd613759",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 5660,
+      "exportedSubsetVolume": 5400,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "san bernardo",
+      "page": "/mascotas/perros/razas/san-bernardo/",
+      "detailSHA256": "9f5ce93b1a12203ae35677b3a782bfa8d8bf968f9d943cddad3d0c719df7c1ce",
+      "detailRowsRead": 17,
+      "reportedGroupVolume": 42270,
+      "exportedSubsetVolume": 42270,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "raza american bully",
+      "page": "/mascotas/perros/razas/american-bully/",
+      "detailSHA256": "44a9c4478602790a13f904e48f65e183374678ed8b2904b08c55a940120dabf8",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 10990,
+      "exportedSubsetVolume": 10160,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "pitbull",
+      "page": "/mascotas/perros/razas/pitbull/",
+      "detailSHA256": "8a85d3a5e3463bfc6c9fbafb31f719d1963d709d1d554484d84fc739d2b92e30",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 10240,
+      "exportedSubsetVolume": 9450,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "bulldog frances",
+      "page": "/mascotas/perros/razas/bulldog-frances/",
+      "detailSHA256": "83112078991b565513b5f0c512fc0fd8246da4cf6ca99391cf6ea85fe6146aad",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 9710,
+      "exportedSubsetVolume": 9180,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "pomerania",
+      "page": "/mascotas/perros/razas/pomerania/",
+      "detailSHA256": "40d130d1d14368b54269b0ad0ceb2737467d5141547f43219c300ca0d0909858",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 9320,
+      "exportedSubsetVolume": 9030,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "doberman perro",
+      "page": "/mascotas/perros/razas/doberman/",
+      "detailSHA256": "0280b7f16d3e663e6bd6b190d636f7466b0742e35b21d2bcf55301c0c49a757b",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 7990,
+      "exportedSubsetVolume": 6290,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "perros salchichas",
+      "page": "/mascotas/perros/razas/perro-salchicha/",
+      "detailSHA256": "e5b57a59db6bbfa1b5b3f58969c2a09fde857fdb885eb0152fabcab4962a49ea",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 7650,
+      "exportedSubsetVolume": 7530,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "perros pug",
+      "page": "/mascotas/perros/razas/pug/",
+      "detailSHA256": "7764742ab0b584bf70c6e340d69ffdf705e2ec06cbdbebd0eb4c35ec24e9eb38",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 7410,
+      "exportedSubsetVolume": 5660,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "cachorros chow",
+      "page": "/mascotas/perros/razas/chow-chow/",
+      "detailSHA256": "3ff3350c846d8197ebac018e50c9a58c3f5a389623b3a2b81f92c7943599f658",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 7150,
+      "exportedSubsetVolume": 4330,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "argentino dogo",
+      "page": "/mascotas/perros/razas/dogo-argentino/",
+      "detailSHA256": "3600776dfb8f1766a3ae0e431a8e7f89a28f0f1926d53bf7bf3573a1b697fa03",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 6610,
+      "exportedSubsetVolume": 6530,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "caniche",
+      "page": "/mascotas/perros/razas/caniche/",
+      "detailSHA256": "23605bde1cf504de98f39e249ecd71d7b286d4539f4d5839089fdfd359c70a75",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 6110,
+      "exportedSubsetVolume": 4810,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "caniche toy",
+      "page": "/mascotas/perros/razas/caniche/",
+      "detailSHA256": "da01188d375ad92ec5bc473c058d9e148ad423c8ba1d8acedac1bcaae10a63e0",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 5350,
+      "exportedSubsetVolume": 3520,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "chihuahua",
+      "page": "/mascotas/perros/razas/chihuahua/",
+      "detailSHA256": "011932d6f9b534059adfe7a9eb756c9579acc8683de89f88039c84119c62dfb4",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 6070,
+      "exportedSubsetVolume": 5540,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "gato persa",
+      "page": "/mascotas/gatos/razas/persa/",
+      "detailSHA256": "cd1e3391bceefd8b1adee44a0fff2a519cb1e5e3569bb1fe4d51faf8b2a50820",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 8240,
+      "exportedSubsetVolume": 5300,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "gatos persa",
+      "page": "/mascotas/gatos/razas/persa/",
+      "detailSHA256": "fb320b63bf1b7b35315e623205872c397d88e88779085f0608aa43cef4091d09",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 5650,
+      "exportedSubsetVolume": 5430,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "gato siamès",
+      "page": "/mascotas/gatos/razas/siames/",
+      "detailSHA256": "32688b849da4bfc40796eb41043adb1d8d8e8f2f7c4681799c91dd6d74b51b1b",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 5660,
+      "exportedSubsetVolume": 3740,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "siames",
+      "page": "/mascotas/gatos/razas/siames/",
+      "detailSHA256": "6bcffe34fbc2dbf60a5b8e51132f516d11929568cb78d9eef0a2e40c5094720d",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 5190,
+      "exportedSubsetVolume": 4140,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "razas de perros",
+      "page": "/mascotas/perros/razas/",
+      "detailSHA256": "6549578cc58800a5b8df12fc6a4fe49f751e7e4d4b9b5383a3f4412b6656297b",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 13490,
+      "exportedSubsetVolume": 11530,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "razas de perros pequeños",
+      "page": "/mascotas/perros/razas/",
+      "detailSHA256": "6ebeca6b072285d334c4841dd911db799f7d64f1ea481119c05edb46e746d4e9",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 7980,
+      "exportedSubsetVolume": 6510,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "razade gatos",
+      "page": "/mascotas/gatos/razas/",
+      "detailSHA256": "cf453f4123392d5be47bf51d95e8237b7645736d8baaaeccc5d35f425fbdcb5d",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 7590,
+      "exportedSubsetVolume": 4220,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "comida para perros",
+      "page": "/productos/comida-para-perros/",
+      "detailSHA256": "9c7f5a8cfedb871da53b55a28ef4271bfdfeeab303538ff813e39290375bbc7b",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 7010,
+      "exportedSubsetVolume": 1780,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "pipetas para perros",
+      "page": "/productos/pipetas-para-perros/",
+      "detailSHA256": "5a96ff1644e38efdefe2af3721424ff3bcbdd7f913006a3754bd6b5f7c2c54ea",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 5940,
+      "exportedSubsetVolume": 3890,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "arena para gato",
+      "page": "/productos/arena-para-gatos/",
+      "detailSHA256": "63bec12bd0486d22585d5ece5e99d3def1d33e79452d52609e17be6b8d8c736b",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 5040,
+      "exportedSubsetVolume": 3750,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "hurones",
+      "page": "/mascotas/hurones/",
+      "detailSHA256": "edd750d481c3659ad88e62007d28c2c10568a3e417f5c5316c739eafc097edef",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 8550,
+      "exportedSubsetVolume": 7910,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "perro vomito",
+      "page": "/cuidados/vomitos-en-perros/",
+      "detailSHA256": "6a43d63d909a389fd215f6793c5a6b81a84b011561140fd98562790d679e868b",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 8370,
+      "exportedSubsetVolume": 780,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "gata vomita",
+      "page": "/cuidados/vomitos-en-gatos/",
+      "detailSHA256": "19f5b7cb11837f9c2c31ee4f8b6f70b13252eec280a077c896445e4cc1e84e2b",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 5270,
+      "exportedSubsetVolume": 620,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "alergia en perros",
+      "page": "/cuidados/alergia-en-perros/",
+      "detailSHA256": "b658e3c7d479207c5db96821d843e1d379e8045c8e71eaa018a27a1818754534",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 6230,
+      "exportedSubsetVolume": 1040,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    },
+    {
+      "group": "tos en perros",
+      "page": "/cuidados/tos-en-perros/",
+      "detailSHA256": "5ca18fe0ba7f5171155fdae516cfbc42d9213ca25a2989de44bb9225a00584c3",
+      "detailRowsRead": 50,
+      "reportedGroupVolume": 5490,
+      "exportedSubsetVolume": 1010,
+      "volumeTreatment": "Preserve provided folded-row counting; reject unrelated semantic variants; do not sum alias groups."
+    }
+  ]
+}

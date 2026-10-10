@@ -1,0 +1,558 @@
+{
+  "assets": {
+    "food-label": {
+      "path": "/assets/food-label-960.webp",
+      "width": 960,
+      "height": 540,
+      "alt": "Ilustración de dos bolsas genéricas con campos de peso neto y precio, sin marcas ni raciones",
+      "creator": "Mascota · ilustración original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py",
+      "caption": "Ilustración educativa de etiquetas genéricas; no representa marcas ni productos reales.",
+      "variants": [
+        {
+          "path": "/assets/food-label-480.webp",
+          "width": 480,
+          "height": 270
+        },
+        {
+          "path": "/assets/food-label-960.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    "companions": {
+      "path": "/assets/companions.svg",
+      "width": 600,
+      "height": 530,
+      "alt": "Ilustración general de un perro y un gato juntos; no representa una raza concreta",
+      "creator": "Mascota · arte incluido en el repositorio",
+      "license": "Arte del proyecto; conservar registro de titularidad al reutilizar",
+      "source": "public/assets/companions.svg",
+      "caption": "Ilustración general de compañía; no representa un ejemplar de una raza específica."
+    },
+    "og-perros": {
+      "path": "/assets/og/perros.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Perros: cuidados, razas y vida en Paraguay",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-gatos": {
+      "path": "/assets/og/gatos.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Gatos: cuidados, razas y vida en casa",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-conejos": {
+      "path": "/assets/og/conejos.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Conejos: alimentación, ambiente y cuidados",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-cobayos": {
+      "path": "/assets/og/cobayos.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Cobayos: necesidades antes de llevarlos a casa",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-hamsters": {
+      "path": "/assets/og/hamsters.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Hámster: tipos, alimentación y cuidados",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-aves": {
+      "path": "/assets/og/aves.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Aves: bienestar, origen y cuidados responsables",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-peces": {
+      "path": "/assets/og/peces.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Peces: tipos, acuarios y cuidados",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-reptiles": {
+      "path": "/assets/og/reptiles.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Reptiles y tortugas: origen y cuidados",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-elegir-mascota": {
+      "path": "/assets/og/elegir-mascota.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Cómo elegir una mascota para tu hogar",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-primer-perro": {
+      "path": "/assets/og/primer-perro.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Primer perro: cómo preparar la llegada",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-primer-gato": {
+      "path": "/assets/og/primer-gato.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Gatitos: cuidados y primeros días en casa",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-mascotas-y-calor": {
+      "path": "/assets/og/mascotas-y-calor.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Mascotas y calor: organizá una rutina más segura",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-presupuesto-mascota": {
+      "path": "/assets/og/presupuesto-mascota.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Cuánto cuesta cuidar una mascota: armá tu presupuesto",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-elegir-veterinaria": {
+      "path": "/assets/og/elegir-veterinaria.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Veterinarias en Paraguay: cómo elegir",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-vacunas-y-controles": {
+      "path": "/assets/og/vacunas-y-controles.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Vacunas y controles: prepará un plan con tu veterinario",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-convivencia-perros-gatos": {
+      "path": "/assets/og/convivencia-perros-gatos.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Perros y gatos en casa: organizá la convivencia",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-leyes-mascotas-paraguay": {
+      "path": "/assets/og/leyes-mascotas-paraguay.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Leyes sobre mascotas en Paraguay: dónde consultar",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-viajar-con-mascotas": {
+      "path": "/assets/og/viajar-con-mascotas.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Viajar con mascotas desde o hacia Paraguay",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-fauna-silvestre": {
+      "path": "/assets/og/fauna-silvestre.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Fauna silvestre en Paraguay: por qué no es una mascota",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-denunciar-maltrato-animal": {
+      "path": "/assets/og/denunciar-maltrato-animal.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Cómo buscar canales para denunciar maltrato animal",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-adopcion-responsable": {
+      "path": "/assets/og/adopcion-responsable.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Adopción responsable: preguntas antes del compromiso",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-transportadoras": {
+      "path": "/assets/og/transportadoras.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Cómo elegir una transportadora para tu mascota",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-collares-y-correas": {
+      "path": "/assets/og/collares-y-correas.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Collares, arneses y correas: qué comprobar",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-rascadores-para-gatos": {
+      "path": "/assets/og/rascadores-para-gatos.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Rascadores para gatos: cómo elegir y ubicarlos",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-perros-razas-labrador": {
+      "path": "/assets/og/perros-razas-labrador.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Labrador retriever: características y cuidados",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-perros-razas-golden-retriever": {
+      "path": "/assets/og/perros-razas-golden-retriever.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Golden retriever: características y cuidados",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-perros-razas-pastor-australiano": {
+      "path": "/assets/og/perros-razas-pastor-australiano.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Pastor australiano: características y cuidados",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-perros-razas-pastor-aleman": {
+      "path": "/assets/og/perros-razas-pastor-aleman.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Pastor alemán: características y cuidados",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-perros-razas-husky-siberiano": {
+      "path": "/assets/og/perros-razas-husky-siberiano.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Husky siberiano: características y cuidados",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-perros-razas-san-bernardo": {
+      "path": "/assets/og/perros-razas-san-bernardo.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "San Bernardo: características y cuidados",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-perros-razas-american-bully": {
+      "path": "/assets/og/perros-razas-american-bully.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "American bully: características y cuidados",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-perros-razas-pitbull": {
+      "path": "/assets/og/perros-razas-pitbull.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Pitbull: características y cuidados",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-perros-razas-bulldog-frances": {
+      "path": "/assets/og/perros-razas-bulldog-frances.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Bulldog francés: características y cuidados",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-perros-razas-pomerania": {
+      "path": "/assets/og/perros-razas-pomerania.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Pomerania: características y cuidados",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-perros-razas-doberman": {
+      "path": "/assets/og/perros-razas-doberman.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Dóberman: características y cuidados",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-perros-razas-perro-salchicha": {
+      "path": "/assets/og/perros-razas-perro-salchicha.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Perro salchicha: características y cuidados",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-perros-razas-pug": {
+      "path": "/assets/og/perros-razas-pug.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Pug: características y cuidados",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-perros-razas-chow-chow": {
+      "path": "/assets/og/perros-razas-chow-chow.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Chow chow: características y cuidados",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-perros-razas-dogo-argentino": {
+      "path": "/assets/og/perros-razas-dogo-argentino.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Dogo argentino: características y cuidados",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-perros-razas-caniche": {
+      "path": "/assets/og/perros-razas-caniche.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Caniche: características y cuidados",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-perros-razas-chihuahua": {
+      "path": "/assets/og/perros-razas-chihuahua.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Chihuahua: características y cuidados",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-gatos-razas-persa": {
+      "path": "/assets/og/gatos-razas-persa.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Gato persa: características y cuidados",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-gatos-razas-siames": {
+      "path": "/assets/og/gatos-razas-siames.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Gato siamés: características y cuidados",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-perros-razas": {
+      "path": "/assets/og/perros-razas.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Razas de perros: tamaños y cuidados",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-gatos-razas": {
+      "path": "/assets/og/gatos-razas.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Razas de gatos: tipos y características",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-comida-para-perros": {
+      "path": "/assets/og/comida-para-perros.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Comida para perros: cómo elegir",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-pipetas-para-perros": {
+      "path": "/assets/og/pipetas-para-perros.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Pipetas para perros: qué comprobar",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-arena-para-gatos": {
+      "path": "/assets/og/arena-para-gatos.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Arena para gatos: tipos y elección",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-hurones": {
+      "path": "/assets/og/hurones.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Hurones: necesidades y cuidados",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-vomitos-en-perros": {
+      "path": "/assets/og/vomitos-en-perros.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Vómitos en perros: señales y consulta",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-vomitos-en-gatos": {
+      "path": "/assets/og/vomitos-en-gatos.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Vómitos en gatos: señales y consulta",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-alergia-en-perros": {
+      "path": "/assets/og/alergia-en-perros.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Alergia en perros: síntomas y consulta",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-tos-en-perros": {
+      "path": "/assets/og/tos-en-perros.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Tos en perros: señales y consulta",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-calculadora-presupuesto-mascota": {
+      "path": "/assets/og/calculadora-presupuesto-mascota.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Calculadora de gastos de mascotas en guaraníes",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-planificador-cuidados": {
+      "path": "/assets/og/planificador-cuidados.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Planificador de cuidados de mascotas para imprimir",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-perros-razas-gran-danes": {
+      "path": "/assets/og/perros-razas-gran-danes.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Gran danés: tamaño, cuidados y convivencia",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-perros-razas-shih-tzu": {
+      "path": "/assets/og/perros-razas-shih-tzu.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Shih tzu: precio en Paraguay y cuidados",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    },
+    "og-perros-razas-pinscher-miniatura": {
+      "path": "/assets/og/perros-razas-pinscher-miniatura.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Pinscher miniatura y dóberman miniatura: diferencias",
+      "creator": "Mascota · tarjeta editorial original dibujada por código",
+      "license": "Ilustración original creada para este proyecto",
+      "source": "tools/build-editorial-assets.py"
+    }
+  }
+}

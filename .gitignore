@@ -152,3 +152,17 @@ vite.config.ts.timestamp-*
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+
+# PHP editorial site: private configuration and runtime commercial agreements
+/php-site/config/site.local.php
+/php-site/content/sponsors.local.json
+
+# Python local verification caches
+__pycache__/
+*.py[cod]
+
+# Private commercial aggregates, never versioned or packaged
+/php-site/private/
+**/commercial-ledger*.json
+**/clinic-clicks*.json
+**/commercial-report*.json
