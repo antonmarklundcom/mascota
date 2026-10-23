@@ -31,3 +31,5 @@ onlyBuiltDependencies:
 # pin de postcss.
 overrides:
   nanoid: "^3.3.18"
+  # GHSA-2464-fhr4-w9xw: sharp <0.35.5 (RCE en /_next/image). Forzar el parche.
+  sharp: "^0.35.5"
