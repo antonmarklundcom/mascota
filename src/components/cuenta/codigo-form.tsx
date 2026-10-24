@@ -37,7 +37,7 @@ export function CodigoAccesoForm() {
           event.preventDefault();
           setError(null);
           startTransition(async () => {
-            const result = await entrarConCodigo({ code });
+            const result = await entrarConCodigo({ phone, code });
             if (!result.ok) {
               setError(result.error);
               return;

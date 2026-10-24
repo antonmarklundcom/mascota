@@ -1,4 +1,4 @@
-import { beforeEach, describe, expect, it } from "vitest";
+import { afterEach, beforeEach, describe, expect, it } from "vitest";
 
 import { clientIp, rateLimit, resetRateLimits } from "@/lib/rate-limit";
 
@@ -48,9 +48,35 @@ describe("rateLimit", () => {
 });
 
 describe("clientIp", () => {
-  it("toma la primera IP de x-forwarded-for", () => {
+  const original = process.env.TRUSTED_PROXY_HOPS;
+  afterEach(() => {
+    if (original === undefined) delete process.env.TRUSTED_PROXY_HOPS;
+    else process.env.TRUSTED_PROXY_HOPS = original;
+  });
+
+  it("toma la última IP de x-forwarded-for (la que agregó el proxy)", () => {
     const headers = new Headers({ "x-forwarded-for": "200.1.2.3, 10.0.0.1, 10.0.0.2" });
-    expect(clientIp(headers)).toBe("200.1.2.3");
+    expect(clientIp(headers)).toBe("10.0.0.2");
+  });
+
+  it("una IP falsificada a la izquierda no cambia la IP elegida", () => {
+    const real = "190.5.5.5";
+    const a = clientIp(new Headers({ "x-forwarded-for": `1.1.1.1, ${real}` }));
+    const b = clientIp(new Headers({ "x-forwarded-for": `9.9.9.9, ${real}` }));
+    expect(a).toBe(real);
+    expect(b).toBe(real);
+  });
+
+  it("TRUSTED_PROXY_HOPS elige contando desde la derecha", () => {
+    process.env.TRUSTED_PROXY_HOPS = "2";
+    const headers = new Headers({ "x-forwarded-for": "200.1.2.3, 10.0.0.1, 10.0.0.2" });
+    expect(clientIp(headers)).toBe("10.0.0.1");
+  });
+
+  it("un TRUSTED_PROXY_HOPS inválido vuelve a 1", () => {
+    process.env.TRUSTED_PROXY_HOPS = "abc";
+    const headers = new Headers({ "x-forwarded-for": "200.1.2.3, 10.0.0.2" });
+    expect(clientIp(headers)).toBe("10.0.0.2");
   });
 
   it("cae a x-real-ip", () => {

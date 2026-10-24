@@ -3,10 +3,11 @@ import type { MessageKey, Params } from '@/i18n';
 
 import { DomainError } from './errors';
 
-import { and, eq, isNull, sql } from 'drizzle-orm';
+import { and, desc, eq, gt, isNull, sql } from 'drizzle-orm';
 
 import { getDb } from '@/db';
 import { customers, loginTokens } from '@/db/schema';
+import { normalizePhonePY } from '@/lib/py';
 
 import type { Executor } from './executor';
 import type { MessageChannel } from './messaging';
@@ -26,6 +27,11 @@ import type { MessageChannel } from './messaging';
  * 4. **Pedir uno nuevo invalida los anteriores.** Si no, cada pedido suma otro
  *    código vivo y la ventana de adivinación crece con cada intento.
  * 5. **Comparación en tiempo constante.** Sobre el hash, con `timingSafeEqual`.
+ * 6. **El código sólo vale junto con la cuenta.** El hash incluye el id del
+ *    cliente y el canje exige el teléfono: adivinar "algún código vivo" no
+ *    abre la sesión de nadie. Además cada código admite pocos intentos
+ *    fallidos (`LOGIN_TOKEN_MAX_ATTEMPTS`), guardados en la base y no en
+ *    memoria, así que no se reinician con el proceso ni se evaden rotando IPs.
  *
  * El código es de 6 dígitos porque se tipea desde un mensaje; lo que compensa
  * ese espacio chico es el rate limit y la expiración, no el largo.
@@ -35,6 +41,9 @@ import type { MessageChannel } from './messaging';
 export const LOGIN_TOKEN_TTL_MS = 10 * 60 * 1000;
 
 const CODE_DIGITS = 6;
+
+/** Intentos fallidos por código; al llegar acá el código muere y hay que pedir otro. */
+export const LOGIN_TOKEN_MAX_ATTEMPTS = 5;
 
 export class LoginTokenError extends DomainError {
   constructor(code: MessageKey, params?: Params) {
@@ -60,9 +69,12 @@ export function generateLoginCode(): string {
   }
 }
 
-/** SHA-256 hex. Ver el comentario de la tabla: no hace falta bcrypt acá. */
-export function hashLoginCode(code: string): string {
-  return createHash('sha256').update(code.trim()).digest('hex');
+/**
+ * SHA-256 hex, atado a la cuenta: el mismo código en dos cuentas da hashes
+ * distintos. Ver el comentario de la tabla: no hace falta bcrypt acá.
+ */
+export function hashLoginCode(customerId: number, code: string): string {
+  return createHash('sha256').update(`${customerId}:${code.trim()}`).digest('hex');
 }
 
 /**
@@ -104,13 +116,12 @@ export async function issueLoginToken(
    * La probabilidad crece con el uso: son N/1.000.000 por emisión, con N el
    * total histórico. Arranca en cero y a los diez mil logins ya es un 1%.
    *
-   * La unicidad global **tiene** que quedarse: `consumeLoginToken` busca sólo
-   * por hash, y dos filas con el mismo hash harían ambigua esa búsqueda. Lo
-   * que se arregla es la reacción — tirar de nuevo, que es gratis.
+   * La unicidad global se mantiene (así no hace falta una migración para
+   * quitarla). Lo que se arregla es la reacción — tirar de nuevo, que es gratis.
    */
   for (let intento = 0; intento < 5; intento += 1) {
     const code = generateLoginCode();
-    const tokenHash = hashLoginCode(code);
+    const tokenHash = hashLoginCode(customerId, code);
 
     try {
       await tx.insert(loginTokens).values({ customerId, tokenHash, channel, expiresAt });
@@ -126,68 +137,78 @@ export async function issueLoginToken(
 export type ConsumedToken = { customerId: number };
 
 /**
- * Canjea un código. Devuelve `null` en **cualquier** fallo, sin distinguir
- * cuál: no existe, ya se usó, venció, lo invalidó otro pedido, o la cuenta se
- * desactivó. Distinguirlos convertiría este formulario en un oráculo.
+ * Canjea un código **de esta cuenta**. Devuelve `null` en cualquier fallo, sin
+ * distinguir cuál: no existe, ya se usó, venció, lo invalidó otro pedido, se
+ * agotaron los intentos o la cuenta se desactivó. Distinguirlos convertiría
+ * este formulario en un oráculo.
  *
- * El `UPDATE ... WHERE consumed_at IS NULL` es lo que hace el único uso real:
- * dos pestañas con el mismo código corren la misma sentencia y sólo una toca
- * una fila.
+ * Un código solo nunca identifica a nadie: se busca la cuenta por teléfono y
+ * sólo se compara contra el código vivo de esa cuenta. Cada fallo suma un
+ * intento (en la base) y al quinto el código se invalida.
  */
-export async function consumeLoginToken(code: string): Promise<ConsumedToken | null> {
+export async function consumeLoginToken(
+  phone: string,
+  code: string,
+): Promise<ConsumedToken | null> {
+  const normalized = normalizePhonePY(phone);
   const candidate = code.trim();
-  if (!/^\d{6}$/.test(candidate)) return null;
-
-  const tokenHash = hashLoginCode(candidate);
+  if (!normalized || !/^\d{6}$/.test(candidate)) return null;
 
   return getDb().transaction(async (tx) => {
+    const customerRows = await tx
+      .select({ id: customers.id, isActive: customers.isActive })
+      .from(customers)
+      .where(eq(customers.phone, normalized))
+      .limit(1)
+      .for('update');
+    const customer = customerRows[0];
+    if (!customer?.isActive) return null;
+
     const rows = await tx
       .select({
         id: loginTokens.id,
-        customerId: loginTokens.customerId,
         tokenHash: loginTokens.tokenHash,
-        expiresAt: loginTokens.expiresAt,
-        consumedAt: loginTokens.consumedAt,
-        invalidatedAt: loginTokens.invalidatedAt,
+        attempts: loginTokens.attempts,
       })
       .from(loginTokens)
-      .where(eq(loginTokens.tokenHash, tokenHash))
+      .where(
+        and(
+          eq(loginTokens.customerId, customer.id),
+          isNull(loginTokens.consumedAt),
+          isNull(loginTokens.invalidatedAt),
+          gt(loginTokens.expiresAt, new Date()),
+        ),
+      )
+      .orderBy(desc(loginTokens.id))
       .limit(1)
       .for('update');
-
     const token = rows[0];
     if (!token) return null;
 
-    // Sobre el hash y en tiempo constante. La consulta de arriba ya seleccionó
-    // por igualdad —o sea que MySQL ya comparó—, pero la comparación explícita
-    // es la que sobrevive a que alguien cambie ese WHERE por un LIKE o por una
-    // búsqueda por prefijo.
+    // En tiempo constante y sobre el hash atado a la cuenta.
     const esperado = Buffer.from(token.tokenHash, 'utf8');
-    const recibido = Buffer.from(tokenHash, 'utf8');
-    if (esperado.length !== recibido.length || !timingSafeEqual(esperado, recibido)) return null;
-
-    if (token.consumedAt || token.invalidatedAt) return null;
-    if (token.expiresAt.getTime() < Date.now()) return null;
-
-    const active = await tx
-      .select({ id: customers.id, isActive: customers.isActive })
-      .from(customers)
-      .where(eq(customers.id, token.customerId))
-      .limit(1);
-    if (!active[0]?.isActive) return null;
+    const recibido = Buffer.from(hashLoginCode(customer.id, candidate), 'utf8');
+    const attempts = token.attempts + 1;
+    if (
+      token.attempts >= LOGIN_TOKEN_MAX_ATTEMPTS ||
+      esperado.length !== recibido.length ||
+      !timingSafeEqual(esperado, recibido)
+    ) {
+      await tx
+        .update(loginTokens)
+        .set({
+          attempts,
+          ...(attempts >= LOGIN_TOKEN_MAX_ATTEMPTS ? { invalidatedAt: sql`NOW()` } : {}),
+        })
+        .where(eq(loginTokens.id, token.id));
+      return null;
+    }
 
     // El UPDATE condicional es el candado real del "un solo uso".
     await tx
       .update(loginTokens)
       .set({ consumedAt: sql`NOW()` })
       .where(and(eq(loginTokens.id, token.id), isNull(loginTokens.consumedAt)));
-
-    const confirmed = await tx
-      .select({ consumedAt: loginTokens.consumedAt })
-      .from(loginTokens)
-      .where(eq(loginTokens.id, token.id))
-      .limit(1);
-    if (!confirmed[0]?.consumedAt) return null;
 
     /**
      * Entrar con un código que llegó al teléfono **prueba** que ese teléfono es
@@ -198,9 +219,9 @@ export async function consumeLoginToken(code: string): Promise<ConsumedToken | n
     await tx
       .update(customers)
       .set({ phoneVerifiedAt: sql`NOW()`, lastLoginAt: sql`NOW()` })
-      .where(eq(customers.id, token.customerId));
+      .where(eq(customers.id, customer.id));
 
-    return { customerId: token.customerId };
+    return { customerId: customer.id };
   });
 }
 

@@ -615,6 +615,9 @@ export const loginTokens = mysqlTable(
     /** SHA-256 hex del código. Nunca el código. */
     tokenHash: varchar('token_hash', { length: 64 }).notNull(),
 
+    /** Intentos fallidos de canje; al llegar al máximo el código se invalida. */
+    attempts: tinyint('attempts', { unsigned: true }).notNull().default(0),
+
     /** Por dónde se mandó, para poder explicar un "no me llegó". */
     channel: varchar('channel', { length: 20 }).notNull(),
 
