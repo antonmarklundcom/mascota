@@ -322,6 +322,7 @@ export async function pedirCodigoAcceso(input: unknown): Promise<CuentaResult> {
 }
 
 const CanjearSchema = z.object({
+  phone: z.string().trim().min(6).max(30),
   code: z.string().trim().regex(/^\d{6}$/, "El código son 6 dígitos"),
 });
 
@@ -352,7 +353,19 @@ export async function entrarConCodigo(input: unknown): Promise<CuentaResult> {
   if (!parsed.success) return { ok: false, error: CODIGO_INVALIDO };
 
   try {
-    const consumed = await consumeLoginToken(parsed.data.code);
+    // El código sólo vale junto con el teléfono de su cuenta, y también se
+    // limita por teléfono: rotar la IP no da intentos nuevos contra una cuenta.
+    const phone = normalizePhonePY(parsed.data.phone);
+    if (
+      !phone ||
+      !rateLimit(`cuenta:otp-verify:tel:${phone}`, {
+        limit: OTP_VERIFY_LIMIT,
+        windowMs: OTP_VERIFY_WINDOW_MS,
+      }).ok
+    ) {
+      return { ok: false, error: CODIGO_INVALIDO };
+    }
+    const consumed = await consumeLoginToken(phone, parsed.data.code);
     if (!consumed) return { ok: false, error: CODIGO_INVALIDO };
 
     const customer = await findCustomerById(consumed.customerId);

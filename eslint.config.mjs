@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // php-site/ is the separate PHP site; it has its own CI (php-seo.yml).
+    "php-site/**",
   ]),
 ]);
 

@@ -1,0 +1,1 @@
+ALTER TABLE `login_tokens` ADD `attempts` tinyint unsigned DEFAULT 0 NOT NULL;

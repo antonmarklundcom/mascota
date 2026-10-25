@@ -110,12 +110,14 @@ describe('el código', () => {
 
   it('el hash no contiene el código', () => {
     const code = '123456';
-    const hash = hashLoginCode(code);
+    const hash = hashLoginCode(1, code);
     expect(hash).not.toContain(code);
     expect(hash).toHaveLength(64);
-    // Determinista, que es lo que permite buscar por hash.
-    expect(hashLoginCode(code)).toBe(hash);
-    expect(hashLoginCode('123457')).not.toBe(hash);
+    // Determinista, que es lo que permite comparar contra lo guardado.
+    expect(hashLoginCode(1, code)).toBe(hash);
+    expect(hashLoginCode(1, '123457')).not.toBe(hash);
+    // Atado a la cuenta: el mismo código en otra cuenta es otro hash.
+    expect(hashLoginCode(2, code)).not.toBe(hash);
   });
 
   it('el mensaje trae el código y avisa que vence', () => {

@@ -7,6 +7,7 @@ import {
   consumeLoginToken,
   hashLoginCode,
   issueLoginToken,
+  LOGIN_TOKEN_MAX_ATTEMPTS,
   LOGIN_TOKEN_TTL_MS,
 } from '@/domain/login-tokens';
 
@@ -38,7 +39,7 @@ describe.skipIf(!hasTestDb)('emisión', () => {
     const { code } = await issueLoginToken(customer.id, 'consola');
 
     const [row] = await getTestDb().select().from(loginTokens);
-    expect(row?.tokenHash).toBe(hashLoginCode(code));
+    expect(row?.tokenHash).toBe(hashLoginCode(customer.id, code));
     // Lo importante: un dump de la base no abre la sesión de nadie.
     expect(JSON.stringify(row)).not.toContain(code);
   });
@@ -58,7 +59,7 @@ describe.skipIf(!hasTestDb)('emisión', () => {
 
     // Si no se invalidara, cada pedido sumaría otro código vivo y la ventana
     // de adivinación crecería con cada intento.
-    expect(await consumeLoginToken(primero.code)).toBeNull();
+    expect(await consumeLoginToken(customer.phone, primero.code)).toBeNull();
   });
 
   it('el segundo código sí sirve', async () => {
@@ -66,7 +67,7 @@ describe.skipIf(!hasTestDb)('emisión', () => {
     await issueLoginToken(customer.id, 'consola');
     const segundo = await issueLoginToken(customer.id, 'consola');
 
-    expect(await consumeLoginToken(segundo.code)).toMatchObject({ customerId: customer.id });
+    expect(await consumeLoginToken(customer.phone, segundo.code)).toMatchObject({ customerId: customer.id });
   });
 });
 
@@ -78,9 +79,9 @@ describe.skipIf(!hasTestDb)('canje', () => {
     const customer = await unaCuenta();
     const { code } = await issueLoginToken(customer.id, 'consola');
 
-    expect(await consumeLoginToken(code)).toMatchObject({ customerId: customer.id });
+    expect(await consumeLoginToken(customer.phone, code)).toMatchObject({ customerId: customer.id });
     // Y una sola: la segunda vez no sirve.
-    expect(await consumeLoginToken(code)).toBeNull();
+    expect(await consumeLoginToken(customer.phone, code)).toBeNull();
   });
 
   it('un código vencido no sirve', async () => {
@@ -92,15 +93,15 @@ describe.skipIf(!hasTestDb)('canje', () => {
       .set({ expiresAt: new Date(Date.now() - 1000) })
       .where(eq(loginTokens.customerId, customer.id));
 
-    expect(await consumeLoginToken(code)).toBeNull();
+    expect(await consumeLoginToken(customer.phone, code)).toBeNull();
   });
 
   it('un código que no existe no sirve, y no explota', async () => {
-    expect(await consumeLoginToken('000000')).toBeNull();
-    expect(await consumeLoginToken('abcdef')).toBeNull();
-    expect(await consumeLoginToken('')).toBeNull();
-    expect(await consumeLoginToken('12345')).toBeNull();
-    expect(await consumeLoginToken('1234567')).toBeNull();
+    expect(await consumeLoginToken('+595981123456', '000000')).toBeNull();
+    expect(await consumeLoginToken('+595981123456', 'abcdef')).toBeNull();
+    expect(await consumeLoginToken('+595981123456', '')).toBeNull();
+    expect(await consumeLoginToken('+595981123456', '12345')).toBeNull();
+    expect(await consumeLoginToken('+595981123456', '1234567')).toBeNull();
   });
 
   it('una cuenta desactivada no entra ni con código válido', async () => {
@@ -109,7 +110,7 @@ describe.skipIf(!hasTestDb)('canje', () => {
 
     await getTestDb().update(customers).set({ isActive: false }).where(eq(customers.id, customer.id));
 
-    expect(await consumeLoginToken(code)).toBeNull();
+    expect(await consumeLoginToken(customer.phone, code)).toBeNull();
   });
 
   it('dos canjes simultáneos abren una sola sesión', async () => {
@@ -118,7 +119,7 @@ describe.skipIf(!hasTestDb)('canje', () => {
 
     // Dos pestañas con el mismo código. El UPDATE condicional es lo que hace
     // que sólo una toque una fila.
-    const [a, b] = await Promise.all([consumeLoginToken(code), consumeLoginToken(code)]);
+    const [a, b] = await Promise.all([consumeLoginToken(customer.phone, code), consumeLoginToken(customer.phone, code)]);
 
     const abiertas = [a, b].filter((result) => result !== null);
     expect(abiertas).toHaveLength(1);
@@ -138,7 +139,7 @@ describe.skipIf(!hasTestDb)('entrar con código verifica el teléfono', () => {
     expect(customer.phoneVerifiedAt).toBeNull();
 
     const { code } = await issueLoginToken(customer.id, 'consola');
-    await consumeLoginToken(code);
+    await consumeLoginToken(customer.phone, code);
 
     const [row] = await getTestDb().select().from(customers).where(eq(customers.id, customer.id));
     expect(row?.phoneVerifiedAt).toBeInstanceOf(Date);
@@ -153,7 +154,7 @@ describe.skipIf(!hasTestDb)('entrar con código verifica el teléfono', () => {
     expect(await listCustomerOrders(customer.id)).toHaveLength(0);
 
     const { code } = await issueLoginToken(customer.id, 'consola');
-    await consumeLoginToken(code);
+    await consumeLoginToken(customer.phone, code);
 
     // Después: el teléfono está probado y el historial es suyo.
     const rows = await listCustomerOrders(customer.id);
@@ -179,7 +180,7 @@ describe.skipIf(!hasTestDb)('robustez de la emisión', () => {
     const ocupado = '000000';
     await getTestDb().insert(loginTokens).values({
       customerId: customer.id,
-      tokenHash: hashLoginCode(ocupado),
+      tokenHash: hashLoginCode(customer.id, ocupado),
       channel: 'consola',
       expiresAt: new Date(Date.now() - 60_000),
       consumedAt: new Date(),
@@ -196,10 +197,52 @@ describe.skipIf(!hasTestDb)('robustez de la emisión', () => {
   it('el código viejo ya consumido no revive al emitir uno nuevo', async () => {
     const customer = await unaCuenta();
     const primero = await issueLoginToken(customer.id, 'consola');
-    await consumeLoginToken(primero.code);
+    await consumeLoginToken(customer.phone, primero.code);
 
     await issueLoginToken(customer.id, 'consola');
 
-    expect(await consumeLoginToken(primero.code)).toBeNull();
+    expect(await consumeLoginToken(customer.phone, primero.code)).toBeNull();
+  });
+});
+
+/**
+ * El código solo no identifica a nadie: hay que presentarlo junto con el
+ * teléfono de la cuenta que lo recibió (hallazgo de la auditoría 2026-10-23).
+ */
+describe.skipIf(!hasTestDb)('el código está atado a la cuenta', () => {
+  beforeEach(resetTables);
+  afterAll(closeTestDb);
+
+  it('un código vivo no abre la sesión de OTRA cuenta', async () => {
+    const duena = await unaCuenta('0981 123 456');
+    const otra = await unaCuenta('0982 654 321');
+    const { code } = await issueLoginToken(duena.id, 'consola');
+
+    // Quien adivina un código vivo pero no usa el teléfono de su dueña.
+    expect(await consumeLoginToken(otra.phone, code)).toBeNull();
+    // Y tampoco con un teléfono que no existe.
+    expect(await consumeLoginToken('+595971000000', code)).toBeNull();
+    // La dueña sí puede, con su teléfono.
+    expect(await consumeLoginToken(duena.phone, code)).toMatchObject({ customerId: duena.id });
+  });
+
+  it('el mismo código en dos cuentas da hashes distintos', async () => {
+    const a = await unaCuenta('0981 123 456');
+    const b = await unaCuenta('0982 654 321');
+    expect(hashLoginCode(a.id, '123456')).not.toBe(hashLoginCode(b.id, '123456'));
+  });
+
+  it('tras los intentos fallidos máximos el código muere, aun el correcto', async () => {
+    const customer = await unaCuenta();
+    const { code } = await issueLoginToken(customer.id, 'consola');
+    const mal = code === '000000' ? '111111' : '000000';
+
+    for (let i = 0; i < LOGIN_TOKEN_MAX_ATTEMPTS; i += 1) {
+      expect(await consumeLoginToken(customer.phone, mal)).toBeNull();
+    }
+    expect(await consumeLoginToken(customer.phone, code)).toBeNull();
+
+    const [row] = await getTestDb().select().from(loginTokens);
+    expect(row?.invalidatedAt).toBeInstanceOf(Date);
   });
 });
