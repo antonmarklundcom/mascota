@@ -1,5 +1,9 @@
 import { getIronSession, type IronSession, type SessionOptions } from 'iron-session';
 import { cookies } from 'next/headers';
+import { eq } from 'drizzle-orm';
+
+import { getDb } from '@/db';
+import { customers } from '@/db/schema';
 
 /**
  * Sesión de **cliente** — separada de la del panel, a propósito y en todo.
@@ -27,6 +31,12 @@ export type CustomerSession = {
   /** `+595XXXXXXXXX`. Sólo para mostrar; la autorización es por `customerId`. */
   phone?: string;
   name?: string;
+  /**
+   * `customers.session_version` al abrir la sesión. Si la cuenta la subió
+   * después (primera verificación del teléfono), esta cookie ya no sirve.
+   * Las cookies de antes de esta columna no la traen y cuentan como 0.
+   */
+  sessionVersion?: number;
 };
 
 export const CUSTOMER_SESSION_COOKIE = 'ecom_cliente';
@@ -86,11 +96,37 @@ export type CustomerActor = { customerId: number; phone: string; name: string };
  * URL. Esconder la pantalla no es el control de acceso.
  */
 export async function requireCustomerSession(): Promise<CustomerActor> {
-  const session = await getCustomerSession();
+  return validateCustomerSession(await getCustomerSession());
+}
+
+/**
+ * La cookie sola no alcanza: se confirma contra la base que la cuenta sigue
+ * activa y que la sesión no quedó vieja (`session_version`). Así una cuenta
+ * desactivada, o una registrada por otra persona antes de que la dueña del
+ * teléfono lo verificara, pierde las sesiones que ya tenía abiertas.
+ */
+export async function validateCustomerSession(
+  session: Partial<CustomerSession>,
+): Promise<CustomerActor> {
   if (!session.customerId || !session.phone || !session.name) {
     throw new CustomerUnauthorizedError();
   }
-  return { customerId: session.customerId, phone: session.phone, name: session.name };
+  const rows = await getDb()
+    .select({
+      id: customers.id,
+      phone: customers.phone,
+      name: customers.name,
+      isActive: customers.isActive,
+      sessionVersion: customers.sessionVersion,
+    })
+    .from(customers)
+    .where(eq(customers.id, session.customerId))
+    .limit(1);
+  const customer = rows[0];
+  if (!customer?.isActive || (session.sessionVersion ?? 0) !== customer.sessionVersion) {
+    throw new CustomerUnauthorizedError();
+  }
+  return { customerId: customer.id, phone: customer.phone, name: customer.name };
 }
 
 /** La sesión si la hay, sin tirar. Para prefills y para el header. */

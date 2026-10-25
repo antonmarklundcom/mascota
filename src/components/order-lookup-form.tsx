@@ -12,6 +12,7 @@ import { t } from "@/i18n";
 export function OrderLookupForm() {
   const router = useRouter();
   const [error, setError] = useState<string | null>(null);
+  const [message, setMessage] = useState<string | null>(null);
   const [isPending, startTransition] = useTransition();
 
   return (
@@ -20,6 +21,7 @@ export function OrderLookupForm() {
       onSubmit={(event) => {
         event.preventDefault();
         setError(null);
+        setMessage(null);
         const data = new FormData(event.currentTarget);
         startTransition(async () => {
           const result = await lookupOrder({
@@ -30,13 +32,19 @@ export function OrderLookupForm() {
             setError(result.error);
             return;
           }
-          router.push(result.redirectTo);
+          if ("redirectTo" in result) router.push(result.redirectTo);
+          else setMessage(result.message);
         });
       }}
     >
       {error ? (
         <p className="border-destructive/40 text-destructive rounded-lg border p-3 text-sm">
           {error}
+        </p>
+      ) : null}
+      {message ? (
+        <p role="status" className="rounded-lg border p-3 text-sm">
+          {message}
         </p>
       ) : null}
 

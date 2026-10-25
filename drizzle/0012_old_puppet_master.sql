@@ -1,0 +1,1 @@
+ALTER TABLE `customers` ADD `session_version` int unsigned DEFAULT 0 NOT NULL;

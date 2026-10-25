@@ -156,7 +156,11 @@ export async function consumeLoginToken(
 
   return getDb().transaction(async (tx) => {
     const customerRows = await tx
-      .select({ id: customers.id, isActive: customers.isActive })
+      .select({
+        id: customers.id,
+        isActive: customers.isActive,
+        phoneVerifiedAt: customers.phoneVerifiedAt,
+      })
       .from(customers)
       .where(eq(customers.phone, normalized))
       .limit(1)
@@ -215,10 +219,25 @@ export async function consumeLoginToken(
      * suyo, que es justo lo que faltaba en el PR E. A partir de acá `/cuenta`
      * puede mostrarle los pedidos viejos que hizo como invitada con ese
      * número: ya no es "alguien que tipeó un número", es su número.
+     *
+     * **La primera verificación limpia la cuenta.** Registrarse no prueba
+     * nada: cualquiera puede abrir una cuenta con el WhatsApp de otra persona
+     * y elegir la contraseña. Si esa contraseña y esas cookies sobrevivieran a
+     * la verificación, quien la registró vería los pedidos de la dueña del
+     * número apenas ella entrara con su código. Por eso, la primera vez, se
+     * borra la contraseña y se sube `session_version`, que cierra toda sesión
+     * abierta antes (ver `requireCustomerSession`).
      */
+    const primeraVerificacion = customer.phoneVerifiedAt === null;
     await tx
       .update(customers)
-      .set({ phoneVerifiedAt: sql`NOW()`, lastLoginAt: sql`NOW()` })
+      .set({
+        phoneVerifiedAt: sql`NOW()`,
+        lastLoginAt: sql`NOW()`,
+        ...(primeraVerificacion
+          ? { passwordHash: null, sessionVersion: sql`${customers.sessionVersion} + 1` }
+          : {}),
+      })
       .where(eq(customers.id, customer.id));
 
     return { customerId: customer.id };

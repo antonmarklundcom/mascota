@@ -1,4 +1,5 @@
 import { and, desc, eq, isNotNull, isNull, or, sql } from 'drizzle-orm';
+import { timingSafeEqual } from 'node:crypto';
 import type { MessageKey, Params } from '@/i18n';
 
 import { DomainError } from './errors';
@@ -37,6 +38,8 @@ export type Customer = {
   name: string;
   marketingOptIn: boolean | null;
   phoneVerifiedAt: Date | null;
+  /** Ver `customers.session_version`: va en la cookie al abrir la sesión. */
+  sessionVersion: number;
 };
 
 export function normalizeCustomerEmail(email: string): string {
@@ -112,6 +115,7 @@ export async function findCustomerByPhone(
     name: row.name,
     marketingOptIn: row.marketingOptIn,
     phoneVerifiedAt: row.phoneVerifiedAt,
+    sessionVersion: row.sessionVersion,
   };
 }
 
@@ -130,6 +134,7 @@ export async function findCustomerById(
     name: row.name,
     marketingOptIn: row.marketingOptIn,
     phoneVerifiedAt: row.phoneVerifiedAt,
+    sessionVersion: row.sessionVersion,
   };
 }
 
@@ -184,6 +189,7 @@ export async function authenticateCustomer(
     name: row.name,
     marketingOptIn: row.marketingOptIn,
     phoneVerifiedAt: row.phoneVerifiedAt,
+    sessionVersion: row.sessionVersion,
   };
 }
 
@@ -304,24 +310,42 @@ export async function listCustomerOrders(
  * Atar un pedido de invitado a una cuenta, después del hecho.
  *
  * Es el "¿querés guardar tus datos?" que aparece al terminar la compra. Sólo
- * ata pedidos que todavía no tienen dueño **y** cuyo teléfono es el de la
- * cuenta: sin las dos condiciones esto sería una forma de adoptar el pedido de
- * cualquiera conociendo su número.
+ * ata pedidos que todavía no tienen dueño, cuyo teléfono es el de la cuenta
+ * **y** de los que se presenta el token privado del link del pedido.
+ *
+ * El teléfono solo no alcanza: una cuenta se puede registrar con el WhatsApp
+ * de otra persona sin probar que es suyo, y los números de pedido son
+ * correlativos. Sin el token, esa cuenta podría adoptar los pedidos de la
+ * dueña del número uno por uno y ver su nombre, dirección y link privado.
  */
 export async function claimGuestOrder(
   customerId: number,
   orderNumber: string,
+  accessToken: string,
   executor?: Executor,
 ): Promise<boolean> {
   const tx = executor ?? getDb();
 
   const account = await tx
-    .select({ phone: customers.phone })
+    .select({ phone: customers.phone, isActive: customers.isActive })
     .from(customers)
     .where(eq(customers.id, customerId))
     .limit(1);
   const me = account[0];
-  if (!me) return false;
+  if (!me?.isActive || !accessToken) return false;
+
+  const found = await tx
+    .select({ accessToken: orders.accessToken })
+    .from(orders)
+    .where(and(eq(orders.orderNumber, orderNumber), isNull(orders.customerId), eq(orders.customerPhone, me.phone)))
+    .limit(1);
+  const order = found[0];
+  if (!order) return false;
+
+  // En tiempo constante, como cualquier comparación de un secreto.
+  const esperado = Buffer.from(order.accessToken, 'utf8');
+  const recibido = Buffer.from(accessToken, 'utf8');
+  if (esperado.length !== recibido.length || !timingSafeEqual(esperado, recibido)) return false;
 
   const result = await tx
     .update(orders)
@@ -331,6 +355,7 @@ export async function claimGuestOrder(
         eq(orders.orderNumber, orderNumber),
         isNull(orders.customerId),
         eq(orders.customerPhone, me.phone),
+        eq(orders.accessToken, accessToken),
       ),
     );
 
