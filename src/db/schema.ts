@@ -582,6 +582,16 @@ export const customers = mysqlTable(
     phoneVerifiedAt: datetime('phone_verified_at'),
 
     isActive: boolean('is_active').notNull().default(true),
+
+    /**
+     * Versión de las cookies de esta cuenta. La cookie guarda la versión con
+     * la que se abrió y `requireCustomerSession` la compara con ésta: subirla
+     * cierra todas las sesiones abiertas. Sube cuando el teléfono se verifica
+     * por primera vez (ver `consumeLoginToken`): quien registró la cuenta
+     * antes no probó que el número era suyo.
+     */
+    sessionVersion: int('session_version', { unsigned: true }).notNull().default(0),
+
     createdAt: timestamp('created_at').notNull().defaultNow(),
     lastLoginAt: datetime('last_login_at'),
   },

@@ -7,6 +7,7 @@ import { z } from "zod";
 import { cuentasClientesHabilitadas } from "@/config/tienda";
 import {
   CustomerError,
+  type Customer,
   authenticateCustomer,
   claimGuestOrder,
   findCustomerById,
@@ -110,7 +111,7 @@ export async function registrarCliente(input: unknown): Promise<CuentaResult> {
       marketingOptIn: parsed.data.marketingOptIn,
     });
 
-    await abrirSesion(customer.id, customer.phone, customer.name);
+    await abrirSesion(customer);
     return { ok: true };
   } catch (error) {
     if (error instanceof CustomerError) return { ok: false, error: error.message };
@@ -155,7 +156,7 @@ export async function entrarCliente(input: unknown): Promise<CuentaResult> {
     resetRateLimitKey(`cuenta:login:ip:${ip}`);
     resetRateLimitKey(`cuenta:login:id:${identifier}`);
 
-    await abrirSesion(customer.id, customer.phone, customer.name);
+    await abrirSesion(customer);
     return { ok: true };
   } catch (error) {
     console.error("entrarCliente falló", error);
@@ -209,14 +210,19 @@ export async function guardarPerfil(input: unknown): Promise<CuentaResult> {
   }
 }
 
-const ReclamarSchema = z.object({ orderNumber: z.string().trim().min(3).max(16) });
+const ReclamarSchema = z.object({
+  orderNumber: z.string().trim().min(3).max(16),
+  /** El token del link privado del pedido: prueba que quien reclama lo tiene. */
+  accessToken: z.string().trim().min(16).max(128),
+});
 
 /**
  * "¿Querés guardar tus datos?" — ata un pedido de invitado recién hecho a la
  * cuenta con la que se acaba de entrar o registrar.
  *
- * El dominio sólo ata pedidos sin dueño **y** cuyo teléfono es el de la
- * cuenta, así que conocer un número de pedido ajeno no alcanza para adoptarlo.
+ * El dominio sólo ata pedidos sin dueño, cuyo teléfono es el de la cuenta y
+ * de los que se presenta el token del link privado: conocer un número de
+ * pedido ajeno, o registrarse con un teléfono ajeno, no alcanza para adoptarlo.
  */
 export async function reclamarPedido(input: unknown): Promise<CuentaResult> {
   if (!cuentasClientesHabilitadas()) return APAGADO;
@@ -227,7 +233,11 @@ export async function reclamarPedido(input: unknown): Promise<CuentaResult> {
     const parsed = ReclamarSchema.safeParse(input);
     if (!parsed.success) return { ok: false, error: "No entendí de qué pedido se trata." };
 
-    const claimed = await claimGuestOrder(actor.customerId, parsed.data.orderNumber);
+    const claimed = await claimGuestOrder(
+      actor.customerId,
+      parsed.data.orderNumber,
+      parsed.data.accessToken,
+    );
     if (!claimed) {
       return { ok: false, error: "Ese pedido no se puede agregar a esta cuenta." };
     }
@@ -240,12 +250,18 @@ export async function reclamarPedido(input: unknown): Promise<CuentaResult> {
   }
 }
 
-/** Abre la sesión de cliente. No exportada: no es un endpoint. */
-async function abrirSesion(customerId: number, phone: string, name: string): Promise<void> {
+/**
+ * Abre la sesión de cliente. No exportada: no es un endpoint.
+ *
+ * Guarda `sessionVersion`: si la cuenta la sube más tarde, esta cookie deja
+ * de servir (ver `requireCustomerSession`).
+ */
+async function abrirSesion(customer: Pick<Customer, 'id' | 'phone' | 'name' | 'sessionVersion'>): Promise<void> {
   const session = await getCustomerSession();
-  session.customerId = customerId;
-  session.phone = phone;
-  session.name = name;
+  session.customerId = customer.id;
+  session.phone = customer.phone;
+  session.name = customer.name;
+  session.sessionVersion = customer.sessionVersion;
   await session.save();
 }
 
@@ -371,7 +387,7 @@ export async function entrarConCodigo(input: unknown): Promise<CuentaResult> {
     const customer = await findCustomerById(consumed.customerId);
     if (!customer) return { ok: false, error: CODIGO_INVALIDO };
 
-    await abrirSesion(customer.id, customer.phone, customer.name);
+    await abrirSesion(customer);
     return { ok: true };
   } catch (error) {
     console.error("entrarConCodigo falló", error);

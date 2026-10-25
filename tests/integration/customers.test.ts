@@ -212,7 +212,7 @@ describe.skipIf(!hasTestDb)('adoptar un pedido de invitada', () => {
     const orderId = await createOrder({ customerPhone: customer.phone });
 
     const [before] = await getTestDb().select().from(orders).where(eq(orders.id, orderId));
-    expect(await claimGuestOrder(customer.id, before!.orderNumber)).toBe(true);
+    expect(await claimGuestOrder(customer.id, before!.orderNumber, before!.accessToken)).toBe(true);
 
     const [after] = await getTestDb().select().from(orders).where(eq(orders.id, orderId));
     expect(after?.customerId).toBe(customer.id);
@@ -223,7 +223,21 @@ describe.skipIf(!hasTestDb)('adoptar un pedido de invitada', () => {
     const orderId = await createOrder({ customerPhone: '+595982999888' });
 
     const [row] = await getTestDb().select().from(orders).where(eq(orders.id, orderId));
-    expect(await claimGuestOrder(customer.id, row!.orderNumber)).toBe(false);
+    expect(await claimGuestOrder(customer.id, row!.orderNumber, row!.accessToken)).toBe(false);
+
+    const [after] = await getTestDb().select().from(orders).where(eq(orders.id, orderId));
+    expect(after?.customerId).toBeNull();
+  });
+
+  it('NO ata un pedido del mismo teléfono sin el token de su link privado', async () => {
+    // Registrarse no prueba que el teléfono es de una: sin el token, una cuenta
+    // abierta con el WhatsApp de otra persona adoptaría sus pedidos uno por uno.
+    const customer = await nuevaCuenta();
+    const orderId = await createOrder({ customerPhone: customer.phone });
+    const [row] = await getTestDb().select().from(orders).where(eq(orders.id, orderId));
+
+    expect(await claimGuestOrder(customer.id, row!.orderNumber, '')).toBe(false);
+    expect(await claimGuestOrder(customer.id, row!.orderNumber, 'x'.repeat(64))).toBe(false);
 
     const [after] = await getTestDb().select().from(orders).where(eq(orders.id, orderId));
     expect(after?.customerId).toBeNull();
@@ -237,7 +251,7 @@ describe.skipIf(!hasTestDb)('adoptar un pedido de invitada', () => {
     const orderId = await createOrder({ customerPhone: dueña.phone, customerId: dueña.id });
     const [row] = await getTestDb().select().from(orders).where(eq(orders.id, orderId));
 
-    expect(await claimGuestOrder(otra.id, row!.orderNumber)).toBe(false);
+    expect(await claimGuestOrder(otra.id, row!.orderNumber, row!.accessToken)).toBe(false);
 
     const [after] = await getTestDb().select().from(orders).where(eq(orders.id, orderId));
     expect(after?.customerId).toBe(dueña.id);

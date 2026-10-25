@@ -2,7 +2,8 @@ import { eq } from 'drizzle-orm';
 import { afterAll, beforeEach, describe, expect, it } from 'vitest';
 
 import { customers, loginTokens } from '@/db/schema';
-import { registerCustomer } from '@/domain/customers';
+import { authenticateCustomer, registerCustomer } from '@/domain/customers';
+import { validateCustomerSession } from '@/lib/customer-session';
 import {
   consumeLoginToken,
   hashLoginCode,
@@ -244,5 +245,73 @@ describe.skipIf(!hasTestDb)('el código está atado a la cuenta', () => {
 
     const [row] = await getTestDb().select().from(loginTokens);
     expect(row?.invalidatedAt).toBeInstanceOf(Date);
+  });
+});
+
+describe.skipIf(!hasTestDb)('la primera verificación limpia la cuenta', () => {
+  beforeEach(resetTables);
+  afterAll(closeTestDb);
+
+  it('borra la contraseña de quien la registró y cierra sus sesiones', async () => {
+    // Alguien registra una cuenta con el WhatsApp de otra persona, elige la
+    // contraseña y queda con la sesión abierta.
+    const cuenta = await unaCuenta();
+    const cookieVieja = {
+      customerId: cuenta.id,
+      phone: cuenta.phone,
+      name: cuenta.name,
+      sessionVersion: cuenta.sessionVersion,
+    };
+    expect(await validateCustomerSession(cookieVieja)).toMatchObject({ customerId: cuenta.id });
+
+    // La dueña del número entra con el código que le llegó.
+    const { code } = await issueLoginToken(cuenta.id, 'consola');
+    expect(await consumeLoginToken(cuenta.phone, code)).toMatchObject({ customerId: cuenta.id });
+
+    const [row] = await getTestDb().select().from(customers).where(eq(customers.id, cuenta.id));
+    expect(row?.passwordHash).toBeNull();
+    expect(row?.sessionVersion).toBe(cuenta.sessionVersion + 1);
+
+    // La contraseña elegida antes ya no entra, y la cookie de antes tampoco.
+    expect(await authenticateCustomer(cuenta.phone, PASSWORD)).toBeNull();
+    await expect(validateCustomerSession(cookieVieja)).rejects.toThrow();
+    // La sesión nueva, con la versión nueva, sí.
+    expect(
+      await validateCustomerSession({ ...cookieVieja, sessionVersion: row!.sessionVersion }),
+    ).toMatchObject({ customerId: cuenta.id });
+  });
+
+  it('una cookie de antes de session_version cuenta como versión 0', async () => {
+    // Las sesiones abiertas antes de este cambio no se cierran solas.
+    const cuenta = await unaCuenta();
+    const sinVersion = { customerId: cuenta.id, phone: cuenta.phone, name: cuenta.name };
+    expect(await validateCustomerSession(sinVersion)).toMatchObject({ customerId: cuenta.id });
+  });
+
+  it('con el teléfono ya verificado, entrar con código no toca la contraseña', async () => {
+    const cuenta = await unaCuenta();
+    await getTestDb()
+      .update(customers)
+      .set({ phoneVerifiedAt: new Date() })
+      .where(eq(customers.id, cuenta.id));
+
+    const { code } = await issueLoginToken(cuenta.id, 'consola');
+    expect(await consumeLoginToken(cuenta.phone, code)).toMatchObject({ customerId: cuenta.id });
+
+    const [row] = await getTestDb().select().from(customers).where(eq(customers.id, cuenta.id));
+    expect(row?.sessionVersion).toBe(cuenta.sessionVersion);
+    expect(await authenticateCustomer(cuenta.phone, PASSWORD)).toMatchObject({ id: cuenta.id });
+  });
+
+  it('una cuenta desactivada pierde la sesión que tenía abierta', async () => {
+    const cuenta = await unaCuenta();
+    const cookie = {
+      customerId: cuenta.id,
+      phone: cuenta.phone,
+      name: cuenta.name,
+      sessionVersion: cuenta.sessionVersion,
+    };
+    await getTestDb().update(customers).set({ isActive: false }).where(eq(customers.id, cuenta.id));
+    await expect(validateCustomerSession(cookie)).rejects.toThrow();
   });
 });
